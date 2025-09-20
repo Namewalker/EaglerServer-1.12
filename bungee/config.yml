@@ -12,7 +12,7 @@ listeners:
   - lobby
   bind_local_address: false
   host: 127.0.0.1:25577
-  max_players: 1
+  max_players: 10
   tab_size: 60
   force_default_server: true
 remote_ping_cache: -1
@@ -46,9 +46,9 @@ disabled_commands:
 servers:
   lobby:
     motd: 'lobby'
-    address: 95.217.198.48:20923
+    address: localhost:25565
     restricted: false
   Civilisations:
-    motd: '&1Just another Waterfall - Forced Host'
+    motd: '&1Namewalker Server'
     address: 95.217.198.48:20923 
     restricted: false
