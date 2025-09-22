@@ -43,5 +43,4 @@ Enjoy!
 <br>
 <br>
 <br>
-<br>
-##Version Author: Namewalker
+Version Author: Namewalker
