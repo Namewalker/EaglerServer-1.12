@@ -1,247 +1,228 @@
-[19:53:25] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[19:53:25] [Server thread/INFO]: Loading properties
-[19:53:25] [Server thread/INFO]: Default game type: SURVIVAL
-[19:53:26] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[19:53:26] [Server thread/INFO]: Debug logging is disabled
-[19:53:26] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[19:53:26] [Server thread/INFO]: Using 4 threads for Netty based IO
-[19:53:26] [Server thread/INFO]: Generating keypair
-[19:53:26] [Server thread/INFO]: Starting Minecraft server on localhost:25565
-[19:53:26] [Server thread/INFO]: Using default channel type
-[19:53:26] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[19:53:26] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[19:53:26] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[19:53:26] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[19:53:26] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[19:53:26] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[19:53:26] [Server thread/INFO]: Preparing level "world"
-[19:53:26] [Server thread/INFO]: -------- World Settings For [world] --------
-[19:53:26] [Server thread/INFO]: Mob Spawn Range: 4
-[19:53:26] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Cane Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Melon Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Vine Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[19:53:26] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[19:53:26] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[19:53:26] [Server thread/INFO]: Random Lighting Updates: false
-[19:53:26] [Server thread/INFO]: Structure Info Saving: true
-[19:53:26] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[19:53:26] [Server thread/INFO]: Max TNT Explosions: 100
-[19:53:26] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[19:53:26] [Server thread/INFO]: Item Despawn Rate: 6000
-[19:53:26] [Server thread/INFO]: Item Merge Radius: 2.5
-[19:53:26] [Server thread/INFO]: View Distance: 4
-[19:53:26] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[19:53:26] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[19:53:26] [Server thread/INFO]: Experience Merge Radius: 3.0
-[19:53:26] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[19:53:26] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[19:53:26] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[19:53:26] [Server thread/INFO]: Mob Spawn Range: 4
-[19:53:26] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Cane Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Melon Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Vine Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[19:53:26] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[19:53:26] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[19:53:26] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[19:53:26] [Server thread/INFO]: Random Lighting Updates: false
-[19:53:26] [Server thread/INFO]: Structure Info Saving: true
-[19:53:26] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[19:53:26] [Server thread/INFO]: Max TNT Explosions: 100
-[19:53:26] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[19:53:26] [Server thread/INFO]: Item Despawn Rate: 6000
-[19:53:26] [Server thread/INFO]: Item Merge Radius: 2.5
-[19:53:26] [Server thread/INFO]: View Distance: 4
-[19:53:26] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[19:53:27] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[19:53:27] [Server thread/INFO]: Experience Merge Radius: 3.0
-[19:53:27] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[19:53:27] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[19:53:27] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[19:53:27] [Server thread/INFO]: Mob Spawn Range: 4
-[19:53:27] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[19:53:27] [Server thread/INFO]: Cane Growth Modifier: 100%
-[19:53:27] [Server thread/INFO]: Melon Growth Modifier: 100%
-[19:53:27] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[19:53:27] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[19:53:27] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[19:53:27] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[19:53:27] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[19:53:27] [Server thread/INFO]: Vine Growth Modifier: 100%
-[19:53:27] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[19:53:27] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[19:53:27] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[19:53:27] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[19:53:27] [Server thread/INFO]: Random Lighting Updates: false
-[19:53:27] [Server thread/INFO]: Structure Info Saving: true
-[19:53:27] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[19:53:27] [Server thread/INFO]: Max TNT Explosions: 100
-[19:53:27] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[19:53:27] [Server thread/INFO]: Item Despawn Rate: 6000
-[19:53:27] [Server thread/INFO]: Item Merge Radius: 2.5
-[19:53:27] [Server thread/INFO]: View Distance: 4
-[19:53:27] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[19:53:27] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[19:53:27] [Server thread/INFO]: Experience Merge Radius: 3.0
-[19:53:27] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[19:53:27] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[19:53:27] [Server thread/INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
-[19:53:28] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
-[19:53:28] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
-[19:53:28] [Server thread/INFO]: Done (1.864s)! For help, type "help" or "?"
-[19:53:28] [Server thread/INFO]: Timings Reset
-[19:53:35] [User Authenticator #1/INFO]: UUID of player The_Code is 98fbc21e-3a53-331b-99fc-6748a611c19c
-[19:53:35] [Server thread/INFO]: The_Code[/127.0.0.1:33410] logged in with entity id 13 at ([world]-1537.3246152033919, 21.0, -1081.2299364355279)
-[19:53:55] [Server thread/INFO]: The_Code issued server command: /effect @p minecraft:levitation 255 1
-[19:53:55] [Server thread/INFO]: [The_Code: Given Levitation (ID 25) * 1 to The_Code for 255 seconds]
-[19:54:08] [Server thread/INFO]: The_Code issued server command: /gamemode 3
-[19:54:08] [Server thread/INFO]: [The_Code: Set own game mode to Spectator Mode]
-[19:54:14] [Server thread/INFO]: The_Code issued server command: /gamemode 1
-[19:54:14] [Server thread/INFO]: [The_Code: Set own game mode to Creative Mode]
-[19:54:45] [Server thread/INFO]: The_Code issued server command: /effect clear
-[19:54:51] [Server thread/INFO]: The_Code issued server command: /effect @p clear
-[19:54:51] [Server thread/INFO]: [The_Code: Took all effects from The_Code]
-[19:55:12] [Server thread/INFO]: The_Code issued server command: /gamemode 3
-[19:55:12] [Server thread/INFO]: [The_Code: Set own game mode to Spectator Mode]
-[19:55:20] [Server thread/INFO]: The_Code issued server command: /summon tnt
-[19:55:20] [Server thread/INFO]: [The_Code: Object successfully summoned]
-[19:55:23] [Server thread/INFO]: The_Code issued server command: /summon tnt
-[19:55:23] [Server thread/INFO]: [The_Code: Object successfully summoned]
-[19:55:24] [Server thread/INFO]: The_Code issued server command: /summon tnt
-[19:55:24] [Server thread/INFO]: [The_Code: Object successfully summoned]
-[19:55:25] [Server thread/INFO]: The_Code issued server command: /summon tnt
-[19:55:25] [Server thread/INFO]: [The_Code: Object successfully summoned]
-[19:55:28] [Server thread/INFO]: The_Code issued server command: /summon tnt
-[19:55:28] [Server thread/INFO]: [The_Code: Object successfully summoned]
-[19:55:31] [Server thread/INFO]: The_Code issued server command: /summon tnt
-[19:55:31] [Server thread/INFO]: [The_Code: Object successfully summoned]
-[19:55:33] [Server thread/INFO]: The_Code issued server command: /gamemode 1
-[19:55:33] [Server thread/INFO]: [The_Code: Set own game mode to Creative Mode]
-[19:55:57] [Server thread/INFO]: The_Code has made the advancement [Stone Age]
-[19:59:48] [Server thread/INFO]: The_Code issued server command: /kill @e[type=!Player
-[19:59:48] [Server thread/INFO]: [The_Code: Entity '@e[type=!Player' cannot be found]
-[19:59:50] [Server thread/INFO]: The_Code issued server command: /kill @e[type=!Player]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Silverfish]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed item.item.seeds]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Silverfish]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed item.tile.dirt.default]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed item.tile.dirt.default]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Experience Orb]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed item.item.seeds]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed item.tile.stone.andesite]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed item.tile.dirt.default]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed item.tile.stonebrick]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed item.tile.stonebrick]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed item.tile.dirt.default]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Spider]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Skeleton]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Creeper]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Pig]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Llama]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Sheep]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Creeper]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Creeper]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Creeper]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Sheep]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Skeleton]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Bat]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Sheep]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Cow]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Zombie]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Skeleton]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Cow]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Cow]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Cow]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Cow]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Cow]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Cow]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Cow]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Experience Orb]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Skeleton]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Zombie]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Sheep]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Sheep]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Skeleton]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Sheep]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Skeleton]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Skeleton]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Sheep]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Sheep]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed item.item.seeds]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Experience Orb]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Spider]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Skeleton]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Zombie]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Zombie]
-[19:59:50] [Server thread/INFO]: [The_Code: Killed Rabbit]
-[19:59:52] [Server thread/INFO]: The_Code issued server command: /kill @e[type=!Player]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.string]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.sulphur]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.arrow]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.bone]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.tile.cloth.white]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed Creeper]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.porkchopRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed Creeper]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed Creeper]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.muttonRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.arrow]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.bone]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.sulphur]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.muttonRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.tile.cloth.white]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed Enderman]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.tile.cloth.brown]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.muttonRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.beefRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.leather]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.beefRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.leather]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.beefRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.rottenFlesh]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.arrow]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.beefRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.beefRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.leather]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.beefRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.arrow]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.muttonRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.tile.cloth.silver]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.tile.cloth.white]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.muttonRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.muttonRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.tile.cloth.white]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.tile.cloth.white]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.muttonRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.tile.cloth.white]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.muttonRaw]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.bone]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.string]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.bone]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.arrow]
-[19:59:52] [Server thread/INFO]: [The_Code: Killed item.item.rottenFlesh]
-[19:59:55] [Server thread/INFO]: The_Code issued server command: /gamemode 3
-[19:59:55] [Server thread/INFO]: [The_Code: Set own game mode to Spectator Mode]
-[20:01:25] [Server thread/INFO]: Stopping the server
-[20:01:25] [Server thread/INFO]: Stopping server
-[20:01:25] [Server thread/INFO]: Saving players
-[20:01:25] [Server thread/INFO]: The_Code lost connection: Server closed
-[20:01:25] [Server thread/INFO]: The_Code left the game
-[20:01:25] [Server thread/INFO]: Saving worlds
-[20:01:25] [Server thread/INFO]: Saving chunks for level 'world'/overworld
-[20:01:25] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
-[20:01:25] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end
+[22:45:34] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[22:45:34] [Server thread/INFO]: Loading properties
+[22:45:34] [Server thread/INFO]: Default game type: SURVIVAL
+[22:45:34] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[22:45:34] [Server thread/INFO]: Debug logging is disabled
+[22:45:34] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:45:34] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:45:34] [Server thread/INFO]: Generating keypair
+[22:45:34] [Server thread/INFO]: Starting Minecraft server on localhost:25565
+[22:45:34] [Server thread/INFO]: Using default channel type
+[22:45:34] [Server thread/ERROR]: Could not load 'plugins/ProtocolLib.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:158) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:136) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.loadPlugins(CraftServer.java:318) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:222) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1620]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.zip.ZipException: zip file is empty
+	at java.util.zip.ZipFile$Source.zerror(ZipFile.java:1781) ~[?:?]
+	at java.util.zip.ZipFile$Source.findEND(ZipFile.java:1562) ~[?:?]
+	at java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1657) ~[?:?]
+	at java.util.zip.ZipFile$Source.<init>(ZipFile.java:1495) ~[?:?]
+	at java.util.zip.ZipFile$Source.get(ZipFile.java:1458) ~[?:?]
+	at java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724) ~[?:?]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:251) ~[?:?]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:180) ~[?:?]
+	at java.util.jar.JarFile.<init>(JarFile.java:345) ~[?:?]
+	at java.util.jar.JarFile.<init>(JarFile.java:316) ~[?:?]
+	at java.util.jar.JarFile.<init>(JarFile.java:282) ~[?:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:146) ~[patched_1.12.2.jar:git-Paper-1620]
+	... 5 more
+[22:45:35] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[22:45:35] [Server thread/INFO]: [WorldEditSimple] Loading WorldEditSimple v1.0
+[22:45:35] [Server thread/INFO]: [DisguiseSimple] Loading DisguiseSimple v1.0
+[22:45:35] [Server thread/INFO]: [ImmersivePortals] Loading ImmersivePortals v1.0
+[22:45:35] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:45:35] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:45:35] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[22:45:35] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[22:45:35] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:45:35] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[22:45:35] [Server thread/INFO]: Preparing level "world"
+[22:45:35] [Server thread/INFO]: -------- World Settings For [world] --------
+[22:45:35] [Server thread/INFO]: Mob Spawn Range: 4
+[22:45:35] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Cane Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Melon Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Vine Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[22:45:35] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[22:45:35] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[22:45:35] [Server thread/INFO]: Random Lighting Updates: false
+[22:45:35] [Server thread/INFO]: Structure Info Saving: true
+[22:45:35] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[22:45:35] [Server thread/INFO]: Max TNT Explosions: 100
+[22:45:35] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[22:45:35] [Server thread/INFO]: Item Despawn Rate: 6000
+[22:45:35] [Server thread/INFO]: Item Merge Radius: 2.5
+[22:45:35] [Server thread/INFO]: View Distance: 4
+[22:45:35] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[22:45:35] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[22:45:35] [Server thread/INFO]: Experience Merge Radius: 3.0
+[22:45:35] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[22:45:35] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[22:45:35] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[22:45:35] [Server thread/INFO]: Mob Spawn Range: 4
+[22:45:35] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Cane Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Melon Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Vine Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[22:45:35] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[22:45:35] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[22:45:35] [Server thread/INFO]: Random Lighting Updates: false
+[22:45:35] [Server thread/INFO]: Structure Info Saving: true
+[22:45:35] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[22:45:35] [Server thread/INFO]: Max TNT Explosions: 100
+[22:45:35] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[22:45:35] [Server thread/INFO]: Item Despawn Rate: 6000
+[22:45:35] [Server thread/INFO]: Item Merge Radius: 2.5
+[22:45:35] [Server thread/INFO]: View Distance: 4
+[22:45:35] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[22:45:35] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[22:45:35] [Server thread/INFO]: Experience Merge Radius: 3.0
+[22:45:35] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[22:45:35] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[22:45:35] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[22:45:35] [Server thread/INFO]: Mob Spawn Range: 4
+[22:45:35] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Cane Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Melon Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Vine Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[22:45:35] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[22:45:35] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[22:45:35] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[22:45:35] [Server thread/INFO]: Random Lighting Updates: false
+[22:45:35] [Server thread/INFO]: Structure Info Saving: true
+[22:45:35] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[22:45:35] [Server thread/INFO]: Max TNT Explosions: 100
+[22:45:35] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[22:45:35] [Server thread/INFO]: Item Despawn Rate: 6000
+[22:45:35] [Server thread/INFO]: Item Merge Radius: 2.5
+[22:45:35] [Server thread/INFO]: View Distance: 4
+[22:45:35] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[22:45:35] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[22:45:35] [Server thread/INFO]: Experience Merge Radius: 3.0
+[22:45:35] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[22:45:35] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[22:45:35] [Server thread/INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
+[22:45:36] [Server thread/INFO]: Preparing spawn area: 4%
+[22:45:37] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
+[22:45:37] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
+[22:45:37] [Server thread/INFO]: [WorldEditSimple] Enabling WorldEditSimple v1.0
+[22:45:37] [Server thread/INFO]: [DisguiseSimple] Enabling DisguiseSimple v1.0
+[22:45:37] [Server thread/INFO]: [ImmersivePortals] Enabling ImmersivePortals v1.0
+[22:45:37] [Server thread/INFO]: [ImmersivePortals] ImmersivePortals enabled!
+[22:45:37] [Server thread/INFO]: Done (2.446s)! For help, type "help" or "?"
+[22:45:37] [Server thread/INFO]: Timings Reset
+[22:47:04] [User Authenticator #1/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[22:47:05] [Server thread/INFO]: ShadowLord[/127.0.0.1:47960] logged in with entity id 64 at ([world]784.1761057936624, 67.0, 1353.9487995965642)
+[22:49:23] [User Authenticator #2/INFO]: UUID of player _Demon_Queen420_ is 8e68c44c-8414-306b-ad0b-4917c0c62a27
+[22:49:23] [Server thread/INFO]: _Demon_Queen420_[/127.0.0.1:43012] logged in with entity id 100 at ([world]926.6999999880791, 64.0, 1353.699999988079)
+[22:49:39] [Async Chat Thread - #0/INFO]: <ShadowLord> hi
+[22:51:17] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> hi
+[22:51:22] [Async Chat Thread - #1/INFO]: <ShadowLord> wyd
+[22:51:46] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> eating or leo was gonna tell on me
+[22:51:57] [Async Chat Thread - #1/INFO]: <ShadowLord> atta boy
+[22:52:05] [Server thread/INFO]: ShadowLord issued server command: /tp @p _Demon_Queen420_
+[22:52:05] [Server thread/INFO]: [ShadowLord: Teleported ShadowLord to _Demon_Queen420_]
+[22:52:17] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> whatever
+[22:52:26] [Async Chat Thread - #1/INFO]: <ShadowLord> like the fridge?
+[22:52:32] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> mhm ig
+[22:52:37] [Async Chat Thread - #1/INFO]: <ShadowLord> ouch
+[22:52:45] [Async Chat Thread - #1/INFO]: <ShadowLord> ig is crazy
+[22:52:57] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> im just mad u were ignoring me earlier
+[22:53:55] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> and im mad bc i never just get to be alone with you
+[22:53:55] [Async Chat Thread - #1/INFO]: <ShadowLord> sry when i commit to smthing i have to focus on that or it makes my brain break
+[22:54:06] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> k
+[22:54:36] [Async Chat Thread - #1/INFO]: <ShadowLord> i can lock down the server kind of, restrict it to 2 players
+[22:54:48] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> its fine
+[22:54:53] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> u dont have to do that
+[22:55:08] [Async Chat Thread - #1/INFO]: <ShadowLord> but i still have to offer
+[22:55:20] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> offer what?
+[22:55:27] [Async Chat Thread - #1/INFO]: <ShadowLord> to lock it down
+[22:55:46] [Server thread/INFO]: ShadowLord issued server command: /clear
+[22:55:46] [Server thread/INFO]: [ShadowLord: Cleared the inventory of ShadowLord, removing 9 items]
+[22:56:00] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> its nothing im just irritated that whenever i talk to you there is always other girls
+[22:56:13] [Async Chat Thread - #1/INFO]: <ShadowLord> sry?
+[22:56:26] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> no dont apoligize
+[22:56:29] [Async Chat Thread - #1/INFO]: <ShadowLord> whoops i forgot theres a first floor
+[22:56:34] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> i dont really care anyway
+[22:56:42] [Async Chat Thread - #1/INFO]: <ShadowLord> one sec
+[22:57:20] [Async Chat Thread - #1/INFO]: <ShadowLord> you not allowed in
+[22:57:29] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> whatever
+[22:57:37] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> rn i feel like i might puke
+[22:57:51] [Async Chat Thread - #1/INFO]: <ShadowLord> dont do that, then youd have to leave
+[22:58:10] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> well i cant control that
+[22:58:17] [Async Chat Thread - #1/INFO]: <ShadowLord> touche
+[22:58:35] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> oh and btw i think mina and elina both like you
+[22:58:46] [Async Chat Thread - #1/INFO]: <ShadowLord> that is CRAZY lol
+[22:58:56] [Async Chat Thread - #1/INFO]: <ShadowLord> a lot of ppl like me ig, never thought of it
+[22:59:03] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> it pisses me off
+[22:59:15] [Server thread/INFO]: ShadowLord issued server command: /cear
+[22:59:17] [Server thread/INFO]: ShadowLord issued server command: /clear
+[22:59:17] [Server thread/INFO]: [ShadowLord: Cleared the inventory of ShadowLord, removing 9 items]
+[22:59:53] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> it gives me more ppl to get paranoid about u cheating with since they are better than me
+[23:00:51] [Async Chat Thread - #1/INFO]: <ShadowLord> says who/
+[23:00:53] [Async Chat Thread - #1/INFO]: <ShadowLord> ?
+[23:01:03] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> its just a fact
+[23:01:06] [Async Chat Thread - #1/INFO]: <ShadowLord> i think that that is an opinion
+[23:01:14] [Async Chat Thread - #1/INFO]: <ShadowLord> beauty is in the eye of the viewer
+[23:01:19] [Async Chat Thread - #1/INFO]: <ShadowLord> besides, this might help
+[23:01:34] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> what
+[23:01:42] [Async Chat Thread - #1/INFO]: <ShadowLord> come here
+[23:01:46] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> why
+[23:01:52] [Async Chat Thread - #1/INFO]: <ShadowLord> i wanna show you
+[23:01:57] [Async Chat Thread - #1/INFO]: <ShadowLord> pls?
+[23:02:01] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> fine
+[23:02:19] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> what
+[23:02:21] [Async Chat Thread - #1/INFO]: <ShadowLord> go in
+[23:02:31] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> ty
+[23:02:46] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> how is this gonna help
+[23:02:55] [Async Chat Thread - #1/INFO]: <ShadowLord> bc it show me love
+[23:03:20] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> im still upset and paranoid
+[23:03:41] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> and how do i know u actually love me
+[23:03:41] [Async Chat Thread - #1/INFO]: <ShadowLord> well just know i do love u
+[23:04:09] [Async Chat Thread - #1/INFO]: <ShadowLord> bc if i didnt why would i still be around? why would you be whitelisted? why would i be on miro and everywhere else i KNOW you will be?
+[23:04:30] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> bc the other girls are also there
+[23:04:33] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> why else
+[23:04:44] [Server thread/INFO]: _Demon_Queen420_ issued server command: /sit
+[23:05:01] [Async Chat Thread - #1/INFO]: <ShadowLord> when i dont like some1 it is obvious. when i do its also obvious. the ppl in between dont matter. they arent anything in our story
+[23:05:23] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> well im still scared that u will cheat on me again
+[23:05:35] [Async Chat Thread - #1/INFO]: <ShadowLord> pause right there and answer me a question
+[23:05:40] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> okay
+[23:05:58] [Async Chat Thread - #1/INFO]: <ShadowLord> did i actually cheat, and when was the last time i saw ash?
+[23:06:07] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> idk anymore
+[23:06:29] [Async Chat Thread - #1/INFO]: <ShadowLord> idk when i last saw ash either, but that doesnt matter anyways
+[23:06:33] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> all i know is that u liked her too and that u talked to her moe than me
+[23:06:40] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> *more
+[23:06:58] [Async Chat Thread - #1/INFO]: <ShadowLord> but you have to question: who was online more often?
+[23:07:37] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> its not my fault all she wanted to do was try to steal you from me and not worry about her and blaze
+[23:08:00] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> u guys did not just hurt me u guys also hurt blaze too
+[23:08:19] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> he went really quiet when i called him crying
+[23:08:47] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> i knew he felt terrible and i knew he wanted to cry too
+[23:09:06] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> bc he also did not stay on call as long as he usually does
+[23:09:08] [Async Chat Thread - #1/INFO]: <ShadowLord> now im confused too
+[23:09:20] [Async Chat Thread - #1/INFO]: <_Demon_Queen420_> how
+[23:10:22] [Async Chat Thread - #2/INFO]: <ShadowLord> give me a sec im trying to put things together
+[23:10:31] [Async Chat Thread - #2/INFO]: <_Demon_Queen420_> okay take ur time

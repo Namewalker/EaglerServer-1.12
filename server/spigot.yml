@@ -15,6 +15,7 @@ settings:
   debug: false
   save-user-cache-on-stop-only: false
   sample-count: 12
+  bungeecord: false
   late-bind: false
   player-shuffle: 0
   filter-creative-items: true
@@ -23,7 +24,6 @@ settings:
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10.0
   item-dirty-ticks: 20
-  bungeecord: false
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh

@@ -96,12 +96,12 @@ world-settings:
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 900
+    use-vanilla-world-scoreboard-name-coloring: false
     despawn-ranges:
       soft: 32
       hard: 128
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
-    use-vanilla-world-scoreboard-name-coloring: false
     water-over-lava-flow-speed: 5
     fast-drain:
       lava: false
@@ -127,6 +127,7 @@ world-settings:
     duplicate-uuid-saferegen-delete-range: 32
     keep-spawn-loaded-range: 4
     auto-save-interval: -1
+    use-alternate-fallingblock-onGround-detection: false
     nether-ceiling-void-damage: false
     allow-non-player-entities-on-scoreboards: false
     frosted-ice:
@@ -139,7 +140,6 @@ world-settings:
     disable-explosion-knockback: false
     elytra-hit-wall-damage: true
     grass-spread-tick-rate: 1
-    use-alternate-fallingblock-onGround-detection: false
     bed-search-radius: 1
     prevent-tnt-from-moving-in-water: false
     non-player-arrow-despawn-rate: -1
