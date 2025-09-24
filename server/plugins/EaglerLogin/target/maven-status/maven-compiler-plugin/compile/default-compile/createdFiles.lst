@@ -1,0 +1,7 @@
+com/shadowlord/eaglerlogin/commands/RegisterCommand.class
+com/shadowlord/eaglerlogin/commands/LoginCommand.class
+com/shadowlord/eaglerlogin/UserManager.class
+com/shadowlord/eaglerlogin/listeners/PlayerListener.class
+com/shadowlord/eaglerlogin/EaglerLoginPlugin.class
+com/shadowlord/eaglerlogin/SessionManager.class
+com/shadowlord/eaglerlogin/listeners/DisconnectListener.class

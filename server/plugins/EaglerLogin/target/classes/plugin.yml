@@ -1,0 +1,14 @@
+name: EaglerLogin
+main: com.shadowlord.eaglerlogin.EaglerLoginPlugin
+version: 1.0
+api-version: "1.12"
+commands:
+  register:
+    description: Register a new account
+    usage: /register <password>
+  login:
+    description: Login to your account
+    usage: /login <password>
+permissions:
+  eaglerlogin.use:
+    default: true
