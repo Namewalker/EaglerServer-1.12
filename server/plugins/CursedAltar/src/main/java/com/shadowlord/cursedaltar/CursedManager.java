@@ -1,27 +1,29 @@
 package com.shadowlord.cursedaltar;
 
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
 
 public class CursedManager {
   private final JavaPlugin plugin;
-  private final Set<String> altarKeys = new HashSet<>();
-  private final Map<UUID, Integer> levels   = new HashMap<>();
+  private final Set<String> altarKeys   = new HashSet<String>();
+  private final Map<UUID, Integer> levels = new HashMap<UUID, Integer>();
 
   public CursedManager(JavaPlugin plugin) {
     this.plugin = plugin;
     loadAll();
   }
 
-  public boolean isAltar(Location loc) {
+  public boolean isAltar(org.bukkit.Location loc) {
     return altarKeys.contains(makeKey(loc));
   }
 
-  public void addAltar(Location loc) {
+  public void addAltar(org.bukkit.Location loc) {
     altarKeys.add(makeKey(loc));
     saveAltars();
   }
@@ -48,6 +50,13 @@ public class CursedManager {
     }
   }
 
+  public void removeCurse(UUID uuid) {
+    if (levels.containsKey(uuid)) {
+      levels.remove(uuid);
+      saveCurses();
+    }
+  }
+
   public void saveAll() {
     saveAltars();
     saveCurses();
@@ -55,7 +64,7 @@ public class CursedManager {
 
   private void saveAltars() {
     FileConfiguration cfg = plugin.getConfig();
-    cfg.set("altars", new ArrayList<>(altarKeys));
+    cfg.set("altars", new java.util.ArrayList<String>(altarKeys));
     plugin.saveConfig();
   }
 
@@ -71,8 +80,10 @@ public class CursedManager {
   @SuppressWarnings("unchecked")
   private void loadAll() {
     FileConfiguration cfg = plugin.getConfig();
-    List<String> list = cfg.getStringList("altars");
-    if (list != null) altarKeys.addAll(list);
+    java.util.List<String> list = cfg.getStringList("altars");
+    if (list != null) {
+      altarKeys.addAll(list);
+    }
 
     if (cfg.isConfigurationSection("cursed-players")) {
       for (String key : cfg.getConfigurationSection("cursed-players").getKeys(false)) {
@@ -81,10 +92,10 @@ public class CursedManager {
     }
   }
 
-  private String makeKey(Location loc) {
-    return loc.getWorld().getName()
-         + ":" + loc.getBlockX()
-         + ":" + loc.getBlockY()
-         + ":" + loc.getBlockZ();
+  private String makeKey(org.bukkit.Location loc) {
+    return loc.getWorld().getName() + ":" +
+           loc.getBlockX() + ":" +
+           loc.getBlockY() + ":" +
+           loc.getBlockZ();
   }
 }
