@@ -91,3 +91,8 @@ com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velo
 [20:06:55] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] ShadowLord -> lobby has connected
 [20:16:51] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:40814) has disconnected
 [20:16:51] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] ShadowLord -> lobby has disconnected
+[20:24:05] [Thread-32/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[20:24:05] [Thread-32/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25577
+[20:24:05] [EaglercraftXVelocity - Task Executor #11/INFO] [eaglerxvelocity]: Eaglercraft listener closed: /0.0.0.0:8081
+[20:24:05] [EaglercraftXVelocity - Task Executor #11/INFO] [eaglerxvelocity]: Successfully disconnected from database 'jdbc:sqlite:eaglercraft_skins_cache.db'
+[20:24:05] [EaglercraftXVelocity - Task Executor #11/INFO] [eaglerxvelocity]: Stopping skin cache HTTP client...
