@@ -2,40 +2,29 @@ package com.shadowlord.eaglerlogin;
 
 import com.shadowlord.eaglerlogin.commands.LoginCommand;
 import com.shadowlord.eaglerlogin.commands.RegisterCommand;
-import com.shadowlord.eaglerlogin.listeners.PlayerListener;
-import com.shadowlord.eaglerlogin.listeners.DisconnectListener;
+import com.shadowlord.eaglerlogin.listeners.LoginListener;
+import com.shadowlord.eaglerlogin.listeners.ProtectionListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class EaglerLoginPlugin extends JavaPlugin {
-  private UserManager users;
-  private SessionManager sessions;
+  private LoginListener loginListener;
 
   @Override
   public void onEnable() {
     saveDefaultConfig();
-    users = new UserManager(this);
-    sessions = new SessionManager();
+    loginListener = new LoginListener(this);
+    getServer().getPluginManager().registerEvents(loginListener, this);
+    getServer().getPluginManager().registerEvents(new ProtectionListener(loginListener, this), this);
 
-    getCommand("register").setExecutor(new RegisterCommand(users));
-    getCommand("login").setExecutor(new LoginCommand(users, sessions));
-
-    getServer().getPluginManager().registerEvents(new PlayerListener(sessions), this);
-    getServer().getPluginManager().registerEvents(new DisconnectListener(sessions), this);
+    if (getCommand("register") != null) getCommand("register").setExecutor(new RegisterCommand(loginListener, this));
+    if (getCommand("login") != null) getCommand("login").setExecutor(new LoginCommand(loginListener));
 
     getLogger().info("EaglerLogin enabled");
   }
 
   @Override
   public void onDisable() {
-    users.saveAll();
+    if (loginListener != null) loginListener.saveUsers();
     getLogger().info("EaglerLogin disabled");
-  }
-
-  public UserManager getUserManager() {
-    return users;
-  }
-
-  public SessionManager getSessionManager() {
-    return sessions;
   }
 }

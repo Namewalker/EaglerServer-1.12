@@ -1,0 +1,17 @@
+name: EaglerLogin
+main: com.shadowlord.eaglerlogin.EaglerLoginPlugin
+version: 1.0
+api-version: "1.12"
+author: Namewalker
+description: Forces registration/login for Eagler clients; locks actions until authenticated.
+commands:
+  register:
+    description: Register an account
+    usage: /register <password>
+  login:
+    description: Login to your account
+    usage: /login <password>
+permissions:
+  eaglerlogin.bypass:
+    description: Bypass login protection (useful for admins or other plugins)
+    default: op

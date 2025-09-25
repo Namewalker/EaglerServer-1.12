@@ -1,41 +1,42 @@
 package com.shadowlord.eaglerlogin.commands;
 
-import com.shadowlord.eaglerlogin.SessionManager;
-import com.shadowlord.eaglerlogin.UserManager;
+import com.shadowlord.eaglerlogin.listeners.LoginListener;
+import com.shadowlord.eaglerlogin.util.MsgUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class LoginCommand implements CommandExecutor {
-  private final UserManager users;
-  private final SessionManager sessions;
+  private final LoginListener loginListener;
 
-  public LoginCommand(UserManager users, SessionManager sessions) {
-    this.users = users;
-    this.sessions = sessions;
+  public LoginCommand(LoginListener loginListener) {
+    this.loginListener = loginListener;
   }
 
   @Override
-  public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-    if (!(sender instanceof Player)) return false;
-    Player player = (Player) sender;
-
+  public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    if (!(sender instanceof Player)) {
+      sender.sendMessage("Console cannot use this command.");
+      return true;
+    }
+    Player p = (Player) sender;
     if (args.length != 1) {
-      player.sendMessage("Usage: /login <password>");
+      p.sendMessage(MsgUtil.color("&eUsage: &6/login <password>"));
       return true;
     }
-
-    if (!users.isRegistered(player.getUniqueId())) {
-      player.sendMessage("You must register first: /register <password>");
+    if (!loginListener.isRegistered(p.getUniqueId())) {
+      String msg = loginListener.getPlugin().getConfig().getString("messages.not-registered","&cNot registered");
+      p.sendMessage(MsgUtil.color(msg));
       return true;
     }
-
-    if (users.verify(player.getUniqueId(), args[0])) {
-      sessions.markLoggedIn(player);
-      player.sendMessage("Login successful! Welcome back.");
+    boolean ok = loginListener.attemptLogin(p, args[0]);
+    if (ok) {
+      String msg = loginListener.getPlugin().getConfig().getString("messages.logged-in","&aLogged in");
+      p.sendMessage(MsgUtil.color(msg));
     } else {
-      player.sendMessage("Incorrect password.");
+      String msg = loginListener.getPlugin().getConfig().getString("messages.wrong-password","&cWrong password");
+      p.sendMessage(MsgUtil.color(msg));
     }
     return true;
   }

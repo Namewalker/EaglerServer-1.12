@@ -1,7 +1,6 @@
-/workspaces/EaglerServer-1.12/server/plugins/EaglerLogin/src/main/java/com/shadowlord/eaglerlogin/listeners/DisconnectListener.java
+/workspaces/EaglerServer-1.12/server/plugins/EaglerLogin/src/main/java/com/shadowlord/eaglerlogin/Listeners/LoginListener.java
 /workspaces/EaglerServer-1.12/server/plugins/EaglerLogin/src/main/java/com/shadowlord/eaglerlogin/EaglerLoginPlugin.java
-/workspaces/EaglerServer-1.12/server/plugins/EaglerLogin/src/main/java/com/shadowlord/eaglerlogin/listeners/PlayerListener.java
 /workspaces/EaglerServer-1.12/server/plugins/EaglerLogin/src/main/java/com/shadowlord/eaglerlogin/commands/LoginCommand.java
-/workspaces/EaglerServer-1.12/server/plugins/EaglerLogin/src/main/java/com/shadowlord/eaglerlogin/SessionManager.java
+/workspaces/EaglerServer-1.12/server/plugins/EaglerLogin/src/main/java/com/shadowlord/eaglerlogin/Listeners/ProtectionListener.java
+/workspaces/EaglerServer-1.12/server/plugins/EaglerLogin/src/main/java/com/shadowlord/eaglerlogin/util/MsgUtil.java
 /workspaces/EaglerServer-1.12/server/plugins/EaglerLogin/src/main/java/com/shadowlord/eaglerlogin/commands/RegisterCommand.java
-/workspaces/EaglerServer-1.12/server/plugins/EaglerLogin/src/main/java/com/shadowlord/eaglerlogin/UserManager.java
