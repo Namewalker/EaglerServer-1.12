@@ -20,6 +20,7 @@ public class ProtectionListener implements Listener {
   private final boolean blockInventory;
   private final boolean blockItemUse;
   private final List<String> whitelist;
+  private final boolean debug;
 
   public ProtectionListener(LoginListener loginListener, EaglerLoginPlugin plugin) {
     this.loginListener = loginListener;
@@ -30,41 +31,55 @@ public class ProtectionListener implements Listener {
     blockInventory = plugin.getConfig().getBoolean("protection.block-inventory", true);
     blockItemUse = plugin.getConfig().getBoolean("protection.block-item-use", true);
     whitelist = plugin.getConfig().getStringList("protection.command-whitelist");
+    debug = plugin.getConfig().getBoolean("protection.debug", false);
   }
 
   private boolean allowed(Player p, String attemptedCommand) {
     if (p.hasPermission("eaglerlogin.bypass")) return true;
     if (loginListener.isLoggedIn(p.getUniqueId())) return true;
     if (attemptedCommand == null) return false;
+
+    // Normalize to base command (without leading slash and without args)
     String cmd = attemptedCommand.startsWith("/") ? attemptedCommand.substring(1) : attemptedCommand;
     cmd = cmd.split(" ")[0].toLowerCase();
+
     for (String w : whitelist) {
       if (w == null) continue;
-      if (w.equalsIgnoreCase(cmd)) return true;
+      if (w.equalsIgnoreCase(cmd)) {
+        if (debug) plugin.getLogger().info("Protection: allowed command '" + cmd + "' for " + p.getName());
+        return true;
+      }
     }
+    if (debug) plugin.getLogger().info("Protection: blocked command '" + cmd + "' for " + p.getName());
     return false;
   }
 
   @EventHandler
   public void onChat(AsyncPlayerChatEvent e) {
-    Player p = e.getPlayer();
     if (!blockChat) return;
-    if (!allowed(p, null)) e.setCancelled(true);
+    Player p = e.getPlayer();
+    if (!allowed(p, null)) {
+      e.setCancelled(true);
+      // Do not spam the player every tick; optional single message on first attempt
+      p.sendMessage(MsgUtil.color("&cYou must /register or /login to chat."));
+    }
   }
 
   @EventHandler
   public void onMove(PlayerMoveEvent e) {
-    Player p = e.getPlayer();
     if (!blockMove) return;
+    Player p = e.getPlayer();
     if (!allowed(p, null)) {
-      if (e.getFrom().distanceSquared(e.getTo()) > 0) p.teleport(e.getFrom());
+      if (e.getFrom().distanceSquared(e.getTo()) > 0) {
+        e.setTo(e.getFrom()); // prevent movement
+      }
     }
   }
 
   @EventHandler
   public void onInteract(PlayerInteractEvent e) {
-    Player p = e.getPlayer();
     if (!blockInteract) return;
+    Player p = e.getPlayer();
     if (!allowed(p, null)) e.setCancelled(true);
   }
 
@@ -87,8 +102,8 @@ public class ProtectionListener implements Listener {
 
   @EventHandler
   public void onPlace(BlockPlaceEvent e) {
-    Player p = e.getPlayer();
     if (!blockInteract) return;
+    Player p = e.getPlayer();
     if (!allowed(p, null)) e.setCancelled(true);
   }
 

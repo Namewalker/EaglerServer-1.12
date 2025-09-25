@@ -5,6 +5,7 @@ import com.shadowlord.eaglerlogin.commands.RegisterCommand;
 import com.shadowlord.eaglerlogin.listeners.LoginListener;
 import com.shadowlord.eaglerlogin.listeners.ProtectionListener;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.command.PluginCommand;
 
 public class EaglerLoginPlugin extends JavaPlugin {
   private LoginListener loginListener;
@@ -12,25 +13,27 @@ public class EaglerLoginPlugin extends JavaPlugin {
   @Override
   public void onEnable() {
     saveDefaultConfig();
+
+    // create & register listeners
     loginListener = new LoginListener(this);
     getServer().getPluginManager().registerEvents(loginListener, this);
     getServer().getPluginManager().registerEvents(new ProtectionListener(loginListener, this), this);
 
-    if (getCommand("register") == null) {
-      getLogger().warning("Command 'register' missing in plugin.yml");
-    } else {
-      getCommand("register").setExecutor(new RegisterCommand(loginListener, this));
-      getLogger().info("Registered /register");
-    }
-
-    if (getCommand("login") == null) {
-      getLogger().warning("Command 'login' missing in plugin.yml");
-    } else {
-      getCommand("login").setExecutor(new LoginCommand(loginListener));
-      getLogger().info("Registered /login");
-    }
+    // register commands safely with logging
+    registerCommand("register", new RegisterCommand(loginListener, this));
+    registerCommand("login", new LoginCommand(loginListener));
 
     getLogger().info("EaglerLogin enabled");
+  }
+
+  private void registerCommand(String name, org.bukkit.command.CommandExecutor exec) {
+    PluginCommand cmd = getCommand(name);
+    if (cmd == null) {
+      getLogger().warning("Command '" + name + "' not found in plugin.yml. It will not be available.");
+      return;
+    }
+    cmd.setExecutor(exec);
+    getLogger().info("Registered command: /" + name);
   }
 
   @Override
