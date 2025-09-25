@@ -7,3 +7,9 @@ commands:
   breakcurse:
     description: Break your own curse or another player’s
     usage: /breakcurse [player]
+  curselevel:
+    description: View your curse level or another player’s
+    usage: /curselevel [player]
+  cursevision:
+    description: Force-activate curse vision (OP only)
+    usage: /cursevision <seconds> [player]
