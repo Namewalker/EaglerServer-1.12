@@ -620,6 +620,7 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "ice_flats": "2025-09-13 00:02:03 +0000",
+      "frozen_river": "2025-09-25 20:09:56 +0000",
       "forest": "2025-09-13 00:08:35 +0000",
       "deep_ocean": "2025-09-22 20:26:27 +0000",
       "beaches": "2025-09-25 00:24:49 +0000",

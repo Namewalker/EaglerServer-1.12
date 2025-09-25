@@ -2,7 +2,6 @@ package com.shadowlord.eaglerlogin.listeners;
 
 import com.shadowlord.eaglerlogin.EaglerLoginPlugin;
 import com.shadowlord.eaglerlogin.util.MsgUtil;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -10,8 +9,6 @@ import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.*;
-import org.bukkit.plugin.Plugin;
-
 import java.util.List;
 
 public class ProtectionListener implements Listener {
@@ -40,7 +37,11 @@ public class ProtectionListener implements Listener {
     if (loginListener.isLoggedIn(p.getUniqueId())) return true;
     if (attemptedCommand == null) return false;
     String cmd = attemptedCommand.startsWith("/") ? attemptedCommand.substring(1) : attemptedCommand;
-    for (String w : whitelist) if (w.equalsIgnoreCase(cmd)) return true;
+    cmd = cmd.split(" ")[0].toLowerCase();
+    for (String w : whitelist) {
+      if (w == null) continue;
+      if (w.equalsIgnoreCase(cmd)) return true;
+    }
     return false;
   }
 
@@ -56,10 +57,7 @@ public class ProtectionListener implements Listener {
     Player p = e.getPlayer();
     if (!blockMove) return;
     if (!allowed(p, null)) {
-      // teleport back if moved
-      if (e.getFrom().getX() != e.getTo().getX() || e.getFrom().getY() != e.getTo().getY() || e.getFrom().getZ() != e.getTo().getZ()) {
-        p.teleport(e.getFrom());
-      }
+      if (e.getFrom().distanceSquared(e.getTo()) > 0) p.teleport(e.getFrom());
     }
   }
 
@@ -96,7 +94,6 @@ public class ProtectionListener implements Listener {
 
   @EventHandler
   public void onEntityDamageByEntity(EntityDamageByEntityEvent e) {
-    // block PvP or interactions from unauthenticated players
     if (e.getDamager() instanceof Player) {
       Player p = (Player) e.getDamager();
       if (!allowed(p, null)) e.setCancelled(true);

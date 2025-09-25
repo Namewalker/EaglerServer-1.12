@@ -10,7 +10,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitTask;
 
 import java.io.File;
@@ -66,7 +65,9 @@ public class LoginListener implements Listener {
     final UUID uuid = p.getUniqueId();
     long now = System.currentTimeMillis() / 1000L;
 
+    // Force logged-out state on join
     loggedIn.remove(uuid);
+
     if (!rateLimitEnabled) {
       sendRequire(p);
       scheduleTimeout(p, uuid);
@@ -121,6 +122,7 @@ public class LoginListener implements Listener {
       usersCfg.set(key + ".hash", hash);
       usersCfg.set(key + ".name", p.getName());
       saveUsers();
+      // auto-login after register
       loggedIn.add(uuid);
       cancelTimeout(uuid);
       return true;
@@ -155,7 +157,7 @@ public class LoginListener implements Listener {
     try { usersCfg.save(usersFile); } catch (IOException e) { plugin.getLogger().severe("Could not save users.yml: " + e.getMessage()); }
   }
 
-  // Expose plugin getter so other classes can access config safely
+  // expose plugin safely
   public EaglerLoginPlugin getPlugin() {
     return this.plugin;
   }

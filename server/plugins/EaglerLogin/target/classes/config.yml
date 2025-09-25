@@ -1,4 +1,3 @@
-# EaglerLogin configuration
 rate-limit:
   enabled: true
   reconnects-per-window: 5
@@ -26,3 +25,4 @@ messages:
   wrong-password: "&cIncorrect password."
   already-logged: "&aYou are already logged in."
   logged-in: "&aYou are now logged in."
+  throttle: "&cYou are reconnecting too quickly. Please wait %seconds% seconds."

@@ -16,8 +16,19 @@ public class EaglerLoginPlugin extends JavaPlugin {
     getServer().getPluginManager().registerEvents(loginListener, this);
     getServer().getPluginManager().registerEvents(new ProtectionListener(loginListener, this), this);
 
-    if (getCommand("register") != null) getCommand("register").setExecutor(new RegisterCommand(loginListener, this));
-    if (getCommand("login") != null) getCommand("login").setExecutor(new LoginCommand(loginListener));
+    if (getCommand("register") == null) {
+      getLogger().warning("Command 'register' missing in plugin.yml");
+    } else {
+      getCommand("register").setExecutor(new RegisterCommand(loginListener, this));
+      getLogger().info("Registered /register");
+    }
+
+    if (getCommand("login") == null) {
+      getLogger().warning("Command 'login' missing in plugin.yml");
+    } else {
+      getCommand("login").setExecutor(new LoginCommand(loginListener));
+      getLogger().info("Registered /login");
+    }
 
     getLogger().info("EaglerLogin enabled");
   }

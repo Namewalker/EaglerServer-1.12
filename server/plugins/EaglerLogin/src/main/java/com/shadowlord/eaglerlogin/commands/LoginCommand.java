@@ -16,6 +16,7 @@ public class LoginCommand implements CommandExecutor {
 
   @Override
   public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    loginListener.getPlugin().getLogger().info("EaglerLogin: /login invoked by " + (sender instanceof Player ? ((Player)sender).getName() : "console"));
     if (!(sender instanceof Player)) {
       sender.sendMessage("Console cannot use this command.");
       return true;
@@ -26,17 +27,14 @@ public class LoginCommand implements CommandExecutor {
       return true;
     }
     if (!loginListener.isRegistered(p.getUniqueId())) {
-      String msg = loginListener.getPlugin().getConfig().getString("messages.not-registered","&cNot registered");
-      p.sendMessage(MsgUtil.color(msg));
+      p.sendMessage(MsgUtil.color(loginListener.getPlugin().getConfig().getString("messages.not-registered","&cNot registered")));
       return true;
     }
     boolean ok = loginListener.attemptLogin(p, args[0]);
     if (ok) {
-      String msg = loginListener.getPlugin().getConfig().getString("messages.logged-in","&aLogged in");
-      p.sendMessage(MsgUtil.color(msg));
+      p.sendMessage(MsgUtil.color(loginListener.getPlugin().getConfig().getString("messages.logged-in","&aLogged in")));
     } else {
-      String msg = loginListener.getPlugin().getConfig().getString("messages.wrong-password","&cWrong password");
-      p.sendMessage(MsgUtil.color(msg));
+      p.sendMessage(MsgUtil.color(loginListener.getPlugin().getConfig().getString("messages.wrong-password","&cWrong password")));
     }
     return true;
   }

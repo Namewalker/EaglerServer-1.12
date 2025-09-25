@@ -1,14 +1,14 @@
-[18:07:17] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[18:07:17] [Server thread/INFO]: Loading properties
-[18:07:17] [Server thread/INFO]: Default game type: SURVIVAL
-[18:07:17] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[18:07:17] [Server thread/INFO]: Debug logging is disabled
-[18:07:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[18:07:17] [Server thread/INFO]: Using 4 threads for Netty based IO
-[18:07:18] [Server thread/INFO]: Generating keypair
-[18:07:18] [Server thread/INFO]: Starting Minecraft server on localhost:25565
-[18:07:18] [Server thread/INFO]: Using default channel type
-[18:07:18] [Server thread/ERROR]: Could not load 'plugins/ProtocolLib.jar' in folder 'plugins'
+[19:15:03] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[19:15:03] [Server thread/INFO]: Loading properties
+[19:15:03] [Server thread/INFO]: Default game type: SURVIVAL
+[19:15:03] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[19:15:03] [Server thread/INFO]: Debug logging is disabled
+[19:15:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[19:15:03] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:15:03] [Server thread/INFO]: Generating keypair
+[19:15:04] [Server thread/INFO]: Starting Minecraft server on localhost:25565
+[19:15:04] [Server thread/INFO]: Using default channel type
+[19:15:04] [Server thread/ERROR]: Could not load 'plugins/ProtocolLib.jar' in folder 'plugins'
 org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
 	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:158) ~[patched_1.12.2.jar:git-Paper-1620]
 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:136) ~[patched_1.12.2.jar:git-Paper-1620]
@@ -30,7 +30,7 @@ Caused by: java.util.zip.ZipException: zip file is empty
 	at java.util.jar.JarFile.<init>(JarFile.java:282) ~[?:?]
 	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:146) ~[patched_1.12.2.jar:git-Paper-1620]
 	... 5 more
-[18:07:18] [Server thread/ERROR]: Could not load 'plugins/EaglerLogin-1.0.0.jar' in folder 'plugins'
+[19:15:04] [Server thread/ERROR]: Could not load 'plugins/EaglerLogin-1.0.0.jar' in folder 'plugins'
 org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
 	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:150) ~[patched_1.12.2.jar:git-Paper-1620]
 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:136) ~[patched_1.12.2.jar:git-Paper-1620]
@@ -40,131 +40,254 @@ org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
 	at java.lang.Thread.run(Thread.java:1583) [?:?]
 Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
 	... 6 more
-[18:07:18] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[18:07:18] [Server thread/INFO]: [WorldEditSimple] Loading WorldEditSimple v1.0
-[18:07:18] [Server thread/INFO]: [CursedAltar] Loading CursedAltar v1.0
-[18:07:18] [Server thread/INFO]: [DisguiseSimple] Loading DisguiseSimple v1.0
-[18:07:18] [Server thread/INFO]: [ImmersivePortals] Loading ImmersivePortals v1.0
-[18:07:18] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[18:07:18] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[18:07:18] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[18:07:18] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[18:07:18] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[18:07:18] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[18:07:18] [Server thread/INFO]: Preparing level "world"
-[18:07:18] [Server thread/INFO]: -------- World Settings For [world] --------
-[18:07:18] [Server thread/INFO]: Mob Spawn Range: 4
-[18:07:18] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[18:07:18] [Server thread/INFO]: Cane Growth Modifier: 100%
-[18:07:18] [Server thread/INFO]: Melon Growth Modifier: 100%
-[18:07:18] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[18:07:18] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[18:07:18] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[18:07:18] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[18:07:18] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[18:07:18] [Server thread/INFO]: Vine Growth Modifier: 100%
-[18:07:18] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[18:07:18] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[18:07:18] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[18:07:18] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[18:07:18] [Server thread/INFO]: Random Lighting Updates: false
-[18:07:18] [Server thread/INFO]: Structure Info Saving: true
-[18:07:18] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[18:07:18] [Server thread/INFO]: Max TNT Explosions: 100
-[18:07:18] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[18:07:18] [Server thread/INFO]: Item Despawn Rate: 6000
-[18:07:18] [Server thread/INFO]: Item Merge Radius: 2.5
-[18:07:18] [Server thread/INFO]: View Distance: 4
-[18:07:18] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[18:07:18] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[18:07:18] [Server thread/INFO]: Experience Merge Radius: 3.0
-[18:07:18] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[18:07:18] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[18:07:19] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[18:07:19] [Server thread/INFO]: Mob Spawn Range: 4
-[18:07:19] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Cane Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Melon Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Vine Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[18:07:19] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[18:07:19] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[18:07:19] [Server thread/INFO]: Random Lighting Updates: false
-[18:07:19] [Server thread/INFO]: Structure Info Saving: true
-[18:07:19] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[18:07:19] [Server thread/INFO]: Max TNT Explosions: 100
-[18:07:19] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[18:07:19] [Server thread/INFO]: Item Despawn Rate: 6000
-[18:07:19] [Server thread/INFO]: Item Merge Radius: 2.5
-[18:07:19] [Server thread/INFO]: View Distance: 4
-[18:07:19] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[18:07:19] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[18:07:19] [Server thread/INFO]: Experience Merge Radius: 3.0
-[18:07:19] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[18:07:19] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[18:07:19] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[18:07:19] [Server thread/INFO]: Mob Spawn Range: 4
-[18:07:19] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Cane Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Melon Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Vine Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[18:07:19] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[18:07:19] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[18:07:19] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[18:07:19] [Server thread/INFO]: Random Lighting Updates: false
-[18:07:19] [Server thread/INFO]: Structure Info Saving: true
-[18:07:19] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[18:07:19] [Server thread/INFO]: Max TNT Explosions: 100
-[18:07:19] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[18:07:19] [Server thread/INFO]: Item Despawn Rate: 6000
-[18:07:19] [Server thread/INFO]: Item Merge Radius: 2.5
-[18:07:19] [Server thread/INFO]: View Distance: 4
-[18:07:19] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[18:07:19] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[18:07:19] [Server thread/INFO]: Experience Merge Radius: 3.0
-[18:07:19] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[18:07:19] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[18:07:19] [Server thread/INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
-[18:07:20] [Server thread/INFO]: Preparing spawn area: 4%
-[18:07:20] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
-[18:07:20] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
-[18:07:20] [Server thread/INFO]: [WorldEditSimple] Enabling WorldEditSimple v1.0
-[18:07:20] [Server thread/INFO]: [CursedAltar] Enabling CursedAltar v1.0
-[18:07:20] [Server thread/INFO]: [CursedAltar] CursedAltar enabled
-[18:07:20] [Server thread/INFO]: [DisguiseSimple] Enabling DisguiseSimple v1.0
-[18:07:20] [Server thread/INFO]: [ImmersivePortals] Enabling ImmersivePortals v1.0
-[18:07:20] [Server thread/INFO]: [ImmersivePortals] ImmersivePortals enabled!
-[18:07:20] [Server thread/INFO]: Done (2.383s)! For help, type "help" or "?"
-[18:07:20] [Server thread/INFO]: Timings Reset
-[18:08:15] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[18:08:21] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[18:18:49] [User Authenticator #1/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
-[18:18:49] [Server thread/INFO]: Ruger1[/127.0.0.1:37490] logged in with entity id 44 at ([world]778.8359252108045, 83.0, 1664.6205843398463)
-[18:20:33] [Server thread/INFO]: Ruger1 lost connection: Disconnected
-[18:20:33] [Server thread/INFO]: Ruger1 left the game
-[18:20:41] [User Authenticator #2/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
-[18:20:41] [Server thread/INFO]: Ruger1[/127.0.0.1:33944] logged in with entity id 119 at ([world]783.2078440342777, 92.0, 1666.1448932193034)
-[18:20:48] [Async Chat Thread - #0/INFO]: <Ruger1> hi
-[18:20:53] [Server thread/INFO]: Ruger1 lost connection: Disconnected
-[18:20:53] [Server thread/INFO]: Ruger1 left the game
-[18:20:57] [User Authenticator #2/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
-[18:20:57] [Server thread/INFO]: Ruger1[/127.0.0.1:60374] logged in with entity id 120 at ([world]783.0039173400089, 92.0, 1666.547584134572)
-[18:21:03] [Server thread/INFO]: Ruger1 lost connection: Disconnected
-[18:21:03] [Server thread/INFO]: Ruger1 left the game
-[18:43:34] [User Authenticator #3/INFO]: UUID of player Elina is 6c21527c-e1f1-32d3-88d7-3a984f9cedd8
-[18:43:34] [Server thread/INFO]: Elina[/127.0.0.1:44090] logged in with entity id 121 at ([world]905.0850917352793, 64.0, 1334.9386311348137)
-[18:43:38] [Async Chat Thread - #1/INFO]: <Elina> hello?
-[18:44:15] [Server thread/INFO]: Elina lost connection: Disconnected
-[18:44:15] [Server thread/INFO]: Elina left the game
+[19:15:04] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[19:15:04] [Server thread/INFO]: [WorldEditSimple] Loading WorldEditSimple v1.0
+[19:15:04] [Server thread/INFO]: [CursedAltar] Loading CursedAltar v1.0
+[19:15:04] [Server thread/INFO]: [DisguiseSimple] Loading DisguiseSimple v1.0
+[19:15:04] [Server thread/INFO]: [ImmersivePortals] Loading ImmersivePortals v1.0
+[19:15:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:15:04] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:15:04] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:15:04] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:15:04] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:15:04] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[19:15:04] [Server thread/INFO]: Preparing level "world"
+[19:15:04] [Server thread/INFO]: -------- World Settings For [world] --------
+[19:15:04] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:15:04] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:15:04] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:15:04] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:15:04] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:15:04] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:15:04] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:15:04] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:15:04] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:15:04] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:15:04] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[19:15:04] [Server thread/INFO]: Mob Spawn Range: 4
+[19:15:04] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:15:04] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:15:04] [Server thread/INFO]: Random Lighting Updates: false
+[19:15:04] [Server thread/INFO]: Structure Info Saving: true
+[19:15:04] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[19:15:04] [Server thread/INFO]: Max TNT Explosions: 100
+[19:15:04] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:15:04] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:15:04] [Server thread/INFO]: Item Merge Radius: 2.5
+[19:15:04] [Server thread/INFO]: View Distance: 4
+[19:15:04] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[19:15:04] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:15:04] [Server thread/INFO]: Experience Merge Radius: 3.0
+[19:15:04] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:15:04] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:15:05] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[19:15:05] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[19:15:05] [Server thread/INFO]: Mob Spawn Range: 4
+[19:15:05] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:15:05] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:15:05] [Server thread/INFO]: Random Lighting Updates: false
+[19:15:05] [Server thread/INFO]: Structure Info Saving: true
+[19:15:05] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[19:15:05] [Server thread/INFO]: Max TNT Explosions: 100
+[19:15:05] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:15:05] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:15:05] [Server thread/INFO]: Item Merge Radius: 2.5
+[19:15:05] [Server thread/INFO]: View Distance: 4
+[19:15:05] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[19:15:05] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:15:05] [Server thread/INFO]: Experience Merge Radius: 3.0
+[19:15:05] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:15:05] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:15:05] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[19:15:05] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:15:05] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[19:15:05] [Server thread/INFO]: Mob Spawn Range: 4
+[19:15:05] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:15:05] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:15:05] [Server thread/INFO]: Random Lighting Updates: false
+[19:15:05] [Server thread/INFO]: Structure Info Saving: true
+[19:15:05] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[19:15:05] [Server thread/INFO]: Max TNT Explosions: 100
+[19:15:05] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:15:05] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:15:05] [Server thread/INFO]: Item Merge Radius: 2.5
+[19:15:05] [Server thread/INFO]: View Distance: 4
+[19:15:05] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[19:15:05] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:15:05] [Server thread/INFO]: Experience Merge Radius: 3.0
+[19:15:05] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:15:05] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:15:05] [Server thread/INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
+[19:15:06] [Server thread/INFO]: Preparing spawn area: 1%
+[19:15:06] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
+[19:15:06] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
+[19:15:06] [Server thread/INFO]: [WorldEditSimple] Enabling WorldEditSimple v1.0
+[19:15:06] [Server thread/INFO]: [CursedAltar] Enabling CursedAltar v1.0
+[19:15:06] [Server thread/INFO]: [CursedAltar] CursedAltar enabled
+[19:15:06] [Server thread/INFO]: [DisguiseSimple] Enabling DisguiseSimple v1.0
+[19:15:06] [Server thread/INFO]: [ImmersivePortals] Enabling ImmersivePortals v1.0
+[19:15:06] [Server thread/INFO]: [ImmersivePortals] ImmersivePortals enabled!
+[19:15:07] [Server thread/INFO]: Done (2.539s)! For help, type "help" or "?"
+[19:15:07] [Server thread/INFO]: Timings Reset
+[19:15:18] [User Authenticator #1/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[19:15:18] [Server thread/INFO]: ShadowLord[/127.0.0.1:55152] logged in with entity id 61 at ([world]972.9729395971784, 64.0, 1316.330248205355)
+[19:15:24] [Server thread/INFO]: ShadowLord issued server command: /register
+[19:16:22] [Server thread/INFO]: ShadowLord issued server command: /register
+[19:16:24] [Server thread/INFO]: ShadowLord issued server command: /login
+[19:16:29] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[19:16:30] [Server thread/INFO]: ShadowLord left the game
+[19:17:29] [User Authenticator #2/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
+[19:17:29] [Server thread/INFO]: Ruger1[/127.0.0.1:51218] logged in with entity id 119 at ([world]781.5661245265411, 93.0, 1666.128373418731)
+[19:17:48] [Async Chat Thread - #0/INFO]: <Ruger1> help
+[19:18:11] [Async Chat Thread - #0/INFO]: <Ruger1> 778 93 1664
+[19:20:55] [Server thread/INFO]: Ruger1 lost connection: Disconnected
+[19:20:56] [Server thread/INFO]: Ruger1 left the game
+[19:29:02] [User Authenticator #3/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
+[19:29:02] [Server thread/INFO]: Ruger1[/127.0.0.1:44446] logged in with entity id 267 at ([world]789.8471547778562, 69.0, 1628.090260916672)
+[19:29:23] [Async Chat Thread - #1/INFO]: <Ruger1> help
+[19:31:00] [Server thread/INFO]: Ruger1 lost connection: Disconnected
+[19:31:00] [Server thread/INFO]: Ruger1 left the game
+[19:33:32] [User Authenticator #4/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[19:33:32] [Server thread/INFO]: ShadowLord[/127.0.0.1:43098] logged in with entity id 462 at ([world]971.3000000119209, 64.0, 1316.764298686973)
+[19:33:32] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[19:33:32] [Server thread/INFO]: ShadowLord left the game
+[19:33:55] [User Authenticator #4/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[19:33:55] [Server thread/INFO]: ShadowLord[/127.0.0.1:43560] logged in with entity id 498 at ([world]971.3000000119209, 64.0, 1316.764298686973)
+[19:34:07] [Server thread/INFO]: ShadowLord issued server command: /tp @p Ruger1
+[19:34:07] [Server thread/INFO]: [ShadowLord: Entity 'Ruger1' cannot be found]
+[19:34:20] [Server thread/INFO]: ShadowLord issued server command: /breakcurse
+[19:34:23] [Server thread/INFO]: ShadowLord issued server command: /breakcurse Ruger1
+[19:35:53] [Server thread/INFO]: ShadowLord lost connection: Timed out
+[19:35:53] [Server thread/INFO]: ShadowLord left the game
+[20:02:23] [User Authenticator #5/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
+[20:02:23] [Server thread/INFO]: Ruger1[/127.0.0.1:59002] logged in with entity id 544 at ([world]855.2139676278313, 68.0, 1372.7513779099443)
+[20:03:11] [Server thread/INFO]: Ruger1 lost connection: Disconnected
+[20:03:11] [Server thread/INFO]: Ruger1 left the game
+[20:06:55] [User Authenticator #6/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[20:06:55] [Server thread/INFO]: ShadowLord[/127.0.0.1:44684] logged in with entity id 619 at ([world]959.6009982925005, 84.0, 1313.393341793245)
+[20:10:13] [Server thread/INFO]: ShadowLord issued server command: /tool sphere 4 air
+[20:10:30] [Server thread/INFO]: ShadowLord issued server command: /undo
+[20:10:31] [Server thread/INFO]: ShadowLord issued server command: /undo
+[20:10:47] [Server thread/INFO]: ShadowLord issued server command: /undo
+[20:10:48] [Server thread/INFO]: ShadowLord issued server command: /undo
+[20:10:53] [Server thread/INFO]: ShadowLord issued server command: /undo
+[20:10:55] [Server thread/INFO]: ShadowLord issued server command: /undo
+[20:10:57] [Server thread/INFO]: ShadowLord issued server command: /undo
+[20:10:58] [Server thread/INFO]: ShadowLord issued server command: /undo
+[20:13:32] [Server thread/INFO]: ShadowLord issued server command: /kill @e[type=!Player]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Chicken]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Cow]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Cow]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Chicken]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Squid]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Chicken]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Squid]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Experience Orb]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Portal #1]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Zombie]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Experience Orb]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Sheep]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Zombie]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Sheep]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Zombie]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Zombie]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Bat]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Bat]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Experience Orb]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Zombie]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Zombie]
+[20:13:32] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:34] [Server thread/INFO]: ShadowLord issued server command: /kill @e[type=!Player]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.feather]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.chickenRaw]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.beefRaw]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.leather]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.leather]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.beefRaw]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.chickenRaw]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.feather]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.chickenRaw]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.dyePowder.black]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.arrow]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.bone]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.arrow]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.arrow]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.rottenFlesh]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.tile.cloth.white]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.muttonRaw]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.rottenFlesh]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.tile.cloth.white]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.muttonRaw]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.rottenFlesh]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.arrow]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.sulphur]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.bone]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.bone]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.sulphur]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.sulphur]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.arrow]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.bone]
+[20:13:34] [Server thread/INFO]: [ShadowLord: Killed item.item.sulphur]
+[20:13:36] [Server thread/INFO]: ShadowLord issued server command: /kill @e[type=!Player]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed item.item.sulphur]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Zombie]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Spider]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Zombie]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Spider]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Enderman]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Enderman]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Creeper]
+[20:13:36] [Server thread/INFO]: [ShadowLord: Killed Skeleton]
+[20:14:37] [Server thread/INFO]: ShadowLord issued server command: /replacenear 5 still_water air
+[20:14:39] [Server thread/INFO]: ShadowLord issued server command: /replacenear 5 still_water air
+[20:14:46] [Server thread/INFO]: ShadowLord issued server command: /replacenear 10 still_water air
+[20:14:48] [Server thread/INFO]: ShadowLord issued server command: /replacenear 10 still_water air
+[20:14:50] [Server thread/INFO]: ShadowLord issued server command: /replacenear 10 still_water air
+[20:14:52] [Server thread/INFO]: ShadowLord issued server command: /replacenear 10 still_water air
+[20:14:59] [Server thread/INFO]: ShadowLord issued server command: /replacenear 50 still_water air
+[20:15:01] [Server thread/INFO]: ShadowLord issued server command: /replacenear 50 still_water air
+[20:15:04] [Server thread/INFO]: ShadowLord issued server command: /replacenear 50 still_water air
+[20:16:51] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[20:16:51] [Server thread/INFO]: ShadowLord left the game
