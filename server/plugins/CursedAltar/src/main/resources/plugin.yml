@@ -5,5 +5,5 @@ api-version: "1.12"
 
 commands:
   breakcurse:
-    description: Break your curse
-    usage: /breakcurse
+    description: Break your own curse or another player’s
+    usage: /breakcurse [player]

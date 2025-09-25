@@ -4,3 +4,4 @@ com/shadowlord/cursedaltar/CursedManager.class
 com/shadowlord/cursedaltar/listeners/AltarInteractListener.class
 com/shadowlord/cursedaltar/listeners/DisconnectListener.class
 com/shadowlord/cursedaltar/CursedAltarPlugin.class
+com/shadowlord/cursedaltar/commands/BreakCurseCommand.class

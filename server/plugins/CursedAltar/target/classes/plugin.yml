@@ -2,4 +2,8 @@ name: CursedAltar
 main: com.shadowlord.cursedaltar.CursedAltarPlugin
 version: 1.0
 api-version: "1.12"
-author: Namewalker
+
+commands:
+  breakcurse:
+    description: Break your own curse or another player’s
+    usage: /breakcurse [player]

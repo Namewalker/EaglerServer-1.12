@@ -1,10 +1,7 @@
 package com.shadowlord.cursedaltar;
 
 import com.shadowlord.cursedaltar.commands.BreakCurseCommand;
-import com.shadowlord.cursedaltar.listeners.AltarPlacementListener;
-import com.shadowlord.cursedaltar.listeners.AltarInteractListener;
-import com.shadowlord.cursedaltar.listeners.DisconnectListener;
-import com.shadowlord.cursedaltar.listeners.LoginListener;
+import com.shadowlord.cursedaltar.listeners.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class CursedAltarPlugin extends JavaPlugin {
@@ -28,7 +25,9 @@ public class CursedAltarPlugin extends JavaPlugin {
       new LoginListener(cursed), this
     );
 
-    getCommand("breakcurse").setExecutor(new BreakCurseCommand(cursed));
+    // Updated command registration
+    getCommand("breakcurse")
+      .setExecutor(new BreakCurseCommand(cursed));
 
     getLogger().info("CursedAltar enabled");
   }

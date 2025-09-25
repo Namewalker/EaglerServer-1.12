@@ -96,16 +96,16 @@ world-settings:
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 900
-    use-vanilla-world-scoreboard-name-coloring: false
     despawn-ranges:
       soft: 32
       hard: 128
-    falling-block-height-nerf: 0
-    tnt-entity-height-nerf: 0
-    water-over-lava-flow-speed: 5
     fast-drain:
       lava: false
       water: false
+    use-vanilla-world-scoreboard-name-coloring: false
+    falling-block-height-nerf: 0
+    tnt-entity-height-nerf: 0
+    water-over-lava-flow-speed: 5
     lava-flow-speed:
       normal: 30
       nether: 10
@@ -127,7 +127,6 @@ world-settings:
     duplicate-uuid-saferegen-delete-range: 32
     keep-spawn-loaded-range: 4
     auto-save-interval: -1
-    container-update-tick-rate: 1
     nether-ceiling-void-damage: false
     allow-non-player-entities-on-scoreboards: false
     frosted-ice:
@@ -135,6 +134,7 @@ world-settings:
       delay:
         min: 20
         max: 40
+    container-update-tick-rate: 1
     parrots-are-unaffected-by-player-movement: false
     disable-explosion-knockback: false
     elytra-hit-wall-damage: true

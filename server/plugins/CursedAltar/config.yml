@@ -1,5 +1,4 @@
 # List of placed altar locations: "world:x:y:z"
 altars:
 - world:914:68:1370
-cursed-players:
-  8e68c44c-8414-306b-ad0b-4917c0c62a27: 6
+- world:965:45:1310
