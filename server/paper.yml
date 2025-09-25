@@ -99,13 +99,13 @@ world-settings:
     despawn-ranges:
       soft: 32
       hard: 128
-    fast-drain:
-      lava: false
-      water: false
     use-vanilla-world-scoreboard-name-coloring: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     water-over-lava-flow-speed: 5
+    fast-drain:
+      lava: false
+      water: false
     lava-flow-speed:
       normal: 30
       nether: 10
