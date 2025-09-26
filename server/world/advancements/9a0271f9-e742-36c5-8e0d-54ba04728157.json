@@ -29,6 +29,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/cyan_dye": {
+    "criteria": {
+      "has_lapis": "2025-09-25 22:42:19 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/iron_sword": {
     "criteria": {
       "has_iron_ingot": "2025-09-13 00:45:22 +0000"
@@ -38,6 +44,12 @@
   "minecraft:end/root": {
     "criteria": {
       "entered_end": "2025-09-22 23:37:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_lapis_ink_bonemeal": {
+    "criteria": {
+      "has_lapis": "2025-09-25 22:42:19 +0000"
     },
     "done": true
   },
@@ -71,6 +83,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/light_blue_dye_from_lapis_bonemeal": {
+    "criteria": {
+      "has_lapis": "2025-09-25 22:42:19 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/lime_concrete_powder": {
     "criteria": {
       "has_gravel": "2025-09-18 00:45:53 +0000"
@@ -86,6 +104,12 @@
   "minecraft:recipes/tools/iron_pickaxe": {
     "criteria": {
       "has_iron_ingot": "2025-09-13 00:45:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_lapis_red_pink": {
+    "criteria": {
+      "has_lapis": "2025-09-25 22:42:19 +0000"
     },
     "done": true
   },
@@ -236,6 +260,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone_slab": {
+    "criteria": {
+      "has_stone": "2025-09-25 22:39:08 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
       "has_at_least_9_coal": "2025-09-13 00:29:21 +0000"
@@ -342,7 +372,9 @@
     "criteria": {
       "cooked_beef": "2025-09-13 00:47:02 +0000",
       "beef": "2025-09-13 00:31:11 +0000",
-      "bread": "2025-09-13 00:33:41 +0000"
+      "apple": "2025-09-25 22:16:29 +0000",
+      "bread": "2025-09-13 00:33:41 +0000",
+      "enchanted_golden_apple": "2025-09-26 00:04:24 +0000"
     },
     "done": false
   },
@@ -400,6 +432,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/bone_meal_from_bone": {
+    "criteria": {
+      "has_bone": "2025-09-25 22:49:19 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/black_concrete_powder": {
     "criteria": {
       "has_gravel": "2025-09-18 00:45:53 +0000"
@@ -448,6 +486,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2025-09-25 22:39:08 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/iron_chestplate": {
     "criteria": {
       "has_iron_ingot": "2025-09-13 00:45:22 +0000"
@@ -487,6 +531,12 @@
   "minecraft:end/find_end_city": {
     "criteria": {
       "in_city": "2025-09-22 23:50:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2025-09-25 22:21:39 +0000"
     },
     "done": true
   },
@@ -601,10 +651,13 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "ice_flats": "2025-09-26 00:03:06 +0000",
+      "frozen_river": "2025-09-26 00:03:07 +0000",
       "forest": "2025-09-13 00:23:16 +0000",
       "extreme_hills_with_trees": "2025-09-13 00:26:55 +0000",
       "forest_hills": "2025-09-13 00:25:33 +0000",
       "plains": "2025-09-13 00:14:04 +0000",
+      "savanna": "2025-09-25 22:21:08 +0000",
       "taiga": "2025-09-13 00:14:33 +0000",
       "taiga_hills": "2025-09-13 00:47:33 +0000",
       "extreme_hills": "2025-09-13 00:24:09 +0000",
@@ -621,6 +674,12 @@
   "minecraft:recipes/combat/diamond_leggings": {
     "criteria": {
       "has_the_recipe": "2025-09-21 21:57:18 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/armor_stand": {
+    "criteria": {
+      "has_stone_slab": "2025-09-25 22:39:34 +0000"
     },
     "done": true
   },
@@ -657,6 +716,12 @@
   "minecraft:recipes/tools/iron_hoe": {
     "criteria": {
       "has_iron_ingot": "2025-09-13 00:45:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2025-09-25 22:49:28 +0000"
     },
     "done": true
   },
@@ -708,6 +773,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2025-09-25 22:21:39 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "entered_water": "2025-09-13 00:22:54 +0000"
@@ -738,6 +809,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/stone_pressure_plate": {
+    "criteria": {
+      "has_stone": "2025-09-25 22:39:08 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/boat": {
     "criteria": {
       "entered_water": "2025-09-13 00:22:54 +0000"
@@ -747,6 +824,12 @@
   "minecraft:recipes/combat/leather_boots": {
     "criteria": {
       "has_leather": "2025-09-13 00:28:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/purple_dye": {
+    "criteria": {
+      "has_lapis": "2025-09-25 22:42:19 +0000"
     },
     "done": true
   },
@@ -849,6 +932,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/lapis_block": {
+    "criteria": {
+      "has_at_least_9_lapis": "2025-09-25 22:42:19 +0000"
+    },
+    "done": true
+  },
   "minecraft:story/enter_the_end": {
     "criteria": {
       "entered_end": "2025-09-22 23:37:50 +0000"
@@ -858,6 +947,12 @@
   "minecraft:recipes/building_blocks/polished_granite": {
     "criteria": {
       "has_stone": "2025-09-13 00:37:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stonebrick": {
+    "criteria": {
+      "has_stone": "2025-09-25 22:39:08 +0000"
     },
     "done": true
   },
@@ -894,6 +989,12 @@
   "minecraft:recipes/misc/diamond": {
     "criteria": {
       "has_diamond_block": "2025-09-21 21:56:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/lapis_lazuli": {
+    "criteria": {
+      "has_the_recipe": "2025-09-25 22:42:19 +0000"
     },
     "done": true
   },
@@ -942,6 +1043,12 @@
   "minecraft:story/smelt_iron": {
     "criteria": {
       "iron": "2025-09-13 00:45:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2025-09-25 23:52:36 +0000"
     },
     "done": true
   },

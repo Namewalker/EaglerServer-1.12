@@ -1,158 +1,150 @@
-[20:25:09] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[20:25:09] [Server thread/INFO]: Loading properties
-[20:25:09] [Server thread/INFO]: Default game type: SURVIVAL
-[20:25:09] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[20:25:09] [Server thread/INFO]: Debug logging is disabled
-[20:25:09] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:25:09] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:25:09] [Server thread/INFO]: Generating keypair
-[20:25:09] [Server thread/INFO]: Starting Minecraft server on localhost:25565
-[20:25:09] [Server thread/INFO]: Using default channel type
-[20:25:10] [Server thread/ERROR]: Could not load 'plugins/ProtocolLib.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
-	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:158) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:136) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.loadPlugins(CraftServer.java:318) ~[patched_1.12.2.jar:git-Paper-1620]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:222) ~[patched_1.12.2.jar:git-Paper-1620]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1620]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-Caused by: java.util.zip.ZipException: zip file is empty
-	at java.util.zip.ZipFile$Source.zerror(ZipFile.java:1781) ~[?:?]
-	at java.util.zip.ZipFile$Source.findEND(ZipFile.java:1562) ~[?:?]
-	at java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1657) ~[?:?]
-	at java.util.zip.ZipFile$Source.<init>(ZipFile.java:1495) ~[?:?]
-	at java.util.zip.ZipFile$Source.get(ZipFile.java:1458) ~[?:?]
-	at java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724) ~[?:?]
-	at java.util.zip.ZipFile.<init>(ZipFile.java:251) ~[?:?]
-	at java.util.zip.ZipFile.<init>(ZipFile.java:180) ~[?:?]
-	at java.util.jar.JarFile.<init>(JarFile.java:345) ~[?:?]
-	at java.util.jar.JarFile.<init>(JarFile.java:316) ~[?:?]
-	at java.util.jar.JarFile.<init>(JarFile.java:282) ~[?:?]
-	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:146) ~[patched_1.12.2.jar:git-Paper-1620]
-	... 5 more
-[20:25:10] [Server thread/ERROR]: Could not load 'plugins/EaglerLogin-1.0.0.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
-	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:150) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:136) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.loadPlugins(CraftServer.java:318) ~[patched_1.12.2.jar:git-Paper-1620]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:222) ~[patched_1.12.2.jar:git-Paper-1620]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1620]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
-	... 6 more
-[20:25:10] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[20:25:10] [Server thread/INFO]: [WorldEditSimple] Loading WorldEditSimple v1.0
-[20:25:10] [Server thread/INFO]: [CursedAltar] Loading CursedAltar v1.0
-[20:25:10] [Server thread/INFO]: [DisguiseSimple] Loading DisguiseSimple v1.0
-[20:25:10] [Server thread/INFO]: [ImmersivePortals] Loading ImmersivePortals v1.0
-[20:25:10] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:25:10] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:25:10] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:25:10] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:25:10] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:25:10] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[20:25:10] [Server thread/INFO]: Preparing level "world"
-[20:25:10] [Server thread/INFO]: -------- World Settings For [world] --------
-[20:25:10] [Server thread/INFO]: Mob Spawn Range: 4
-[20:25:10] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:25:10] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:25:10] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:25:10] [Server thread/INFO]: Random Lighting Updates: false
-[20:25:10] [Server thread/INFO]: Structure Info Saving: true
-[20:25:10] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:25:10] [Server thread/INFO]: Max TNT Explosions: 100
-[20:25:10] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:25:10] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:25:10] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:25:10] [Server thread/INFO]: View Distance: 4
-[20:25:10] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:25:10] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:25:10] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:25:10] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:25:10] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:25:10] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[20:25:10] [Server thread/INFO]: Mob Spawn Range: 4
-[20:25:10] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:25:10] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:25:10] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:25:10] [Server thread/INFO]: Random Lighting Updates: false
-[20:25:10] [Server thread/INFO]: Structure Info Saving: true
-[20:25:10] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:25:10] [Server thread/INFO]: Max TNT Explosions: 100
-[20:25:10] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:25:10] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:25:10] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:25:10] [Server thread/INFO]: View Distance: 4
-[20:25:10] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:25:10] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:25:10] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:25:10] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:25:10] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:25:10] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[20:25:10] [Server thread/INFO]: Mob Spawn Range: 4
-[20:25:10] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:25:10] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:25:10] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:25:10] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:25:10] [Server thread/INFO]: Random Lighting Updates: false
-[20:25:10] [Server thread/INFO]: Structure Info Saving: true
-[20:25:10] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:25:10] [Server thread/INFO]: Max TNT Explosions: 100
-[20:25:10] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:25:10] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:25:10] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:25:10] [Server thread/INFO]: View Distance: 4
-[20:25:10] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:25:10] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:25:10] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:25:10] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:25:10] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:25:10] [Server thread/INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
-[20:25:11] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
-[20:25:12] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
-[20:25:12] [Server thread/INFO]: [WorldEditSimple] Enabling WorldEditSimple v1.0
-[20:25:12] [Server thread/INFO]: [CursedAltar] Enabling CursedAltar v1.0
-[20:25:12] [Server thread/INFO]: [CursedAltar] CursedAltar enabled
-[20:25:12] [Server thread/INFO]: [DisguiseSimple] Enabling DisguiseSimple v1.0
-[20:25:12] [Server thread/INFO]: [ImmersivePortals] Enabling ImmersivePortals v1.0
-[20:25:12] [Server thread/INFO]: [ImmersivePortals] ImmersivePortals enabled!
-[20:25:12] [Server thread/INFO]: Done (2.151s)! For help, type "help" or "?"
-[20:25:12] [Server thread/INFO]: Timings Reset
-[20:26:33] [User Authenticator #1/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
-[20:26:34] [Server thread/INFO]: ShadowLord[/127.0.0.1:60018] logged in with entity id 50 at ([world]935.7470961996432, 74.49390748022948, 1331.5375409999558)
-[20:26:41] [Server thread/INFO]: ShadowLord issued server command: /login
-[20:26:51] [Server thread/INFO]: ShadowLord lost connection: Disconnected
-[20:26:51] [Server thread/INFO]: ShadowLord left the game
-[20:35:06] [User Authenticator #2/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
-[20:35:06] [Server thread/INFO]: ShadowLord[/127.0.0.1:60226] logged in with entity id 70 at ([world]932.5778371681753, 70.7495417589564, 1332.3372599274455)
-[20:35:58] [Server thread/INFO]: ShadowLord lost connection: Disconnected
-[20:35:58] [Server thread/INFO]: ShadowLord left the game
+[00:00:09] [Server thread/INFO]: Ruger1 lost connection: Disconnected
+[00:00:09] [Server thread/INFO]: Ruger1 left the game
+[00:00:16] [User Authenticator #9/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
+[00:00:16] [Server thread/INFO]: Ruger1[/127.0.0.1:43066] logged in with entity id 2620 at ([world]776.3000000119209, 83.0, 1664.300000011921)
+[00:00:44] [Server thread/INFO]: 1been1 lost connection: Disconnected
+[00:00:44] [Server thread/INFO]: 1been1 left the game
+[00:00:47] [User Authenticator #9/INFO]: UUID of player 1been1 is 9a0271f9-e742-36c5-8e0d-54ba04728157
+[00:00:47] [Server thread/INFO]: 1been1[/127.0.0.1:34890] logged in with entity id 2646 at ([world]896.2882347349939, 64.0, 1356.3040588310057)
+[00:07:59] [Server thread/INFO]: 1been1 lost connection: Disconnected
+[00:07:59] [Server thread/INFO]: 1been1 left the game
+[00:10:00] [User Authenticator #10/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[00:10:01] [Server thread/INFO]: ShadowLord[/127.0.0.1:33130] logged in with entity id 3927 at ([world]881.5521277619833, 162.0, 1331.586109945083)
+[00:10:35] [Async Chat Thread - #4/INFO]: <Ruger1> hi
+[00:11:04] [Server thread/INFO]: ShadowLord issued server command: /gamemode 3
+[00:11:04] [Server thread/INFO]: [ShadowLord: Set own game mode to Spectator Mode]
+[00:11:12] [User Authenticator #11/INFO]: UUID of player 1been1___ is 5f49e7a9-701f-3f13-87ae-46fd0788e7f1
+[00:11:12] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@4cf2e5f9[id=5f49e7a9-701f-3f13-87ae-46fd0788e7f1,name=1been1___,properties={},legacy=false] (/127.0.0.1:58502): You are not whitelisted on this server!
+[00:11:12] [Server thread/INFO]: com.mojang.authlib.GameProfile@4cf2e5f9[id=5f49e7a9-701f-3f13-87ae-46fd0788e7f1,name=1been1___,properties={},legacy=false] (/127.0.0.1:58502) lost connection: You are not whitelisted on this server!
+[00:11:21] [Async Chat Thread - #4/INFO]: <ShadowLord> wsp
+[00:11:35] [Async Chat Thread - #4/INFO]: <ShadowLord> someone is gonna diiiiieee tonight
+[00:11:40] [Server thread/INFO]: Ruger1 lost connection: Disconnected
+[00:11:40] [Server thread/INFO]: Ruger1 left the game
+[00:11:41] [Server thread/INFO]: ShadowLord issued server command: /gamemode 3
+[00:11:41] [Server thread/INFO]: [ShadowLord: Set own game mode to Spectator Mode]
+[00:11:43] [User Authenticator #11/INFO]: UUID of player 1been1___ is 5f49e7a9-701f-3f13-87ae-46fd0788e7f1
+[00:11:43] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@48f6db46[id=5f49e7a9-701f-3f13-87ae-46fd0788e7f1,name=1been1___,properties={},legacy=false] (/127.0.0.1:48216): You are not whitelisted on this server!
+[00:11:44] [Server thread/INFO]: com.mojang.authlib.GameProfile@48f6db46[id=5f49e7a9-701f-3f13-87ae-46fd0788e7f1,name=1been1___,properties={},legacy=false] (/127.0.0.1:48216) lost connection: You are not whitelisted on this server!
+[00:11:44] [Server thread/INFO]: ShadowLord issued server command: /gamemode 1
+[00:11:44] [Server thread/INFO]: [ShadowLord: Set own game mode to Creative Mode]
+[00:11:47] [User Authenticator #11/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
+[00:11:47] [Server thread/INFO]: Ruger1[/127.0.0.1:48232] logged in with entity id 4431 at ([world]1084.4731109810632, 69.0, 1681.433539992472)
+[00:12:09] [Async Chat Thread - #4/INFO]: <Ruger1> boone put stuff back
+[00:12:17] [Async Chat Thread - #4/INFO]: <Ruger1> in a chest or smthing
+[00:12:29] [Server thread/INFO]: ShadowLord issued server command: /gamemode 3
+[00:12:29] [Server thread/INFO]: [ShadowLord: Set own game mode to Spectator Mode]
+[00:12:58] [Server thread/INFO]: ShadowLord issued server command: /gamemode 1
+[00:12:58] [Server thread/INFO]: [ShadowLord: Set own game mode to Creative Mode]
+[00:13:06] [Server thread/INFO]: ShadowLord issued server command: /gamemode 3
+[00:13:06] [Server thread/INFO]: [ShadowLord: Set own game mode to Spectator Mode]
+[00:13:09] [Server thread/INFO]: ShadowLord issued server command: /gamemode 1
+[00:13:09] [Server thread/INFO]: [ShadowLord: Set own game mode to Creative Mode]
+[00:13:13] [Async Chat Thread - #4/INFO]: <ShadowLord> wyd
+[00:13:18] [Server thread/INFO]: ShadowLord issued server command: /tp Ruger1
+[00:13:18] [Server thread/INFO]: [ShadowLord: Teleported ShadowLord to Ruger1]
+[00:14:21] [Server thread/INFO]: ShadowLord issued server command: /tp @p 1088 1000 1697
+[00:14:21] [Server thread/INFO]: [ShadowLord: Teleported ShadowLord to 1088.5, 1000.0, 1697.5]
+[00:14:53] [Server thread/INFO]: ShadowLord issued server command: /kill
+[00:14:53] [Server thread/INFO]: ShadowLord fell out of the world
+[00:14:53] [Server thread/INFO]: [ShadowLord: Killed ShadowLord]
+[00:14:55] [Async Chat Thread - #5/INFO]: <Ruger1> got to get get em milkyies
+[00:15:04] [Async Chat Thread - #5/INFO]: <Ruger1> milk the cow lol
+[00:15:06] [User Authenticator #12/INFO]: UUID of player _Demon_Queen420_ is 8e68c44c-8414-306b-ad0b-4917c0c62a27
+[00:15:06] [Server thread/INFO]: _Demon_Queen420_[/127.0.0.1:37456] logged in with entity id 4894 at ([world]904.9096851140024, 63.9375, 1345.5221213315433)
+[00:15:07] [Async Chat Thread - #5/INFO]: <Ruger1> see ya
+[00:15:10] [Async Chat Thread - #5/INFO]: <ShadowLord> cya
+[00:15:16] [Async Chat Thread - #5/INFO]: <Ruger1> hi
+[00:15:30] [Async Chat Thread - #5/INFO]: <Ruger1> and bye
+[00:15:31] [Server thread/INFO]: _Demon_Queen420_ issued server command: /register 1234567890 1234567890
+[00:15:31] [Server thread/INFO]: [EaglerLogin] EaglerLogin: /register invoked by _Demon_Queen420_
+[00:15:41] [Server thread/INFO]: _Demon_Queen420_ issued server command: /register 1234567890
+[00:15:41] [Server thread/INFO]: [EaglerLogin] EaglerLogin: /register invoked by _Demon_Queen420_
+[00:15:41] [Server thread/INFO]: [EaglerLogin] Registered account for _Demon_Queen420_ (8e68c44c-8414-306b-ad0b-4917c0c62a27)
+[00:15:59] [User Authenticator #12/INFO]: UUID of player 1been1 is 9a0271f9-e742-36c5-8e0d-54ba04728157
+[00:15:59] [Server thread/INFO]: 1been1[/127.0.0.1:51092] logged in with entity id 5070 at ([world]888.3128475560287, 64.0, 1329.9149056187227)
+[00:16:13] [Async Chat Thread - #5/INFO]: <1been1> i will give it back
+[00:16:15] [Async Chat Thread - #5/INFO]: <ShadowLord> use /login
+[00:16:21] [Async Chat Thread - #5/INFO]: <ShadowLord> oh no you have to place every block
+[00:16:24] [Server thread/INFO]: _Demon_Queen420_ issued server command: /login 1234567890
+[00:16:24] [Server thread/INFO]: [EaglerLogin] EaglerLogin: /login invoked by _Demon_Queen420_
+[00:16:28] [Async Chat Thread - #5/INFO]: <_Demon_Queen420_> hai
+[00:16:39] [Async Chat Thread - #5/INFO]: <ShadowLord> every
+[00:16:40] [Async Chat Thread - #5/INFO]: <ShadowLord> last
+[00:16:42] [Async Chat Thread - #5/INFO]: <ShadowLord> block
+[00:16:47] [Async Chat Thread - #5/INFO]: <1been1> i have ot all come get it
+[00:16:48] [Async Chat Thread - #5/INFO]: <ShadowLord> or i destroy ur house
+[00:16:51] [Async Chat Thread - #5/INFO]: <Ruger1> what
+[00:17:09] [Server thread/INFO]: 1been1 fell from a high place
+[00:17:23] [Server thread/INFO]: _Demon_Queen420_ fell from a high place
+[00:17:27] [Async Chat Thread - #5/INFO]: <ShadowLord> lol
+[00:17:33] [Async Chat Thread - #5/INFO]: <1been1> it is down there
+[00:17:34] [Async Chat Thread - #5/INFO]: <Ruger1> bye
+[00:17:37] [Async Chat Thread - #5/INFO]: <ShadowLord> ik that
+[00:17:42] [Async Chat Thread - #5/INFO]: <Ruger1> come on boone
+[00:17:45] [Server thread/INFO]: Ruger1 lost connection: Disconnected
+[00:17:45] [Server thread/INFO]: Ruger1 left the game
+[00:18:13] [Async Chat Thread - #5/INFO]: <1been1> got ti go milk the cow
+[00:18:17] [Server thread/INFO]: 1been1 lost connection: Disconnected
+[00:18:17] [Server thread/INFO]: 1been1 left the game
+[00:18:22] [Async Chat Thread - #5/INFO]: <ShadowLord> lol
+[00:19:04] [Async Chat Thread - #5/INFO]: <ShadowLord> boone
+[00:19:14] [Async Chat Thread - #5/INFO]: <ShadowLord> ye
+[00:19:58] [Async Chat Thread - #5/INFO]: <ShadowLord> ?
+[00:20:13] [Async Chat Thread - #5/INFO]: <ShadowLord> womp womp
+[00:21:07] [Async Chat Thread - #5/INFO]: <ShadowLord> where
+[00:21:29] [Server thread/INFO]: ShadowLord issued server command: /tp @p _
+[00:21:29] [Server thread/INFO]: [ShadowLord: Entity '_' cannot be found]
+[00:21:31] [Server thread/INFO]: ShadowLord issued server command: /tp @p _Demon_Queen420_
+[00:21:31] [Server thread/INFO]: [ShadowLord: Teleported ShadowLord to _Demon_Queen420_]
+[00:21:39] [Async Chat Thread - #5/INFO]: <ShadowLord> they do nothing
+[00:21:47] [Server thread/INFO]: [@: Teleported ShadowLord to 870.5, 200.0, 1345.5]
+[00:21:56] [Async Chat Thread - #5/INFO]: <ShadowLord> pressure plate
+[00:22:05] [Server thread/INFO]: [@: Teleported _Demon_Queen420_ to 870.5, 200.0, 1345.5]
+[00:22:08] [Async Chat Thread - #5/INFO]: <ShadowLord> hehehe
+[00:22:09] [Server thread/INFO]: _Demon_Queen420_ fell from a high place
+[00:22:18] [Async Chat Thread - #5/INFO]: <ShadowLord> i fixed it
+[00:22:31] [Server thread/INFO]: [@: Teleported _Demon_Queen420_ to 870.5, 200.0, 1345.5]
+[00:22:33] [Async Chat Thread - #5/INFO]: <ShadowLord> hi
+[00:22:46] [Server thread/INFO]: ShadowLord issued server command: /tool sphere 5 air
+[00:22:50] [Server thread/INFO]: ShadowLord issued server command: /undo
+[00:22:52] [Server thread/INFO]: _Demon_Queen420_ fell from a high place
+[00:23:31] [Server thread/INFO]: ShadowLord issued server command: /clear
+[00:23:31] [Server thread/INFO]: [ShadowLord: Cleared the inventory of ShadowLord, removing 534 items]
+[00:23:34] [Server thread/INFO]: ShadowLord issued server command: /wand
+[00:23:38] [Server thread/INFO]: ShadowLord issued server command: /undo
+[00:23:43] [Async Chat Thread - #6/INFO]: <ShadowLord> bc of boone
+[00:24:29] [Async Chat Thread - #6/INFO]: <ShadowLord> idk
+[00:24:36] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[00:24:36] [Server thread/INFO]: ShadowLord left the game
+[00:24:42] [User Authenticator #13/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[00:24:42] [Server thread/INFO]: ShadowLord[/127.0.0.1:36260] logged in with entity id 7589 at ([world]923.6910514119982, 68.0, 1345.3578510127634)
+[00:24:49] [Server thread/INFO]: ShadowLord issued server command: /clear
+[00:24:49] [Server thread/INFO]: [ShadowLord: Cleared the inventory of ShadowLord, removing 1 items]
+[00:24:50] [Server thread/INFO]: ShadowLord issued server command: /wand
+[00:24:58] [Server thread/INFO]: ShadowLord issued server command: /set air
+[00:25:15] [Server thread/INFO]: ShadowLord issued server command: /set planks
+[00:25:48] [Server thread/INFO]: ShadowLord issued server command: /set ari
+[00:25:51] [Server thread/INFO]: ShadowLord issued server command: /set air
+[00:26:05] [Async Chat Thread - #7/INFO]: <ShadowLord> hehehe i know what to do
+[00:26:40] [Async Chat Thread - #7/INFO]: <ShadowLord> i did
+[00:27:56] [Async Chat Thread - #8/INFO]: <ShadowLord> tv
+[00:29:39] [Server thread/INFO]: ShadowLord has made the advancement [Suit Up]
+[00:31:56] [Server thread/INFO]: ShadowLord issued server command: /summon minecraft:armor_stand ~ ~ ~ {ShowArms:1b,HandItems:[{id:"minecraft:diamond_sword",Count:1b},{id:"minecraft:shield",Count:1b}],ArmorItems:[{},{},{},{}],NoGravity:0b}
+[00:31:56] [Server thread/INFO]: [ShadowLord: Object successfully summoned]
+[00:32:30] [Server thread/INFO]: ShadowLord issued server command: /summon minecraft:armor_stand ~ ~ ~ {ShowArms:1b,HandItems:[{id:"minecraft:diamond_sword",Count:1b},{id:"minecraft:shield",Count:1b}],ArmorItems:[{},{},{},{}],NoGravity:0b}
+[00:32:30] [Server thread/INFO]: [ShadowLord: Object successfully summoned]
+[00:32:54] [Server thread/INFO]: ShadowLord issued server command: /summon minecraft:armor_stand ~ ~ ~ {ShowArms:1b,HandItems:[{id:"minecraft:diamond_sword",Count:1b},{id:"minecraft:shield",Count:1b}],ArmorItems:[{},{},{},{}],NoGravity:0b}
+[00:32:54] [Server thread/INFO]: [ShadowLord: Object successfully summoned]
+[00:33:01] [Server thread/INFO]: ShadowLord issued server command: /summon minecraft:armor_stand ~ ~ ~ {ShowArms:1b,HandItems:[{id:"minecraft:diamond_sword",Count:1b},{id:"minecraft:shield",Count:1b}],ArmorItems:[{},{},{},{}],NoGravity:0b}
+[00:33:01] [Server thread/INFO]: [ShadowLord: Object successfully summoned]
+[00:33:05] [Server thread/INFO]: ShadowLord issued server command: /summon minecraft:armor_stand ~ ~ ~ {ShowArms:1b,HandItems:[{id:"minecraft:diamond_sword",Count:1b},{id:"minecraft:shield",Count:1b}],ArmorItems:[{},{},{},{}],NoGravity:0b}
+[00:33:05] [Server thread/INFO]: [ShadowLord: Object successfully summoned]
+[00:33:11] [Server thread/INFO]: ShadowLord issued server command: /summon minecraft:armor_stand ~ ~ ~ {ShowArms:1b,HandItems:[{id:"minecraft:diamond_sword",Count:1b},{id:"minecraft:shield",Count:1b}],ArmorItems:[{},{},{},{}],NoGravity:0b}
+[00:33:11] [Server thread/INFO]: [ShadowLord: Object successfully summoned]
+[00:33:34] [Server thread/INFO]: ShadowLord issued server command: /summon minecraft:armor_stand ~ ~ ~ {ShowArms:1b,HandItems:[{id:"minecraft:diamond_sword",Count:1b},{id:"minecraft:shield",Count:1b}],ArmorItems:[{},{},{},{}],NoGravity:0b}
+[00:33:34] [Server thread/INFO]: [ShadowLord: Object successfully summoned]
+[00:33:59] [Async Chat Thread - #9/INFO]: <ShadowLord> voila
+[00:34:15] [Async Chat Thread - #9/INFO]: <ShadowLord> no
+[00:35:01] [Server thread/INFO]: There are 2/20 players online:
+[00:35:01] [Server thread/INFO]: _Demon_Queen420_, ShadowLord
+[00:35:10] [Async Chat Thread - #9/INFO]: <ShadowLord> ?

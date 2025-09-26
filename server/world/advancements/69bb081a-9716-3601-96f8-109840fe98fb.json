@@ -371,6 +371,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/sea_lantern": {
+    "criteria": {
+      "has_prismarine_crystals": "2025-09-26 00:27:28 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cobblestone_slab": {
     "criteria": {
       "has_cobblestone": "2025-09-12 22:57:59 +0000"
@@ -533,6 +539,12 @@
     },
     "done": true
   },
+  "minecraft:nether/get_wither_skull": {
+    "criteria": {
+      "wither_skull": "2025-09-25 22:11:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/black_stained_glass_pane": {
     "criteria": {
       "has_glass": "2025-09-22 23:26:23 +0000"
@@ -593,6 +605,12 @@
     },
     "done": true
   },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_helmet": "2025-09-26 00:29:39 +0000"
+    },
+    "done": true
+  },
   "minecraft:story/mine_stone": {
     "criteria": {
       "get_stone": "2025-09-12 22:57:59 +0000"
@@ -624,6 +642,7 @@
       "forest": "2025-09-13 00:08:35 +0000",
       "deep_ocean": "2025-09-22 20:26:27 +0000",
       "beaches": "2025-09-25 00:24:49 +0000",
+      "forest_hills": "2025-09-26 00:13:18 +0000",
       "plains": "2025-09-12 22:24:54 +0000",
       "savanna": "2025-09-25 00:24:50 +0000",
       "ice_mountains": "2025-09-13 00:11:02 +0000",
@@ -668,6 +687,12 @@
   "minecraft:adventure/sleep_in_bed": {
     "criteria": {
       "slept_in_bed": "2025-09-23 23:46:27 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/book": {
+    "criteria": {
+      "has_paper": "2025-09-25 22:11:56 +0000"
     },
     "done": true
   },

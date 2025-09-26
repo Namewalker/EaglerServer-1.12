@@ -9,167 +9,177 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.scheduler.BukkitTask;
 
 import java.io.File;
-import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.SecureRandom;
 import java.util.Base64;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Central account manager and lightweight listener for account storage and session tracking.
+ * Exposes public API used by command classes: registerAccount, attemptLogin, setPasswordForUuid, etc.
+ */
 public class LoginListener implements Listener {
-  private final EaglerLoginPlugin plugin;
-  private final Map<UUID, Deque<Long>> recentJoins = new ConcurrentHashMap<>();
-  private final Set<UUID> loggedIn = ConcurrentHashMap.newKeySet();
-  private final Map<UUID, BukkitTask> scheduledKick = new ConcurrentHashMap<>();
 
+  private final EaglerLoginPlugin plugin;
   private final File usersFile;
   private FileConfiguration usersCfg;
-
-  private final boolean rateLimitEnabled;
-  private final int maxReconnects;
-  private final int windowSeconds;
-  private final int loginTimeoutSeconds;
-  private final String loginTimeoutKickMessage;
+  private final Set<UUID> loggedIn = new HashSet<>();
 
   public LoginListener(EaglerLoginPlugin plugin) {
     this.plugin = plugin;
-
-    this.rateLimitEnabled = plugin.getConfig().getBoolean("rate-limit.enabled", true);
-    this.maxReconnects = plugin.getConfig().getInt("rate-limit.reconnects-per-window", 5);
-    this.windowSeconds = plugin.getConfig().getInt("rate-limit.window-seconds", 10);
-
-    this.loginTimeoutSeconds = plugin.getConfig().getInt("login.timeout-seconds", 30);
-    this.loginTimeoutKickMessage = plugin.getConfig().getString("login.timeout-kick-message",
-        "&cYou did not login in time. Please reconnect and use &6/login <password>&c.");
-
-    usersFile = new File(plugin.getDataFolder(), "users.yml");
+    this.usersFile = new File(plugin.getDataFolder(), "users.yml");
     if (!usersFile.exists()) {
-      plugin.getDataFolder().mkdirs();
-      try { usersFile.createNewFile(); } catch (IOException e) { plugin.getLogger().severe("Could not create users.yml: " + e.getMessage()); }
-    }
-    usersCfg = YamlConfiguration.loadConfiguration(usersFile);
-  }
-
-  @EventHandler
-  public void onJoin(PlayerJoinEvent event) {
-    final Player p = event.getPlayer();
-    final UUID uuid = p.getUniqueId();
-    long now = System.currentTimeMillis() / 1000L;
-
-    // Force logged-out state on join
-    loggedIn.remove(uuid);
-
-    if (!rateLimitEnabled) {
-      sendRequire(p);
-      scheduleTimeout(p, uuid);
-      return;
-    }
-
-    Deque<Long> dq = recentJoins.computeIfAbsent(uuid, k -> new LinkedList<>());
-    synchronized (dq) {
-      while (!dq.isEmpty() && (now - dq.peekFirst()) >= windowSeconds) dq.pollFirst();
-      dq.addLast(now);
-      if (dq.size() > maxReconnects) {
-        event.setJoinMessage(null);
-        int wait = windowSeconds - (int)(now - dq.peekFirst());
-        if (wait < 0) wait = 1;
-        p.kickPlayer(MsgUtil.color(plugin.getConfig().getString("messages.throttle","&cToo fast. Wait %seconds%").replace("%seconds%", String.valueOf(wait))));
-        scheduleCleanup(uuid, windowSeconds + 2);
-        return;
+      try {
+        plugin.getDataFolder().mkdirs();
+        usersFile.createNewFile();
+      } catch (Exception e) {
+        plugin.getLogger().severe("Could not create users.yml: " + e.getMessage());
       }
     }
-
-    sendRequire(p);
-    scheduleTimeout(p, uuid);
+    this.usersCfg = YamlConfiguration.loadConfiguration(usersFile);
+    // Register this listener so join events etc. will work
+    Bukkit.getPluginManager().registerEvents(this, plugin);
   }
 
-  @EventHandler
-  public void onQuit(PlayerQuitEvent event) {
-    Player p = event.getPlayer();
-    UUID uuid = p.getUniqueId();
-    loggedIn.remove(uuid);
-    cancelTimeout(uuid);
-    scheduleCleanup(uuid, windowSeconds + 2);
-  }
+  // --- Public API used by commands and other components ---
 
-  private void sendRequire(Player p) {
-    p.sendMessage(MsgUtil.color(plugin.getConfig().getString("messages.welcome","&aWelcome %player%").replace("%player%", p.getName())));
-    p.sendMessage(MsgUtil.color(plugin.getConfig().getString("messages.require-login","&eRun /register or /login")));
-  }
-
-  // Registration & Login API
-
-  public boolean registerAccount(Player p, String password) {
-    UUID uuid = p.getUniqueId();
-    String key = uuid.toString();
-    if (isRegistered(uuid)) return false;
+  // Register a new player account (internal helper)
+  public boolean registerPlayer(UUID uuid, String playerName, String password) {
     try {
       byte[] salt = new byte[16];
-      SecureRandom sr = new SecureRandom();
-      sr.nextBytes(salt);
+      new SecureRandom().nextBytes(salt);
       String saltB = Base64.getEncoder().encodeToString(salt);
       String hash = sha256Hex(saltB + password);
-      usersCfg.set(key + ".salt", saltB);
-      usersCfg.set(key + ".hash", hash);
-      usersCfg.set(key + ".name", p.getName());
-      saveUsers();
-      // auto-login after register
-      loggedIn.add(uuid);
-      cancelTimeout(uuid);
+
+      String base = uuid.toString();
+      usersCfg.set(base + ".salt", saltB);
+      usersCfg.set(base + ".hash", hash);
+      usersCfg.set(base + ".name", playerName);
+      usersCfg.set(base + ".registered", System.currentTimeMillis());
+      usersCfg.save(usersFile);
+      plugin.getLogger().info("Registered account for " + playerName + " (" + uuid + ")");
       return true;
     } catch (Exception e) {
-      plugin.getLogger().severe("Register failed: " + e.getMessage());
+      plugin.getLogger().severe("registerPlayer failed: " + e.getMessage());
       return false;
     }
   }
 
-  public boolean attemptLogin(Player p, String password) {
-    UUID uuid = p.getUniqueId();
-    String key = uuid.toString();
-    if (!isRegistered(uuid)) return false;
-    if (verifyPassword(key, password)) {
-      loggedIn.add(uuid);
-      cancelTimeout(uuid);
+  // Verify a password against stored salt+hash for UUID
+  public boolean verifyLogin(UUID uuid, String password) {
+    String base = uuid.toString();
+    String salt = usersCfg.getString(base + ".salt", null);
+    String hash = usersCfg.getString(base + ".hash", null);
+    if (salt == null || hash == null) return false;
+    return hash.equals(sha256Hex(salt + password));
+  }
+
+  // Admin helper to set password for any UUID (create or update)
+  public boolean setPasswordForUuid(UUID uuid, String password, String displayName) {
+    try {
+      byte[] salt = new byte[16];
+      new SecureRandom().nextBytes(salt);
+      String saltB = Base64.getEncoder().encodeToString(salt);
+      String hash = sha256Hex(saltB + password);
+      String key = uuid.toString();
+      usersCfg.set(key + ".salt", saltB);
+      usersCfg.set(key + ".hash", hash);
+      usersCfg.set(key + ".name", displayName);
+      usersCfg.save(usersFile);
+      // Ensure admin-set passwords do not auto-login target
+      loggedIn.remove(uuid);
+      plugin.getLogger().info("Password set for " + displayName + " (" + uuid + ") by admin");
       return true;
+    } catch (Exception e) {
+      plugin.getLogger().severe("setPasswordForUuid failed: " + e.getMessage());
+      return false;
     }
-    return false;
   }
 
-  public boolean isRegistered(UUID uuid) {
-    String key = uuid.toString();
-    return usersCfg.isSet(key + ".hash") && usersCfg.isSet(key + ".salt");
+  // Return stored salt or null
+  public String getStoredSalt(UUID uuid) {
+    return usersCfg.getString(uuid.toString() + ".salt", null);
   }
 
+  // Return stored hash or null
+  public String getStoredHash(UUID uuid) {
+    return usersCfg.getString(uuid.toString() + ".hash", null);
+  }
+
+  // Mark a player authenticated (used by bypass/login)
+  public void markLoggedIn(UUID uuid, String name) {
+    loggedIn.add(uuid);
+    try {
+      usersCfg.set(uuid.toString() + ".name", name);
+      usersCfg.set(uuid.toString() + ".lastLogin", System.currentTimeMillis());
+      usersCfg.save(usersFile);
+    } catch (Exception e) {
+      plugin.getLogger().warning("markLoggedIn save failed: " + e.getMessage());
+    }
+  }
+
+  // Check if UUID currently authenticated in-memory
   public boolean isLoggedIn(UUID uuid) {
     return loggedIn.contains(uuid);
   }
 
+  // Explicitly save users.yml
   public void saveUsers() {
-    try { usersCfg.save(usersFile); } catch (IOException e) { plugin.getLogger().severe("Could not save users.yml: " + e.getMessage()); }
+    try {
+      usersCfg.save(usersFile);
+    } catch (Exception e) {
+      plugin.getLogger().warning("saveUsers failed: " + e.getMessage());
+    }
   }
 
-  // expose plugin safely
+  // Give access to plugin instance
   public EaglerLoginPlugin getPlugin() {
     return this.plugin;
   }
 
-  // password helpers
-  private boolean verifyPassword(String key, String password) {
-    String salt = usersCfg.getString(key + ".salt", null);
-    String stored = usersCfg.getString(key + ".hash", null);
-    if (salt == null || stored == null) return false;
-    return stored.equals(sha256Hex(salt + password));
+  // Convenience checks and wrappers expected by command classes
+
+  public boolean isRegistered(java.util.UUID uuid) {
+    return usersCfg.getString(uuid.toString() + ".hash", null) != null;
   }
 
+  // Attempt login for a Player: verifies and marks logged in on success
+  public boolean attemptLogin(Player p, String password) {
+    java.util.UUID uuid = p.getUniqueId();
+    boolean ok = verifyLogin(uuid, password);
+    if (ok) {
+      markLoggedIn(uuid, p.getName());
+    }
+    return ok;
+  }
+
+  // High-level registerAccount used by RegisterCommand
+  public boolean registerAccount(Player p, String password) {
+    java.util.UUID uuid = p.getUniqueId();
+    if (isRegistered(uuid)) return false;
+    return registerPlayer(uuid, p.getName(), password);
+  }
+
+  // --- Optional listener behavior (example: announce saved state on join) ---
+
+  @EventHandler
+  public void onPlayerJoin(PlayerJoinEvent e) {
+    Player p = e.getPlayer();
+    // If player was previously logged in (persist across restarts isn't implemented),
+    // you may choose to auto-logout on join. We keep them logged out by default.
+    // This is a safe default: remove any persisted "loggedIn" storage if you add it.
+    // Ensure a safe message if you want:
+    if (!isLoggedIn(p.getUniqueId())) {
+      p.sendMessage(MsgUtil.color("&ePlease /register or /login to authenticate."));
+    }
+  }
+
+  // --- Utility: SHA-256 hash ---
   private String sha256Hex(String input) {
     try {
       MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -177,28 +187,9 @@ public class LoginListener implements Listener {
       StringBuilder sb = new StringBuilder(out.length * 2);
       for (byte b : out) sb.append(String.format("%02x", b & 0xff));
       return sb.toString();
-    } catch (Exception e) { return ""; }
-  }
-
-  // timeout scheduling
-  private void scheduleTimeout(final Player p, final UUID uuid) {
-    cancelTimeout(uuid);
-    BukkitTask t = Bukkit.getScheduler().runTaskLater(plugin, () -> {
-      Player pl = Bukkit.getPlayer(uuid);
-      if (pl != null && pl.isOnline() && !isLoggedIn(uuid)) {
-        pl.kickPlayer(MsgUtil.color(loginTimeoutKickMessage));
-      }
-      scheduledKick.remove(uuid);
-    }, loginTimeoutSeconds * 20L);
-    scheduledKick.put(uuid, t);
-  }
-
-  private void cancelTimeout(UUID uuid) {
-    BukkitTask t = scheduledKick.remove(uuid);
-    if (t != null) { try { t.cancel(); } catch (Throwable ignored) {} }
-  }
-
-  private void scheduleCleanup(UUID uuid, int delaySeconds) {
-    Bukkit.getScheduler().runTaskLater(plugin, () -> recentJoins.remove(uuid), delaySeconds * 20L);
+    } catch (Exception e) {
+      plugin.getLogger().severe("sha256Hex failed: " + e.getMessage());
+      return "";
+    }
   }
 }
