@@ -33,14 +33,11 @@ Right click port and make port `8081` public.
 <br>
 Right click again, click open in browser, then copy the URL of the page.
 <br>
-Load up the client (Tuff Client recomended [See TuffClient.Readme] due to smooth running)! When you are in, paste the link in the add server section, replacing https:// with wss:// and join!
+Load up the client (Tuff Client recomended [See TuffClient file/folder] due to smooth running)! When you are in, paste the link in the add server section, replacing https:// with wss:// and join!
 Your Eaglercraft server is setup!
-<br>
-PS: You can use this as a normal server too (like properly hosted) just clone this repo and run it in much the same way. I (Namewalker) have also added small plugins like a mini worldedit (/wand, /set, /replacenear) and a second plugin of my own design, but I'm not going to give too much away...
 <br>
 <br>
 Enjoy!
-<br>
 <br>
 <br>
 Version Author: Namewalker
