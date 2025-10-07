@@ -2,12 +2,15 @@ package com.shadowlord.tickfreeze.listeners;
 
 import com.shadowlord.tickfreeze.TickFreezePlugin;
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.*;
 import org.bukkit.event.entity.*;
 import org.bukkit.event.player.*;
+import org.bukkit.projectiles.ProjectileSource;
+import org.bukkit.util.Vector;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.event.weather.WeatherChangeEvent;
@@ -15,7 +18,7 @@ import org.bukkit.event.weather.WeatherChangeEvent;
 import java.util.UUID;
 
 /**
- * Listens for many events and cancels or modifies them while plugin is in frozen mode.
+ * Freeze listener including arrow-suspension for allowed shooters (ops / bypass).
  */
 public class FreezeListener implements Listener {
   private final TickFreezePlugin plugin;
@@ -153,6 +156,45 @@ public class FreezeListener implements Listener {
         msg.startsWith("/weather") || msg.startsWith("/spawnpoint") || msg.startsWith("/summon")) {
       e.setCancelled(true);
       p.sendMessage("§cServer is frozen.");
+    }
+  }
+
+  // Arrow suspension
+
+  @EventHandler
+  public void onBowShoot(EntityShootBowEvent e) {
+    if (!plugin.isFrozen()) return;
+    if (!(e.getProjectile() instanceof Arrow)) {
+      e.setCancelled(true);
+      return;
+    }
+
+    ProjectileSource shooter = e.getEntity();
+    if (shooter instanceof Player) {
+      Player p = (Player) shooter;
+      UUID uuid = p.getUniqueId();
+
+      // Frozen players cannot shoot
+      if (plugin.shouldFreezePlayer(uuid)) {
+        e.setCancelled(true);
+        p.sendMessage("§cYou cannot shoot while the server is frozen.");
+        return;
+      }
+
+      // Op/bypass shooter: allow spawn but suspend arrow
+      Arrow arrow = (Arrow) e.getProjectile();
+      Vector originalVel = arrow.getVelocity().clone();
+      Bukkit.getScheduler().runTaskLater(plugin, () -> {
+        try {
+          if (arrow != null && arrow.isValid()) {
+            plugin.suspendArrow(arrow, originalVel);
+          }
+        } catch (Throwable t) {
+          plugin.getLogger().warning("Failed to suspend arrow: " + t.getMessage());
+        }
+      }, 1L);
+    } else {
+      e.setCancelled(true);
     }
   }
 }

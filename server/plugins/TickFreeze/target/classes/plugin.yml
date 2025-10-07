@@ -9,7 +9,11 @@ commands:
   tick:
     description: Freeze or unfreeze server simulation
     usage: /tick <freeze|unfreeze>
+
 permissions:
   tickfreeze.use:
     description: Allows use of /tick
+    default: op
+  tickfreeze.bypass:
+    description: Bypass tick freeze effects
     default: op
