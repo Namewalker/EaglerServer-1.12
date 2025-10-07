@@ -96,10 +96,10 @@ world-settings:
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 900
-    use-vanilla-world-scoreboard-name-coloring: false
     despawn-ranges:
       soft: 32
       hard: 128
+    use-vanilla-world-scoreboard-name-coloring: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     water-over-lava-flow-speed: 5
@@ -127,9 +127,6 @@ world-settings:
     duplicate-uuid-saferegen-delete-range: 32
     keep-spawn-loaded-range: 4
     auto-save-interval: -1
-    squid-spawn-height:
-      maximum: 63.0
-      minimum: 45.0
     nether-ceiling-void-damage: false
     allow-non-player-entities-on-scoreboards: false
     frosted-ice:
@@ -147,8 +144,6 @@ world-settings:
     prevent-tnt-from-moving-in-water: false
     non-player-arrow-despawn-rate: -1
     armor-stands-tick: true
-    mob-spawner-tick-rate: 1
-    all-chunks-are-slime-chunks: false
     keep-spawn-loaded: true
     anti-xray:
       enabled: false
@@ -183,6 +178,11 @@ world-settings:
     spawner-nerfed-mobs-should-jump: false
     baby-zombie-movement-speed: 0.5
     allow-leashing-undead-horse: false
+    mob-spawner-tick-rate: 1
+    all-chunks-are-slime-chunks: false
+    squid-spawn-height:
+      maximum: 63.0
+      minimum: 45.0
     disable-teleportation-suffocation-check: false
     enable-treasure-maps: true
     treasure-maps-return-already-discovered: false
