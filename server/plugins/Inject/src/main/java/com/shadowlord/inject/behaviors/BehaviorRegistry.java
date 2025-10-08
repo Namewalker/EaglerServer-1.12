@@ -8,9 +8,6 @@ import org.bukkit.scheduler.BukkitTask;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Keeps registry of available behaviors and active behaviors on entities.
- */
 public class BehaviorRegistry {
   private final Map<String, Behavior> available = new ConcurrentHashMap<>();
   private final Map<UUID, Map<String, Behavior>> active = new ConcurrentHashMap<>();
@@ -31,7 +28,7 @@ public class BehaviorRegistry {
     if (b == null) return false;
     active.computeIfAbsent(entity.getUniqueId(), k -> new ConcurrentHashMap<>())
           .computeIfAbsent(behaviorName.toLowerCase(), k -> {
-            b.onAttach(entity);
+            try { b.onAttach(entity); } catch (Throwable ignored) {}
             return b;
           });
     return true;
@@ -42,20 +39,18 @@ public class BehaviorRegistry {
     if (map == null) return false;
     Behavior b = map.remove(behaviorName.toLowerCase());
     if (b == null) return false;
-    b.onRemove(entity);
+    try { b.onRemove(entity); } catch (Throwable ignored) {}
     if (map.isEmpty()) active.remove(entity.getUniqueId());
     return true;
   }
 
   public void disableAll() {
-    // call onRemove for all active
     for (UUID id : new HashSet<>(active.keySet())) {
       Map<String, Behavior> map = active.remove(id);
       if (map == null) continue;
       for (Map.Entry<String, Behavior> e : map.entrySet()) {
         try {
-          // best-effort: get entity and call onRemove
-          org.bukkit.entity.Entity ent = Bukkit.getEntity(id);
+          Entity ent = Bukkit.getEntity(id);
           if (ent != null) e.getValue().onRemove(ent);
         } catch (Throwable ignored) {}
       }
@@ -66,11 +61,9 @@ public class BehaviorRegistry {
   private void startTicker() {
     tickTask = Bukkit.getScheduler().runTaskTimer(plugin, () -> {
       try {
-        // iterate active behaviors and call tick
         for (Map.Entry<UUID, Map<String, Behavior>> entEntry : new HashSet<>(active.entrySet())) {
-          org.bukkit.entity.Entity ent = Bukkit.getEntity(entEntry.getKey());
+          Entity ent = Bukkit.getEntity(entEntry.getKey());
           if (ent == null || !ent.isValid()) {
-            // cleanup
             active.remove(entEntry.getKey());
             continue;
           }
@@ -81,6 +74,6 @@ public class BehaviorRegistry {
       } catch (Throwable t) {
         plugin.getLogger().warning("BehaviorRegistry tick error: " + t.getMessage());
       }
-    }, 1L, 2L); // tick every 2 server ticks for performance
+    }, 1L, 2L);
   }
 }

@@ -1,7 +1,8 @@
 package com.shadowlord.inject;
 
 import com.shadowlord.inject.behaviors.BehaviorRegistry;
-import com.shadowlord.inject.listeners.InjectListeners;
+import com.shadowlord.inject.commands.InjectCommand;
+import com.shadowlord.inject.commands.PatrolCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class InjectPlugin extends JavaPlugin {
@@ -10,22 +11,34 @@ public class InjectPlugin extends JavaPlugin {
   @Override
   public void onEnable() {
     this.registry = new BehaviorRegistry(this);
-    // register example behaviors
-    registry.register("explodeOnDeath", new com.shadowlord.inject.behaviors.ExplodeOnDeathBehavior());
-    registry.register("followPlayer", new com.shadowlord.inject.behaviors.FollowPlayerBehavior(this));
 
-    getCommand("inject").setExecutor(new com.shadowlord.inject.commands.InjectCommand(this, registry));
-    getServer().getPluginManager().registerEvents(new InjectListeners(this, registry), this);
+    // Register example behaviors here if you have implementations:
+    // registry.register("explodeOnDeath", new com.shadowlord.inject.behaviors.ExplodeOnDeathBehavior());
+    // registry.register("followPlayer", new com.shadowlord.inject.behaviors.FollowPlayerBehavior(this));
+
+    // Register commands with null checks and logging so missing plugin.yml entries are obvious
+    if (getCommand("inject") != null) {
+      getCommand("inject").setExecutor(new InjectCommand(this, registry));
+      getLogger().info("Registered command: inject");
+    } else {
+      getLogger().warning("Command 'inject' not found in plugin.yml");
+    }
+
+    if (getCommand("patrol") != null) {
+      getCommand("patrol").setExecutor(new PatrolCommand(this));
+      getLogger().info("Registered command: patrol");
+    } else {
+      getLogger().warning("Command 'patrol' not found in plugin.yml");
+    }
+
     getLogger().info("Inject enabled");
   }
 
   @Override
   public void onDisable() {
-    registry.disableAll();
+    if (registry != null) registry.disableAll();
     getLogger().info("Inject disabled");
   }
 
-  public BehaviorRegistry getRegistry() {
-    return registry;
-  }
+  public BehaviorRegistry getRegistry() { return registry; }
 }

@@ -7,8 +7,10 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Player;
 
-import java.util.UUID;
+import java.util.*;
 
 public class InjectCommand implements CommandExecutor {
   private final InjectPlugin plugin;
@@ -25,69 +27,73 @@ public class InjectCommand implements CommandExecutor {
       sender.sendMessage("§cNo permission.");
       return true;
     }
-    if (args.length < 2) {
-      sender.sendMessage("§eUsage: /inject <entityId|@e:<uuid>|uuid> <behavior> [remove]");
+
+    if (args.length < 3) {
+      sender.sendMessage("§eUsage: /inject <mobType|@e:uuid|entityId> <radius|behavior> <behavior>");
       return true;
     }
 
     String target = args[0];
-    String behaviorName = args[1];
-    boolean remove = args.length >= 3 && args[2].equalsIgnoreCase("remove");
+    String radiusOrBehavior = args[1];
+    String behaviorName = args[2];
 
-    Entity ent = resolveEntity(target);
-    if (ent == null) {
-      sender.sendMessage("§cEntity not found.");
+    List<Entity> targets = new ArrayList<>();
+
+    // If sender is a player and target is a mob type + radius
+    if (sender instanceof Player && isMobType(target) && isNumeric(radiusOrBehavior)) {
+      EntityType type = EntityType.valueOf(target.toUpperCase());
+      double radius = Double.parseDouble(radiusOrBehavior);
+      Player p = (Player) sender;
+      for (Entity e : p.getNearbyEntities(radius, radius, radius)) {
+        if (e.getType() == type) targets.add(e);
+      }
+    } else {
+      // Fallback: treat target as UUID or entity ID
+      Entity ent = resolveEntity(target);
+      if (ent != null) targets.add(ent);
+    }
+
+    if (targets.isEmpty()) {
+      sender.sendMessage("§cNo matching entities found.");
       return true;
     }
 
-    if (remove) {
-      boolean ok = registry.removeBehaviorFrom(ent, behaviorName);
-      sender.sendMessage(ok ? "§aBehavior removed." : "§cBehavior not present.");
-    } else {
-      boolean ok = registry.addBehaviorTo(ent, behaviorName);
-      sender.sendMessage(ok ? "§aBehavior injected." : "§cBehavior not found.");
+    int success = 0;
+    for (Entity e : targets) {
+      if (registry.addBehaviorTo(e, behaviorName)) success++;
     }
+
+    sender.sendMessage("§aInjected behavior '" + behaviorName + "' into " + success + " entities.");
     return true;
   }
 
-  /**
-   * Resolve an entity from a selector:
-   * - @e:<uuid>  -> exact UUID
-   * - numeric id -> scan loaded entities and match entity.getEntityId()
-   * - plain UUID -> parse UUID
-   */
-  private Entity resolveEntity(String token) {
-    // @e:UUID selector
-    if (token.startsWith("@e:")) {
-      String uuidPart = token.substring(3);
-      try {
-        UUID id = UUID.fromString(uuidPart);
-        return Bukkit.getEntity(id);
-      } catch (Throwable ignored) {
-        return null;
-      }
-    }
-
-    // Try numeric entity id (server-internal int id). Bukkit doesn't expose getEntity(int),
-    // so scan loaded entities across worlds and match getEntityId().
+  private boolean isMobType(String s) {
     try {
-      int numericId = Integer.parseInt(token);
-      for (org.bukkit.World w : Bukkit.getWorlds()) {
-        for (Entity e : w.getEntities()) {
-          if (e.getEntityId() == numericId) return e;
-        }
-      }
-      return null;
+      EntityType type = EntityType.valueOf(s.toUpperCase());
+      return type.isAlive();
+    } catch (IllegalArgumentException ignored) {
+      return false;
+    }
+  }
+
+  private boolean isNumeric(String s) {
+    try {
+      Double.parseDouble(s);
+      return true;
     } catch (NumberFormatException ignored) {
-      // Not a number — fall through to UUID parse attempt.
+      return false;
     }
+  }
 
-    // Try plain UUID string
-    try {
-      UUID uuid = UUID.fromString(token);
-      return Bukkit.getEntity(uuid);
-    } catch (Throwable ignored) {
-      return null;
+  private Entity resolveEntity(String token) {
+    if (token.startsWith("@e:")) {
+      try { return Bukkit.getEntity(UUID.fromString(token.substring(3))); } catch (Throwable ignored) {}
     }
+    try {
+      int id = Integer.parseInt(token);
+      for (org.bukkit.World w : Bukkit.getWorlds()) for (Entity e : w.getEntities()) if (e.getEntityId() == id) return e;
+    } catch (NumberFormatException ignored) {}
+    try { return Bukkit.getEntity(UUID.fromString(token)); } catch (Throwable ignored) {}
+    return null;
   }
 }
