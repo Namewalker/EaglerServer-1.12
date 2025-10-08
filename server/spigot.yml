@@ -15,7 +15,6 @@ settings:
   debug: false
   save-user-cache-on-stop-only: false
   sample-count: 12
-  bungeecord: false
   late-bind: false
   player-shuffle: 0
   filter-creative-items: true
@@ -24,6 +23,7 @@ settings:
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10.0
   item-dirty-ticks: 20
+  bungeecord: false
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
@@ -64,6 +64,7 @@ stats:
 world-settings:
   default:
     verbose: true
+    mob-spawn-range: 4
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -75,7 +76,6 @@ world-settings:
       netherwart-modifier: 100
       vine-modifier: 100
       cocoa-modifier: 100
-    mob-spawn-range: 4
     entity-activation-range:
       animals: 32
       monsters: 32
@@ -113,11 +113,11 @@ world-settings:
       entity: 50
     squid-spawn-range:
       min: 45.0
+    view-distance: 4
     item-despawn-rate: 6000
     merge-radius:
       item: 2.5
       exp: 3.0
-    view-distance: 4
     arrow-despawn-rate: 1200
     enable-zombie-pigmen-portal-spawns: true
     wither-spawn-sound-radius: 0

@@ -1,0 +1,22 @@
+playerName:
+  homeName:
+    world: world
+    X: 100.5062
+    Y: 60
+    Z: 200.923
+ShadowLord:
+  Lab:
+    world: world
+    X: 959.9852304908844
+    Y: 64.0
+    Z: 1323.7158729650523
+  Tower:
+    world: world
+    X: 914.2246577334402
+    Y: 68.0
+    Z: 1365.2403500054506
+  Spawn:
+    world: world
+    X: 885.4476018082103
+    Y: 67.0
+    Z: 1363.8716722390513

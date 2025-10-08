@@ -1,0 +1,15 @@
+commands:
+  inject:
+    description: Inject or remove behaviors from an entity
+    usage: /inject <entityId|selector> <behavior> [remove]
+  patrol:
+    description: Manage patrol points for an entity
+    usage: /patrol <entityId|selector> <addpoint|clear|list>
+
+permissions:
+  inject.use:
+    description: Allows using /inject
+    default: op
+  patrol.use:
+    description: Allows using /patrol
+    default: op
