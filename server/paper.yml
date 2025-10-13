@@ -99,10 +99,10 @@ world-settings:
     despawn-ranges:
       soft: 32
       hard: 128
-    use-vanilla-world-scoreboard-name-coloring: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     water-over-lava-flow-speed: 5
+    use-vanilla-world-scoreboard-name-coloring: false
     fast-drain:
       lava: false
       water: false
@@ -127,6 +127,7 @@ world-settings:
     duplicate-uuid-saferegen-delete-range: 32
     keep-spawn-loaded-range: 4
     auto-save-interval: -1
+    disable-teleportation-suffocation-check: false
     nether-ceiling-void-damage: false
     allow-non-player-entities-on-scoreboards: false
     frosted-ice:
@@ -176,14 +177,13 @@ world-settings:
     disable-ice-and-snow: false
     fire-physics-event-for-redstone: false
     spawner-nerfed-mobs-should-jump: false
-    baby-zombie-movement-speed: 0.5
     allow-leashing-undead-horse: false
+    baby-zombie-movement-speed: 0.5
     mob-spawner-tick-rate: 1
     all-chunks-are-slime-chunks: false
     squid-spawn-height:
       maximum: 63.0
       minimum: 45.0
-    disable-teleportation-suffocation-check: false
     enable-treasure-maps: true
     treasure-maps-return-already-discovered: false
     enable-old-tnt-cannon-behaviors: false
