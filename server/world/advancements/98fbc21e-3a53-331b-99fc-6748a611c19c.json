@@ -609,6 +609,7 @@
       "evoker": "2025-09-17 00:25:33 +0000",
       "zombie": "2025-09-12 17:24:55 +0000",
       "silverfish": "2025-09-12 19:04:32 +0000",
+      "witch": "2025-10-13 20:16:49 +0000",
       "spider": "2025-09-12 17:21:29 +0000",
       "creeper": "2025-09-12 16:48:38 +0000",
       "enderman": "2025-09-16 17:38:25 +0000"
@@ -1134,6 +1135,12 @@
   "minecraft:recipes/building_blocks/light_gray_stained_glass": {
     "criteria": {
       "has_glass": "2025-09-15 22:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:end/dragon_egg": {
+    "criteria": {
+      "dragon_egg": "2025-10-13 20:28:45 +0000"
     },
     "done": true
   },
