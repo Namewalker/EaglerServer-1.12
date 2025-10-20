@@ -484,6 +484,7 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "ice_flats": "2025-09-13 00:11:23 +0000",
+      "frozen_river": "2025-10-15 23:15:33 +0000",
       "forest": "2025-09-13 00:06:50 +0000",
       "deep_ocean": "2025-09-23 00:24:07 +0000",
       "plains": "2025-09-13 00:01:34 +0000",
@@ -777,6 +778,12 @@
   "minecraft:recipes/decorations/light_gray_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2025-09-24 21:30:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/tame_an_animal": {
+    "criteria": {
+      "tamed_animal": "2025-10-16 00:02:24 +0000"
     },
     "done": true
   }
