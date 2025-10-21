@@ -9,9 +9,9 @@ listeners:
     pvp.md-5.net: pvp
   ping_passthrough: false
   priorities:
-  - lobby
+  - survival
   bind_local_address: false
-  host: 127.0.0.1:25577
+  host: 0.0.0.0:8081
   max_players: 10
   tab_size: 60
   force_default_server: true
@@ -39,16 +39,24 @@ remote_ping_timeout: 5000
 connection_throttle: 4000
 log_commands: false
 prevent_proxy_connections: false
-online_mode: false
+online_mode: true
 forge_support: true
 disabled_commands:
 - disabledcommandhere
 servers:
   lobby:
     motd: 'lobby'
-    address: localhost:25565
+    address: 127.0.0.1:25565
     restricted: false
   Civilisations:
     motd: '&1Namewalker Server'
-    address: 95.217.198.48:20923 
+    address: 95.217.198.48:20923
+    restricted: false
+  survival:
+    motd: 'survival'
+    address: 127.0.0.1:25566
+    restricted: false
+  arena:
+    motd: 'arena'
+    address: 127.0.0.1:25568
     restricted: false

@@ -1,162 +1,115 @@
-[20:07:43] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[20:07:43] [Server thread/INFO]: Loading properties
-[20:07:43] [Server thread/INFO]: Default game type: SURVIVAL
-[20:07:43] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[20:07:43] [Server thread/INFO]: Debug logging is disabled
-[20:07:43] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:07:43] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:07:43] [Server thread/INFO]: Generating keypair
-[20:07:43] [Server thread/INFO]: Starting Minecraft server on localhost:25565
-[20:07:43] [Server thread/INFO]: Using default channel type
-[20:07:44] [Server thread/ERROR]: Could not load 'plugins/ProtocolLib.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
-	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:158) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:136) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.loadPlugins(CraftServer.java:318) ~[patched_1.12.2.jar:git-Paper-1620]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:222) ~[patched_1.12.2.jar:git-Paper-1620]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1620]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-Caused by: java.util.zip.ZipException: zip file is empty
-	at java.util.zip.ZipFile$Source.zerror(ZipFile.java:1781) ~[?:?]
-	at java.util.zip.ZipFile$Source.findEND(ZipFile.java:1562) ~[?:?]
-	at java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1657) ~[?:?]
-	at java.util.zip.ZipFile$Source.<init>(ZipFile.java:1495) ~[?:?]
-	at java.util.zip.ZipFile$Source.get(ZipFile.java:1458) ~[?:?]
-	at java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724) ~[?:?]
-	at java.util.zip.ZipFile.<init>(ZipFile.java:251) ~[?:?]
-	at java.util.zip.ZipFile.<init>(ZipFile.java:180) ~[?:?]
-	at java.util.jar.JarFile.<init>(JarFile.java:345) ~[?:?]
-	at java.util.jar.JarFile.<init>(JarFile.java:316) ~[?:?]
-	at java.util.jar.JarFile.<init>(JarFile.java:282) ~[?:?]
-	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:146) ~[patched_1.12.2.jar:git-Paper-1620]
-	... 5 more
-[20:07:44] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[20:07:45] [Server thread/INFO]: [Inject] Loading Inject v1.0.3
-[20:07:45] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v6.4
-[20:07:45] [Server thread/INFO]: [InventorySpy] Loading InventorySpy v1.0.0
-[20:07:45] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
-[20:07:45] [Server thread/INFO]: [CursedAltar] Loading CursedAltar v1.0
-[20:07:45] [Server thread/INFO]: [DisguiseSimple] Loading DisguiseSimple v1.0
-[20:07:45] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
-[20:07:45] [Server thread/INFO]: [SimpleHomes] Loading SimpleHomes v2.2
-[20:07:45] [Server thread/INFO]: [EaglerVanish] Loading EaglerVanish v1.0.0
-[20:07:45] [Server thread/INFO]: [TickFreeze] Loading TickFreeze v1.0.0
-[20:07:45] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.4.2
-[20:07:45] [Server thread/INFO]: [ViaVersion] ViaVersion 5.4.2 is now loaded. Registering protocol transformers and injecting...
-[20:07:45] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[20:07:45] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[20:07:46] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[20:07:46] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[20:07:46] [Server thread/INFO]: [ImmersivePortals] Loading ImmersivePortals v1.0
-[20:07:46] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.4.2
-[20:07:46] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:07:46] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:07:46] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:07:46] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:07:46] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:07:46] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[20:07:46] [Server thread/INFO]: Preparing level "world"
-[20:07:47] [Server thread/INFO]: -------- World Settings For [world] --------
-[20:07:47] [Server thread/INFO]: Mob Spawn Range: 4
-[20:07:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:07:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:07:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:07:47] [Server thread/INFO]: Random Lighting Updates: false
-[20:07:47] [Server thread/INFO]: Structure Info Saving: true
-[20:07:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:07:47] [Server thread/INFO]: Max TNT Explosions: 100
-[20:07:47] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:07:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:07:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:07:47] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:07:47] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:07:47] [Server thread/INFO]: View Distance: 4
-[20:07:47] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:07:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:07:47] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:07:47] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[20:07:47] [Server thread/INFO]: Mob Spawn Range: 4
-[20:07:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:07:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:07:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:07:47] [Server thread/INFO]: Random Lighting Updates: false
-[20:07:47] [Server thread/INFO]: Structure Info Saving: true
-[20:07:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:07:47] [Server thread/INFO]: Max TNT Explosions: 100
-[20:07:47] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:07:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:07:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:07:47] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:07:47] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:07:47] [Server thread/INFO]: View Distance: 4
-[20:07:47] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:07:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:07:47] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:07:47] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[20:07:47] [Server thread/INFO]: Mob Spawn Range: 4
-[20:07:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:07:47] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:07:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:07:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:07:47] [Server thread/INFO]: Random Lighting Updates: false
-[20:07:47] [Server thread/INFO]: Structure Info Saving: true
-[20:07:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:07:47] [Server thread/INFO]: Max TNT Explosions: 100
-[20:07:47] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:07:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:07:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:07:47] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:07:47] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:07:47] [Server thread/INFO]: View Distance: 4
-[20:07:47] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:07:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:07:47] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:07:47] [Server thread/INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
-[20:07:48] [Server thread/INFO]: Preparing spawn area: 6%
-[20:07:48] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
-[20:07:49] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
-[20:07:49] [Server thread/INFO]: [Inject] Enabling Inject v1.0.3
-[20:07:49] [Server thread/INFO]: [Inject] Registered command: /inject
-[20:07:49] [Server thread/INFO]: [Inject] Registered command: /patrol
-[20:07:49] [Server thread/INFO]: [Inject] Inject plugin enabled.
-[20:07:49] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.4
-[20:07:49] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[20:07:49] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 6.4
-[20:07:49] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
-[20:07:49] [Server thread/INFO]: [InventorySpy] Enabling InventorySpy v1.0.0
-[20:07:49] [Server thread/INFO]: [InventorySpy] InventorySpy enabled.
-[20:07:49] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
-[20:07:49] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[20:07:49] [Server thread/WARN]: [WorldEdit] 
+[20:13:57] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[20:13:57] [Server thread/INFO]: Loading properties
+[20:13:57] [Server thread/INFO]: Default game type: SURVIVAL
+[20:13:57] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[20:13:57] [Server thread/INFO]: Debug logging is disabled
+[20:13:57] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:13:57] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:13:57] [Server thread/INFO]: Generating keypair
+[20:13:57] [Server thread/INFO]: Starting Minecraft server on localhost:25565
+[20:13:58] [Server thread/INFO]: Using default channel type
+[20:13:58] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[20:13:58] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[20:13:58] [Server thread/INFO]: [TickFreeze] Loading TickFreeze v1.0.0
+[20:13:58] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
+[20:13:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:13:58] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:13:58] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:13:58] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:13:58] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:13:58] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[20:13:58] [Server thread/INFO]: Preparing level "world"
+[20:13:58] [Server thread/INFO]: -------- World Settings For [world] --------
+[20:13:58] [Server thread/INFO]: Mob Spawn Range: 4
+[20:13:58] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[20:13:58] [Server thread/INFO]: Cane Growth Modifier: 100%
+[20:13:58] [Server thread/INFO]: Melon Growth Modifier: 100%
+[20:13:58] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[20:13:58] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[20:13:58] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[20:13:58] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[20:13:58] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[20:13:58] [Server thread/INFO]: Vine Growth Modifier: 100%
+[20:13:58] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[20:13:58] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[20:13:58] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[20:13:58] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[20:13:58] [Server thread/INFO]: Random Lighting Updates: false
+[20:13:58] [Server thread/INFO]: Structure Info Saving: true
+[20:13:58] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[20:13:58] [Server thread/INFO]: Max TNT Explosions: 100
+[20:13:58] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[20:13:58] [Server thread/INFO]: Item Despawn Rate: 6000
+[20:13:58] [Server thread/INFO]: Item Merge Radius: 2.5
+[20:13:58] [Server thread/INFO]: View Distance: 4
+[20:13:58] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[20:13:58] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[20:13:58] [Server thread/INFO]: Experience Merge Radius: 3.0
+[20:13:58] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[20:13:58] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[20:13:59] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[20:13:59] [Server thread/INFO]: Mob Spawn Range: 4
+[20:13:59] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Cane Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Melon Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Vine Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[20:13:59] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[20:13:59] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[20:13:59] [Server thread/INFO]: Random Lighting Updates: false
+[20:13:59] [Server thread/INFO]: Structure Info Saving: true
+[20:13:59] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[20:13:59] [Server thread/INFO]: Max TNT Explosions: 100
+[20:13:59] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[20:13:59] [Server thread/INFO]: Item Despawn Rate: 6000
+[20:13:59] [Server thread/INFO]: Item Merge Radius: 2.5
+[20:13:59] [Server thread/INFO]: View Distance: 4
+[20:13:59] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[20:13:59] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[20:13:59] [Server thread/INFO]: Experience Merge Radius: 3.0
+[20:13:59] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[20:13:59] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[20:13:59] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[20:13:59] [Server thread/INFO]: Mob Spawn Range: 4
+[20:13:59] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Cane Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Melon Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Vine Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[20:13:59] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[20:13:59] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[20:13:59] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[20:13:59] [Server thread/INFO]: Random Lighting Updates: false
+[20:13:59] [Server thread/INFO]: Structure Info Saving: true
+[20:13:59] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[20:13:59] [Server thread/INFO]: Max TNT Explosions: 100
+[20:13:59] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[20:13:59] [Server thread/INFO]: Item Despawn Rate: 6000
+[20:13:59] [Server thread/INFO]: Item Merge Radius: 2.5
+[20:13:59] [Server thread/INFO]: View Distance: 4
+[20:13:59] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[20:13:59] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[20:13:59] [Server thread/INFO]: Experience Merge Radius: 3.0
+[20:13:59] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[20:13:59] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[20:13:59] [Server thread/INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
+[20:14:00] [Server thread/INFO]: Preparing spawn area: 9%
+[20:14:00] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
+[20:14:00] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
+[20:14:00] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[20:14:00] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[20:14:00] [Server thread/WARN]: [WorldEdit] 
 **********************************************
 ** This WorldEdit version does not fully support your version of Bukkit.
 **
@@ -167,150 +120,25 @@ Caused by: java.util.zip.ZipException: zip file is empty
 ** Please see http://wiki.sk89q.com/wiki/WorldEdit/Bukkit_adapters
 **********************************************
 
-[20:07:49] [Server thread/INFO]: [CursedAltar] Enabling CursedAltar v1.0
-[20:07:49] [Server thread/INFO]: [CursedAltar] CursedAltar enabled
-[20:07:49] [Server thread/INFO]: [DisguiseSimple] Enabling DisguiseSimple v1.0
-[20:07:49] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
-[20:07:49] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
-[20:07:49] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
-[20:07:49] [Server thread/INFO]: [LoginSecurity] Registering commands...
-[20:07:49] [Server thread/INFO]: [LoginSecurity] Registering listeners...
-[20:07:49] [Server thread/INFO]: [SimpleHomes] Enabling SimpleHomes v2.2
-[20:07:49] [Server thread/INFO]: [EaglerVanish] Enabling EaglerVanish v1.0.0
-[20:07:49] [Server thread/INFO]: [EaglerVanish] EaglerVanish enabled
-[20:07:49] [Server thread/INFO]: [TickFreeze] Enabling TickFreeze v1.0.0
-[20:07:49] [Server thread/INFO]: [TickFreeze] TickFreeze enabled
-[20:07:49] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.4.2
-[20:07:49] [Server thread/INFO]: [ImmersivePortals] Enabling ImmersivePortals v1.0
-[20:07:49] [Server thread/INFO]: [ImmersivePortals] ImmersivePortals enabled!
-[20:07:49] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.4.2
-[20:07:50] [Server thread/INFO]: Done (3.053s)! For help, type "help" or "?"
-[20:07:50] [Server thread/INFO]: Timings Reset
-[20:07:50] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.12.2 (340)
-[20:07:50] [Server thread/WARN]: [ViaVersion] This version of Minecraft is extremely outdated and support for it has reached its end of life. You will still be able to run Via on this Minecraft version, but we will prioritize issues with legacy Minecraft versions less. Please consider updating to give your players a better experience and to avoid issues that have long been fixed.
-[20:07:50] [Craft Scheduler Thread - 1/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[20:07:50] [Craft Scheduler Thread - 2/INFO]: [SimpleTpa] There is a new update available.
-[20:07:50] [Craft Scheduler Thread - 2/INFO]: [SimpleTpa] There is a new update available:
-[20:07:50] [Craft Scheduler Thread - 2/INFO]: [SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/
-[20:07:50] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.5.1, you're on: 5.4.2
-[20:08:35] [User Authenticator #1/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
-[20:08:36] [Server thread/INFO]: ShadowLord[/127.0.0.1:52734] logged in with entity id 31 at ([world]-8583.856474582002, 64.0, -8978.575771326265)
-[20:08:55] [Server thread/INFO]: ShadowLord issued server command: /inventory
-[20:09:02] [Server thread/INFO]: ShadowLord issued server command: /inventory The_Code
-[20:09:06] [Server thread/INFO]: ShadowLord issued server command: /inventory ShadowLord
-[20:09:06] [Server thread/INFO]: [InventorySpy] ShadowLord opened inventory of ShadowLord
-[20:09:12] [Server thread/INFO]: ShadowLord issued server command: /inventory ShadowLord ender
-[20:09:12] [Server thread/INFO]: [InventorySpy] ShadowLord opened ender chest of ShadowLord
-[20:10:09] [Server thread/INFO]: ShadowLord issued server command: /inventory ShadowLord
-[20:10:09] [Server thread/INFO]: [InventorySpy] ShadowLord opened inventory of ShadowLord
-[20:12:26] [Server thread/INFO]: ShadowLord issued server command: /sethome
-[20:12:34] [Server thread/INFO]: ShadowLord issued server command: /sethome domedLab
-[20:12:38] [Server thread/INFO]: ShadowLord issued server command: /home spawn
-[20:12:42] [Server thread/INFO]: ShadowLord issued server command: /home Spawn
-[20:13:09] [Server thread/INFO]: ShadowLord issued server command: //cyl
-[20:13:14] [Server thread/INFO]: ShadowLord issued server command: //cyl air 10
-[20:13:18] [Server thread/INFO]: ShadowLord issued server command: //cyl air 12
-[20:13:23] [Server thread/INFO]: ShadowLord issued server command: //cyl air 12 10
-[20:13:28] [Server thread/INFO]: ShadowLord issued server command: //cyl air 12 -2
-[20:13:33] [Server thread/INFO]: ShadowLord issued server command: //cyl air 12 -2
-[20:13:56] [Server thread/INFO]: ShadowLord issued server command: //cyl air 12 -4 stonebrick
-[20:14:06] [Server thread/INFO]: ShadowLord issued server command: //cyl stonebrick 12 -4
-[20:14:22] [Server thread/INFO]: ShadowLord issued server command: /undo
-[20:14:28] [Server thread/INFO]: ShadowLord issued server command: //cyl stonebrick 12 -4
-[20:14:37] [Server thread/INFO]: ShadowLord issued server command: /undo
-[20:14:43] [Server thread/INFO]: ShadowLord issued server command: //cyl stonebrick 12 -4
-[20:15:03] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 13
-[20:15:07] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 13
-[20:15:17] [Server thread/INFO]: ShadowLord issued server command: //hcyl glass 13
-[20:15:30] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 12
-[20:15:34] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 11
-[20:15:37] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 10
-[20:15:39] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 19
-[20:15:58] [Server thread/INFO]: ShadowLord issued server command: //undo
-[20:16:03] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 9
-[20:16:07] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 8
-[20:16:20] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 7
-[20:16:22] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 6
-[20:16:27] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 5
-[20:16:28] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 4
-[20:16:32] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 3
-[20:16:33] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 2
-[20:16:36] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 1
-[20:16:37] [Server thread/INFO]: ShadowLord issued server command: //hcyl stonebrick 0
-[20:18:46] [Server thread/INFO]: ShadowLord issued server command: //replacenear
-[20:18:51] [Server thread/INFO]: ShadowLord issued server command: //replacenear 5 grass air
-[20:18:57] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:00] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:02] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:03] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:07] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:09] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:11] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:13] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:19] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:21] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:23] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:25] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:27] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:28] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:30] [Server thread/INFO]: ShadowLord issued server command: //replacenear 8 grass air
-[20:19:45] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt air
-[20:19:48] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt air
-[20:19:50] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt air
-[20:19:52] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt air
-[20:19:53] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt air
-[20:19:55] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt air
-[20:20:01] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass air
-[20:20:03] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass air
-[20:20:05] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass air
-[20:20:07] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass air
-[20:20:09] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass air
-[20:20:11] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass air
-[20:20:14] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass air
-[20:20:16] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass air
-[20:20:18] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass air
-[20:20:22] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass,stone air
-[20:20:24] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass,stone air
-[20:20:28] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass,stone air
-[20:20:30] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass,stone air
-[20:20:31] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass,stone air
-[20:20:32] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass,stone air
-[20:20:34] [Server thread/INFO]: ShadowLord issued server command: //replacenear 7 dirt,grass,stone air
-[20:26:25] [Server thread/INFO]: ShadowLord issued server command: //deltree
-[20:27:08] [Server thread/INFO]: ShadowLord issued server command: //cyl air
-[20:27:12] [Server thread/INFO]: ShadowLord issued server command: //cyl air 14
-[20:27:17] [Server thread/INFO]: ShadowLord issued server command: //cyl air 14
-[20:30:04] [Server thread/INFO]: ShadowLord lost connection: Disconnected
-[20:30:04] [Server thread/INFO]: ShadowLord left the game
-[20:30:09] [Server thread/INFO]: Stopping the server
-[20:30:09] [Server thread/INFO]: Stopping server
-[20:30:09] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.4.2
-[20:30:09] [Server thread/INFO]: [ImmersivePortals] Disabling ImmersivePortals v1.0
-[20:30:09] [Server thread/INFO]: [ImmersivePortals] ImmersivePortals disabled!
-[20:30:09] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.4.2
-[20:30:09] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling. If this is a reload and you experience issues, please reboot instead.
-[20:30:09] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[20:30:09] [Server thread/INFO]: [TickFreeze] Disabling TickFreeze v1.0.0
-[20:30:09] [Server thread/INFO]: [TickFreeze] TickFreeze disabled
-[20:30:09] [Server thread/INFO]: [EaglerVanish] Disabling EaglerVanish v1.0.0
-[20:30:09] [Server thread/INFO]: [EaglerVanish] EaglerVanish disabled
-[20:30:09] [Server thread/INFO]: [SimpleHomes] Disabling SimpleHomes v2.2
-[20:30:09] [Server thread/INFO]: [LoginSecurity] Disabling LoginSecurity v3.2.0
-[20:30:09] [Server thread/INFO]: [LoginSecurity] Waiting for queued tasks...
-[20:30:09] [Server thread/INFO]: [LoginSecurity] ExecutorService shut down, ready to disable.
-[20:30:09] [Server thread/INFO]: [DisguiseSimple] Disabling DisguiseSimple v1.0
-[20:30:09] [Server thread/INFO]: [CursedAltar] Disabling CursedAltar v1.0
-[20:30:09] [Server thread/INFO]: [CursedAltar] CursedAltar disabled
-[20:30:09] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1;no_git_id
-[20:30:09] [Server thread/INFO]: [InventorySpy] Disabling InventorySpy v1.0.0
-[20:30:09] [Server thread/INFO]: [InventorySpy] InventorySpy disabled.
-[20:30:09] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v6.4
-[20:30:09] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[20:30:09] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 6.4
-[20:30:09] [Server thread/INFO]: [Inject] Disabling Inject v1.0.3
-[20:30:09] [Server thread/INFO]: [Inject] Inject plugin disabled.
-[20:30:09] [Server thread/INFO]: Saving players
-[20:30:09] [Server thread/INFO]: Saving worlds
-[20:30:09] [Server thread/INFO]: Saving chunks for level 'world'/overworld
-[20:30:09] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
-[20:30:09] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end
+[20:14:00] [Server thread/INFO]: [TickFreeze] Enabling TickFreeze v1.0.0
+[20:14:00] [Server thread/INFO]: [TickFreeze] TickFreeze enabled
+[20:14:00] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
+[20:14:01] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
+[20:14:01] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
+[20:14:01] [Server thread/INFO]: [LoginSecurity] Registering commands...
+[20:14:01] [Server thread/INFO]: [LoginSecurity] Registering listeners...
+[20:14:01] [Server thread/INFO]: Done (3.163s)! For help, type "help" or "?"
+[20:14:01] [Server thread/INFO]: Timings Reset
+[20:17:05] [Server thread/INFO]: Stopping the server
+[20:17:05] [Server thread/INFO]: Stopping server
+[20:17:05] [Server thread/INFO]: [LoginSecurity] Disabling LoginSecurity v3.2.0
+[20:17:05] [Server thread/INFO]: [LoginSecurity] Waiting for queued tasks...
+[20:17:05] [Server thread/INFO]: [LoginSecurity] ExecutorService shut down, ready to disable.
+[20:17:05] [Server thread/INFO]: [TickFreeze] Disabling TickFreeze v1.0.0
+[20:17:05] [Server thread/INFO]: [TickFreeze] TickFreeze disabled
+[20:17:05] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1;no_git_id
+[20:17:05] [Server thread/INFO]: Saving players
+[20:17:05] [Server thread/INFO]: Saving worlds
+[20:17:05] [Server thread/INFO]: Saving chunks for level 'world'/overworld
+[20:17:05] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
+[20:17:05] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end
