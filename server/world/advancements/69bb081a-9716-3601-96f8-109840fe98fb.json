@@ -89,6 +89,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_stonebrick": {
+    "criteria": {
+      "has_mossy_cobblestone": "2025-10-22 22:22:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone": {
+    "criteria": {
+      "has_the_recipe": "2025-10-23 00:02:21 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/purple_stained_glass": {
     "criteria": {
       "has_glass": "2025-09-22 23:26:23 +0000"
@@ -272,6 +284,12 @@
   "minecraft:recipes/building_blocks/light_blue_concrete_powder": {
     "criteria": {
       "has_sand": "2025-09-15 14:47:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall": {
+    "criteria": {
+      "has_mossy_cobblestone": "2025-10-22 22:22:06 +0000"
     },
     "done": true
   },
@@ -534,6 +552,7 @@
       "zombie_villager": "2025-09-23 01:07:36 +0000",
       "skeleton": "2025-09-13 00:09:52 +0000",
       "zombie": "2025-09-13 00:10:09 +0000",
+      "witch": "2025-10-22 01:05:49 +0000",
       "spider": "2025-09-13 00:11:21 +0000",
       "creeper": "2025-09-13 00:33:12 +0000",
       "enderman": "2025-09-22 20:25:04 +0000"
@@ -549,6 +568,12 @@
   "minecraft:recipes/decorations/green_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2025-09-23 23:40:57 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_block": {
+    "criteria": {
+      "has_at_least_9_redstone": "2025-10-23 00:02:21 +0000"
     },
     "done": true
   },
@@ -1085,6 +1110,12 @@
   "minecraft:recipes/building_blocks/purpur_pillar": {
     "criteria": {
       "has_purpur_block": "2025-09-24 13:01:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/carrot_on_a_stick": {
+    "criteria": {
+      "has_carrot": "2025-10-22 01:01:12 +0000"
     },
     "done": true
   },
