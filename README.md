@@ -41,3 +41,5 @@ Enjoy!
 <br>
 <br>
 Version Author: Namewalker
+<br>
+    Added things such as Worldedit, SimpleHomes, SimpleTPA, and a few of my own (Cursed Altar [When players right click an enchant table SPECIFICALLY named "Cursed Altar" they become cursed, commands: /curse, /breakcurse], /vanish, /tick <freeze|unfreeze>). Do enjoy!
