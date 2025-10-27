@@ -38,6 +38,7 @@ public class WebRenderPlugin extends JavaPlugin implements TabExecutor {
         if (args.length == 0) {
             sender.sendMessage("/web open <url> - request a render (admin)");
             sender.sendMessage("/web ping - ping renderer");
+            sender.sendMessage("/web grant <player> - grant web access to a player (ops only)");
             return true;
         }
 
@@ -48,6 +49,10 @@ public class WebRenderPlugin extends JavaPlugin implements TabExecutor {
                 return true;
             }
             String url = args[1];
+            if (!sender.hasPermission("webrender.use")) {
+                sender.sendMessage("You don't have permission to use /web open");
+                return true;
+            }
             if (sender instanceof Player) {
                 Player p = (Player) sender;
                 // For prototype: call renderer and inform player of result
@@ -70,6 +75,27 @@ public class WebRenderPlugin extends JavaPlugin implements TabExecutor {
             } catch (IOException e) {
                 sender.sendMessage("Renderer ping failed: " + e.getMessage());
             }
+            return true;
+        } else if (sub.equals("grant")) {
+            // grant a player permission to use web commands
+            if (!sender.hasPermission("webrender.admin") && !sender.isOp()) {
+                sender.sendMessage("You don't have permission to grant web access.");
+                return true;
+            }
+            if (args.length < 2) {
+                sender.sendMessage("Usage: /web grant <player>");
+                return true;
+            }
+            String targetName = args[1];
+            Player target = Bukkit.getPlayerExact(targetName);
+            if (target == null) {
+                sender.sendMessage("Player not online: " + targetName);
+                return true;
+            }
+            // Attach a transient permission allowing web use
+            target.addAttachment(this, "webrender.use", true);
+            sender.sendMessage("Granted web access to " + target.getName() + " (until server restart)");
+            target.sendMessage("You were granted web access by " + sender.getName());
             return true;
         }
 
