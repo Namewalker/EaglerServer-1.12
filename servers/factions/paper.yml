@@ -65,25 +65,25 @@ world-settings:
       disable-extreme-hills-emeralds: false
       disable-extreme-hills-monster-eggs: false
       disable-mesa-additional-gold: false
-    queue-light-updates: false
-    max-chunk-gens-per-tick: 10
     prevent-moving-into-unloaded-chunks: false
     use-vanilla-world-scoreboard-name-coloring: false
+    portal-search-radius: 128
+    queue-light-updates: false
     optimize-explosions: false
     use-chunk-inhabited-timer: true
-    max-auto-save-chunks-per-tick: 24
     delay-chunk-unloads-by: 10s
-    max-chunk-sends-per-tick: 81
+    max-auto-save-chunks-per-tick: 24
     save-queue-limit-for-auto-save: 50
-    portal-search-radius: 128
     remove-corrupt-tile-entities: false
+    max-chunk-sends-per-tick: 81
+    max-chunk-gens-per-tick: 10
     game-mechanics:
       allow-permanent-chunk-loaders: false
       scan-for-legacy-ender-dragon: true
-      shield-blocking-delay: 5
       disable-end-credits: false
       disable-player-crits: false
       disable-sprint-interruption-on-attack: false
+      shield-blocking-delay: 5
       disable-chest-cat-detection: false
       disable-unloaded-chunk-enderpearl-exploit: true
       village-sieges-enabled: true
@@ -137,8 +137,8 @@ world-settings:
     grass-spread-tick-rate: 1
     use-alternate-fallingblock-onGround-detection: false
     bed-search-radius: 1
-    prevent-tnt-from-moving-in-water: false
     non-player-arrow-despawn-rate: -1
+    prevent-tnt-from-moving-in-water: false
     armor-stands-tick: true
     keep-spawn-loaded: true
     anti-xray:
@@ -171,8 +171,8 @@ world-settings:
     skeleton-horse-thunder-spawn-chance: 0.01
     disable-ice-and-snow: false
     fire-physics-event-for-redstone: false
-    baby-zombie-movement-speed: 0.5
     spawner-nerfed-mobs-should-jump: false
+    baby-zombie-movement-speed: 0.5
     allow-leashing-undead-horse: false
     mob-spawner-tick-rate: 1
     all-chunks-are-slime-chunks: false

@@ -1,0 +1,9 @@
+name: Halloween
+main: com.eagler.halloween.HalloweenPlugin
+version: "1.0.0"
+author: automated-agent
+api-version: "1.12"
+commands:
+  hallowreload:
+    description: Reload Halloween plugin (noop)
+    usage: /<command>
