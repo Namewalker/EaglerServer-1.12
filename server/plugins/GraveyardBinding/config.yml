@@ -1,4 +1,10 @@
 graves:
+  24ef6066-39a5-3755-9e3b-dc012227f624:
+    world: world
+    x: 730.0
+    y: 64.0
+    z: 1686.0
+    level: 5
   69bb081a-9716-3601-96f8-109840fe98fb:
     world: world
     x: 785.0
@@ -18,6 +24,11 @@ graves:
     z: 1352.0
     level: 5
 bindings:
+  24ef6066-39a5-3755-9e3b-dc012227f624:
+    world: world
+    x: 730.0
+    y: 64.0
+    z: 1686.0
   69bb081a-9716-3601-96f8-109840fe98fb:
     world: world
     x: 785.0

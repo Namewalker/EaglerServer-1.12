@@ -14,6 +14,13 @@ config-version: 13
 settings:
   load-permissions-yml-before-plugins: true
   bungee-online-mode: true
+  sleep-between-chunk-saves: false
+  region-file-cache-size: 256
+  save-empty-scoreboard-teams: false
+  incoming-packet-spam-threshold: 300
+  remove-invalid-statistics: false
+  save-player-data: true
+  use-alternative-luck-formula: false
   min-chunk-load-threads: 2
   suggest-player-names-when-null-tab-completions: true
   watchdog:
@@ -25,13 +32,6 @@ settings:
   book-size:
     page-max: 2560
     total-multiplier: 0.98
-  sleep-between-chunk-saves: false
-  region-file-cache-size: 256
-  save-empty-scoreboard-teams: false
-  incoming-packet-spam-threshold: 300
-  remove-invalid-statistics: false
-  save-player-data: true
-  use-alternative-luck-formula: false
   enable-player-collisions: true
   player-auto-save-rate: -1
   max-player-auto-save-per-tick: -1
@@ -40,9 +40,9 @@ settings:
   limit-player-interactions: true
 messages:
   kick:
+    authentication-servers-down: ''
     flying-player: Flying is not enabled on this server
     flying-vehicle: Flying is not enabled on this server
-    authentication-servers-down: ''
 timings:
   enabled: true
   verbose: true
@@ -68,14 +68,14 @@ world-settings:
       disable-extreme-hills-emeralds: false
       disable-extreme-hills-monster-eggs: false
       disable-mesa-additional-gold: false
-    portal-search-radius: 128
+    remove-corrupt-tile-entities: false
+    use-chunk-inhabited-timer: true
     queue-light-updates: false
     optimize-explosions: false
-    use-chunk-inhabited-timer: true
+    portal-search-radius: 128
     delay-chunk-unloads-by: 10s
     max-auto-save-chunks-per-tick: 24
     save-queue-limit-for-auto-save: 50
-    remove-corrupt-tile-entities: false
     max-chunk-sends-per-tick: 81
     max-chunk-gens-per-tick: 10
     game-mechanics:
@@ -101,7 +101,6 @@ world-settings:
       hard: 128
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
-    use-vanilla-world-scoreboard-name-coloring: false
     water-over-lava-flow-speed: 5
     fast-drain:
       lava: false
@@ -117,6 +116,7 @@ world-settings:
       refresh-min: 12h
       refresh-max: 2d
     filter-nbt-data-from-spawn-eggs-and-related: true
+    use-vanilla-world-scoreboard-name-coloring: false
     max-entity-collisions: 8
     disable-creeper-lingering-effect: false
     hopper:
