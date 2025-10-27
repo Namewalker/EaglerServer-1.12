@@ -20,6 +20,7 @@ network_compression_threshold: 256
 permissions:
   default:
   - bungeecord.command.server
+  - velocity.command.server
   - bungeecord.command.list
   admin:
   - bungeecord.command.alert
