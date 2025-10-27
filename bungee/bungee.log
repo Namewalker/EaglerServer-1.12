@@ -182,3 +182,28 @@ Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refus
 [20:28:24 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:47086) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
 [20:28:24 ERROR]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:47086): read timed out
 [20:28:24 INFO]: [server connection] ShadowLord -> survival has disconnected
+[20:29:05 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:49374): kicked from server survival: You have been ejected! <Player> was a bitch! 2 Remain...
+[20:29:05 INFO]: [server connection] Ruger1 -> survival has disconnected
+[20:29:05 INFO]: [server connection] Ruger1 -> lobby has connected
+[20:29:19 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:55864]: Connected via websocket
+[20:29:19 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:55864]: Origin header is null
+[20:29:19 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:55864) has connected
+[20:29:20 INFO]: [server connection] ShadowLord -> lobby has connected
+[20:29:27 INFO]: [server connection] Ruger1 -> survival has connected
+[20:29:27 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[20:29:27 INFO]: [server connection] ShadowLord -> survival has connected
+[20:29:28 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[20:30:23 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:49374) has disconnected
+[20:30:23 INFO]: [server connection] Ruger1 -> survival has disconnected
+[20:30:41 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:55864) has disconnected
+[20:30:41 INFO]: [server connection] ShadowLord -> survival has disconnected
+[20:33:00 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:54508]: Connected via websocket
+[20:33:00 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:54508]: Origin header is null
+[20:33:01 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:54508) has connected
+[20:33:01 INFO]: [server connection] ShadowLord -> lobby has connected
+[20:33:25 INFO]: [server connection] ShadowLord -> factions has connected
+[20:33:25 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[20:33:34 INFO]: [server connection] ShadowLord -> survival has connected
+[20:33:34 INFO]: [server connection] ShadowLord -> factions has disconnected
+[20:36:04 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:54508) has disconnected
+[20:36:04 INFO]: [server connection] ShadowLord -> survival has disconnected

@@ -178,3 +178,7 @@ Caused by: java.util.zip.ZipException: zip END header not found
 [20:17:03] [Server thread/INFO]: ShadowLord left the game
 [20:17:05] [Server thread/INFO]: Ruger1 lost connection: Disconnected
 [20:17:05] [Server thread/INFO]: Ruger1 left the game
+[20:33:25] [User Authenticator #2/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[20:33:25] [Server thread/INFO]: ShadowLord[/0:0:0:0:0:0:0:1:50230] logged in with entity id 106 at ([factions_world]-155.99190525065458, 65.0, 76.61746629916976)
+[20:33:34] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[20:33:34] [Server thread/INFO]: ShadowLord left the game

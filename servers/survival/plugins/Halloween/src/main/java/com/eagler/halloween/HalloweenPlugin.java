@@ -26,34 +26,57 @@ import org.bukkit.potion.PotionEffectType;
 
 import java.lang.reflect.Field;
 import java.util.Random;
+import java.util.Map;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class HalloweenPlugin extends JavaPlugin implements Listener {
 
     private final Random random = new Random();
 
-    // A couple of spooky skull textures (base64) to use for jumpscares. They are generic scary textures.
+    // A few scary skull textures (base64) for skull GUI and armor-stand heads.
+    // These are base64-encoded JSON profiles pointing to textures.minecraft.net URLs.
+    // Replace or extend these with other base64 texture strings if you want different faces.
     private final String[] SKULL_TEXTURES = new String[] {
-            // placeholder short strings (expand with valid base64 texture strings if desired)
-            "",
-            ""
+            // Creepy skull texture
+            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2YzMzE3ZTg0NDI5MjM0M2Q0ODhlY2I4ZjFkM2QzYjE3M2I3ZTUxNTQ2ZDcxMDRlYjZiY2Y4YzA0ZTg2In19fQ==",
+            // Hollow-eyed skull
+            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQyNzYyZjA2ZjJiYjQzY2JhY2M0YzVhY2U5ZDRkMzY2Y2VhZDk4Y2QyY2E0YzVhMjI0ZDYzMzQifX19",
+            // Distorted face
+            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjk0YmM1OTMwZjFhZDYwODRkMjE4NjU4ZDM5M2E2YjM2ZTI2ZjE5YzE3MzBmOTk2Y2QzOTQ0YzY3In19fQ=="
     };
+
+    // Track next allowed scare time per player (ms timestamp). Helps space scares so players can't predict them.
+    private final Map<UUID, Long> nextAllowedScare = new ConcurrentHashMap<>();
 
     @Override
     public void onEnable() {
         getLogger().info("Halloween plugin enabling...");
         getServer().getPluginManager().registerEvents(this, this);
 
-        // ambient noises every few seconds
+        // ambient noises and rare random scares: run every 15 seconds and very rarely trigger a surprise for a random online player
         new BukkitRunnable() {
             @Override
             public void run() {
                 for (Player p : Bukkit.getOnlinePlayers()) {
-                    if (random.nextInt(100) < 5) { // ~5% chance per loop
+                    if (random.nextInt(200) == 0) { // very rare ambient blip
                         playAmbient(p);
                     }
                 }
+
+                // rare global surprise: pick a random player occasionally
+                if (random.nextInt(1200) == 0) {
+                    Player[] arr = Bukkit.getOnlinePlayers().toArray(new Player[0]);
+                    if (arr.length > 0) {
+                        Player p = arr[random.nextInt(arr.length)];
+                        if (canScare(p)) {
+                            triggerMassiveScream(p);
+                            scheduleNextAllowed(p);
+                        }
+                    }
+                }
             }
-        }.runTaskTimer(this, 20L, 20L * 8L);
+        }.runTaskTimer(this, 20L, 20L * 15L);
     }
 
     @Override
@@ -64,11 +87,10 @@ public class HalloweenPlugin extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlayerMove(PlayerMoveEvent ev) {
         Player p = ev.getPlayer();
-        // chance increases when player is moving quickly (running)
-        int chance = p.isSprinting() ? 50 : 8; // more likely when sprinting
-        if (random.nextInt(10000) < chance) {
-            // pick one of several scare types
-            int type = random.nextInt(4);
+        // Make scares very unpredictable: combine a low-probability movement trigger plus per-player spacing
+        int baseChance = p.isSprinting() ? 6 : 1; // small chance per move event
+        if (random.nextInt(20000) < baseChance && canScare(p)) {
+            int type = random.nextInt(6);
             switch (type) {
                 case 0:
                     triggerJumpscare(p);
@@ -82,7 +104,14 @@ public class HalloweenPlugin extends JavaPlugin implements Listener {
                 case 3:
                     triggerMassiveScream(p);
                     break;
+                case 4:
+                    triggerHotbarPrank(p);
+                    break;
+                case 5:
+                    triggerTeleportPrank(p);
+                    break;
             }
+            scheduleNextAllowed(p);
         }
     }
 
@@ -100,8 +129,8 @@ public class HalloweenPlugin extends JavaPlugin implements Listener {
         p.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 50, 4));
         p.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 60, 1));
 
-    Sound s1 = findSound("ENTITY_GHAST_SCREAM", "GHAST_SCREAM", "ENTITY_ZOMBIE_INFECT", "ZOMBIE_INFECT");
-    if (s1 != null) p.playSound(loc, s1, 3.0f, 0.4f);
+        Sound s1 = findSound("ENTITY_GHAST_SCREAM", "GHAST_SCREAM", "ENTITY_ZOMBIE_INFECT", "ZOMBIE_INFECT");
+        if (s1 != null) p.playSound(loc, s1, 3.0f, 0.4f);
 
         p.sendTitle("§4It's behind you!", "§cLook away...", 5, 60, 10);
 
@@ -139,8 +168,8 @@ public class HalloweenPlugin extends JavaPlugin implements Listener {
         inv.setItem(4, skull);
         p.openInventory(inv);
 
-    Sound s2 = findSound("ENTITY_WITCH_AMBIENT", "WITCH_AMBIENT", "ENTITY_WITCH_AMBIENT");
-    if (s2 != null) p.playSound(p.getLocation(), s2, 2.0f, 0.8f);
+        Sound s2 = findSound("ENTITY_WITCH_AMBIENT", "WITCH_AMBIENT", "ENTITY_WITCH_AMBIENT");
+        if (s2 != null) p.playSound(p.getLocation(), s2, 2.0f, 0.8f);
 
         // close and remove after a short delay
         new BukkitRunnable() {
@@ -163,8 +192,8 @@ public class HalloweenPlugin extends JavaPlugin implements Listener {
         ItemStack skull = createCustomSkull(randomTexture());
         if (skull != null) stand.setHelmet(skull);
 
-    Sound s3 = findSound("ENTITY_ENDERMEN_SCREAM", "ENDERMEN_SCREAM", "ENTITY_ENDERMAN_SCREAM", "ENDERMAN_SCREAM", "ENTITY_GHAST_SCREAM");
-    if (s3 != null) p.playSound(loc, s3, 3.0f, 0.7f);
+        Sound s3 = findSound("ENTITY_ENDERMEN_SCREAM", "ENDERMEN_SCREAM", "ENTITY_ENDERMAN_SCREAM", "ENDERMAN_SCREAM", "ENTITY_GHAST_SCREAM");
+        if (s3 != null) p.playSound(loc, s3, 3.0f, 0.7f);
 
         new BukkitRunnable() {
             @Override
@@ -226,4 +255,69 @@ public class HalloweenPlugin extends JavaPlugin implements Listener {
             return null;
         }
     }
+
+    // ---- New prank/jumpscare helpers ----
+
+    // Swap player's hotbar with garbage for a few seconds
+    private void triggerHotbarPrank(final Player p) {
+        getLogger().info("Hotbar prank for " + p.getName());
+        final ItemStack[] saved = new ItemStack[9];
+        for (int i = 0; i < 9; i++) saved[i] = p.getInventory().getItem(i);
+
+        ItemStack rotten = new ItemStack(Material.ROTTEN_FLESH, 1);
+        for (int i = 0; i < 9; i++) p.getInventory().setItem(i, rotten);
+        Sound s = findSound("ENTITY_PIG_DEATH", "PIG_DEATH", "ENTITY_PLAYER_BURP");
+        if (s != null) p.playSound(p.getLocation(), s, 2.0f, 0.8f);
+
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                try {
+                    for (int i = 0; i < 9; i++) p.getInventory().setItem(i, saved[i]);
+                } catch (Throwable ignored) {}
+            }
+        }.runTaskLater(this, 60L);
+    }
+
+    // Teleport a short distance away and then return the player
+    private void triggerTeleportPrank(final Player p) {
+        getLogger().info("Teleport prank for " + p.getName());
+        final Location orig = p.getLocation().clone();
+        Location away = orig.clone().add((random.nextDouble() - 0.5) * 6, 0, (random.nextDouble() - 0.5) * 6);
+        try { p.teleport(away); } catch (Throwable ignored) {}
+        Sound s = findSound("ENTITY_ENDERMEN_TELEPORT", "ENDERMEN_TELEPORT");
+        if (s != null) p.playSound(p.getLocation(), s, 3.0f, 0.5f);
+
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                try { p.teleport(orig); } catch (Throwable ignored) {}
+            }
+        }.runTaskLater(this, 40L);
+    }
+
+    // Small fake-death prank: send fake death message and brief blackout
+    private void triggerFakeDeath(final Player p) {
+        getLogger().info("Fake death prank for " + p.getName());
+        p.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 80, 1));
+        p.sendTitle("§4You died...", "§7But it was only a prank.", 10, 60, 10);
+        Bukkit.getServer().broadcastMessage("§8[§4⚰§8] §c" + p.getName() + " was slain by an unknown horror...");
+    }
+
+    // Decide if a player can be scared now based on per-player cooldown
+    private boolean canScare(Player p) {
+        Long next = nextAllowedScare.get(p.getUniqueId());
+        long now = System.currentTimeMillis();
+        return next == null || now >= next;
+    }
+
+    // Schedule the next allowed scare time for a player: random between 1 and 8 minutes
+    private void scheduleNextAllowed(Player p) {
+        long now = System.currentTimeMillis();
+        int min = 60_000; // 1 minute
+        int range = 7 * 60_000; // + up to 7 minutes = 1-8 minutes
+        long next = now + min + random.nextInt(range);
+        nextAllowedScare.put(p.getUniqueId(), next);
+    }
+
 }

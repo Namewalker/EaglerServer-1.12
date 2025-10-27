@@ -1,122 +1,121 @@
-[20:23:39] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[20:23:39] [Server thread/INFO]: Loading properties
-[20:23:39] [Server thread/INFO]: Default game type: SURVIVAL
-[20:23:40] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[20:23:40] [Server thread/INFO]: Debug logging is disabled
-[20:23:40] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:23:40] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:23:40] [Server thread/INFO]: Generating keypair
-[20:23:40] [Server thread/INFO]: Starting Minecraft server on *:25566
-[20:23:40] [Server thread/INFO]: Using default channel type
-[20:23:40] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[20:23:40] [Server thread/INFO]: [UndeadSiege] Loading UndeadSiege v1.0.0
-[20:23:40] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
-[20:23:40] [Server thread/INFO]: [GraveyardBinding] Loading GraveyardBinding v1.0.0
-[20:23:40] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.9.8
-[20:23:40] [Server thread/INFO]: [Halloween] Loading Halloween v1.0.0
-[20:23:40] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
-[20:23:40] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:23:40] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:23:40] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:23:40] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
-[20:23:40] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
-[20:23:40] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:23:40] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[20:23:40] [Server thread/INFO]: Preparing level "world"
-[20:23:40] [Server thread/INFO]: -------- World Settings For [world] --------
-[20:23:40] [Server thread/INFO]: Mob Spawn Range: 4
-[20:23:40] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:23:40] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:23:40] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:23:40] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:23:40] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:23:40] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:23:40] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:23:40] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:23:40] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:23:40] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:23:40] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:23:40] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:23:40] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:23:40] [Server thread/INFO]: Random Lighting Updates: false
-[20:23:40] [Server thread/INFO]: Structure Info Saving: true
-[20:23:40] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:23:40] [Server thread/INFO]: Max TNT Explosions: 100
-[20:23:40] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:23:40] [Server thread/INFO]: View Distance: 4
-[20:23:40] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:23:40] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:23:40] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:23:40] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:23:40] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:23:40] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:23:40] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:23:41] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[20:23:41] [Server thread/INFO]: Mob Spawn Range: 4
-[20:23:41] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:23:41] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:23:41] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:23:41] [Server thread/INFO]: Random Lighting Updates: false
-[20:23:41] [Server thread/INFO]: Structure Info Saving: true
-[20:23:41] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:23:41] [Server thread/INFO]: Max TNT Explosions: 100
-[20:23:41] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:23:41] [Server thread/INFO]: View Distance: 4
-[20:23:41] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:23:41] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:23:41] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:23:41] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:23:41] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:23:41] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:23:41] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:23:41] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[20:23:41] [Server thread/INFO]: Mob Spawn Range: 4
-[20:23:41] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:23:41] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:23:41] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:23:41] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:23:41] [Server thread/INFO]: Random Lighting Updates: false
-[20:23:41] [Server thread/INFO]: Structure Info Saving: true
-[20:23:41] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:23:41] [Server thread/INFO]: Max TNT Explosions: 100
-[20:23:41] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:23:41] [Server thread/INFO]: View Distance: 4
-[20:23:41] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:23:41] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:23:41] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:23:41] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:23:41] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:23:41] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:23:41] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:23:41] [Server thread/INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
-[20:23:42] [User Authenticator #1/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
-[20:23:42] [Server thread/INFO]: Preparing spawn area: 7%
-[20:23:42] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
-[20:23:43] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
-[20:23:43] [Server thread/INFO]: [UndeadSiege] Enabling UndeadSiege v1.0.0
-[20:23:43] [Server thread/INFO]: [UndeadSiege] UndeadSiege enabled.
-[20:23:43] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
-[20:23:43] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[20:23:43] [Server thread/WARN]: [WorldEdit] 
+[20:29:14] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[20:29:14] [Server thread/INFO]: Loading properties
+[20:29:14] [Server thread/INFO]: Default game type: SURVIVAL
+[20:29:14] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[20:29:14] [Server thread/INFO]: Debug logging is disabled
+[20:29:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:29:14] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:29:14] [Server thread/INFO]: Generating keypair
+[20:29:14] [Server thread/INFO]: Starting Minecraft server on *:25566
+[20:29:14] [Server thread/INFO]: Using default channel type
+[20:29:14] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[20:29:15] [Server thread/INFO]: [UndeadSiege] Loading UndeadSiege v1.0.0
+[20:29:15] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[20:29:15] [Server thread/INFO]: [GraveyardBinding] Loading GraveyardBinding v1.0.0
+[20:29:15] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.9.8
+[20:29:15] [Server thread/INFO]: [Halloween] Loading Halloween v1.0.0
+[20:29:15] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
+[20:29:15] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:29:15] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:29:15] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:29:15] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[20:29:15] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[20:29:15] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:29:15] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[20:29:15] [Server thread/INFO]: Preparing level "world"
+[20:29:15] [Server thread/INFO]: -------- World Settings For [world] --------
+[20:29:15] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Cane Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Melon Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Vine Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[20:29:15] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[20:29:15] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[20:29:15] [Server thread/INFO]: Random Lighting Updates: false
+[20:29:15] [Server thread/INFO]: Structure Info Saving: true
+[20:29:15] [Server thread/INFO]: Mob Spawn Range: 4
+[20:29:15] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[20:29:15] [Server thread/INFO]: Max TNT Explosions: 100
+[20:29:15] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[20:29:15] [Server thread/INFO]: Item Despawn Rate: 6000
+[20:29:15] [Server thread/INFO]: Item Merge Radius: 2.5
+[20:29:15] [Server thread/INFO]: View Distance: 4
+[20:29:15] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[20:29:15] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[20:29:15] [Server thread/INFO]: Experience Merge Radius: 3.0
+[20:29:15] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[20:29:15] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[20:29:15] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[20:29:15] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Cane Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Melon Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Vine Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[20:29:15] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[20:29:15] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[20:29:15] [Server thread/INFO]: Random Lighting Updates: false
+[20:29:15] [Server thread/INFO]: Structure Info Saving: true
+[20:29:15] [Server thread/INFO]: Mob Spawn Range: 4
+[20:29:15] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[20:29:15] [Server thread/INFO]: Max TNT Explosions: 100
+[20:29:15] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[20:29:15] [Server thread/INFO]: Item Despawn Rate: 6000
+[20:29:15] [Server thread/INFO]: Item Merge Radius: 2.5
+[20:29:15] [Server thread/INFO]: View Distance: 4
+[20:29:15] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[20:29:15] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[20:29:15] [Server thread/INFO]: Experience Merge Radius: 3.0
+[20:29:15] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[20:29:15] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[20:29:15] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[20:29:15] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Cane Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Melon Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Vine Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[20:29:15] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[20:29:15] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[20:29:15] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[20:29:15] [Server thread/INFO]: Random Lighting Updates: false
+[20:29:15] [Server thread/INFO]: Structure Info Saving: true
+[20:29:15] [Server thread/INFO]: Mob Spawn Range: 4
+[20:29:15] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[20:29:15] [Server thread/INFO]: Max TNT Explosions: 100
+[20:29:15] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[20:29:15] [Server thread/INFO]: Item Despawn Rate: 6000
+[20:29:15] [Server thread/INFO]: Item Merge Radius: 2.5
+[20:29:15] [Server thread/INFO]: View Distance: 4
+[20:29:15] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[20:29:15] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[20:29:15] [Server thread/INFO]: Experience Merge Radius: 3.0
+[20:29:15] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[20:29:15] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[20:29:15] [Server thread/INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
+[20:29:16] [Server thread/INFO]: Preparing spawn area: 0%
+[20:29:17] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
+[20:29:17] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
+[20:29:17] [Server thread/INFO]: [UndeadSiege] Enabling UndeadSiege v1.0.0
+[20:29:17] [Server thread/INFO]: [UndeadSiege] UndeadSiege enabled.
+[20:29:17] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[20:29:17] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[20:29:17] [Server thread/WARN]: [WorldEdit] 
 **********************************************
 ** This WorldEdit version does not fully support your version of Bukkit.
 **
@@ -127,36 +126,45 @@
 ** Please see http://wiki.sk89q.com/wiki/WorldEdit/Bukkit_adapters
 **********************************************
 
-[20:23:43] [Server thread/INFO]: [GraveyardBinding] Enabling GraveyardBinding v1.0.0
-[20:23:43] [Server thread/INFO]: [GraveyardBinding] GraveyardBinding enabled.
-[20:23:43] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.9.8
-[20:23:43] [Server thread/INFO]: [DecentHolograms] Initialized NMS adapter for v1_12_R1 (1.12.2).
-[20:23:43] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_12_R1! Trying to find NMS support
-[20:23:43] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
-[20:23:43] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DecentHolograms' to create a bStats instance!
-[20:23:43] [Server thread/INFO]: [DecentHolograms] NBT-API loaded successfully.
-[20:23:43] [Server thread/INFO]: [Halloween] Enabling Halloween v1.0.0
-[20:23:43] [Server thread/INFO]: [Halloween] Halloween plugin enabling...
-[20:23:43] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
-[20:23:43] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
-[20:23:43] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
-[20:23:44] [Server thread/INFO]: [LoginSecurity] Registering commands...
-[20:23:44] [Server thread/INFO]: [LoginSecurity] Registering listeners...
-[20:23:44] [Server thread/INFO]: Done (3.422s)! For help, type "help" or "?"
-[20:23:44] [Server thread/INFO]: Timings Reset
-[20:23:44] [Craft Scheduler Thread - 2/INFO]: [DecentHolograms] Created directory plugins/DecentHolograms/animations
-[20:23:44] [Craft Scheduler Thread - 3/INFO]: [DecentHolograms] Created directory plugins/DecentHolograms/holograms
-[20:23:44] [Server thread/INFO]: Ruger1[/0:0:0:0:0:0:0:1:42456] logged in with entity id 32 at ([world]-2019.8059722110497, 67.0, 1737.237500011921)
-[20:24:01] [Server thread/INFO]: [Halloween] Triggering jumpscare for Ruger1
-[20:24:15] [User Authenticator #1/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
-[20:24:15] [Server thread/INFO]: ShadowLord[/0:0:0:0:0:0:0:1:57908] logged in with entity id 87 at ([world]920.6633691626417, 65.0, 1319.5926354506075)
-[20:24:57] [Server thread/INFO]: ShadowLord issued server command: /dh create
-[20:25:19] [Server thread/INFO]: ShadowLord issued server command: /dh hologram create spawn
-[20:25:28] [Server thread/INFO]: ShadowLord issued server command: /dh center spawn
-[20:25:55] [Server thread/INFO]: ShadowLord issued server command: /dh line set spawn 1 1 &6Welcome to survival! Enjoy!
-[20:26:57] [Server thread/INFO]: ShadowLord issued server command: /dh l insert spawn 1 1
-[20:27:00] [Server thread/INFO]: ShadowLord issued server command: /dh line set spawn 1 1 &6Welcome to survival! Enjoy!
-[20:27:13] [Server thread/INFO]: ShadowLord issued server command: /dh line set spawn 1 2 &cWelcome to survival! Enjoy!
-[20:27:31] [Server thread/INFO]: ShadowLord issued server command: /dh line set spawn 1 2 &cGriefing spawn will be fatal.
-[20:28:24] [Server thread/INFO]: ShadowLord lost connection: Timed out
-[20:28:24] [Server thread/INFO]: ShadowLord left the game
+[20:29:17] [Server thread/INFO]: [GraveyardBinding] Enabling GraveyardBinding v1.0.0
+[20:29:17] [Server thread/INFO]: [GraveyardBinding] GraveyardBinding enabled.
+[20:29:17] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.9.8
+[20:29:17] [Server thread/INFO]: [DecentHolograms] Initialized NMS adapter for v1_12_R1 (1.12.2).
+[20:29:18] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_12_R1! Trying to find NMS support
+[20:29:18] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
+[20:29:18] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DecentHolograms' to create a bStats instance!
+[20:29:18] [Server thread/INFO]: [DecentHolograms] NBT-API loaded successfully.
+[20:29:18] [Server thread/INFO]: [Halloween] Enabling Halloween v1.0.0
+[20:29:18] [Server thread/INFO]: [Halloween] Halloween plugin enabling...
+[20:29:18] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
+[20:29:18] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
+[20:29:18] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
+[20:29:18] [Server thread/INFO]: [LoginSecurity] Registering commands...
+[20:29:18] [Server thread/INFO]: [LoginSecurity] Registering listeners...
+[20:29:18] [Server thread/INFO]: Done (3.365s)! For help, type "help" or "?"
+[20:29:18] [Server thread/INFO]: Timings Reset
+[20:29:18] [Craft Scheduler Thread - 0/INFO]: [DecentHolograms] Loading holograms... 
+[20:29:18] [Craft Scheduler Thread - 0/INFO]: [DecentHolograms] Loaded 1 holograms!
+[20:29:27] [User Authenticator #1/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
+[20:29:27] [Server thread/INFO]: Ruger1[/0:0:0:0:0:0:0:1:45576] logged in with entity id 33 at ([world]-2054.823398721591, 69.0, 1727.5825515535143)
+[20:29:27] [User Authenticator #1/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[20:29:28] [Server thread/INFO]: ShadowLord[/0:0:0:0:0:0:0:1:45580] logged in with entity id 64 at ([world]885.1872659579874, 67.0, 1362.4377362488995)
+[20:29:39] [Server thread/INFO]: [Halloween] Triggering jumpscare for Ruger1
+[20:29:41] [Server thread/INFO]: [Halloween] Massive scream for ShadowLord
+[20:29:56] [Server thread/INFO]: [Halloween] Massive scream for Ruger1
+[20:29:57] [Server thread/INFO]: [Halloween] Massive scream for Ruger1
+[20:30:17] [Server thread/INFO]: [Halloween] Triggering jumpscare for Ruger1
+[20:30:23] [Server thread/INFO]: Ruger1 lost connection: Disconnected
+[20:30:23] [Server thread/INFO]: Ruger1 left the game
+[20:30:27] [Server thread/INFO]: [Halloween] Triggering jumpscare for ShadowLord
+[20:30:41] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[20:30:41] [Server thread/INFO]: ShadowLord left the game
+[20:33:34] [User Authenticator #2/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[20:33:34] [Server thread/INFO]: ShadowLord[/0:0:0:0:0:0:0:1:48360] logged in with entity id 102 at ([world]861.6258711918778, 64.0, 1343.0029010809574)
+[20:34:15] [Server thread/INFO]: [Halloween] Skull GUI jumpscare for ShadowLord
+[20:34:30] [Server thread/INFO]: [Halloween] Skull GUI jumpscare for ShadowLord
+[20:34:38] [Server thread/INFO]: [Halloween] Triggering jumpscare for ShadowLord
+[20:34:49] [Server thread/INFO]: [Halloween] Skull GUI jumpscare for ShadowLord
+[20:35:43] [Server thread/INFO]: [Halloween] Skull GUI jumpscare for ShadowLord
+[20:36:04] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[20:36:04] [Server thread/INFO]: ShadowLord left the game
