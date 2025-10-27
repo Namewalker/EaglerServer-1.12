@@ -1,0 +1,9 @@
+name: WebRender
+main: com.eagler.webrender.WebRenderPlugin
+version: 0.1.0
+api-version: 1.12
+commands:
+  web:
+    description: WebRender commands
+    usage: /<command> open <url>
+    permission: webrender.use
