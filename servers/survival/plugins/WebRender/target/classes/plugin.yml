@@ -6,4 +6,11 @@ commands:
   web:
     description: WebRender commands
     usage: /<command> open <url>
-    permission: webrender.use
+    permission: webrender.admin
+permissions:
+  webrender.use:
+    description: Allows using web render commands
+    default: false
+  webrender.admin:
+    description: Admin commands for WebRender
+    default: op

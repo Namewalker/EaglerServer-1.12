@@ -1,0 +1,7 @@
+name: BookPortal
+main: com.eagler.bookportal.BookPortalPlugin
+version: 0.1.0
+authors:
+  - eagler
+commands: {}
+permissions: {}

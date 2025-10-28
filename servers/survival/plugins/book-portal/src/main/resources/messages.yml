@@ -1,0 +1,6 @@
+messages:
+  dimension_created: "A new dimension has been created based on the book: %book_name%"
+  dimension_error: "There was an error creating the dimension from the book: %book_name%"
+  blank_book_generated: "A random dimension has been generated from a blank book."
+  invalid_book: "The book name is invalid or cannot be processed."
+  spell_check_suggestion: "Did you mean: %suggestion%?"
