@@ -9,6 +9,7 @@ import org.bukkit.World;
 import org.bukkit.WorldCreator;
 import org.bukkit.WorldType;
 import org.bukkit.block.Block;
+import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.Random;
@@ -22,7 +23,7 @@ public class DimensionManager {
         this.plugin = plugin;
     }
 
-    public synchronized World createOrOpenFromTitle(String title, Location portalLocation) {
+    public synchronized World createOrOpenFromTitle(String title, Location portalLocation, Player owner) {
         String normalized = NameNormalizer.normalize(title);
         if (normalized == null || normalized.isEmpty()) {
             normalized = "random_" + Math.abs(rnd.nextInt(99999));
@@ -50,6 +51,7 @@ public class DimensionManager {
     // populate spawn area asynchronously (schedule sync task for block operations)
     final World worldRef = w;
     final String normalizedKey = normalized;
+    final Player ownerPlayer = owner;
         new BukkitRunnable() {
             @Override
             public void run() {
@@ -100,10 +102,30 @@ public class DimensionManager {
 
                     // set a simple colored indicator using wool if available
                     Material colorMat = Material.WOOL;
+                    int colorId = Math.abs(normalizedKey.hashCode()) % 16; // 0-15 wool colors
                     for (int x = -1; x <= 1; x++) {
                         for (int z = -1; z <= 1; z++) {
-                            worldRef.getBlockAt(cx + x, spawnY, cz + z).setType(colorMat);
+                            Block b = worldRef.getBlockAt(cx + x, spawnY, cz + z);
+                            b.setType(colorMat);
+                            try { b.setData((byte) colorId); } catch (Throwable ignored) {}
                         }
+                    }
+
+                    // build a small framed portal at spawn using obsidian and colored wool trim
+                    int px = cx + 6;
+                    int pz = cz;
+                    for (int y = spawnY; y <= spawnY + 3; y++) {
+                        worldRef.getBlockAt(px - 1, y, pz - 1).setType(Material.OBSIDIAN);
+                        worldRef.getBlockAt(px + 1, y, pz - 1).setType(Material.OBSIDIAN);
+                        worldRef.getBlockAt(px - 1, y, pz + 1).setType(Material.OBSIDIAN);
+                        worldRef.getBlockAt(px + 1, y, pz + 1).setType(Material.OBSIDIAN);
+                    }
+                    worldRef.getBlockAt(px, spawnY + 1, pz).setType(Material.PORTAL);
+                    // color trim around portal
+                    for (int dx = -2; dx <= 2; dx++) {
+                        Block tb = worldRef.getBlockAt(px + dx, spawnY + 2, pz + 2);
+                        tb.setType(colorMat);
+                        try { tb.setData((byte) colorId); } catch (Throwable ignored) {}
                     }
 
                 } catch (Throwable t) {
@@ -111,6 +133,15 @@ public class DimensionManager {
                 }
             }
         }.runTaskLater(plugin, 20L);
+
+        // teleport owner into the world (if provided) on the next tick
+        if (ownerPlayer != null && ownerPlayer.isOnline()) {
+            Bukkit.getScheduler().runTask(plugin, () -> {
+                try {
+                    ownerPlayer.teleport(worldRef.getSpawnLocation());
+                } catch (Throwable ignored) {}
+            });
+        }
 
         return w;
     }

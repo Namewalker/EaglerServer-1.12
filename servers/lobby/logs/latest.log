@@ -1,138 +1,117 @@
-[23:25:00] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[23:25:00] [Server thread/INFO]: Loading properties
-[23:25:00] [Server thread/INFO]: Default game type: SURVIVAL
-[23:25:00] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[23:25:00] [Server thread/INFO]: Debug logging is disabled
-[23:25:00] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[23:25:00] [Server thread/INFO]: Using 4 threads for Netty based IO
-[23:25:00] [Server thread/INFO]: Generating keypair
-[23:25:01] [Server thread/INFO]: Starting Minecraft server on *:25565
-[23:25:01] [Server thread/INFO]: Using default channel type
-[23:25:01] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[23:25:01] [Server thread/ERROR]: Could not load 'plugins/ViaVersion.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/viaversion/viaversion/ViaVersionPlugin has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:131) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:329) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.loadPlugins(CraftServer.java:318) ~[patched_1.12.2.jar:git-Paper-1620]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:222) ~[patched_1.12.2.jar:git-Paper-1620]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1620]
-	at java.lang.Thread.run(Thread.java:829) [?:?]
-Caused by: java.lang.UnsupportedClassVersionError: com/viaversion/viaversion/ViaVersionPlugin has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0
-	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:152) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:104) ~[patched_1.12.2.jar:git-Paper-1620]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:589) ~[?:?]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[?:?]
-	at java.lang.Class.forName0(Native Method) ~[?:?]
-	at java.lang.Class.forName(Class.java:398) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:82) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:127) ~[patched_1.12.2.jar:git-Paper-1620]
-	... 6 more
-[23:25:01] [Server thread/ERROR]: Could not load 'plugins/ViaBackwards-5.4.2.jar' in folder 'plugins'
-org.bukkit.plugin.UnknownDependencyException: ViaVersion
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:218) ~[patched_1.12.2.jar:git-Paper-1620]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.loadPlugins(CraftServer.java:318) ~[patched_1.12.2.jar:git-Paper-1620]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:222) ~[patched_1.12.2.jar:git-Paper-1620]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1620]
-	at java.lang.Thread.run(Thread.java:829) [?:?]
-[23:25:01] [Server thread/INFO]: [Inject] Loading Inject v1.0.3
-[23:25:01] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v6.4
-[23:25:01] [Server thread/INFO]: [InventorySpy] Loading InventorySpy v1.0.0
-[23:25:01] [Server thread/INFO]: [VoidGen] Loading VoidGen v1.1
-[23:25:01] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
-[23:25:01] [Server thread/INFO]: [CursedAltar] Loading CursedAltar v1.0
-[23:25:01] [Server thread/INFO]: [DisguiseSimple] Loading DisguiseSimple v1.0
-[23:25:01] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
-[23:25:01] [Server thread/INFO]: [SimpleHomes] Loading SimpleHomes v2.2
-[23:25:01] [Server thread/INFO]: [EaglerVanish] Loading EaglerVanish v1.0.0
-[23:25:01] [Server thread/INFO]: [TickFreeze] Loading TickFreeze v1.0.0
-[23:25:01] [Server thread/INFO]: [ImmersivePortals] Loading ImmersivePortals v1.0
-[23:25:01] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[23:25:01] [Server thread/INFO]: [VoidGen] Enabling VoidGen v1.1
-[23:25:01] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[23:25:01] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[23:25:01] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
-[23:25:01] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
-[23:25:01] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[23:25:01] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[23:25:01] [Server thread/INFO]: Preparing level "lobby_world"
-[23:25:02] [Server thread/INFO]: -------- World Settings For [lobby_world] --------
-[23:25:02] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[23:25:02] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[23:25:02] [Server thread/INFO]: Random Lighting Updates: false
-[23:25:02] [Server thread/INFO]: Structure Info Saving: true
-[23:25:02] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[23:25:02] [Server thread/INFO]: Cane Growth Modifier: 100%
-[23:25:02] [Server thread/INFO]: Melon Growth Modifier: 100%
-[23:25:02] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[23:25:02] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[23:25:02] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[23:25:02] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[23:25:02] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[23:25:02] [Server thread/INFO]: Vine Growth Modifier: 100%
-[23:25:02] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[23:25:02] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[23:25:02] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[23:25:02] [Server thread/INFO]: Max TNT Explosions: 100
-[23:25:02] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[23:25:02] [Server thread/INFO]: Mob Spawn Range: 4
-[23:25:02] [Server thread/INFO]: Item Despawn Rate: 6000
-[23:25:02] [Server thread/INFO]: Item Merge Radius: 2.5
-[23:25:02] [Server thread/INFO]: View Distance: 4
-[23:25:02] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[23:25:02] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[23:25:02] [Server thread/INFO]: Experience Merge Radius: 3.0
-[23:25:02] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[23:25:02] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[23:25:03] [Server thread/INFO]: -------- World Settings For [lobby_world_the_end] --------
-[23:25:03] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[23:25:03] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[23:25:03] [Server thread/INFO]: Random Lighting Updates: false
-[23:25:03] [Server thread/INFO]: Structure Info Saving: true
-[23:25:03] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[23:25:03] [Server thread/INFO]: Cane Growth Modifier: 100%
-[23:25:03] [Server thread/INFO]: Melon Growth Modifier: 100%
-[23:25:03] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[23:25:03] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[23:25:03] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[23:25:03] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[23:25:03] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[23:25:03] [Server thread/INFO]: Vine Growth Modifier: 100%
-[23:25:03] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[23:25:03] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[23:25:03] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[23:25:03] [Server thread/INFO]: Max TNT Explosions: 100
-[23:25:03] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[23:25:03] [Server thread/INFO]: Mob Spawn Range: 4
-[23:25:03] [Server thread/INFO]: Item Despawn Rate: 6000
-[23:25:03] [Server thread/INFO]: Item Merge Radius: 2.5
-[23:25:03] [Server thread/INFO]: View Distance: 4
-[23:25:03] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[23:25:03] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[23:25:03] [Server thread/INFO]: Experience Merge Radius: 3.0
-[23:25:03] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[23:25:03] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[23:25:03] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3770571510763107811)
-[23:25:05] [Server thread/INFO]: Preparing spawn area: 0%
-[23:25:05] [Server thread/ERROR]: Chunk file at -10,19 is in the wrong location; relocating. (Expected -10, 19, got -3, 14)
-[23:25:06] [Server thread/INFO]: Preparing spawn area: 9%
-[23:25:06] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9193991585933015891)
-[23:25:06] [Server thread/INFO]: [Inject] Enabling Inject v1.0.3
-[23:25:06] [Server thread/INFO]: [Inject] Registered command: /inject
-[23:25:06] [Server thread/INFO]: [Inject] Registered command: /patrol
-[23:25:06] [Server thread/INFO]: [Inject] Inject plugin enabled.
-[23:25:06] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.4
-[23:25:06] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[23:25:06] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 6.4
-[23:25:06] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
-[23:25:06] [Server thread/INFO]: [InventorySpy] Enabling InventorySpy v1.0.0
-[23:25:06] [Server thread/INFO]: [InventorySpy] InventorySpy enabled.
-[23:25:06] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
-[23:25:07] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[23:25:07] [Server thread/WARN]: [WorldEdit] 
+[21:48:07] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[21:48:07] [Server thread/INFO]: Loading properties
+[21:48:07] [Server thread/INFO]: Default game type: SURVIVAL
+[21:48:07] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[21:48:07] [Server thread/INFO]: Debug logging is disabled
+[21:48:07] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:48:07] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:48:07] [Server thread/INFO]: Generating keypair
+[21:48:08] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:48:08] [Server thread/INFO]: Using default channel type
+[21:48:08] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[21:48:09] [Server thread/INFO]: [Inject] Loading Inject v1.0.3
+[21:48:09] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v6.4
+[21:48:09] [Server thread/INFO]: [InventorySpy] Loading InventorySpy v1.0.0
+[21:48:09] [Server thread/INFO]: [VoidGen] Loading VoidGen v1.1
+[21:48:09] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[21:48:09] [Server thread/INFO]: [CursedAltar] Loading CursedAltar v1.0
+[21:48:09] [Server thread/INFO]: [DisguiseSimple] Loading DisguiseSimple v1.0
+[21:48:09] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.9.8
+[21:48:09] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
+[21:48:09] [Server thread/INFO]: [SimpleHomes] Loading SimpleHomes v2.2
+[21:48:09] [Server thread/INFO]: [EaglerVanish] Loading EaglerVanish v1.0.0
+[21:48:09] [Server thread/INFO]: [TickFreeze] Loading TickFreeze v1.0.0
+[21:48:09] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.4.2
+[21:48:09] [Server thread/INFO]: [ViaVersion] ViaVersion 5.4.2 is now loaded. Registering protocol transformers and injecting...
+[21:48:12] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[21:48:13] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[21:48:13] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[21:48:13] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[21:48:14] [Server thread/INFO]: [ImmersivePortals] Loading ImmersivePortals v1.0
+[21:48:14] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.4.2
+[21:48:14] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:48:14] [Server thread/INFO]: [VoidGen] Enabling VoidGen v1.1
+[21:48:14] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:48:14] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:48:14] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[21:48:14] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[21:48:14] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:48:14] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[21:48:14] [Server thread/INFO]: Preparing level "lobby_world"
+[21:48:14] [Server thread/INFO]: -------- World Settings For [lobby_world] --------
+[21:48:14] [Server thread/INFO]: Mob Spawn Range: 4
+[21:48:14] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[21:48:14] [Server thread/INFO]: Cane Growth Modifier: 100%
+[21:48:14] [Server thread/INFO]: Melon Growth Modifier: 100%
+[21:48:14] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[21:48:14] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[21:48:14] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[21:48:14] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[21:48:14] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[21:48:14] [Server thread/INFO]: Vine Growth Modifier: 100%
+[21:48:14] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[21:48:14] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[21:48:14] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[21:48:14] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[21:48:14] [Server thread/INFO]: Random Lighting Updates: false
+[21:48:14] [Server thread/INFO]: Structure Info Saving: true
+[21:48:14] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[21:48:14] [Server thread/INFO]: Max TNT Explosions: 100
+[21:48:14] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[21:48:14] [Server thread/INFO]: View Distance: 4
+[21:48:14] [Server thread/INFO]: Item Despawn Rate: 6000
+[21:48:14] [Server thread/INFO]: Item Merge Radius: 2.5
+[21:48:14] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[21:48:14] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[21:48:14] [Server thread/INFO]: Experience Merge Radius: 3.0
+[21:48:14] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[21:48:14] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[21:48:15] [Server thread/INFO]: -------- World Settings For [lobby_world_the_end] --------
+[21:48:15] [Server thread/INFO]: Mob Spawn Range: 4
+[21:48:15] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[21:48:15] [Server thread/INFO]: Cane Growth Modifier: 100%
+[21:48:15] [Server thread/INFO]: Melon Growth Modifier: 100%
+[21:48:15] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[21:48:15] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[21:48:15] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[21:48:15] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[21:48:15] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[21:48:15] [Server thread/INFO]: Vine Growth Modifier: 100%
+[21:48:15] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[21:48:15] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[21:48:15] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[21:48:15] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[21:48:15] [Server thread/INFO]: Random Lighting Updates: false
+[21:48:15] [Server thread/INFO]: Structure Info Saving: true
+[21:48:15] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[21:48:15] [Server thread/INFO]: Max TNT Explosions: 100
+[21:48:15] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[21:48:15] [Server thread/INFO]: View Distance: 4
+[21:48:15] [Server thread/INFO]: Item Despawn Rate: 6000
+[21:48:15] [Server thread/INFO]: Item Merge Radius: 2.5
+[21:48:15] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[21:48:15] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[21:48:15] [Server thread/INFO]: Experience Merge Radius: 3.0
+[21:48:15] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[21:48:15] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[21:48:15] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3770571510763107811)
+[21:48:15] [Server thread/ERROR]: Chunk file at -11,12 is in the wrong location; relocating. (Expected -11, 12, got -5, 11)
+[21:48:16] [Server thread/INFO]: Preparing spawn area: 0%
+[21:48:16] [Server thread/ERROR]: Chunk file at -10,19 is in the wrong location; relocating. (Expected -10, 19, got -3, 14)
+[21:48:17] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9193991585933015891)
+[21:48:17] [Server thread/INFO]: [Inject] Enabling Inject v1.0.3
+[21:48:17] [Server thread/INFO]: [Inject] Registered command: /inject
+[21:48:17] [Server thread/INFO]: [Inject] Registered command: /patrol
+[21:48:17] [Server thread/INFO]: [Inject] Inject plugin enabled.
+[21:48:17] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.4
+[21:48:17] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[21:48:17] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 6.4
+[21:48:17] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[21:48:17] [Server thread/INFO]: [InventorySpy] Enabling InventorySpy v1.0.0
+[21:48:17] [Server thread/INFO]: [InventorySpy] InventorySpy enabled.
+[21:48:17] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[21:48:18] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[21:48:18] [Server thread/WARN]: [WorldEdit] 
 **********************************************
 ** This WorldEdit version does not fully support your version of Bukkit.
 **
@@ -143,48 +122,39 @@ org.bukkit.plugin.UnknownDependencyException: ViaVersion
 ** Please see http://wiki.sk89q.com/wiki/WorldEdit/Bukkit_adapters
 **********************************************
 
-[23:25:07] [Server thread/INFO]: [CursedAltar] Enabling CursedAltar v1.0
-[23:25:07] [Server thread/INFO]: [CursedAltar] CursedAltar enabled
-[23:25:07] [Server thread/INFO]: [DisguiseSimple] Enabling DisguiseSimple v1.0
-[23:25:07] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
-[23:25:07] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
-[23:25:07] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
-[23:25:07] [Server thread/INFO]: [LoginSecurity] Registering commands...
-[23:25:08] [Server thread/INFO]: [LoginSecurity] Registering listeners...
-[23:25:08] [Server thread/INFO]: [SimpleHomes] Enabling SimpleHomes v2.2
-[23:25:08] [Server thread/INFO]: [EaglerVanish] Enabling EaglerVanish v1.0.0
-[23:25:08] [Server thread/INFO]: [EaglerVanish] EaglerVanish enabled
-[23:25:08] [Server thread/INFO]: [TickFreeze] Enabling TickFreeze v1.0.0
-[23:25:08] [Server thread/INFO]: [TickFreeze] TickFreeze enabled
-[23:25:08] [Server thread/INFO]: [ImmersivePortals] Enabling ImmersivePortals v1.0
-[23:25:08] [Server thread/INFO]: [ImmersivePortals] ImmersivePortals enabled!
-[23:25:08] [Server thread/INFO]: Done (6.470s)! For help, type "help" or "?"
-[23:25:08] [Server thread/INFO]: Timings Reset
-[23:25:08] [Server thread/INFO]: Stopping the server
-[23:25:08] [Server thread/INFO]: Stopping server
-[23:25:08] [Server thread/INFO]: [ImmersivePortals] Disabling ImmersivePortals v1.0
-[23:25:08] [Server thread/INFO]: [ImmersivePortals] ImmersivePortals disabled!
-[23:25:08] [Server thread/INFO]: [TickFreeze] Disabling TickFreeze v1.0.0
-[23:25:08] [Server thread/INFO]: [TickFreeze] TickFreeze disabled
-[23:25:08] [Server thread/INFO]: [EaglerVanish] Disabling EaglerVanish v1.0.0
-[23:25:08] [Server thread/INFO]: [EaglerVanish] EaglerVanish disabled
-[23:25:08] [Server thread/INFO]: [SimpleHomes] Disabling SimpleHomes v2.2
-[23:25:08] [Server thread/INFO]: [LoginSecurity] Disabling LoginSecurity v3.2.0
-[23:25:08] [Server thread/INFO]: [LoginSecurity] Waiting for queued tasks...
-[23:25:08] [Server thread/INFO]: [LoginSecurity] ExecutorService shut down, ready to disable.
-[23:25:08] [Server thread/INFO]: [DisguiseSimple] Disabling DisguiseSimple v1.0
-[23:25:08] [Server thread/INFO]: [CursedAltar] Disabling CursedAltar v1.0
-[23:25:08] [Server thread/INFO]: [CursedAltar] CursedAltar disabled
-[23:25:08] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1;no_git_id
-[23:25:08] [Server thread/INFO]: [VoidGen] Disabling VoidGen v1.1
-[23:25:08] [Server thread/INFO]: [InventorySpy] Disabling InventorySpy v1.0.0
-[23:25:08] [Server thread/INFO]: [InventorySpy] InventorySpy disabled.
-[23:25:08] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v6.4
-[23:25:08] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[23:25:08] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 6.4
-[23:25:08] [Server thread/INFO]: [Inject] Disabling Inject v1.0.3
-[23:25:08] [Server thread/INFO]: [Inject] Inject plugin disabled.
-[23:25:08] [Server thread/INFO]: Saving players
-[23:25:08] [Server thread/INFO]: Saving worlds
-[23:25:08] [Server thread/INFO]: Saving chunks for level 'lobby_world'/overworld
-[23:25:09] [Server thread/INFO]: Saving chunks for level 'lobby_world_the_end'/the_end
+[21:48:18] [Server thread/INFO]: [CursedAltar] Enabling CursedAltar v1.0
+[21:48:18] [Server thread/INFO]: [CursedAltar] CursedAltar enabled
+[21:48:18] [Server thread/INFO]: [DisguiseSimple] Enabling DisguiseSimple v1.0
+[21:48:18] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.9.8
+[21:48:18] [Server thread/INFO]: [DecentHolograms] Initialized NMS adapter for v1_12_R1 (1.12.2).
+[21:48:18] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_12_R1! Trying to find NMS support
+[21:48:18] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
+[21:48:18] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DecentHolograms' to create a bStats instance!
+[21:48:18] [Server thread/INFO]: [DecentHolograms] NBT-API loaded successfully.
+[21:48:18] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
+[21:48:18] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
+[21:48:18] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
+[21:48:18] [Server thread/INFO]: [LoginSecurity] Registering commands...
+[21:48:18] [Server thread/INFO]: [LoginSecurity] Registering listeners...
+[21:48:18] [Server thread/INFO]: [SimpleHomes] Enabling SimpleHomes v2.2
+[21:48:18] [Server thread/INFO]: [EaglerVanish] Enabling EaglerVanish v1.0.0
+[21:48:19] [Server thread/INFO]: [EaglerVanish] EaglerVanish enabled
+[21:48:19] [Server thread/INFO]: [TickFreeze] Enabling TickFreeze v1.0.0
+[21:48:19] [Server thread/INFO]: [TickFreeze] TickFreeze enabled
+[21:48:19] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.4.2
+[21:48:19] [Server thread/INFO]: [ImmersivePortals] Enabling ImmersivePortals v1.0
+[21:48:19] [Server thread/INFO]: [ImmersivePortals] ImmersivePortals enabled!
+[21:48:19] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.4.2
+[21:48:19] [Server thread/INFO]: Done (4.980s)! For help, type "help" or "?"
+[21:48:19] [Server thread/INFO]: Timings Reset
+[21:48:19] [Craft Scheduler Thread - 2/INFO]: [DecentHolograms] Loading holograms... 
+[21:48:19] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.12.2 (340)
+[21:48:19] [Server thread/WARN]: [ViaVersion] This version of Minecraft is extremely outdated and support for it has reached its end of life. You will still be able to run Via on this Minecraft version, but we will prioritize issues with legacy Minecraft versions less. Please consider updating to give your players a better experience and to avoid issues that have long been fixed.
+[21:48:19] [Server thread/WARN]: [ViaVersion] Please update your Java runtime to at least Java 21 (your version is 17.0.16).
+[21:48:19] [Server thread/WARN]: [ViaVersion] At some point in the future, ViaVersion will no longer be compatible with this version of Java.
+[21:48:19] [Craft Scheduler Thread - 2/INFO]: [DecentHolograms] Loaded 1 holograms!
+[21:48:19] [Craft Scheduler Thread - 1/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[21:48:20] [Craft Scheduler Thread - 3/INFO]: [SimpleTpa] There is a new update available.
+[21:48:20] [Craft Scheduler Thread - 3/INFO]: [SimpleTpa] There is a new update available:
+[21:48:20] [Craft Scheduler Thread - 3/INFO]: [SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/
+[21:48:20] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.5.1, you're on: 5.4.2

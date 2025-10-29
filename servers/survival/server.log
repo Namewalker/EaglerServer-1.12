@@ -1,121 +1,125 @@
 Loading libraries, please wait...
-2025-10-25 19:16:31,574 main WARN Disabling terminal, you're running in an unsupported environment.
-[19:16:39 INFO]: Starting minecraft server version 1.12.2
-[19:16:39 INFO]: Loading properties
-[19:16:39 INFO]: Default game type: SURVIVAL
-[19:16:40 INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[19:16:40 INFO]: Debug logging is disabled
-[19:16:40 INFO]: Server Ping Player Sample Count: 12
-[19:16:40 INFO]: Using 4 threads for Netty based IO
-[19:16:40 INFO]: Generating keypair
-[19:16:41 INFO]: Starting Minecraft server on *:25566
-[19:16:41 INFO]: Using default channel type
-[19:16:41 INFO]: Set PluginClassLoader as parallel capable
-[19:16:41 INFO]: [UndeadSiege] Loading UndeadSiege v1.0.0
-[19:16:41 INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
-[19:16:41 INFO]: [GraveyardBinding] Loading GraveyardBinding v1.0.0
-[19:16:41 INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
-[19:16:41 INFO]: Server permissions file permissions.yml is empty, ignoring it
-[19:16:41 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[19:16:41 WARN]: The server will make no attempt to authenticate usernames. Beware.
-[19:16:41 WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
-[19:16:41 WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
-[19:16:41 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[19:16:41 INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[19:16:41 INFO]: Preparing level "world"
-[19:16:42 INFO]: -------- World Settings For [world] --------
-[19:16:42 INFO]: Cactus Growth Modifier: 100%
-[19:16:42 INFO]: Cane Growth Modifier: 100%
-[19:16:42 INFO]: Melon Growth Modifier: 100%
-[19:16:42 INFO]: Mushroom Growth Modifier: 100%
-[19:16:42 INFO]: Pumpkin Growth Modifier: 100%
-[19:16:42 INFO]: Sapling Growth Modifier: 100%
-[19:16:42 INFO]: Wheat Growth Modifier: 100%
-[19:16:42 INFO]: NetherWart Growth Modifier: 100%
-[19:16:42 INFO]: Vine Growth Modifier: 100%
-[19:16:42 INFO]: Cocoa Growth Modifier: 100%
-[19:16:42 INFO]: Mob Spawn Range: 4
-[19:16:42 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[19:16:42 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[19:16:42 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[19:16:42 INFO]: Random Lighting Updates: false
-[19:16:42 INFO]: Structure Info Saving: true
-[19:16:42 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[19:16:42 INFO]: Max TNT Explosions: 100
-[19:16:42 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[19:16:42 INFO]: Item Despawn Rate: 6000
-[19:16:42 INFO]: Item Merge Radius: 2.5
-[19:16:42 INFO]: View Distance: 4
-[19:16:42 INFO]: Arrow Despawn Rate: 1200
-[19:16:42 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[19:16:42 INFO]: Experience Merge Radius: 3.0
-[19:16:42 INFO]: Zombie Aggressive Towards Villager: true
-[19:16:42 INFO]: Nerfing mobs spawned from spawners: false
-[19:16:43 INFO]: -------- World Settings For [world_nether] --------
-[19:16:43 INFO]: Cactus Growth Modifier: 100%
-[19:16:43 INFO]: Cane Growth Modifier: 100%
-[19:16:43 INFO]: Melon Growth Modifier: 100%
-[19:16:43 INFO]: Mushroom Growth Modifier: 100%
-[19:16:43 INFO]: Pumpkin Growth Modifier: 100%
-[19:16:43 INFO]: Sapling Growth Modifier: 100%
-[19:16:43 INFO]: Wheat Growth Modifier: 100%
-[19:16:43 INFO]: NetherWart Growth Modifier: 100%
-[19:16:43 INFO]: Vine Growth Modifier: 100%
-[19:16:43 INFO]: Cocoa Growth Modifier: 100%
-[19:16:43 INFO]: Mob Spawn Range: 4
-[19:16:43 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[19:16:43 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[19:16:43 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[19:16:43 INFO]: Random Lighting Updates: false
-[19:16:43 INFO]: Structure Info Saving: true
-[19:16:43 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[19:16:43 INFO]: Max TNT Explosions: 100
-[19:16:43 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[19:16:43 INFO]: Item Despawn Rate: 6000
-[19:16:43 INFO]: Item Merge Radius: 2.5
-[19:16:43 INFO]: View Distance: 4
-[19:16:43 INFO]: Arrow Despawn Rate: 1200
-[19:16:43 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[19:16:43 INFO]: Experience Merge Radius: 3.0
-[19:16:43 INFO]: Zombie Aggressive Towards Villager: true
-[19:16:43 INFO]: Nerfing mobs spawned from spawners: false
-[19:16:43 INFO]: -------- World Settings For [world_the_end] --------
-[19:16:43 INFO]: Cactus Growth Modifier: 100%
-[19:16:43 INFO]: Cane Growth Modifier: 100%
-[19:16:43 INFO]: Melon Growth Modifier: 100%
-[19:16:43 INFO]: Mushroom Growth Modifier: 100%
-[19:16:43 INFO]: Pumpkin Growth Modifier: 100%
-[19:16:43 INFO]: Sapling Growth Modifier: 100%
-[19:16:43 INFO]: Wheat Growth Modifier: 100%
-[19:16:43 INFO]: NetherWart Growth Modifier: 100%
-[19:16:43 INFO]: Vine Growth Modifier: 100%
-[19:16:43 INFO]: Cocoa Growth Modifier: 100%
-[19:16:43 INFO]: Mob Spawn Range: 4
-[19:16:43 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[19:16:43 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[19:16:43 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[19:16:43 INFO]: Random Lighting Updates: false
-[19:16:43 INFO]: Structure Info Saving: true
-[19:16:43 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[19:16:43 INFO]: Max TNT Explosions: 100
-[19:16:43 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[19:16:43 INFO]: Item Despawn Rate: 6000
-[19:16:43 INFO]: Item Merge Radius: 2.5
-[19:16:43 INFO]: View Distance: 4
-[19:16:43 INFO]: Arrow Despawn Rate: 1200
-[19:16:43 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[19:16:43 INFO]: Experience Merge Radius: 3.0
-[19:16:43 INFO]: Zombie Aggressive Towards Villager: true
-[19:16:43 INFO]: Nerfing mobs spawned from spawners: false
-[19:16:43 INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
-[19:16:45 INFO]: Preparing spawn area: 0%
-[19:16:46 INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
-[19:16:47 INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
-[19:16:47 INFO]: [UndeadSiege] Enabling UndeadSiege v1.0.0
-[19:16:47 INFO]: [UndeadSiege] UndeadSiege enabled.
-[19:16:47 INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
-[19:16:48 INFO]: WEPIF: Using the Bukkit Permissions API.
-[19:16:48 WARN]: [WorldEdit] 
+2025-10-28 19:31:52,350 main WARN Disabling terminal, you're running in an unsupported environment.
+[19:31:57 INFO]: Starting minecraft server version 1.12.2
+[19:31:57 INFO]: Loading properties
+[19:31:57 INFO]: Default game type: SURVIVAL
+[19:31:57 INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[19:31:58 INFO]: Debug logging is disabled
+[19:31:58 INFO]: Server Ping Player Sample Count: 12
+[19:31:58 INFO]: Using 4 threads for Netty based IO
+[19:31:58 INFO]: Generating keypair
+[19:31:59 INFO]: Starting Minecraft server on *:25566
+[19:31:59 INFO]: Using default channel type
+[19:31:59 INFO]: Set PluginClassLoader as parallel capable
+[19:31:59 INFO]: [UndeadSiege] Loading UndeadSiege v1.0.0
+[19:31:59 INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[19:31:59 INFO]: [ArmorPrank] Loading ArmorPrank v1.0.0
+[19:31:59 INFO]: [BookPortal] Loading BookPortal v0.1.0
+[19:31:59 INFO]: [GraveyardBinding] Loading GraveyardBinding v1.0.0
+[19:31:59 INFO]: [DecentHolograms] Loading DecentHolograms v2.9.8
+[19:31:59 INFO]: [Halloween] Loading Halloween v1.0.0
+[19:31:59 INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
+[19:31:59 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:31:59 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:31:59 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:31:59 WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[19:31:59 WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[19:31:59 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:31:59 INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[19:31:59 INFO]: Preparing level "world"
+[19:31:59 INFO]: -------- World Settings For [world] --------
+[19:31:59 INFO]: Cactus Growth Modifier: 100%
+[19:31:59 INFO]: Cane Growth Modifier: 100%
+[19:31:59 INFO]: Melon Growth Modifier: 100%
+[19:31:59 INFO]: Mushroom Growth Modifier: 100%
+[19:31:59 INFO]: Pumpkin Growth Modifier: 100%
+[19:31:59 INFO]: Sapling Growth Modifier: 100%
+[19:31:59 INFO]: Wheat Growth Modifier: 100%
+[19:31:59 INFO]: NetherWart Growth Modifier: 100%
+[19:31:59 INFO]: Vine Growth Modifier: 100%
+[19:31:59 INFO]: Cocoa Growth Modifier: 100%
+[19:31:59 INFO]: Mob Spawn Range: 4
+[19:31:59 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[19:31:59 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:31:59 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:31:59 INFO]: Random Lighting Updates: false
+[19:31:59 INFO]: Structure Info Saving: true
+[19:31:59 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[19:31:59 INFO]: Max TNT Explosions: 100
+[19:31:59 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:31:59 INFO]: Item Despawn Rate: 6000
+[19:31:59 INFO]: Item Merge Radius: 2.5
+[19:31:59 INFO]: View Distance: 4
+[19:31:59 INFO]: Arrow Despawn Rate: 1200
+[19:31:59 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:31:59 INFO]: Experience Merge Radius: 3.0
+[19:31:59 INFO]: Zombie Aggressive Towards Villager: true
+[19:31:59 INFO]: Nerfing mobs spawned from spawners: false
+[19:32:00 INFO]: -------- World Settings For [world_nether] --------
+[19:32:00 INFO]: Cactus Growth Modifier: 100%
+[19:32:00 INFO]: Cane Growth Modifier: 100%
+[19:32:00 INFO]: Melon Growth Modifier: 100%
+[19:32:00 INFO]: Mushroom Growth Modifier: 100%
+[19:32:00 INFO]: Pumpkin Growth Modifier: 100%
+[19:32:00 INFO]: Sapling Growth Modifier: 100%
+[19:32:00 INFO]: Wheat Growth Modifier: 100%
+[19:32:00 INFO]: NetherWart Growth Modifier: 100%
+[19:32:00 INFO]: Vine Growth Modifier: 100%
+[19:32:00 INFO]: Cocoa Growth Modifier: 100%
+[19:32:00 INFO]: Mob Spawn Range: 4
+[19:32:00 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[19:32:00 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:32:00 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:32:00 INFO]: Random Lighting Updates: false
+[19:32:00 INFO]: Structure Info Saving: true
+[19:32:00 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[19:32:00 INFO]: Max TNT Explosions: 100
+[19:32:00 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:32:00 INFO]: Item Despawn Rate: 6000
+[19:32:00 INFO]: Item Merge Radius: 2.5
+[19:32:00 INFO]: View Distance: 4
+[19:32:00 INFO]: Arrow Despawn Rate: 1200
+[19:32:00 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:32:00 INFO]: Experience Merge Radius: 3.0
+[19:32:00 INFO]: Zombie Aggressive Towards Villager: true
+[19:32:00 INFO]: Nerfing mobs spawned from spawners: false
+[19:32:00 INFO]: -------- World Settings For [world_the_end] --------
+[19:32:00 INFO]: Cactus Growth Modifier: 100%
+[19:32:00 INFO]: Cane Growth Modifier: 100%
+[19:32:00 INFO]: Melon Growth Modifier: 100%
+[19:32:00 INFO]: Mushroom Growth Modifier: 100%
+[19:32:00 INFO]: Pumpkin Growth Modifier: 100%
+[19:32:00 INFO]: Sapling Growth Modifier: 100%
+[19:32:00 INFO]: Wheat Growth Modifier: 100%
+[19:32:00 INFO]: NetherWart Growth Modifier: 100%
+[19:32:00 INFO]: Vine Growth Modifier: 100%
+[19:32:00 INFO]: Cocoa Growth Modifier: 100%
+[19:32:00 INFO]: Mob Spawn Range: 4
+[19:32:00 INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[19:32:00 INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:32:00 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:32:00 INFO]: Random Lighting Updates: false
+[19:32:00 INFO]: Structure Info Saving: true
+[19:32:00 INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[19:32:00 INFO]: Max TNT Explosions: 100
+[19:32:00 INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:32:00 INFO]: Item Despawn Rate: 6000
+[19:32:00 INFO]: Item Merge Radius: 2.5
+[19:32:00 INFO]: View Distance: 4
+[19:32:00 INFO]: Arrow Despawn Rate: 1200
+[19:32:00 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:32:00 INFO]: Experience Merge Radius: 3.0
+[19:32:00 INFO]: Zombie Aggressive Towards Villager: true
+[19:32:00 INFO]: Nerfing mobs spawned from spawners: false
+[19:32:01 INFO]: Preparing start region for level 0 (Seed: 9043210522798455108)
+[19:32:02 INFO]: Preparing spawn area: 0%
+[19:32:02 INFO]: Preparing start region for level 1 (Seed: 9043210522798455108)
+[19:32:03 INFO]: Preparing start region for level 2 (Seed: 9043210522798455108)
+[19:32:03 INFO]: [UndeadSiege] Enabling UndeadSiege v1.0.0
+[19:32:03 INFO]: [UndeadSiege] UndeadSiege enabled.
+[19:32:03 INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[19:32:04 INFO]: WEPIF: Using the Bukkit Permissions API.
+[19:32:04 WARN]: [WorldEdit] 
 **********************************************
 ** This WorldEdit version does not fully support your version of Bukkit.
 **
@@ -126,18 +130,60 @@ Loading libraries, please wait...
 ** Please see http://wiki.sk89q.com/wiki/WorldEdit/Bukkit_adapters
 **********************************************
 
-[19:16:48 INFO]: [GraveyardBinding] Enabling GraveyardBinding v1.0.0
-[19:16:48 INFO]: [GraveyardBinding] GraveyardBinding enabled.
-[19:16:48 INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
-[19:16:48 INFO]: [LoginSecurity] Loading base translations from "en_us"
-[19:16:48 INFO]: [LoginSecurity] Loading specified translations from "en_us"
-[19:16:48 INFO]: [LoginSecurity] Registering commands...
-[19:16:48 INFO]: [LoginSecurity] Registering listeners...
-[19:16:48 INFO]: Done (6.950s)! For help, type "help" or "?"
-[19:16:48 INFO]: Timings Reset
-[19:18:04 INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
-[19:18:05 INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:39868] logged in with entity id 31 at ([world]806.245165873133, 79.0, 1397.1531096849326)
-[19:18:18 INFO]: ShadowLord lost connection: Disconnected
-[19:18:18 INFO]: ShadowLord left the game
-[19:27:11 INFO]: Stopping server
-[19:27:11 INFO]: [LoginSecurity] Disabling LoginSecurity v3.2.0
+[19:32:04 INFO]: [ArmorPrank] Enabling ArmorPrank v1.0.0
+[19:32:04 ERROR]: Error occurred while enabling ArmorPrank v1.0.0 (Is it up to date?)
+java.lang.IllegalArgumentException: The embedded resource 'config.yml' cannot be found in plugins/ArmorPrank-0.1.0.jar
+	at org.bukkit.plugin.java.JavaPlugin.saveResource(JavaPlugin.java:195) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.java.JavaPlugin.saveDefaultConfig(JavaPlugin.java:182) ~[patched_1.12.2.jar:git-Paper-1620]
+	at com.eagler.armorprank.ArmorPrankPlugin.onEnable(ArmorPrankPlugin.java:27) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:395) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:344) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:442) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:403) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:341) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:289) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1620]
+	at java.lang.Thread.run(Thread.java:840) [?:?]
+[19:32:04 INFO]: [ArmorPrank] Disabling ArmorPrank v1.0.0
+[19:32:04 INFO]: [ArmorPrank] ArmorPrank disabled
+[19:32:04 INFO]: [BookPortal] Enabling BookPortal v0.1.0
+[19:32:04 ERROR]: Error occurred while enabling BookPortal v0.1.0 (Is it up to date?)
+java.lang.IllegalArgumentException: The embedded resource 'config.yml' cannot be found in plugins/book-portal-0.1.0.jar
+	at org.bukkit.plugin.java.JavaPlugin.saveResource(JavaPlugin.java:195) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.java.JavaPlugin.saveDefaultConfig(JavaPlugin.java:182) ~[patched_1.12.2.jar:git-Paper-1620]
+	at com.eagler.bookportal.BookPortalPlugin.onEnable(BookPortalPlugin.java:13) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:395) ~[patched_1.12.2.jar:git-Paper-1620]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:344) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:442) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:403) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:341) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:289) ~[patched_1.12.2.jar:git-Paper-1620]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1620]
+	at java.lang.Thread.run(Thread.java:840) [?:?]
+[19:32:04 INFO]: [BookPortal] Disabling BookPortal v0.1.0
+[19:32:04 INFO]: [BookPortal] BookPortal disabled
+[19:32:04 INFO]: [GraveyardBinding] Enabling GraveyardBinding v1.0.0
+[19:32:04 INFO]: [GraveyardBinding] GraveyardBinding enabled.
+[19:32:04 INFO]: [DecentHolograms] Enabling DecentHolograms v2.9.8
+[19:32:04 INFO]: [DecentHolograms] Initialized NMS adapter for v1_12_R1 (1.12.2).
+[19:32:04 INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_12_R1! Trying to find NMS support
+[19:32:04 INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
+[19:32:05 INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DecentHolograms' to create a bStats instance!
+[19:32:05 INFO]: [DecentHolograms] NBT-API loaded successfully.
+[19:32:05 INFO]: [Halloween] Enabling Halloween v1.0.0
+[19:32:05 INFO]: [Halloween] Halloween plugin enabling...
+[19:32:05 INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
+[19:32:05 INFO]: [LoginSecurity] Loading base translations from "en_us"
+[19:32:05 INFO]: [LoginSecurity] Loading specified translations from "en_us"
+[19:32:05 INFO]: [LoginSecurity] Registering commands...
+[19:32:05 INFO]: [LoginSecurity] Registering listeners...
+[19:32:05 INFO]: Done (5.893s)! For help, type "help" or "?"
+[19:32:05 INFO]: Timings Reset
+[19:32:05 INFO]: [DecentHolograms] Loading holograms... 
+[19:32:05 INFO]: [DecentHolograms] Loaded 2 holograms!

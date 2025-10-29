@@ -13,15 +13,17 @@
 config-version: 11
 settings:
   debug: false
+  save-user-cache-on-stop-only: false
+  sample-count: 12
+  bungeecord: true
+  late-bind: false
+  player-shuffle: 0
   filter-creative-items: true
   user-cache-size: 1000
   int-cache-limit: 1024
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10.0
   item-dirty-ticks: 20
-  bungeecord: true
-  late-bind: false
-  player-shuffle: 0
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
@@ -33,37 +35,36 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
-  save-user-cache-on-stop-only: false
-  sample-count: 12
   moved-too-quickly-threshold: 100.0
 commands:
-  silent-commandblock-console: false
-  log: true
+  tab-complete: 0
   spam-exclusions:
   - /skill
+  silent-commandblock-console: false
   replace-commands:
   - setblock
   - summon
   - testforblock
   - tellraw
-  tab-complete: 0
-advancements:
-  disable-saving: false
-  disabled:
-  - minecraft:story/disabled
+  log: true
 messages:
-  restart: Shut down for Maintenance, we will be back!
   whitelist: You are not whitelisted on this server!
   unknown-command: Unknown command. Type "/help" for help.
   server-full: Too many people, come back later.
   outdated-client: Outdated client! Please use {0}
   outdated-server: Outdated server! I'm still on {0}
+  restart: Shut down for Maintenance, we will be back!
+advancements:
+  disable-saving: false
+  disabled:
+  - minecraft:story/disabled
 stats:
   disable-saving: false
   forced-stats: {}
 world-settings:
   default:
     verbose: true
+    mob-spawn-range: 4
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -87,7 +88,6 @@ world-settings:
       monsters: 48
       misc: 32
       other: 64
-    mob-spawn-range: 4
     ticks-per:
       hopper-transfer: 8
       hopper-check: 1
@@ -113,11 +113,11 @@ world-settings:
       entity: 50
     squid-spawn-range:
       min: 45.0
+    view-distance: 4
     item-despawn-rate: 6000
     merge-radius:
       item: 2.5
       exp: 3.0
-    view-distance: 4
     arrow-despawn-rate: 1200
     enable-zombie-pigmen-portal-spawns: true
     wither-spawn-sound-radius: 0

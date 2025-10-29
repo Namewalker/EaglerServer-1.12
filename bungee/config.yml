@@ -57,7 +57,15 @@ servers:
     motd: 'survival'
     address: 127.0.0.1:25566
     restricted: false
-  arena:
-    motd: 'arena'
+  Among Us:
+    motd: 'Among Us'
+    address: 127.0.0.1:25569
+    restricted: false
+  creative:
+    motd: 'creative'
     address: 127.0.0.1:25568
     restricted: false
+#  arena: --- IGNORE ---
+#    motd: 'arena' --- IGNORE ---
+#    address:
+#    restricted: false

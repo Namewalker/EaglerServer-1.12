@@ -1,155 +1,152 @@
-[20:06:53] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[20:06:53] [Server thread/INFO]: Loading properties
-[20:06:53] [Server thread/INFO]: Default game type: SURVIVAL
-[20:06:54] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[20:06:54] [Server thread/INFO]: Debug logging is disabled
-[20:06:54] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:06:54] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:06:54] [Server thread/INFO]: Generating keypair
-[20:06:54] [Server thread/INFO]: Starting Minecraft server on *:30067
-[20:06:54] [Server thread/INFO]: Using default channel type
-[20:06:54] [Server thread/ERROR]: Could not load 'plugins/EssentialsX.jar' in folder 'plugins'
+[15:38:13] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[15:38:13] [Server thread/INFO]: Loading properties
+[15:38:13] [Server thread/INFO]: Default game type: SURVIVAL
+[15:38:14] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[15:38:14] [Server thread/INFO]: Debug logging is disabled
+[15:38:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:38:14] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:38:14] [Server thread/INFO]: Generating keypair
+[15:38:14] [Server thread/INFO]: Starting Minecraft server on *:30067
+[15:38:14] [Server thread/INFO]: Using default channel type
+[15:38:15] [Server thread/ERROR]: Could not load 'plugins/EssentialsX.jar' in folder 'plugins'
 org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
 	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:158) ~[patched_1.12.2.jar:git-Paper-1620]
 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:136) ~[patched_1.12.2.jar:git-Paper-1620]
 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.loadPlugins(CraftServer.java:318) ~[patched_1.12.2.jar:git-Paper-1620]
 	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:222) ~[patched_1.12.2.jar:git-Paper-1620]
 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1620]
-	at java.lang.Thread.run(Thread.java:829) [?:?]
+	at java.lang.Thread.run(Thread.java:840) [?:?]
 Caused by: java.util.zip.ZipException: zip END header not found
-	at java.util.zip.ZipFile$Source.zerror(ZipFile.java:1607) ~[?:?]
-	at java.util.zip.ZipFile$Source.findEND(ZipFile.java:1497) ~[?:?]
-	at java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1504) ~[?:?]
-	at java.util.zip.ZipFile$Source.<init>(ZipFile.java:1308) ~[?:?]
-	at java.util.zip.ZipFile$Source.get(ZipFile.java:1271) ~[?:?]
-	at java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733) ~[?:?]
-	at java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:850) ~[?:?]
-	at java.util.zip.ZipFile.<init>(ZipFile.java:248) ~[?:?]
-	at java.util.zip.ZipFile.<init>(ZipFile.java:177) ~[?:?]
-	at java.util.jar.JarFile.<init>(JarFile.java:350) ~[?:?]
-	at java.util.jar.JarFile.<init>(JarFile.java:321) ~[?:?]
-	at java.util.jar.JarFile.<init>(JarFile.java:287) ~[?:?]
+	at java.util.zip.ZipFile$Source.findEND(ZipFile.java:1637) ~[?:?]
+	at java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1645) ~[?:?]
+	at java.util.zip.ZipFile$Source.<init>(ZipFile.java:1483) ~[?:?]
+	at java.util.zip.ZipFile$Source.get(ZipFile.java:1445) ~[?:?]
+	at java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:717) ~[?:?]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:251) ~[?:?]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:180) ~[?:?]
+	at java.util.jar.JarFile.<init>(JarFile.java:346) ~[?:?]
+	at java.util.jar.JarFile.<init>(JarFile.java:317) ~[?:?]
+	at java.util.jar.JarFile.<init>(JarFile.java:283) ~[?:?]
 	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:146) ~[patched_1.12.2.jar:git-Paper-1620]
 	... 5 more
-[20:06:55] [Server thread/ERROR]: Ambiguous plugin name `Vault' for files `plugins/Vault-spiget.jar' and `plugins/Vault-1.7.3.jar' in `plugins'
-[20:06:55] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[20:06:55] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.5.17
-[20:06:57] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[20:06:57] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
-[20:06:57] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
-[20:06:57] [Server thread/INFO]: [Factions] Loading Factions v1.8.2-U0.4
-[20:06:57] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:06:57] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.17
-[20:06:57] [Server thread/INFO]:         __    
-[20:06:57] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.17
-[20:06:57] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[20:06:57] [Server thread/INFO]: 
-[20:06:58] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[20:06:58] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[20:06:59] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[20:06:59] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1994ms)
-[20:06:59] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[20:06:59] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[20:06:59] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[20:06:59] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[20:06:59] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:06:59] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:06:59] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
-[20:06:59] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
-[20:06:59] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:06:59] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[20:06:59] [Server thread/INFO]: Preparing level "factions_world"
-[20:06:59] [Server thread/INFO]: -------- World Settings For [factions_world] --------
-[20:06:59] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:06:59] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:06:59] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:06:59] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:06:59] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:06:59] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:06:59] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:06:59] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:06:59] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:06:59] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:06:59] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:06:59] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:06:59] [Server thread/INFO]: Mob Spawn Range: 4
-[20:06:59] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:06:59] [Server thread/INFO]: Random Lighting Updates: false
-[20:06:59] [Server thread/INFO]: Structure Info Saving: true
-[20:06:59] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:06:59] [Server thread/INFO]: Max TNT Explosions: 100
-[20:06:59] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:06:59] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:06:59] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:06:59] [Server thread/INFO]: View Distance: 4
-[20:06:59] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:06:59] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:06:59] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:06:59] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:06:59] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:07:00] [Server thread/INFO]: -------- World Settings For [factions_world_nether] --------
-[20:07:00] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:07:00] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:07:00] [Server thread/INFO]: Mob Spawn Range: 4
-[20:07:00] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:07:00] [Server thread/INFO]: Random Lighting Updates: false
-[20:07:00] [Server thread/INFO]: Structure Info Saving: true
-[20:07:00] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:07:00] [Server thread/INFO]: Max TNT Explosions: 100
-[20:07:00] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:07:00] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:07:00] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:07:00] [Server thread/INFO]: View Distance: 4
-[20:07:00] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:07:00] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:07:00] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:07:00] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:07:00] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:07:00] [Server thread/INFO]: -------- World Settings For [factions_world_the_end] --------
-[20:07:00] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Cane Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Melon Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Vine Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[20:07:00] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[20:07:00] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[20:07:00] [Server thread/INFO]: Mob Spawn Range: 4
-[20:07:00] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[20:07:00] [Server thread/INFO]: Random Lighting Updates: false
-[20:07:00] [Server thread/INFO]: Structure Info Saving: true
-[20:07:00] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[20:07:00] [Server thread/INFO]: Max TNT Explosions: 100
-[20:07:00] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[20:07:00] [Server thread/INFO]: Item Despawn Rate: 6000
-[20:07:00] [Server thread/INFO]: Item Merge Radius: 2.5
-[20:07:00] [Server thread/INFO]: View Distance: 4
-[20:07:00] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[20:07:00] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[20:07:00] [Server thread/INFO]: Experience Merge Radius: 3.0
-[20:07:00] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[20:07:00] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[20:07:00] [Server thread/INFO]: Preparing start region for level 0 (Seed: 8055419652834075536)
-[20:07:02] [Server thread/INFO]: Preparing spawn area: 0%
-[20:07:02] [Server thread/INFO]: Preparing start region for level 1 (Seed: 8055419652834075536)
-[20:07:03] [Server thread/INFO]: Preparing start region for level 2 (Seed: 8055419652834075536)
-[20:07:03] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
-[20:07:03] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[20:07:03] [Server thread/WARN]: [WorldEdit] 
+[15:38:15] [Server thread/ERROR]: Ambiguous plugin name `Vault' for files `plugins/Vault-spiget.jar' and `plugins/Vault-1.7.3.jar' in `plugins'
+[15:38:15] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[15:38:15] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.5.17
+[15:38:16] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[15:38:16] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[15:38:16] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[15:38:16] [Server thread/INFO]: [Factions] Loading Factions v1.8.2-U0.4
+[15:38:16] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:38:16] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.17
+[15:38:17] [Server thread/INFO]:         __    
+[15:38:17] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.17
+[15:38:17] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[15:38:17] [Server thread/INFO]: 
+[15:38:17] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[15:38:18] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[15:38:18] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[15:38:18] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2082ms)
+[15:38:18] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[15:38:18] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[15:38:19] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[15:38:19] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[15:38:19] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15:38:19] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[15:38:19] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[15:38:19] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[15:38:19] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[15:38:19] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[15:38:19] [Server thread/INFO]: Preparing level "factions_world"
+[15:38:19] [Server thread/INFO]: -------- World Settings For [factions_world] --------
+[15:38:19] [Server thread/INFO]: Mob Spawn Range: 4
+[15:38:19] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:38:19] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:38:19] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:38:19] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:38:19] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:38:19] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:38:19] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:38:19] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:38:19] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:38:19] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:38:19] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[15:38:19] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:38:19] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:38:19] [Server thread/INFO]: Random Lighting Updates: false
+[15:38:19] [Server thread/INFO]: Structure Info Saving: true
+[15:38:19] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[15:38:19] [Server thread/INFO]: Max TNT Explosions: 100
+[15:38:19] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:38:19] [Server thread/INFO]: View Distance: 4
+[15:38:19] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:38:19] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:38:19] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:38:19] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:38:19] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:38:19] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:38:19] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:38:20] [Server thread/INFO]: -------- World Settings For [factions_world_nether] --------
+[15:38:20] [Server thread/INFO]: Mob Spawn Range: 4
+[15:38:20] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[15:38:20] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:38:20] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:38:20] [Server thread/INFO]: Random Lighting Updates: false
+[15:38:20] [Server thread/INFO]: Structure Info Saving: true
+[15:38:20] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[15:38:20] [Server thread/INFO]: Max TNT Explosions: 100
+[15:38:20] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:38:20] [Server thread/INFO]: View Distance: 4
+[15:38:20] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:38:20] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:38:20] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:38:20] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:38:20] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:38:20] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:38:20] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:38:20] [Server thread/INFO]: -------- World Settings For [factions_world_the_end] --------
+[15:38:20] [Server thread/INFO]: Mob Spawn Range: 4
+[15:38:20] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:38:20] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[15:38:20] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:38:20] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:38:20] [Server thread/INFO]: Random Lighting Updates: false
+[15:38:20] [Server thread/INFO]: Structure Info Saving: true
+[15:38:20] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[15:38:20] [Server thread/INFO]: Max TNT Explosions: 100
+[15:38:20] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:38:20] [Server thread/INFO]: View Distance: 4
+[15:38:20] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:38:20] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:38:20] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:38:20] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:38:20] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:38:20] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:38:20] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:38:20] [Server thread/INFO]: Preparing start region for level 0 (Seed: 8055419652834075536)
+[15:38:21] [Server thread/INFO]: Preparing start region for level 1 (Seed: 8055419652834075536)
+[15:38:21] [Server thread/INFO]: Preparing start region for level 2 (Seed: 8055419652834075536)
+[15:38:21] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[15:38:21] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[15:38:21] [Server thread/WARN]: [WorldEdit] 
 **********************************************
 ** This WorldEdit version does not fully support your version of Bukkit.
 **
@@ -160,25 +157,12 @@ Caused by: java.util.zip.ZipException: zip END header not found
 ** Please see http://wiki.sk89q.com/wiki/WorldEdit/Bukkit_adapters
 **********************************************
 
-[20:07:03] [Server thread/INFO]: [Factions] Enabling Factions v1.8.2-U0.4
-[20:07:03] [Server thread/ERROR]: [Factions v1.8.2-U0.4] GSON lib not found. Your CraftBukkit build is too old (< 1.3.2) or otherwise not compatible.
-[20:07:03] [Server thread/INFO]: [Factions v1.8.2-U0.4] Now I suicide!
-[20:07:03] [Server thread/INFO]: [Factions] Disabling Factions v1.8.2-U0.4
-[20:07:03] [Server thread/INFO]: [Factions v1.8.2-U0.4] Disabled
-[20:07:04] [Server thread/INFO]: Done (4.755s)! For help, type "help" or "?"
-[20:07:04] [Server thread/INFO]: Timings Reset
-[20:07:04] [Craft Scheduler Thread - 0/INFO]: [Vault] Checking for Updates ... 
-[20:07:05] [Craft Scheduler Thread - 0/INFO]: [Vault] No new version available
-[20:16:01] [User Authenticator #1/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
-[20:16:02] [Server thread/INFO]: ShadowLord[/0:0:0:0:0:0:0:1:35586] logged in with entity id 30 at ([factions_world]-159.5, 65.0, 57.5)
-[20:16:16] [User Authenticator #1/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
-[20:16:16] [Server thread/INFO]: Ruger1[/0:0:0:0:0:0:0:1:57180] logged in with entity id 41 at ([factions_world]-148.5, 65.0, 70.5)
-[20:16:38] [Server thread/INFO]: ShadowLord was slain by Ruger1
-[20:17:03] [Server thread/INFO]: ShadowLord lost connection: Disconnected
-[20:17:03] [Server thread/INFO]: ShadowLord left the game
-[20:17:05] [Server thread/INFO]: Ruger1 lost connection: Disconnected
-[20:17:05] [Server thread/INFO]: Ruger1 left the game
-[20:33:25] [User Authenticator #2/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
-[20:33:25] [Server thread/INFO]: ShadowLord[/0:0:0:0:0:0:0:1:50230] logged in with entity id 106 at ([factions_world]-155.99190525065458, 65.0, 76.61746629916976)
-[20:33:34] [Server thread/INFO]: ShadowLord lost connection: Disconnected
-[20:33:34] [Server thread/INFO]: ShadowLord left the game
+[15:38:21] [Server thread/INFO]: [Factions] Enabling Factions v1.8.2-U0.4
+[15:38:21] [Server thread/ERROR]: [Factions v1.8.2-U0.4] GSON lib not found. Your CraftBukkit build is too old (< 1.3.2) or otherwise not compatible.
+[15:38:21] [Server thread/INFO]: [Factions v1.8.2-U0.4] Now I suicide!
+[15:38:21] [Server thread/INFO]: [Factions] Disabling Factions v1.8.2-U0.4
+[15:38:21] [Server thread/INFO]: [Factions v1.8.2-U0.4] Disabled
+[15:38:22] [Server thread/INFO]: Done (3.179s)! For help, type "help" or "?"
+[15:38:22] [Server thread/INFO]: Timings Reset
+[15:38:22] [Craft Scheduler Thread - 2/INFO]: [Vault] Checking for Updates ... 
+[15:38:22] [Craft Scheduler Thread - 2/INFO]: [Vault] No new version available
