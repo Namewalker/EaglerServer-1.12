@@ -87,8 +87,8 @@ world-settings:
       disable-player-crits: false
       disable-sprint-interruption-on-attack: false
       disable-chest-cat-detection: false
-      village-sieges-enabled: true
       disable-unloaded-chunk-enderpearl-exploit: true
+      village-sieges-enabled: true
       boats-drop-boats: false
     prevent-moving-into-unloaded-chunks: false
     max-growth-height:
@@ -143,10 +143,6 @@ world-settings:
     bed-search-radius: 1
     non-player-arrow-despawn-rate: -1
     prevent-tnt-from-moving-in-water: false
-    disable-thunder: false
-    skeleton-horse-thunder-spawn-chance: 0.01
-    disable-ice-and-snow: false
-    fire-physics-event-for-redstone: false
     armor-stands-tick: true
     keep-spawn-loaded: true
     anti-xray:
@@ -175,6 +171,10 @@ world-settings:
     experience-merge-max-value: -1
     armor-stands-do-collision-entity-lookups: true
     skip-entity-ticking-in-chunks-scheduled-for-unload: true
+    disable-thunder: false
+    skeleton-horse-thunder-spawn-chance: 0.01
+    disable-ice-and-snow: false
+    fire-physics-event-for-redstone: false
     baby-zombie-movement-speed: 0.5
     spawner-nerfed-mobs-should-jump: false
     allow-leashing-undead-horse: false

@@ -1,0 +1,12 @@
+location: world:959.535:44.000:1311.012
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&cAuthorized Personnel Only'
+    height: 0.3
+  actions: {}
