@@ -1,3 +1,152 @@
-[19:04:36] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[19:04:36] [Server thread/INFO]: Loading properties
-[19:04:36] [Server thread/INFO]: Default game type: SURVIVAL
+[00:00:52] [User Authenticator #2/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[00:00:52] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:45344] logged in with entity id 27 at ([world]881.2855445164212, 68.4027426254827, 1361.759067435663)
+[00:01:22] [Server thread/INFO]: Error in command syntax. Check command help.
+[00:01:26] [Server thread/INFO]: Error in command syntax. Check command help.
+[00:01:39] [Server thread/INFO]: Promotion error: User are not in this ladder
+[00:01:39] [Server thread/ERROR]: [PermissionsEx] Ranking Error (console > 69bb081a-9716-3601-96f8-109840fe98fb/ShadowLord): User are not in this ladder
+[00:01:55] [Server thread/INFO]: ShadowLord lost connection: Timed out
+[00:01:55] [Server thread/INFO]: ShadowLord left the game
+[00:03:28] [Server thread/INFO]: [PermissionsEx] version [1.23.4]
+[00:03:28] [Server thread/INFO]: Usage:
+[00:03:28] [Server thread/INFO]: /pex - Display help
+[00:03:28] [Server thread/INFO]: /pex reload - Reload environment
+[00:03:28] [Server thread/INFO]: /pex report - Report an issue with PEX
+[00:03:28] [Server thread/INFO]: /pex config <node> [value] - Print or set <node> [value]
+[00:03:28] [Server thread/INFO]: /pex backend - Print currently used backend
+[00:03:28] [Server thread/INFO]: /pex backend <backend> - Change permission backend on the fly (Use with caution!)
+[00:03:28] [Server thread/INFO]: /pex hierarchy [world] - Print complete user/group hierarchy
+[00:03:28] [Server thread/INFO]: /pex import <backend> - Import data from <backend> into currently selected backend
+[00:03:28] [Server thread/INFO]: /pex convert uuid - Bulk convert user data to UUID-based storage
+[00:03:28] [Server thread/INFO]: /pex toggle debug - Enable/disable debug mode
+[00:03:28] [Server thread/INFO]: /pex help [page] [count] - PermissionsEx commands help
+[00:03:28] [Server thread/INFO]: /pex users list - List all registered users
+[00:03:28] [Server thread/INFO]: /pex users - List all registered users (alias)
+[00:03:28] [Server thread/INFO]: /pex user - List all registered users (alias)
+[00:03:28] [Server thread/INFO]: /pex user <user> - List user permissions (list alias)
+[00:03:28] [Server thread/INFO]: /pex user <user> list [world] - List user permissions
+[00:03:28] [Server thread/INFO]: /pex user <user> superperms - List user actual superperms
+[00:03:28] [Server thread/INFO]: /pex user <user> prefix [newprefix] [world] - Get or set <user> prefix
+[00:03:28] [Server thread/INFO]: /pex user <user> suffix [newsuffix] [world] - Get or set <user> suffix
+[00:03:28] [Server thread/INFO]: /pex user <user> toggle debug - Toggle debug only for <user>
+[00:03:28] [Server thread/INFO]: /pex user <user> check <permission> [world] - Checks player for <permission>
+[00:03:28] [Server thread/INFO]: /pex user <user> get <option> [world] - Toggle debug only for <user>
+[00:03:28] [Server thread/INFO]: /pex user <user> delete - Remove <user>
+[00:03:28] [Server thread/INFO]: /pex user <user> add <permission> [world] - Add <permission> to <user> in [world]
+[00:03:28] [Server thread/INFO]: /pex user <user> remove <permission> [world] - Remove permission from <user> in [world]
+[00:03:28] [Server thread/INFO]: /pex user <user> swap <permission> <targetPermission> [world] - Swap <permission> and <targetPermission> in permission list. Could be number or permission itself
+[00:03:28] [Server thread/INFO]: /pex user <user> timed add <permission> [lifetime] [world] - Add timed <permissions> to <user> for [lifetime] seconds in [world]
+[00:03:28] [Server thread/INFO]: /pex user <user> timed remove <permission> [world] - Remove timed <permission> from <user> in [world]
+[00:03:28] [Server thread/INFO]: /pex user <user> set <option> <value> [world] - Set <option> to <value> in [world]
+[00:03:28] [Server thread/INFO]: /pex user <user> group list [world] - List all <user> groups
+[00:03:28] [Server thread/INFO]: /pex user <user> group add <group> [world] [lifetime] - Add <user> to <group>
+[00:03:28] [Server thread/INFO]: /pex user <user> group set <group> [world] - Set <group> for <user>
+[00:03:28] [Server thread/INFO]: /pex user <user> group remove <group> [world] - Remove <user> from <group>
+[00:03:28] [Server thread/INFO]: /pex users cleanup <group> [threshold] - Clean users of specified group, which last login was before threshold (in days). By default threshold is 30 days.
+[00:03:28] [Server thread/INFO]: /pex group <group> swap <permission> <targetPermission> [world] - Swap <permission> and <targetPermission> in permission list. Could be number or permission itself
+[00:03:28] [Server thread/INFO]: /pex groups list [world] - List all registered groups
+[00:03:28] [Server thread/INFO]: /pex groups - List all registered groups (alias)
+[00:03:28] [Server thread/INFO]: /pex group - List all registered groups (alias)
+[00:03:28] [Server thread/INFO]: /pex group <group> weight [weight] - Print or set group weight
+[00:03:28] [Server thread/INFO]: /pex group <group> toggle debug - Toggle debug mode for group
+[00:03:28] [Server thread/INFO]: /pex group <group> prefix [newprefix] [world] - Get or set <group> prefix.
+[00:03:28] [Server thread/INFO]: /pex group <group> suffix [newsuffix] [world] - Get or set <group> suffix
+[00:03:28] [Server thread/INFO]: /pex group <group> create [parents] - Create <group> and/or set [parents]
+[00:03:28] [Server thread/INFO]: /pex group <group> delete - Remove <group>
+[00:03:28] [Server thread/INFO]: /pex group <group> parents [world] - List parents for <group> (alias)
+[00:03:28] [Server thread/INFO]: /pex group <group> parents list [world] - List parents for <group>
+[00:03:28] [Server thread/INFO]: /pex group <group> parents set <parents> [world] - Set parent(s) for <group> (single or comma-separated list)
+[00:03:28] [Server thread/INFO]: /pex group <group> parents add <parents> [world] - Set parent(s) for <group> (single or comma-separated list)
+[00:03:28] [Server thread/INFO]: /pex group <group> parents remove <parents> [world] - Set parent(s) for <group> (single or comma-separated list)
+[00:03:28] [Server thread/INFO]: /pex group <group> - List all <group> permissions (alias)
+[00:03:28] [Server thread/INFO]: /pex group <group> list [world] - List all <group> permissions in [world]
+[00:03:28] [Server thread/INFO]: /pex group <group> add <permission> [world] - Add <permission> to <group> in [world]
+[00:03:28] [Server thread/INFO]: /pex group <group> set <option> <value> [world] - Set <option> <value> for <group> in [world]
+[00:03:28] [Server thread/INFO]: /pex group <group> remove <permission> [world] - Remove <permission> from <group> in [world]
+[00:03:28] [Server thread/INFO]: /pex group <group> timed add <permission> [lifetime] [world] - Add timed <permission> to <group> with [lifetime] in [world]
+[00:03:28] [Server thread/INFO]: /pex group <group> timed remove <permission> [world] - Remove timed <permissions> for <group> in [world]
+[00:03:28] [Server thread/INFO]: /pex group <group> users - List all users in <group>
+[00:03:28] [Server thread/INFO]: /pex group <group> user add <user> [world] - Add <user> (single or comma-separated list) to <group>
+[00:03:28] [Server thread/INFO]: /pex group <group> user remove <user> [world] - Add <user> (single or comma-separated list) to <group>
+[00:03:28] [Server thread/INFO]: /pex default group [world] - Print default groups for specified world
+[00:03:28] [Server thread/INFO]: /pex set default group <group> <value> [world] - Set whether a group is default for specified worlds
+[00:03:28] [Server thread/INFO]: /pex group <group> rank [rank] [ladder] - Get or set <group> [rank] [ladder]
+[00:03:28] [Server thread/INFO]: /pex promote <user> [ladder] - Promotes <user> to next group on [ladder]
+[00:03:28] [Server thread/INFO]: /pex demote <user> [ladder] - Demotes <user> to previous group or [ladder]
+[00:03:28] [Server thread/INFO]: /pex worlds - Print loaded worlds
+[00:03:28] [Server thread/INFO]: /pex world <world> - Print <world> inheritance info
+[00:03:28] [Server thread/INFO]: /pex world <world> inherit <parentWorlds> - Set <parentWorlds> for <world>
+[00:04:16] [Server thread/INFO]: Permission "rank.lord" added!
+[00:04:26] [User Authenticator #3/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[00:04:26] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:43736] logged in with entity id 28 at ([world]877.9120570015285, 68.4027426254827, 1370.8862324495472)
+[00:04:32] [Async Chat Thread - #0/INFO]: [Owner] ShadowLord » test
+[00:04:42] [Server thread/INFO]: Permission "rank.lord" added!
+[00:04:46] [Async Chat Thread - #0/INFO]: [Owner] ShadowLord » test
+[00:05:07] [Server thread/INFO]: ShadowLord issued server command: /powerboard reload
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard]  
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] Config: Reloading config...
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard]  
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] Loading configs..
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard]  
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] (SelfCheck) config.yml -> Loading...
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] (SelfCheck) config.yml -> Finished!
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard]  
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] Configs loaded!
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard]  
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] Config: Initializing external plugins...
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] Config: Reloading scoreboards...
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] Registered scoreboard 'scoreboard'.
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] Config: Reloading ranks...
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] Config: Reloading tablists...
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] Registered tablist.
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard] Config: Plugin reloaded!
+[00:05:07] [Craft Scheduler Thread - 6/INFO]: [PowerBoard]  
+[00:05:46] [Server thread/INFO]: ShadowLord issued server command: /pex
+[00:05:52] [Server thread/INFO]: ShadowLord issued server command: /pex help
+[00:05:52] [Server thread/WARN]: [PermissionsEx] User ShadowLord tried to access chat command "pex help", but doesn't have permission to do this.
+[00:06:26] [Server thread/INFO]: Unknown command. Type "/help" for help.
+[00:06:32] [Server thread/INFO]: ShadowLord lost connection: Kicked by an operator.
+[00:06:32] [Server thread/INFO]: ShadowLord left the game
+[00:06:32] [Server thread/INFO]: Kicked ShadowLord from the game
+[00:06:32] [Server thread/WARN]: handleDisconnection() called twice
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard]  
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] Config: Reloading config...
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard]  
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] Loading configs..
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard]  
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] (SelfCheck) config.yml -> Loading...
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] (SelfCheck) config.yml -> Finished!
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard]  
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] Configs loaded!
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard]  
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] Config: Initializing external plugins...
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] Config: Reloading scoreboards...
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] Registered scoreboard 'scoreboard'.
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] Config: Reloading ranks...
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] Config: Reloading tablists...
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] Registered tablist.
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard] Config: Plugin reloaded!
+[00:10:27] [Craft Scheduler Thread - 2/INFO]: [PowerBoard]  
+[00:10:38] [User Authenticator #4/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[00:10:38] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:39216] logged in with entity id 30 at ([world]892.6222391697418, 68.02033580438774, 1344.9039987191886)
+[00:10:51] [Async Chat Thread - #1/INFO]: [Owner Lord] ShadowLord » test
+[00:11:42] [Server thread/INFO]: Error in command syntax. Check command help.
+[00:11:47] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[00:11:47] [Server thread/INFO]: ShadowLord left the game
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard]  
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] Config: Reloading config...
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard]  
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] Loading configs..
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard]  
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] (SelfCheck) config.yml -> Loading...
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] (SelfCheck) config.yml -> Finished!
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard]  
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] Configs loaded!
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard]  
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] Config: Initializing external plugins...
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] Config: Reloading scoreboards...
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] Registered scoreboard 'scoreboard'.
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] Config: Reloading ranks...
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] Config: Reloading tablists...
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] Registered tablist.
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard] Config: Plugin reloaded!
+[00:24:09] [Craft Scheduler Thread - 14/INFO]: [PowerBoard]  

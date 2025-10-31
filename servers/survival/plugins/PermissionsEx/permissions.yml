@@ -1,0 +1,13 @@
+groups:
+  default:
+    options:
+      default: true
+    permissions:
+    - modifyworld.*
+schema-version: 1
+users:
+  69bb081a-9716-3601-96f8-109840fe98fb:
+    options:
+      name: ShadowLord
+    permissions:
+    - rank.lord

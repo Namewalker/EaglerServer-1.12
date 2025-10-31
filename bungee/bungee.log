@@ -1,9 +1,9 @@
-2025-10-30T19:04:12.641529464Z main WARN Advanced terminal features are not available in this environment
-[19:04:13 INFO]: Booting up Velocity 3.4.0-SNAPSHOT (git-965db127-b454)...
-[19:04:13 INFO]: Loading localizations...
-[19:04:14 INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
-[19:04:14 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
-[19:04:14 INFO]: Unable to load your server-icon.png, continuing without it.
+2025-10-30T23:31:07.668562319Z main WARN Advanced terminal features are not available in this environment
+[23:31:08 INFO]: Booting up Velocity 3.4.0-SNAPSHOT (git-965db127-b454)...
+[23:31:08 INFO]: Loading localizations...
+[23:31:08 INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[23:31:08 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[23:31:08 INFO]: Unable to load your server-icon.png, continuing without it.
 java.lang.IllegalArgumentException: Image is not 64x64 (found 475x896)
 	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:299) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.api.util.Favicon.create(Favicon.java:82) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
@@ -13,8 +13,8 @@ java.lang.IllegalArgumentException: Image is not 64x64 (found 475x896)
 	at com.velocitypowered.proxy.VelocityServer.doStartupConfigLoad(VelocityServer.java:388) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:276) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[19:04:14 INFO]: Loading plugins...
-[19:04:14 ERROR]: Unable to load plugin plugins/QuickVoid-1.0.jar
+[23:31:08 INFO]: Loading plugins...
+[23:31:08 ERROR]: Unable to load plugin plugins/QuickVoid-1.0.jar
 com.velocitypowered.api.plugin.InvalidPluginException: The plugin file QuickVoid-1.0.jar appears to be a Bukkit or BungeeCord plugin. Velocity does not support Bukkit or BungeeCord plugins.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.getSerializedPluginInfo(JavaPluginLoader.java:161) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:62) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
@@ -22,70 +22,135 @@ com.velocitypowered.api.plugin.InvalidPluginException: The plugin file QuickVoid
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:418) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:289) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[19:04:14 ERROR]: Unable to load plugin plugins/LuckPerms-Velocity.jar
+[23:31:08 ERROR]: Unable to load plugin plugins/LuckPerms-Velocity.jar
 com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velocity-plugin.json.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:65) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:101) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:418) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:289) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[19:04:14 ERROR]: Unable to load plugin plugins/luckperms-velocity.jar
+[23:31:08 ERROR]: Unable to load plugin plugins/luckperms-velocity.jar
 com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velocity-plugin.json.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:65) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:101) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:418) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:289) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[19:04:14 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[19:04:14 ERROR]: :>  
-[19:04:14 ERROR]: :>      EAGLERCRAFTXVELOCITY WARNING:
-[19:04:14 ERROR]: :>  
-[19:04:14 ERROR]: :>  This plugin wasn't tested to be 'working'
-[19:04:14 ERROR]: :>  with ANY version of Velocity (and forks)
-[19:04:14 ERROR]: :>  apart from the versions listed below:
-[19:04:14 ERROR]: :>  
-[19:04:14 ERROR]: :>  - Velocity: 3.4.0-SNAPSHOT:a33f2d1a:b452
-[19:04:14 ERROR]: :>  
-[19:04:14 ERROR]: :>  This is not a Bukkit/Spigot plugin!
-[19:04:14 ERROR]: :>  
-[19:04:14 ERROR]: :>  Use "-Deaglerxvelocity.stfu=true" to hide
-[19:04:14 ERROR]: :>  
-[19:04:14 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[19:04:14 INFO]: Loaded plugin eaglerxvelocity 1.1.5 by lax1dude, ayunami2000
-[19:04:14 INFO]: Loaded plugin luckperms 5.5.17 by Luck
-[19:04:15 INFO]: Loaded plugin viaversion 5.4.2 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
-[19:04:15 INFO]: Loaded plugin viabackwards 5.4.2 by Matsv, kennytv, Gerrygames, creeper123123321, ForceUpdate1, EnZaXD
-[19:04:15 INFO]: Loaded plugin viarewind 4.0.11 by FlorianMichael/EnZaXD, Gerrygames, creeper123123321
-[19:04:15 INFO]: Loaded 6 plugins
-[19:04:15 INFO] [luckperms]: Loading configuration...
-[19:04:15 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
-[19:04:15 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [0m[38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.17[0m
-[19:04:15 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Velocity - Velocity[0m
-[19:04:15 INFO]: 
-[19:04:16 INFO] [luckperms]: Loading storage provider... [H2]
-[19:04:16 INFO] [luckperms]: Loading internal permission managers...
-[19:04:16 INFO] [luckperms]: Performing initial data load...
-[19:04:16 INFO] [luckperms]: Successfully enabled. (took 1665ms)
-[19:04:16 WARN] [eaglerxvelocity]: This plugin is still in development, certain features may not be functional!
-[19:04:16 WARN] [eaglerxvelocity]: Not recommended for public servers yet, please check for updates
-[19:04:16 INFO] [eaglerxvelocity]: Loading vanilla profile: lax1dude
-[19:04:17 INFO] [eaglerxvelocity]: Loaded vanilla profile: lax1dude
-[19:04:17 ERROR] [eaglerxvelocity]: Online mode is set to false! Authentication system has been disabled
-[19:04:17 INFO] [eaglerxvelocity]: Eaglercraft is listening on: /0.0.0.0:8081
-[19:04:17 INFO] [eaglerxvelocity]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
-[19:04:17 WARN] [eaglerxvelocity]: Voice chat enabled, not recommended for public servers!
-[19:04:18 INFO] [viaversion]: Loading block connection mappings ...
-[19:04:19 INFO] [viaversion]: Replacing channel initializers; you can safely ignore the following two warnings.
-[19:04:19 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-[19:04:19 WARN]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-[19:04:19 INFO] [viabackwards]: Loading translations...
-[19:04:19 INFO] [viabackwards]: Registering protocols...
-[19:04:19 INFO] [viarewind]: Registering protocols...
-[19:04:20 INFO] [viaversion]: ViaVersion detected lowest supported version by the proxy: 1.7.2-1.7.5 (4)
-[19:04:20 INFO] [viaversion]: Highest supported version by the proxy: 1.21.4 (769)
-[19:04:20 WARN] [viaversion]: Please update your Java runtime to at least Java 21 (your version is 17.0.16).
-[19:04:20 WARN] [viaversion]: At some point in the future, ViaVersion will no longer be compatible with this version of Java.
-[19:04:20 INFO] [viaversion]: Finished mapping loading, shutting down loader executor.
-[19:04:20 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25577
-[19:04:20 INFO]: Done (6.76s)!
-[19:04:20 WARN] [viaversion]: There is a newer plugin version available: 5.5.1, you're on: 5.4.2
+[23:31:09 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
+[23:31:09 ERROR]: :>  
+[23:31:09 ERROR]: :>      EAGLERCRAFTXVELOCITY WARNING:
+[23:31:09 ERROR]: :>  
+[23:31:09 ERROR]: :>  This plugin wasn't tested to be 'working'
+[23:31:09 ERROR]: :>  with ANY version of Velocity (and forks)
+[23:31:09 ERROR]: :>  apart from the versions listed below:
+[23:31:09 ERROR]: :>  
+[23:31:09 ERROR]: :>  - Velocity: 3.4.0-SNAPSHOT:a33f2d1a:b452
+[23:31:09 ERROR]: :>  
+[23:31:09 ERROR]: :>  This is not a Bukkit/Spigot plugin!
+[23:31:09 ERROR]: :>  
+[23:31:09 ERROR]: :>  Use "-Deaglerxvelocity.stfu=true" to hide
+[23:31:09 ERROR]: :>  
+[23:31:09 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
+[23:31:09 INFO]: Loaded plugin eaglerxvelocity 1.1.5 by lax1dude, ayunami2000
+[23:31:09 INFO]: Loaded plugin luckperms 5.5.17 by Luck
+[23:31:09 INFO]: Loaded plugin viaversion 5.4.2 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
+[23:31:09 INFO]: Loaded plugin viabackwards 5.4.2 by Matsv, kennytv, Gerrygames, creeper123123321, ForceUpdate1, EnZaXD
+[23:31:09 INFO]: Loaded plugin viarewind 4.0.11 by FlorianMichael/EnZaXD, Gerrygames, creeper123123321
+[23:31:09 INFO]: Loaded 6 plugins
+[23:31:09 INFO] [luckperms]: Loading configuration...
+[23:31:10 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
+[23:31:10 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [0m[38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.17[0m
+[23:31:10 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Velocity - Velocity[0m
+[23:31:10 INFO]: 
+[23:31:10 INFO] [luckperms]: Loading storage provider... [H2]
+[23:31:11 INFO] [luckperms]: Loading internal permission managers...
+[23:31:11 INFO] [luckperms]: Performing initial data load...
+[23:31:11 INFO] [luckperms]: Successfully enabled. (took 2001ms)
+[23:31:11 WARN] [eaglerxvelocity]: This plugin is still in development, certain features may not be functional!
+[23:31:11 WARN] [eaglerxvelocity]: Not recommended for public servers yet, please check for updates
+[23:31:11 INFO] [eaglerxvelocity]: Loading vanilla profile: lax1dude
+[23:31:12 INFO] [eaglerxvelocity]: Loaded vanilla profile: lax1dude
+[23:31:12 ERROR] [eaglerxvelocity]: Online mode is set to false! Authentication system has been disabled
+[23:31:12 INFO] [eaglerxvelocity]: Eaglercraft is listening on: /0.0.0.0:8081
+[23:31:12 INFO] [eaglerxvelocity]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
+[23:31:12 WARN] [eaglerxvelocity]: Voice chat enabled, not recommended for public servers!
+[23:31:13 INFO] [viaversion]: Loading block connection mappings ...
+[23:31:13 INFO] [viaversion]: Replacing channel initializers; you can safely ignore the following two warnings.
+[23:31:13 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[23:31:13 WARN]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[23:31:13 INFO] [viabackwards]: Loading translations...
+[23:31:13 INFO] [viabackwards]: Registering protocols...
+[23:31:14 INFO] [viarewind]: Registering protocols...
+[23:31:14 INFO] [viaversion]: ViaVersion detected lowest supported version by the proxy: 1.7.2-1.7.5 (4)
+[23:31:14 INFO] [viaversion]: Highest supported version by the proxy: 1.21.4 (769)
+[23:31:14 WARN] [viaversion]: Please update your Java runtime to at least Java 21 (your version is 17.0.16).
+[23:31:14 WARN] [viaversion]: At some point in the future, ViaVersion will no longer be compatible with this version of Java.
+[23:31:14 INFO] [viaversion]: Finished mapping loading, shutting down loader executor.
+[23:31:14 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25577
+[23:31:14 INFO]: Done (7.16s)!
+[23:31:14 WARN] [viaversion]: There is a newer plugin version available: 5.5.1, you're on: 5.4.2
+[23:32:04 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:38500]: Connected via websocket
+[23:32:04 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:38500]: Origin header is null
+[23:32:05 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:38500) has connected
+[23:32:05 INFO]: [server connection] ShadowLord -> lobby has connected
+[23:32:11 INFO]: [server connection] ShadowLord -> survival has connected
+[23:32:11 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[23:45:55 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:38500) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[23:45:55 ERROR]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:38500): read timed out
+[23:45:55 INFO]: [server connection] ShadowLord -> survival has disconnected
+[23:50:17 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:52618]: Connected via websocket
+[23:50:17 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:52618]: Origin header is null
+[23:50:17 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:52618) has connected
+[23:50:17 INFO]: [server connection] ShadowLord -> lobby has connected
+[23:50:22 INFO]: [server connection] ShadowLord -> survival has connected
+[23:50:22 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[23:52:06 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:52618) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[23:52:06 ERROR]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:52618): read timed out
+[23:52:06 INFO]: [server connection] ShadowLord -> survival has disconnected
+[23:55:08 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:40872]: Connected via websocket
+[23:55:08 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:40872]: Origin header is null
+[23:55:08 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:40872) has connected
+[23:55:08 INFO]: [server connection] ShadowLord -> lobby has connected
+[23:55:17 INFO]: [server connection] ShadowLord -> survival has connected
+[23:55:17 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[23:56:28 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:40872) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[23:56:28 ERROR]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:40872): read timed out
+[23:56:28 INFO]: [server connection] ShadowLord -> survival has disconnected
+[23:58:33 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:53532]: Connected via websocket
+[23:58:33 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:53532]: Origin header is null
+[23:58:33 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:53532) has connected
+[23:58:33 INFO]: [server connection] ShadowLord -> lobby has connected
+[23:58:38 INFO]: [server connection] ShadowLord -> survival has connected
+[23:58:38 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[23:59:58 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:53532) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[23:59:58 ERROR]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:53532): read timed out
+[23:59:58 INFO]: [server connection] ShadowLord -> survival has disconnected
+[00:00:49 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:44022]: Connected via websocket
+[00:00:49 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:44022]: Origin header is null
+[00:00:49 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:44022) has connected
+[00:00:49 INFO]: [server connection] ShadowLord -> lobby has connected
+[00:00:52 INFO]: [server connection] ShadowLord -> survival has connected
+[00:00:52 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[00:01:55 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:44022) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[00:01:55 ERROR]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:44022): read timed out
+[00:01:55 INFO]: [server connection] ShadowLord -> survival has disconnected
+[00:04:22 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43792]: Connected via websocket
+[00:04:22 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43792]: Origin header is null
+[00:04:22 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:43792) has connected
+[00:04:22 INFO]: [server connection] ShadowLord -> lobby has connected
+[00:04:26 INFO]: [server connection] ShadowLord -> survival has connected
+[00:04:26 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[00:06:32 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:43792): kicked from server survival: Kicked by an operator.
+[00:06:32 INFO]: [server connection] ShadowLord -> survival has disconnected
+[00:06:32 INFO]: [server connection] ShadowLord -> lobby has connected
+[00:06:46 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:43792) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[00:06:46 ERROR]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:43792): read timed out
+[00:06:46 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[00:10:34 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:50692]: Connected via websocket
+[00:10:34 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:50692]: Origin header is null
+[00:10:34 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:50692) has connected
+[00:10:34 INFO]: [server connection] ShadowLord -> lobby has connected
+[00:10:38 INFO]: [server connection] ShadowLord -> survival has connected
+[00:10:38 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[00:11:47 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:50692) has disconnected
+[00:11:47 INFO]: [server connection] ShadowLord -> survival has disconnected

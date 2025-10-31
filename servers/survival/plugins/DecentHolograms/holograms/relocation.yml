@@ -1,4 +1,4 @@
-location: world:959.535:44.000:1311.012
+location: world:910.242:66.000:1346.054
 enabled: true
 display-range: 48
 update-range: 48
@@ -7,6 +7,8 @@ facing: 0.0
 down-origin: false
 pages:
 - lines:
-  - content: '&cAuthorized Personnel Only'
+  - content: '&6House Relocated'
+    height: 0.3
+  - content: '&cNew Build Coming!'
     height: 0.3
   actions: {}
