@@ -154,3 +154,12 @@ com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velo
 [00:10:38 INFO]: [server connection] ShadowLord -> lobby has disconnected
 [00:11:47 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:50692) has disconnected
 [00:11:47 INFO]: [server connection] ShadowLord -> survival has disconnected
+[00:34:25 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:46314]: Connected via websocket
+[00:34:25 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:46314]: Origin header is null
+[00:34:25 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:46314) has connected
+[00:34:25 INFO]: [server connection] ShadowLord -> lobby has connected
+[00:34:42 INFO]: [server connection] ShadowLord -> survival has connected
+[00:34:42 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[00:36:38 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:46314) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[00:36:38 ERROR]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:46314): read timed out
+[00:36:38 INFO]: [server connection] ShadowLord -> survival has disconnected

@@ -10,4 +10,5 @@ users:
     options:
       name: ShadowLord
     permissions:
+    - '''*'''
     - rank.lord

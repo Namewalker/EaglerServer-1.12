@@ -14,3 +14,7 @@
 [00:10:34] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:35644] logged in with entity id 109 at ([lobby_world]-103.19630785653605, 246.0, 258.12990066102566)
 [00:10:38] [Server thread/INFO]: ShadowLord lost connection: Disconnected
 [00:10:38] [Server thread/INFO]: ShadowLord left the game
+[00:34:25] [User Authenticator #9/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[00:34:25] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:41298] logged in with entity id 117 at ([lobby_world]-103.19630785653605, 246.0, 258.12990066102566)
+[00:34:42] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[00:34:42] [Server thread/INFO]: ShadowLord left the game
