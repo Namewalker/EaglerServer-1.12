@@ -149,6 +149,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_stonebrick": {
+    "criteria": {
+      "has_mossy_cobblestone": "2025-10-31 17:26:21 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/golden_hoe": {
     "criteria": {
       "has_gold_ingot": "2025-10-29 15:19:19 +0000"
@@ -451,6 +457,12 @@
   "minecraft:recipes/building_blocks/light_blue_concrete_powder": {
     "criteria": {
       "has_sand": "2025-09-12 22:19:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall": {
+    "criteria": {
+      "has_mossy_cobblestone": "2025-10-31 17:26:21 +0000"
     },
     "done": true
   },
@@ -1471,6 +1483,7 @@
       "frozen_river": "2025-09-12 22:18:14 +0000",
       "taiga_cold_hills": "2025-09-12 22:37:48 +0000",
       "forest": "2025-09-04 20:16:41 +0000",
+      "swampland": "2025-10-31 17:35:44 +0000",
       "deep_ocean": "2025-10-28 15:55:25 +0000",
       "beaches": "2025-09-12 14:47:46 +0000",
       "extreme_hills_with_trees": "2025-09-13 00:46:23 +0000",

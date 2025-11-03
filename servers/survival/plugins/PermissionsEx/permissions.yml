@@ -10,5 +10,11 @@ users:
     options:
       name: ShadowLord
     permissions:
+    - admin
     - '''*'''
     - rank.lord
+  24ef6066-39a5-3755-9e3b-dc012227f624:
+    permissions:
+    - rank.highlord
+    options:
+      name: Ruger1

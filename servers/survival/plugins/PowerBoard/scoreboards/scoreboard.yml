@@ -47,7 +47,7 @@ title:
 '0':
   speed: -1
   scores:
-  - '-Not animated-'
+  - '&cRespect the &crules'
 
 '1':
   speed: -1
@@ -57,28 +57,28 @@ title:
 '2':
   speed: 13
   scores:
-  - '&a-A-'
-  - '&b-An-'
-  - '&c-Ani-'
-  - '&d-Anim-'
-  - '&e-Anima-'
-  - '&f-Animat-'
-  - '&6-Animate-'
-  - '&3-Animated-'
-  - '&3-Animated- \'
-  - '&3-Animated- |'
-  - '&3-Animated- /'
-  - '&3-Animated- -'
-  - '&3-Animated- \'
-  - '&3-Animated- |'
-  - '&3-Animated-'
-  - '&6-Animate-'
-  - '&f-Animat-'
-  - '&e-Anima-'
-  - '&d-Anim-'
-  - '&c-Ani-'
-  - '&b-An-'
-  - '&a-A-'
+  - '&aW'
+  - '&bWe'
+  - '&cWel'
+  - '&dWelc'
+  - '&eWelco'
+  - '&fWelcom'
+  - '&6Welcome'
+  - '&3Welcome B'
+  - '&3Welcome Ba'
+  - '&3Welcome Bac'
+  - '&3Welcome Back'
+  - '&3Welcome Back'
+  - '&3Welcome Bac'
+  - '&3Welcome Ba'
+  - '&3Welcome B'
+  - '&6Welcome'
+  - '&fWelcom'
+  - '&eWelco'
+  - '&dWelc'
+  - '&cWel'
+  - '&bWe'
+  - '&aW'
 
 '3':
   speed: -1
