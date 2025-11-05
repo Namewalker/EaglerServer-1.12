@@ -1,5 +1,5 @@
 location: world:885.500:70.000:1367.500
-enabled: true
+enabled: false
 display-range: 48
 update-range: 48
 update-interval: 20

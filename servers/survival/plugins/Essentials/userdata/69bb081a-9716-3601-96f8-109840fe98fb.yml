@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 0:0:0:0:0:0:0:1
+afk: false
+socialspy: true
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1762297535023
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1762305460508
+  login: 1762305152951
+money: '0'
+last-account-name: ShadowLord
+lastlocation:
+  world: e6495bc2-b68c-46d4-bc57-f3ea503e4709
+  world-name: world
+  x: 885.3000000119209
+  y: 48.0
+  z: 1363.6992389452353
+  yaw: -42.000816345214844
+  pitch: 33.149967193603516
+logoutlocation:
+  world: e6495bc2-b68c-46d4-bc57-f3ea503e4709
+  world-name: world
+  x: 936.4171155712894
+  y: 125.0
+  z: 1306.9872859449433
+  yaw: 74.99930572509766
+  pitch: 14.549993515014648

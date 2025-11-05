@@ -1,9 +1,52 @@
 groups:
   default:
     options:
-      default: true
+      default: 'false'
     permissions:
     - modifyworld.*
+    - essentials.spawn
+    - essentials.spawn.default
+  admin:
+    options:
+      default: 'false'
+    permissions:
+    - essentials.spawn
+    - essentials.spawn.admin
+    - essentials.setspawn
+    - '*'
+  aetherborn:
+    options:
+      default: 'false'
+    permissions:
+    - rank.aetherborn
+    - essentials.kit.aetherborn
+    - kit.aetherborn
+  break_the_bed:
+    options:
+      default: 'false'
+    permissions:
+    - rank.break_the_bed
+    - essentials.kit.break_the_bed
+    - kit.break_the_bed
+  highlord:
+    options:
+      default: 'false'
+    permissions:
+    - rank.highlord
+    - essentials.kit.highlord
+    - kit.highlord
+  lord:
+    options:
+      default: 'false'
+    permissions:
+    - rank.lord
+    - essentials.kit.lord
+    - kit.lord
+  Member:
+    options:
+      default: 'false'
+    permissions:
+    - rank.player
 schema-version: 1
 users:
   69bb081a-9716-3601-96f8-109840fe98fb:
@@ -18,3 +61,9 @@ users:
     - rank.highlord
     options:
       name: Ruger1
+  8e68c44c-8414-306b-ad0b-4917c0c62a27:
+    permissions:
+    - rank.aetherborn
+    - rank.break_the_bed
+    options:
+      name: _Demon_Queen420_

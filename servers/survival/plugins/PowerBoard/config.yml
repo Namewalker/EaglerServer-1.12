@@ -92,6 +92,12 @@ ranks:
       suffix: ' &7[&dNoble&7]'
       chatPrefix: '&7[&5High Lord&7] %player_name% » '
       placeholder-name: 'High Lord'
+    aetherborn:
+      permission: 'rank.aetherborn'
+      prefix: '&3Aetherborn &7| &3'
+      suffix: ' &7[&6Of Heaven&7]'
+      chatPrefix: '&7[&3Aetherborn&7] %player_name% » '
+      placeholder-name: 'Aetherborn'
     lord:
       permission: 'rank.lord'
       prefix: '&5Lord &7| &5'
@@ -100,13 +106,13 @@ ranks:
       placeholder-name: 'Lord'
     creative:
       permission: 'rank.creative'
-      prefix: '&9Creative &7| &9'
+      prefix: '&6[Creative] &7| &9'
       suffix: ''
-      chatPrefix: '&7[&9Creative&7] %player_name% » '
+      chatPrefix: '&7[&6Creative&7] %player_name% » '
       placeholder-name: 'Creative'
     player:
       permission: 'rank.player'
-      prefix: '&7Player | '
+      prefix: '&7[Player] | '
       suffix: ''
       chatPrefix: '&7[&aPlayer&7] %player_name% » '
       placeholder-name: 'Player'

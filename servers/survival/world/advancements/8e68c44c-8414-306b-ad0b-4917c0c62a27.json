@@ -23,6 +23,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/lever": {
+    "criteria": {
+      "has_cobblestone": "2025-11-04 01:20:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/magenta_concrete_powder": {
     "criteria": {
       "has_gravel": "2025-09-22 21:57:52 +0000"
@@ -245,6 +251,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/stone_shovel": {
+    "criteria": {
+      "has_cobblestone": "2025-11-04 01:20:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_planks": {
     "criteria": {
       "has_log": "2025-09-13 00:10:22 +0000"
@@ -297,13 +309,20 @@
       "cookie": "2025-09-24 20:41:46 +0000",
       "beetroot": "2025-09-16 23:21:28 +0000",
       "cooked_chicken": "2025-09-16 23:40:16 +0000",
-      "enchanted_golden_apple": "2025-09-16 23:36:46 +0000"
+      "enchanted_golden_apple": "2025-09-16 23:36:46 +0000",
+      "carrot": "2025-11-04 01:47:57 +0000"
     },
     "done": false
   },
   "minecraft:recipes/tools/wooden_hoe": {
     "criteria": {
       "has_stick": "2025-09-22 22:18:30 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab": {
+    "criteria": {
+      "has_cobblestone": "2025-11-04 01:20:07 +0000"
     },
     "done": true
   },
@@ -493,6 +512,18 @@
     },
     "done": true
   },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2025-11-04 01:20:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/furnace": {
+    "criteria": {
+      "has_cobblestone": "2025-11-04 01:20:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/beetroot_soup": {
     "criteria": {
       "has_beetroot": "2025-09-16 00:30:46 +0000"
@@ -531,6 +562,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/sandstone": {
+    "criteria": {
+      "has_sand": "2025-11-04 01:21:41 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/spruce_planks": {
     "criteria": {
       "has_log": "2025-09-13 00:04:36 +0000"
@@ -561,9 +598,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/stone_sword": {
+    "criteria": {
+      "has_cobblestone": "2025-11-04 01:20:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_stairs": {
     "criteria": {
       "has_planks": "2025-09-15 23:55:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall": {
+    "criteria": {
+      "has_cobblestone": "2025-11-04 01:20:07 +0000"
     },
     "done": true
   },
@@ -576,6 +625,12 @@
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "entered_water": "2025-09-15 23:55:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_pickaxe": {
+    "criteria": {
+      "has_cobblestone": "2025-11-04 01:20:07 +0000"
     },
     "done": true
   },
@@ -648,6 +703,12 @@
   "minecraft:recipes/decorations/lime_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2025-09-24 21:30:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_hoe": {
+    "criteria": {
+      "has_cobblestone": "2025-11-04 01:20:07 +0000"
     },
     "done": true
   },
@@ -733,6 +794,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone_stairs": {
+    "criteria": {
+      "has_cobblestone": "2025-11-04 01:20:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/birch_door": {
     "criteria": {
       "has_planks": "2025-09-15 23:54:57 +0000"
@@ -766,6 +833,12 @@
   "minecraft:recipes/building_blocks/red_wool": {
     "criteria": {
       "has_white_wool": "2025-09-16 23:59:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_axe": {
+    "criteria": {
+      "has_cobblestone": "2025-11-04 01:20:07 +0000"
     },
     "done": true
   },
