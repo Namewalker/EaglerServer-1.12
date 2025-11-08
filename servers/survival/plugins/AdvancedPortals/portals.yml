@@ -1,4 +1,4 @@
-
+# 
 #  ExamplePortal:
 #    world: it will be the world name
 #    triggerblock: LAVA # will only be used if the hastriggerblock is true and can be id or text
@@ -17,3 +17,30 @@
 #        X:
 #        Y:
 #        Z:
+
+
+
+
+tunnel:
+  world: world
+  triggerblock: PORTAL
+  destination: tunnel
+  pos1:
+    X: 945
+    Y: 45
+    Z: 1301
+  pos2:
+    X: 942
+    Y: 42
+    Z: 1301
+wizard:
+  world: world
+  triggerblock: PORTAL
+  pos1:
+    X: 914
+    Y: 64
+    Z: 1370
+  pos2:
+    X: 914
+    Y: 64
+    Z: 1370
