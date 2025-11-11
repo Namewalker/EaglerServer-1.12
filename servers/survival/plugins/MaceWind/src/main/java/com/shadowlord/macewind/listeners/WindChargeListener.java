@@ -4,7 +4,6 @@ import com.shadowlord.macewind.MaceWindPlugin;
 import com.shadowlord.macewind.util.ItemUtils;
 import org.bukkit.Effect;
 import org.bukkit.Location;
-import org.bukkit.Sound;
 import org.bukkit.World;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
@@ -27,6 +26,7 @@ public class WindChargeListener implements Listener {
         this.plugin = plugin;
     }
 
+    // Player right-clicks with Wind Charge item -> spawn a SmallFireball and tag it
     @EventHandler
     public void onPlayerUse(PlayerInteractEvent event) {
         if (event.getHand() != EquipmentSlot.HAND) return;
@@ -50,6 +50,7 @@ public class WindChargeListener implements Listener {
         event.setCancelled(true);
     }
 
+    // Handle projectile hit (use ProjectileHitEvent to control everything)
     @EventHandler
     public void onProjectileHit(ProjectileHitEvent event) {
         Projectile proj = event.getEntity();
@@ -58,23 +59,12 @@ public class WindChargeListener implements Listener {
         Location center = proj.getLocation();
         World world = center.getWorld();
 
-        if (plugin.getConfig().getBoolean("windcharge.feedback.enable-sound", true)) {
-            try {
-                Sound s = Sound.valueOf(plugin.getConfig().getString("windcharge.feedback.sound", "ENTITY_ENDERDRAGON_FLAP"));
-                world.playSound(center, s, 1.0f, 1.0f);
-            } catch (IllegalArgumentException ignored) {}
-        }
-        if (plugin.getConfig().getBoolean("windcharge.feedback.enable-effect", true)) {
-            world.playEffect(center, Effect.SMOKE, plugin.getConfig().getInt("windcharge.feedback.effect-data", 10));
-        }
+        // Visual only: lightweight swirl using a few Effect play calls (no sound)
+        spawnSwirlEffects(world, center);
 
         double radius = plugin.getConfig().getDouble("windcharge.radius", 6.0);
         double centerMagnitude = plugin.getConfig().getDouble("windcharge.center-magnitude", 3.5);
         double minUp = plugin.getConfig().getDouble("windcharge.min-upward", 0.8);
-
-        // Tuned multipliers: increase from 0.5 to 0.75
-        final double verticalMultiplier = 0.75;
-        final double magnitudeMultiplier = 0.75;
 
         Collection<Entity> nearby = world.getNearbyEntities(center, radius, radius, radius);
         for (Entity ent : nearby) {
@@ -85,16 +75,13 @@ public class WindChargeListener implements Listener {
 
             Vector dir = ent.getLocation().toVector().subtract(center.toVector()).normalize();
             if (dx < 1.2) {
-                dir = new Vector(0, 1 * verticalMultiplier, 0);
+                dir = new Vector(0, 1, 0);
             } else {
-                double computedUp = Math.max(minUp, 0.6 + strength);
-                dir.setY(Math.max(0.0, computedUp * verticalMultiplier));
+                dir.setY(Math.max(minUp, 0.6 + strength));
             }
 
             double magnitude = 1.0 + (centerMagnitude - 1.0) * strength;
-            magnitude *= magnitudeMultiplier;
             dir.multiply(magnitude);
-
             ent.setVelocity(dir);
 
             if (ent instanceof LivingEntity) {
@@ -103,5 +90,39 @@ public class WindChargeListener implements Listener {
         }
 
         proj.remove();
+    }
+
+    /**
+     * Spawn a small, low-overhead swirl of particles/effects around center.
+     * We keep the number of Effect calls small and only execute once so the
+     * visual reads as a swirl without taxing clients or server.
+     */
+    private void spawnSwirlEffects(World world, Location center) {
+        if (!plugin.getConfig().getBoolean("windcharge.feedback.enable-effect", true)) return;
+
+        // Choose a server-side effect that is cheap and available on 1.12
+        Effect effect = Effect.SMOKE; // subtle and cheap; adjust in config if desired
+        int effectData = plugin.getConfig().getInt("windcharge.feedback.effect-data", 10);
+
+        // sample a small number of points around a few concentric radii
+        double[] radii = new double[] { 0.4, 1.0, 1.6 };
+        int samplesPerRing = 8; // low count to avoid lag
+
+        for (double r : radii) {
+            for (int i = 0; i < samplesPerRing; i++) {
+                double angle = (2 * Math.PI * i) / samplesPerRing + (r * 0.3);
+                double x = Math.cos(angle) * r;
+                double z = Math.sin(angle) * r;
+                // slight vertical offset to give a spiral feel
+                double y = 0.2 + (r * 0.15);
+
+                Location pos = center.clone().add(x, y, z);
+                try {
+                    world.playEffect(pos, effect, effectData);
+                } catch (Throwable ignored) {
+                    // ensure no exception bubbles up on unusual server builds
+                }
+            }
+        }
     }
 }

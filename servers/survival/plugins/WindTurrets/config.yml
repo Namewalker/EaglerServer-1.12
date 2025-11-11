@@ -1,0 +1,11 @@
+# WindTurrets configuration
+fire_interval_ticks: 10
+default_radius: 10
+max_targets_per_scan: 1
+crafting:
+  enabled: true
+  result_material: QUARTZ_BLOCK
+  result_name: '&bWind Turret Core'
+  result_lore:
+  - '&7Right-click a Quartz Pillar on top of an up-facing Dispenser to activate'
+  - '&8(Place on top of dispenser facing UP)'

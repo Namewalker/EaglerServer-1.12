@@ -336,3 +336,97 @@
 [INFO] WorldEdit: The_Code (in "world"): /walls stonebrick - Region: (900.0, 62.0, 1308.0) - (914.0, 62.0, 1319.0)
 [INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (901.0, 62.0, 1309.0) - (913.0, 62.0, 1318.0)
 [INFO] WorldEdit: The_Code (in "world"): /undo 5
+[INFO] WorldEdit: The_Code (in "world"): up 200 - Position: (867.4128033364035, 7.992921873894621, 1269.9135188517087)
+[INFO] WorldEdit: The_Code (in "world"): up 200 - Position: (867.5, 216.34838310247767, 1269.5)
+[INFO] WorldEdit: The_Code (in "world"): ascend
+[INFO] WorldEdit: The_Code (in "world"): descend
+[INFO] WorldEdit: The_Code (in "world"): up 200 - Position: (898.0789418414743, 64.0, 1339.1213872681667)
+[INFO] WorldEdit: The_Code (in "world"): ascend
+[INFO] WorldEdit: The_Code (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): up 5 - Position: (976.5035471414581, 71.95262615653596, 1581.4977259256611)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 bedrock,stone,lava,redstoneore,ironore,coalore,diamondore air - Position: (1.500087E7, 2.0, 1.5001353E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 bedrock,stone,lava,redstoneore,ironore,coalore,diamondore,dirt,goldore air - Position: (1.500087E7, 2.0, 1.5001353E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 bedrock,stone,lava,redstoneore,ironore,coalore,diamondore,dirt,goldore,lapisore air - Position: (1.500087E7, 2.0, 1.5001353E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /drain 50 - Position: (1.500087E7, 2.0, 1.5001353E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /wand
+[INFO] WorldEdit: ShadowLord (in "world"): /set bedrock - Region: (1.5000859E7, 0.0, 1.5001363E7) - (1.5000881E7, 12.0, 1.5001363E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /set air - Region: (1.500086E7, 0.0, 1.5001342E7) - (1.500088E7, 12.0, 1.5001342E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /set bedrock - Region: (1.500086E7, 0.0, 1.5001341E7) - (1.500088E7, 12.0, 1.5001341E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /set bedrock - Region: (1.5000859E7, 0.0, 1.5001342E7) - (1.5000859E7, 12.0, 1.5001362E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /set bedrock - Region: (1.5000881E7, 0.0, 1.5001342E7) - (1.5000881E7, 12.0, 1.5001362E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /set bedrock - Region: (1.500086E7, 13.0, 1.5001342E7) - (1.500088E7, 13.0, 1.5001362E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000873E7, 9.0, 1.500135E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000878E7, 9.0, 1.5001346E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000878E7, 9.0, 1.5001351E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000877E7, 9.0, 1.5001351E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000877E7, 9.0, 1.5001351E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000877E7, 9.0, 1.5001351E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000877E7, 9.0, 1.5001351E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000877E7, 9.0, 1.5001351E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000877E7, 9.0, 1.5001351E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000879E7, 3.0, 1.5001348E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000879E7, 3.0, 1.5001348E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000879E7, 3.0, 1.5001348E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000879E7, 3.0, 1.5001348E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000879E7, 3.0, 1.5001348E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000871E7, 3.0, 1.5001353E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 10 lava air - Position: (1.5000876E7, 3.0, 1.5001351E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /center barrier - Region: (1.5000881E7, 0.0, 1.5001342E7) - (1.5000881E7, 0.0, 1.5001362E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /center barrier - Region: (1.500086E7, 0.0, 1.5001363E7) - (1.500088E7, 0.0, 1.5001363E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /set barrier - Region: (1.500087E7, 0.0, 1.5001341E7) - (1.500087E7, 0.0, 1.5001363E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /set barrier - Region: (1.500087E7, 0.0, 1.5001351E7) - (1.5000881E7, 0.0, 1.5001352E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /undo
+[INFO] WorldEdit: ShadowLord (in "world"): /undo
+[INFO] WorldEdit: ShadowLord (in "world"): /redo
+[INFO] WorldEdit: ShadowLord (in "world"): /set barrier - Region: (1.500087E7, 0.0, 1.5001352E7) - (1.5000881E7, 0.0, 1.5001352E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /set barrier - Region: (1.5000859E7, 0.0, 1.5001351E7) - (1.5000881E7, 0.0, 1.5001352E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /undo
+[INFO] WorldEdit: ShadowLord (in "world"): /undo
+[INFO] WorldEdit: ShadowLord (in "world"): /redo
+[INFO] WorldEdit: ShadowLord (in "world"): /set barrier - Region: (1.5000859E7, 0.0, 1.5001352E7) - (1.5000881E7, 0.0, 1.5001352E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 15 barrier air - Position: (1.500087E7, 1.0, 1.5001352E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 15 barrier air - Position: (1.5000872E7, 3.0, 1.5001354E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 15 barrier air - Position: (1.5000873E7, 1.0, 1.5001352E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 15 barrier air - Position: (1.5000865E7, 1.0, 1.5001354E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 15 barrier air - Position: (1.5000876E7, 1.0, 1.5001353E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /center stonebrick - Region: (1.5000881E7, 0.0, 1.5001342E7) - (1.5000881E7, 0.0, 1.5001362E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /center stonebrick - Region: (1.500086E7, 0.0, 1.5001363E7) - (1.500088E7, 0.0, 1.5001363E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /center stonebrick - Region: (1.5000859E7, 0.0, 1.5001342E7) - (1.5000859E7, 0.0, 1.5001362E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /center stonebrick - Region: (1.500086E7, 0.0, 1.5001341E7) - (1.500088E7, 0.0, 1.5001341E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /set stonebrick - Region: (1.500087E7, 0.0, 1.5001341E7) - (1.500087E7, 0.0, 1.5001363E7)
+[INFO] WorldEdit: ShadowLord (in "world"): /set stonebrick - Region: (1.5000859E7, 0.0, 1.5001352E7) - (1.5000881E7, 0.0, 1.5001352E7)
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): descend
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 20 diamondblock ari - Position: (852.0, 68.0, 1377.0)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 20 diamondblock air - Position: (851.0, 69.0, 1374.0)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 20 beacon air - Position: (851.0, 70.0, 1371.0)
+[INFO] WorldEdit: ShadowLord (in "world"): /wand
+[INFO] WorldEdit: ShadowLord (in "world"): /walls grass - Region: (848.0, 63.0, 1391.0) - (859.0, 66.0, 1400.0)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 15 air barrier - Position: (1.500087E7, 6.0, 1.5001352E7)
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): up 5 - Position: (905.5394587593603, 63.9375, 1343.6388113414355)
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): /ex 500 - Position: (913.0, 63.0, 1322.0)
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 5 stone diamondore - Position: (1626.0, 11.0, 1655.0)
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): ascend

@@ -35,6 +35,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/pillar_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2025-11-10 23:12:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/iron_sword": {
     "criteria": {
       "has_iron_ingot": "2025-09-04 20:21:51 +0000"
@@ -239,6 +245,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/pink_carpet": {
+    "criteria": {
+      "has_pink_wool": "2025-11-10 22:50:41 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/wooden_shovel": {
     "criteria": {
       "has_stick": "2025-09-04 20:11:32 +0000"
@@ -373,18 +385,28 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
+      "chicken": "2025-11-11 00:57:09 +0000",
       "cooked_mutton": "2025-09-04 20:17:54 +0000",
       "cooked_beef": "2025-09-11 20:21:33 +0000",
       "chorus_fruit": "2025-09-12 21:58:14 +0000",
       "melon": "2025-09-12 14:46:24 +0000",
+      "bread": "2025-11-11 01:33:29 +0000",
+      "rotten_flesh": "2025-11-11 01:37:48 +0000",
       "cooked_chicken": "2025-10-28 15:50:13 +0000",
-      "enchanted_golden_apple": "2025-09-12 20:23:32 +0000"
+      "enchanted_golden_apple": "2025-09-12 20:23:32 +0000",
+      "carrot": "2025-11-11 01:42:46 +0000"
     },
     "done": false
   },
   "minecraft:recipes/tools/wooden_hoe": {
     "criteria": {
       "has_stick": "2025-09-04 20:11:32 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_wart_block": {
+    "criteria": {
+      "has_nether_wart": "2025-11-11 02:02:33 +0000"
     },
     "done": true
   },
@@ -457,6 +479,12 @@
   "minecraft:recipes/building_blocks/light_blue_concrete_powder": {
     "criteria": {
       "has_sand": "2025-09-12 22:19:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pink_banner": {
+    "criteria": {
+      "has_pink_wool": "2025-11-10 22:50:41 +0000"
     },
     "done": true
   },
@@ -652,6 +680,12 @@
     },
     "done": true
   },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2025-11-11 01:39:27 +0000"
+    },
+    "done": true
+  },
   "minecraft:husbandry/root": {
     "criteria": {
       "consumed_item": "2025-09-04 20:17:54 +0000"
@@ -688,6 +722,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_stairs": {
+    "criteria": {
+      "has_quartz_block": "2025-11-10 23:12:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/enchanting_table": {
     "criteria": {
       "has_obsidian": "2025-09-12 22:16:41 +0000"
@@ -721,6 +761,12 @@
   "minecraft:recipes/building_blocks/orange_stained_glass": {
     "criteria": {
       "has_glass": "2025-09-12 20:24:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:end/dragon_breath": {
+    "criteria": {
+      "dragon_breath": "2025-11-11 14:48:21 +0000"
     },
     "done": true
   },
@@ -784,6 +830,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/red_nether_brick": {
+    "criteria": {
+      "has_nether_wart": "2025-11-11 02:02:33 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/white_stained_glass_pane": {
     "criteria": {
       "has_glass": "2025-09-12 20:24:10 +0000"
@@ -804,6 +856,7 @@
       "evoker": "2025-09-21 21:49:24 +0000",
       "silverfish": "2025-09-12 16:04:07 +0000",
       "zombie": "2025-09-12 22:13:36 +0000",
+      "cave_spider": "2025-11-11 01:09:15 +0000",
       "witch": "2025-09-16 14:38:33 +0000",
       "spider": "2025-09-12 21:58:32 +0000",
       "creeper": "2025-09-12 22:13:48 +0000",
@@ -1129,6 +1182,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/quartz_slab": {
+    "criteria": {
+      "has_quartz_block": "2025-11-10 23:12:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pink_bed": {
+    "criteria": {
+      "has_pink_wool": "2025-11-10 22:50:41 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_stained_glass": {
     "criteria": {
       "has_glass": "2025-09-12 20:24:10 +0000"
@@ -1186,6 +1251,12 @@
   "minecraft:recipes/redstone/light_weighted_pressure_plate": {
     "criteria": {
       "has_gold_ingot": "2025-10-29 15:19:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/deflect_arrow": {
+    "criteria": {
+      "deflected_projectile": "2025-11-11 01:55:19 +0000"
     },
     "done": true
   },
@@ -1312,6 +1383,12 @@
   "minecraft:recipes/combat/iron_boots": {
     "criteria": {
       "has_iron_ingot": "2025-09-04 20:21:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2025-11-10 23:12:07 +0000"
     },
     "done": true
   },
@@ -1489,17 +1566,20 @@
       "frozen_river": "2025-09-12 22:18:14 +0000",
       "taiga_cold_hills": "2025-09-12 22:37:48 +0000",
       "forest": "2025-09-04 20:16:41 +0000",
+      "mesa_rock": "2025-11-10 22:44:41 +0000",
       "swampland": "2025-10-31 17:35:44 +0000",
       "birch_forest": "2025-11-04 23:10:37 +0000",
       "deep_ocean": "2025-10-28 15:55:25 +0000",
       "beaches": "2025-09-12 14:47:46 +0000",
       "extreme_hills_with_trees": "2025-09-13 00:46:23 +0000",
       "desert_hills": "2025-10-13 20:15:55 +0000",
+      "mesa": "2025-11-10 22:44:35 +0000",
       "forest_hills": "2025-09-12 14:46:23 +0000",
       "plains": "2025-09-12 14:43:18 +0000",
       "jungle_hills": "2025-09-12 14:39:08 +0000",
       "jungle_edge": "2025-09-12 14:41:29 +0000",
       "savanna": "2025-09-12 16:01:47 +0000",
+      "mesa_clear_rock": "2025-11-10 22:46:45 +0000",
       "ice_mountains": "2025-09-12 22:06:11 +0000",
       "taiga": "2025-09-04 20:07:51 +0000",
       "redwood_taiga": "2025-11-04 23:34:14 +0000",
@@ -1510,6 +1590,7 @@
       "ocean": "2025-09-12 16:01:36 +0000",
       "extreme_hills": "2025-09-04 20:09:29 +0000",
       "roofed_forest": "2025-09-12 14:41:50 +0000",
+      "cold_beach": "2025-11-10 22:39:10 +0000",
       "river": "2025-09-04 20:09:17 +0000",
       "jungle": "2025-09-12 14:37:51 +0000",
       "desert": "2025-10-13 20:14:19 +0000",

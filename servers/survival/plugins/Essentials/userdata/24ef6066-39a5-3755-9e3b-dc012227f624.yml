@@ -16,15 +16,23 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1762551021331
-  login: 1762549648574
+  logout: 1762880780130
+  login: 1762880644636
 money: '0'
 last-account-name: Ruger1
 logoutlocation:
   world: e6495bc2-b68c-46d4-bc57-f3ea503e4709
   world-name: world
-  x: 6627.666432509697
-  y: 62.07326432466507
-  z: -7546.4726347553415
-  yaw: -106.72158813476562
-  pitch: 31.61554527282715
+  x: 886.649324432856
+  y: 63.9375
+  z: 1345.2046982227666
+  yaw: -337.3687744140625
+  pitch: 38.41536331176758
+lastlocation:
+  world: e6495bc2-b68c-46d4-bc57-f3ea503e4709
+  world-name: world
+  x: 1628.699999988079
+  y: 11.0
+  z: 1649.226613099074
+  yaw: 7.76849889755249
+  pitch: 56.235477447509766

@@ -127,6 +127,9 @@ world-settings:
     duplicate-uuid-saferegen-delete-range: 32
     keep-spawn-loaded-range: 4
     auto-save-interval: -1
+    squid-spawn-height:
+      maximum: 63.0
+      minimum: 45.0
     container-update-tick-rate: 1
     nether-ceiling-void-damage: false
     allow-non-player-entities-on-scoreboards: false
@@ -180,12 +183,9 @@ world-settings:
     allow-leashing-undead-horse: false
     mob-spawner-tick-rate: 1
     all-chunks-are-slime-chunks: false
-    squid-spawn-height:
-      maximum: 63.0
-      minimum: 45.0
-    disable-teleportation-suffocation-check: false
     enable-treasure-maps: true
     treasure-maps-return-already-discovered: false
+    disable-teleportation-suffocation-check: false
     enable-old-tnt-cannon-behaviors: false
     verbose: true
     allow-block-location-tab-completion: true

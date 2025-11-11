@@ -38,6 +38,7 @@ settings:
   moved-too-quickly-threshold: 100.0
 commands:
   tab-complete: 0
+  log: true
   spam-exclusions:
   - /skill
   silent-commandblock-console: false
@@ -46,7 +47,6 @@ commands:
   - summon
   - testforblock
   - tellraw
-  log: true
 messages:
   whitelist: You are not whitelisted on this server!
   unknown-command: Unknown command. Type "/help" for help.

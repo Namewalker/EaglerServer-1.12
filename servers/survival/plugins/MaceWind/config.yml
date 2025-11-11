@@ -3,16 +3,16 @@
 
 mace:
   # Base damage applied when hitting with the Mace (event.setDamage)
-  base-damage: 9.0
+  base-damage: 15.0
 
   # Minimum fall distance (in blocks) before bonus damage starts
   fall-threshold: 1.5
 
   # Extra damage added per block fallen past the threshold
-  bonus-per-block: 2.0
+  bonus-per-block: 7.0
 
   # Maximum bonus damage allowed from fall scaling
-  max-bonus: 10.0
+  max-bonus: 50.0
 
   # Debounce window (ms) to avoid multiple rapid hits applying twice
   hit-debounce-ms: 50
@@ -43,7 +43,7 @@ windcharge:
   radius: 6.0
 
   # Magnitude multiplier applied at center; falls off towards edge
-  center-magnitude: 3.5
+  center-magnitude: 3.0
 
   # Minimum upward component for thrown entities
   min-upward: 0.8

@@ -30,6 +30,11 @@ ShadowLord:
     X: -8578.34414713111
     Y: 64.0
     Z: -8979.12832105786
+  storage:
+    world: world
+    X: 1.5000868206947194E7
+    Y: 1.0
+    Z: 1.5001357612174604E7
 Ruger1:
   base:
     world: world
