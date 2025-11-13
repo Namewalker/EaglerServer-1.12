@@ -44,9 +44,16 @@ groups:
     - kit.lord
   Member:
     options:
-      default: 'false'
+      default: 'true'
     permissions:
     - rank.player
+  Creative:
+    options:
+      default: 'false'
+    permissions:
+    - rank.creative
+    - essentials.kit.creative
+    - kit.creative
 schema-version: 1
 users:
   69bb081a-9716-3601-96f8-109840fe98fb:
@@ -67,3 +74,6 @@ users:
     - rank.break_the_bed
     options:
       name: _Demon_Queen420_
+  crims0nf4ng:
+    options:
+      rank: rank.admin

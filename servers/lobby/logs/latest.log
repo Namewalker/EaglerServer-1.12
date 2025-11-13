@@ -1,142 +1,142 @@
-[17:03:39] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[17:03:39] [Server thread/INFO]: Loading properties
-[17:03:39] [Server thread/INFO]: Default game type: SURVIVAL
-[17:03:39] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[17:03:39] [Server thread/INFO]: Debug logging is disabled
-[17:03:39] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:03:39] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:03:39] [Server thread/INFO]: Generating keypair
-[17:03:39] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:03:40] [Server thread/INFO]: Using default channel type
-[17:03:40] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[17:03:40] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v6.4
-[17:03:40] [Server thread/INFO]: [SimpleHomes] Loading SimpleHomes v2.2
-[17:03:40] [Server thread/INFO]: [VoidGen] Loading VoidGen v1.1
-[17:03:40] [Server thread/INFO]: [EaglerVanish] Loading EaglerVanish v1.0.0
-[17:03:40] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
-[17:03:40] [Server thread/INFO]: [CursedAltar] Loading CursedAltar v1.0
-[17:03:40] [Server thread/INFO]: [DisguiseSimple] Loading DisguiseSimple v1.0
-[17:03:40] [Server thread/INFO]: [TickFreeze] Loading TickFreeze v1.0.0
-[17:03:40] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.4.2
-[17:03:40] [Server thread/INFO]: [ViaVersion] ViaVersion 5.4.2 is now loaded. Registering protocol transformers and injecting...
-[17:03:41] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[17:03:41] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[17:03:41] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[17:03:41] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[17:03:42] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.9.8
-[17:03:42] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
-[17:03:42] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.4.2
-[17:03:42] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:03:42] [Server thread/INFO]: [VoidGen] Enabling VoidGen v1.1
-[17:03:42] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[17:03:42] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[17:03:42] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[17:03:42] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[17:03:42] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[17:03:42] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
-[17:03:42] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
-[17:03:42] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[17:03:42] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[17:03:42] [Server thread/INFO]: Preparing level "lobby_world"
-[17:03:42] [Server thread/INFO]: -------- World Settings For [lobby_world] --------
-[17:03:42] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[17:03:42] [Server thread/INFO]: Cane Growth Modifier: 100%
-[17:03:42] [Server thread/INFO]: Melon Growth Modifier: 100%
-[17:03:42] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[17:03:42] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[17:03:42] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[17:03:42] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[17:03:42] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[17:03:42] [Server thread/INFO]: Vine Growth Modifier: 100%
-[17:03:42] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[17:03:42] [Server thread/INFO]: Mob Spawn Range: 4
-[17:03:42] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[17:03:42] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[17:03:42] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[17:03:42] [Server thread/INFO]: Random Lighting Updates: false
-[17:03:42] [Server thread/INFO]: Structure Info Saving: true
-[17:03:42] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[17:03:42] [Server thread/INFO]: Max TNT Explosions: 100
-[17:03:42] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[17:03:42] [Server thread/INFO]: Item Despawn Rate: 6000
-[17:03:42] [Server thread/INFO]: Item Merge Radius: 2.5
-[17:03:42] [Server thread/INFO]: View Distance: 4
-[17:03:42] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[17:03:42] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[17:03:42] [Server thread/INFO]: Experience Merge Radius: 3.0
-[17:03:42] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[17:03:42] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[17:03:43] [Server thread/INFO]: -------- World Settings For [lobby_world_nether] --------
-[17:03:43] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Cane Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Melon Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Vine Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Mob Spawn Range: 4
-[17:03:43] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[17:03:43] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[17:03:43] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[17:03:43] [Server thread/INFO]: Random Lighting Updates: false
-[17:03:43] [Server thread/INFO]: Structure Info Saving: true
-[17:03:43] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[17:03:43] [Server thread/INFO]: Max TNT Explosions: 100
-[17:03:43] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[17:03:43] [Server thread/INFO]: Item Despawn Rate: 6000
-[17:03:43] [Server thread/INFO]: Item Merge Radius: 2.5
-[17:03:43] [Server thread/INFO]: View Distance: 4
-[17:03:43] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[17:03:43] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[17:03:43] [Server thread/INFO]: Experience Merge Radius: 3.0
-[17:03:43] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[17:03:43] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[17:03:43] [Server thread/INFO]: -------- World Settings For [lobby_world_the_end] --------
-[17:03:43] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Cane Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Melon Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Vine Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[17:03:43] [Server thread/INFO]: Mob Spawn Range: 4
-[17:03:43] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[17:03:43] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[17:03:43] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[17:03:43] [Server thread/INFO]: Random Lighting Updates: false
-[17:03:43] [Server thread/INFO]: Structure Info Saving: true
-[17:03:43] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[17:03:43] [Server thread/INFO]: Max TNT Explosions: 100
-[17:03:43] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[17:03:43] [Server thread/INFO]: Item Despawn Rate: 6000
-[17:03:43] [Server thread/INFO]: Item Merge Radius: 2.5
-[17:03:43] [Server thread/INFO]: View Distance: 4
-[17:03:43] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[17:03:43] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[17:03:43] [Server thread/INFO]: Experience Merge Radius: 3.0
-[17:03:43] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[17:03:43] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[17:03:43] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3770571510763107811)
-[17:03:43] [Server thread/ERROR]: Chunk file at -11,12 is in the wrong location; relocating. (Expected -11, 12, got -1, 17)
-[17:03:44] [Server thread/INFO]: Preparing spawn area: 0%
-[17:03:45] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9193991585933015891)
-[17:03:45] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9193991585933015891)
-[17:03:45] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.4
-[17:03:45] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[17:03:45] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 6.4
-[17:03:45] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
-[17:03:45] [Server thread/INFO]: [SimpleHomes] Enabling SimpleHomes v2.2
-[17:03:45] [Server thread/INFO]: [EaglerVanish] Enabling EaglerVanish v1.0.0
-[17:03:45] [Server thread/INFO]: [EaglerVanish] EaglerVanish enabled
-[17:03:45] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
-[17:03:46] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[17:03:46] [Server thread/WARN]: [WorldEdit] 
+[15:34:58] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[15:34:58] [Server thread/INFO]: Loading properties
+[15:35:00] [Server thread/INFO]: Default game type: SURVIVAL
+[15:35:00] [Server thread/INFO]: This server is running Paper version git-Paper-1620 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[15:35:01] [Server thread/INFO]: Debug logging is disabled
+[15:35:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:35:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:35:01] [Server thread/INFO]: Generating keypair
+[15:35:01] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:35:02] [Server thread/INFO]: Using default channel type
+[15:35:03] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[15:35:04] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v6.4
+[15:35:04] [Server thread/INFO]: [SimpleHomes] Loading SimpleHomes v2.2
+[15:35:04] [Server thread/INFO]: [VoidGen] Loading VoidGen v1.1
+[15:35:04] [Server thread/INFO]: [EaglerVanish] Loading EaglerVanish v1.0.0
+[15:35:04] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[15:35:04] [Server thread/INFO]: [CursedAltar] Loading CursedAltar v1.0
+[15:35:04] [Server thread/INFO]: [DisguiseSimple] Loading DisguiseSimple v1.0
+[15:35:04] [Server thread/INFO]: [TickFreeze] Loading TickFreeze v1.0.0
+[15:35:04] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.4.2
+[15:35:04] [Server thread/INFO]: [ViaVersion] ViaVersion 5.4.2 is now loaded. Registering protocol transformers and injecting...
+[15:35:05] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[15:35:05] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[15:35:05] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[15:35:05] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[15:35:07] [Server thread/INFO]: [DecentHolograms] Loading DecentHolograms v2.9.8
+[15:35:07] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[15:35:07] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.4.2
+[15:35:07] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:35:07] [Server thread/INFO]: [VoidGen] Enabling VoidGen v1.1
+[15:35:07] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[15:35:07] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[15:35:07] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[15:35:07] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15:35:07] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[15:35:07] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[15:35:07] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[15:35:07] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[15:35:07] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[15:35:07] [Server thread/INFO]: Preparing level "lobby_world"
+[15:35:08] [Server thread/INFO]: -------- World Settings For [lobby_world] --------
+[15:35:08] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[15:35:08] [Server thread/INFO]: Mob Spawn Range: 4
+[15:35:08] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:35:08] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:35:08] [Server thread/INFO]: Random Lighting Updates: false
+[15:35:08] [Server thread/INFO]: Structure Info Saving: true
+[15:35:08] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[15:35:08] [Server thread/INFO]: Max TNT Explosions: 100
+[15:35:08] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:35:08] [Server thread/INFO]: View Distance: 4
+[15:35:08] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:35:08] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:35:08] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:35:08] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:35:08] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:35:08] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:35:08] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:35:08] [Server thread/INFO]: -------- World Settings For [lobby_world_nether] --------
+[15:35:08] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:35:08] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[15:35:08] [Server thread/INFO]: Mob Spawn Range: 4
+[15:35:08] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:35:08] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:35:08] [Server thread/INFO]: Random Lighting Updates: false
+[15:35:08] [Server thread/INFO]: Structure Info Saving: true
+[15:35:08] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[15:35:08] [Server thread/INFO]: Max TNT Explosions: 100
+[15:35:08] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:35:08] [Server thread/INFO]: View Distance: 4
+[15:35:08] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:35:08] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:35:08] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:35:08] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:35:08] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:35:08] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:35:08] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:35:09] [Server thread/INFO]: -------- World Settings For [lobby_world_the_end] --------
+[15:35:09] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:35:09] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:35:09] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:35:09] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:35:09] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:35:09] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:35:09] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:35:09] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:35:09] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:35:09] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:35:09] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
+[15:35:09] [Server thread/INFO]: Mob Spawn Range: 4
+[15:35:09] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:35:09] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:35:09] [Server thread/INFO]: Random Lighting Updates: false
+[15:35:09] [Server thread/INFO]: Structure Info Saving: true
+[15:35:09] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[15:35:09] [Server thread/INFO]: Max TNT Explosions: 100
+[15:35:09] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:35:09] [Server thread/INFO]: View Distance: 4
+[15:35:09] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:35:09] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:35:09] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:35:09] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:35:09] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:35:09] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:35:09] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:35:09] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3770571510763107811)
+[15:35:09] [Server thread/ERROR]: Chunk file at -11,12 is in the wrong location; relocating. (Expected -11, 12, got -1, 17)
+[15:35:10] [Server thread/INFO]: Preparing spawn area: 0%
+[15:35:11] [Server thread/INFO]: Preparing start region for level 1 (Seed: 9193991585933015891)
+[15:35:11] [Server thread/INFO]: Preparing start region for level 2 (Seed: 9193991585933015891)
+[15:35:11] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.4
+[15:35:11] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[15:35:11] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 6.4
+[15:35:11] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[15:35:11] [Server thread/INFO]: [SimpleHomes] Enabling SimpleHomes v2.2
+[15:35:11] [Server thread/INFO]: [EaglerVanish] Enabling EaglerVanish v1.0.0
+[15:35:11] [Server thread/INFO]: [EaglerVanish] EaglerVanish enabled
+[15:35:11] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[15:35:12] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[15:35:12] [Server thread/WARN]: [WorldEdit] 
 **********************************************
 ** This WorldEdit version does not fully support your version of Bukkit.
 **
@@ -147,44 +147,87 @@
 ** Please see http://wiki.sk89q.com/wiki/WorldEdit/Bukkit_adapters
 **********************************************
 
-[17:03:46] [Server thread/INFO]: [CursedAltar] Enabling CursedAltar v1.0
-[17:03:46] [Server thread/INFO]: [CursedAltar] CursedAltar enabled
-[17:03:46] [Server thread/INFO]: [DisguiseSimple] Enabling DisguiseSimple v1.0
-[17:03:46] [Server thread/INFO]: [TickFreeze] Enabling TickFreeze v1.0.0
-[17:03:46] [Server thread/INFO]: [TickFreeze] TickFreeze enabled
-[17:03:46] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.4.2
-[17:03:46] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.9.8
-[17:03:46] [Server thread/INFO]: [DecentHolograms] Initialized NMS adapter for v1_12_R1 (1.12.2).
-[17:03:46] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_12_R1! Trying to find NMS support
-[17:03:46] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
-[17:03:46] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DecentHolograms' to create a bStats instance!
-[17:03:46] [Server thread/INFO]: [DecentHolograms] NBT-API loaded successfully.
-[17:03:46] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.4.2
-[17:03:47] [Server thread/INFO]: Done (4.466s)! For help, type "help" or "?"
-[17:03:47] [Server thread/INFO]: Timings Reset
-[17:03:47] [Craft Scheduler Thread - 2/INFO]: [DecentHolograms] Loading holograms... 
-[17:03:47] [Craft Scheduler Thread - 4/INFO]: [Vault] Checking for Updates ... 
-[17:03:47] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.12.2 (340)
-[17:03:47] [Server thread/WARN]: [ViaVersion] This version of Minecraft is extremely outdated and support for it has reached its end of life. You will still be able to run Via on this Minecraft version, but we will prioritize issues with legacy Minecraft versions less. Please consider updating to give your players a better experience and to avoid issues that have long been fixed.
-[17:03:47] [Server thread/WARN]: [ViaVersion] Please update your Java runtime to at least Java 21 (your version is 17.0.16).
-[17:03:47] [Server thread/WARN]: [ViaVersion] At some point in the future, ViaVersion will no longer be compatible with this version of Java.
-[17:03:47] [Craft Scheduler Thread - 2/INFO]: [DecentHolograms] Loaded 1 holograms!
-[17:03:47] [Craft Scheduler Thread - 1/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[17:03:48] [Craft Scheduler Thread - 4/WARN]: [Vault] No files found, or Feed URL is bad.
-[17:03:48] [Craft Scheduler Thread - 4/INFO]: [Vault] No new version available
-[17:03:48] [Craft Scheduler Thread - 3/INFO]: [SimpleTpa] There is a new update available.
-[17:03:48] [Craft Scheduler Thread - 3/INFO]: [SimpleTpa] There is a new update available:
-[17:03:48] [Craft Scheduler Thread - 3/INFO]: [SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/
-[17:03:48] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.5.1, you're on: 5.4.2
-[17:03:55] [User Authenticator #1/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
-[17:03:55] [Server thread/INFO]: Ruger1[/[0:0:0:0:0:0:0:1]:58746] logged in with entity id 26 at ([lobby_world]-104.03949903963411, 246.0, 258.6720025794322)
-[17:03:59] [User Authenticator #1/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
-[17:03:59] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:51846] logged in with entity id 27 at ([lobby_world_nether]-16.262593456060447, 38.0, -8.906739392263026)
-[17:04:03] [Server thread/INFO]: ShadowLord lost connection: Disconnected
-[17:04:03] [Server thread/INFO]: ShadowLord left the game
-[17:04:04] [Server thread/INFO]: Ruger1 lost connection: Disconnected
-[17:04:04] [Server thread/INFO]: Ruger1 left the game
-[17:07:52] [User Authenticator #2/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
-[17:07:52] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:41934] logged in with entity id 28 at ([lobby_world_nether]-15.946714878944483, 38.0, -8.695663478789234)
-[17:07:56] [Server thread/INFO]: ShadowLord lost connection: Disconnected
-[17:07:56] [Server thread/INFO]: ShadowLord left the game
+[15:35:12] [Server thread/INFO]: [CursedAltar] Enabling CursedAltar v1.0
+[15:35:12] [Server thread/INFO]: [CursedAltar] CursedAltar enabled
+[15:35:12] [Server thread/INFO]: [DisguiseSimple] Enabling DisguiseSimple v1.0
+[15:35:12] [Server thread/INFO]: [TickFreeze] Enabling TickFreeze v1.0.0
+[15:35:12] [Server thread/INFO]: [TickFreeze] TickFreeze enabled
+[15:35:12] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.4.2
+[15:35:12] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.9.8
+[15:35:12] [Server thread/INFO]: [DecentHolograms] Initialized NMS adapter for v1_12_R1 (1.12.2).
+[15:35:12] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_12_R1! Trying to find NMS support
+[15:35:12] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_12_R1' loaded!
+[15:35:12] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DecentHolograms' to create a bStats instance!
+[15:35:13] [Server thread/INFO]: [DecentHolograms] NBT-API loaded successfully.
+[15:35:13] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.4.2
+[15:35:13] [Server thread/INFO]: Done (5.228s)! For help, type "help" or "?"
+[15:35:13] [Server thread/INFO]: Timings Reset
+[15:35:13] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.12.2 (340)
+[15:35:13] [Craft Scheduler Thread - 4/INFO]: [Vault] Checking for Updates ... 
+[15:35:13] [Craft Scheduler Thread - 2/INFO]: [DecentHolograms] Loading holograms... 
+[15:35:13] [Server thread/WARN]: [ViaVersion] This version of Minecraft is extremely outdated and support for it has reached its end of life. You will still be able to run Via on this Minecraft version, but we will prioritize issues with legacy Minecraft versions less. Please consider updating to give your players a better experience and to avoid issues that have long been fixed.
+[15:35:13] [Craft Scheduler Thread - 2/INFO]: [DecentHolograms] Loaded 1 holograms!
+[15:35:13] [Craft Scheduler Thread - 2/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[15:35:14] [Craft Scheduler Thread - 4/INFO]: [Vault] No new version available
+[15:35:14] [Craft Scheduler Thread - 3/INFO]: [SimpleTpa] There is a new update available.
+[15:35:14] [Craft Scheduler Thread - 3/INFO]: [SimpleTpa] There is a new update available:
+[15:35:14] [Craft Scheduler Thread - 3/INFO]: [SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/
+[15:35:15] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.5.1, you're on: 5.4.2
+[15:35:37] [User Authenticator #1/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[15:35:37] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:40472] logged in with entity id 26 at ([lobby_world_nether]-15.946714878944483, 38.0, -8.695663478789234)
+[15:35:41] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[15:35:41] [Server thread/INFO]: ShadowLord left the game
+[15:37:17] [User Authenticator #2/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
+[15:37:17] [Server thread/INFO]: Ruger1[/[0:0:0:0:0:0:0:1]:38884] logged in with entity id 27 at ([lobby_world]-105.8608134239077, 246.0, 257.3719572034978)
+[15:37:23] [Server thread/INFO]: Ruger1 lost connection: Disconnected
+[15:37:23] [Server thread/INFO]: Ruger1 left the game
+[15:49:04] [User Authenticator #3/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
+[15:49:04] [Server thread/INFO]: Ruger1[/[0:0:0:0:0:0:0:1]:60452] logged in with entity id 35 at ([lobby_world]-105.8608134239077, 246.0, 257.3719572034978)
+[15:49:10] [Server thread/INFO]: Ruger1 lost connection: Disconnected
+[15:49:10] [Server thread/INFO]: Ruger1 left the game
+[15:51:17] [User Authenticator #4/INFO]: UUID of player Crims0nF4ng is 54be7686-46ef-3f89-a534-4a02aaf80bb7
+[15:51:17] [Server thread/INFO]: Crims0nF4ng[/[0:0:0:0:0:0:0:1]:39844] logged in with entity id 43 at ([lobby_world]-98.5, 256.0, 249.5)
+[15:51:32] [User Authenticator #4/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[15:51:32] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:57034] logged in with entity id 51 at ([lobby_world_nether]-15.946714878944483, 38.0, -8.695663478789234)
+[15:51:37] [Server thread/INFO]: ShadowLord issued server command: /tp @p Crims0nF4ng
+[15:51:37] [Server thread/INFO]: [ShadowLord: Teleported ShadowLord to Crims0nF4ng]
+[15:51:43] [Async Chat Thread - #0/INFO]: <Crims0nF4ng> what do i put?
+[15:51:44] [Server thread/INFO]: ShadowLord issued server command: /op Crims0nF4ng
+[15:51:44] [Server thread/INFO]: [ShadowLord: Opped Crims0nF4ng]
+[15:51:51] [Async Chat Thread - #0/INFO]: <ShadowLord> use /server survival
+[15:51:56] [Async Chat Thread - #0/INFO]: <ShadowLord> that only server for now
+[15:52:00] [Async Chat Thread - #0/INFO]: <Crims0nF4ng> {/server ?????}
+[15:52:05] [Async Chat Thread - #0/INFO]: <ShadowLord> use /server survival
+[15:52:08] [Server thread/INFO]: Crims0nF4ng issued server command: /gamemode c
+[15:52:08] [Server thread/INFO]: [Crims0nF4ng: Set own game mode to Creative Mode]
+[15:52:30] [Async Chat Thread - #0/INFO]: <Crims0nF4ng> btw
+[15:52:31] [Async Chat Thread - #0/INFO]: <ShadowLord> bye
+[15:52:33] [Async Chat Thread - #0/INFO]: <ShadowLord> what
+[15:52:39] [Async Chat Thread - #0/INFO]: <Crims0nF4ng> i spawned up there
+[15:52:42] [Async Chat Thread - #0/INFO]: <ShadowLord> yea
+[15:52:48] [Async Chat Thread - #0/INFO]: <ShadowLord> cya
+[15:52:55] [Async Chat Thread - #0/INFO]: <ShadowLord> use /server survival if you want
+[15:52:56] [User Authenticator #5/INFO]: UUID of player Ruger1 is 24ef6066-39a5-3755-9e3b-dc012227f624
+[15:52:56] [Server thread/INFO]: Ruger1[/[0:0:0:0:0:0:0:1]:57638] logged in with entity id 52 at ([lobby_world]-105.8608134239077, 246.0, 257.3719572034978)
+[15:52:58] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[15:52:58] [Server thread/INFO]: ShadowLord left the game
+[15:52:59] [Async Chat Thread - #0/INFO]: <Crims0nF4ng> oj
+[15:53:04] [Server thread/INFO]: Ruger1 lost connection: Disconnected
+[15:53:04] [Server thread/INFO]: Ruger1 left the game
+[15:53:04] [Async Chat Thread - #0/INFO]: <Crims0nF4ng> hi
+[15:53:10] [Server thread/INFO]: Crims0nF4ng lost connection: Disconnected
+[15:53:10] [Server thread/INFO]: Crims0nF4ng left the game
+[15:53:48] [User Authenticator #5/INFO]: UUID of player Morgan is 3fa6a32a-139d-37a7-8559-0156a8f9dea6
+[15:53:48] [Server thread/INFO]: Morgan[/[0:0:0:0:0:0:0:1]:50616] logged in with entity id 53 at ([lobby_world]-106.60596756826365, 246.0, 259.373641614808)
+[15:53:54] [Server thread/INFO]: Morgan lost connection: Disconnected
+[15:53:54] [Server thread/INFO]: Morgan left the game
+[16:15:46] [User Authenticator #6/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[16:15:46] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:40032] logged in with entity id 61 at ([lobby_world]-104.36833405388951, 246.0, 257.5058623963673)
+[16:15:55] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[16:15:55] [Server thread/INFO]: ShadowLord left the game
+[16:20:29] [User Authenticator #7/INFO]: UUID of player ShadowLord is 69bb081a-9716-3601-96f8-109840fe98fb
+[16:20:29] [Server thread/INFO]: ShadowLord[/[0:0:0:0:0:0:0:1]:51300] logged in with entity id 69 at ([lobby_world]-104.36833405388951, 248.15814676123662, 257.5058623963673)
+[16:20:30] [Server thread/INFO]: ShadowLord lost connection: Disconnected
+[16:20:30] [Server thread/INFO]: ShadowLord left the game
+[16:24:52] [Server thread/INFO]: Added Crims0nF4ng to the whitelist
+[16:26:26] [Server thread/INFO]: Turned on the whitelist
