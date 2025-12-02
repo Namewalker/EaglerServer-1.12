@@ -127,6 +127,7 @@ world-settings:
     duplicate-uuid-saferegen-delete-range: 32
     keep-spawn-loaded-range: 4
     auto-save-interval: -1
+    disable-teleportation-suffocation-check: false
     nether-ceiling-void-damage: false
     allow-non-player-entities-on-scoreboards: false
     frosted-ice:
@@ -183,7 +184,6 @@ world-settings:
     squid-spawn-height:
       maximum: 63.0
       minimum: 45.0
-    disable-teleportation-suffocation-check: false
     enable-treasure-maps: true
     treasure-maps-return-already-discovered: false
     enable-old-tnt-cannon-behaviors: false

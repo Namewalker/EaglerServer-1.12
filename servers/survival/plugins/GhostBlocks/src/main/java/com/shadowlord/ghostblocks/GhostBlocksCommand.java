@@ -1,4 +1,4 @@
-package shadowlord.ghostblocks;
+package com.shadowlord.ghostblocks;
 
 import org.bukkit.Chunk;
 import org.bukkit.Location;

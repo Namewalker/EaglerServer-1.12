@@ -349,6 +349,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_block": {
+    "criteria": {
+      "has_the_recipe": "2025-12-02 23:14:38 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/hopper": {
     "criteria": {
       "has_iron_ingot": "2025-09-12 12:58:28 +0000"
@@ -568,6 +574,12 @@
   "minecraft:recipes/tools/iron_hoe": {
     "criteria": {
       "has_iron_ingot": "2025-09-12 12:58:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2025-12-02 23:16:41 +0000"
     },
     "done": true
   },
@@ -997,6 +1009,12 @@
   "minecraft:recipes/building_blocks/end_bricks": {
     "criteria": {
       "has_end_stone": "2025-11-18 20:35:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/iron_block": {
+    "criteria": {
+      "has_at_least_9_iron_ingot": "2025-12-02 23:14:38 +0000"
     },
     "done": true
   },

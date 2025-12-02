@@ -1,6 +1,7 @@
-shadowlord/ghostblocks/GhostBlockManager.class
-shadowlord/ghostblocks/GhostBlocksPlugin.class
-shadowlord/ghostblocks/GhostBlockListener.class
-shadowlord/ghostblocks/GhostBlock.class
-shadowlord/ghostblocks/GhostBlockManager$BlockVector.class
-shadowlord/ghostblocks/GhostBlocksCommand.class
+com/shadowlord/ghostblocks/GhostBlockManager$BlockVector.class
+com/shadowlord/ghostblocks/GhostBlocksCommand.class
+com/shadowlord/ghostblocks/GhostBlocksPlugin$1.class
+com/shadowlord/ghostblocks/GhostBlocksPlugin.class
+com/shadowlord/ghostblocks/GhostBlock.class
+com/shadowlord/ghostblocks/GhostBlockListener.class
+com/shadowlord/ghostblocks/GhostBlockManager.class

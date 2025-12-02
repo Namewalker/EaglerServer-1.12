@@ -511,3 +511,10 @@
 [INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (943.0, 60.0, 1402.0) - (945.0, 62.0, 1406.0)
 [INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (944.0, 60.0, 1402.0) - (945.0, 62.0, 1408.0)
 [INFO] WorldEdit: The_Code (in "world"): up 200 - Position: (873.8976140364813, 41.3444768288131, 1273.8256958335517)
+[INFO] WorldEdit: The_Code (in "world"): /replacenear 10 torch air - Position: (883.0, 67.0, 1333.0)
+[INFO] WorldEdit: The_Code (in "world"): /replacenear 10 torch air - Position: (876.0, 67.0, 1333.0)
+[INFO] WorldEdit: The_Code (in "world"): /replacenear 10 torch air - Position: (886.0, 67.0, 1321.0)
+[INFO] WorldEdit: The_Code (in "world"): descend
+[INFO] WorldEdit: The_Code (in "world"): descend
+[INFO] WorldEdit: The_Code (in "world"): ascend
+[INFO] WorldEdit: The_Code (in "world"): ascend

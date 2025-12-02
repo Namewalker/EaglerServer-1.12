@@ -82,6 +82,7 @@ users:
     options:
       name: ShadowLord
     permissions:
+    - rank.owner
     - admin
     - '''*'''
     - rank.lord

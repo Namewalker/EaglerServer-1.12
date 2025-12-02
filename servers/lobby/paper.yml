@@ -69,6 +69,7 @@ world-settings:
       disable-extreme-hills-emeralds: false
       disable-extreme-hills-monster-eggs: false
       disable-mesa-additional-gold: false
+    portal-search-radius: 128
     queue-light-updates: false
     optimize-explosions: false
     use-chunk-inhabited-timer: true
@@ -96,6 +97,7 @@ world-settings:
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 900
+    use-vanilla-world-scoreboard-name-coloring: false
     despawn-ranges:
       soft: 32
       hard: 128
@@ -122,13 +124,11 @@ world-settings:
       cooldown-when-full: true
       disable-move-event: false
       push-based: false
-    use-vanilla-world-scoreboard-name-coloring: false
-    portal-search-radius: 128
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
     keep-spawn-loaded-range: 4
     auto-save-interval: -1
-    container-update-tick-rate: 1
+    use-alternate-fallingblock-onGround-detection: false
     nether-ceiling-void-damage: false
     allow-non-player-entities-on-scoreboards: false
     frosted-ice:
@@ -136,11 +136,11 @@ world-settings:
       delay:
         min: 20
         max: 40
+    container-update-tick-rate: 1
     parrots-are-unaffected-by-player-movement: false
     disable-explosion-knockback: false
     elytra-hit-wall-damage: true
     grass-spread-tick-rate: 1
-    use-alternate-fallingblock-onGround-detection: false
     bed-search-radius: 1
     prevent-tnt-from-moving-in-water: false
     non-player-arrow-despawn-rate: -1

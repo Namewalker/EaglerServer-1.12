@@ -1,4 +1,4 @@
-package shadowlord.ghostblocks;
+package com.shadowlord.ghostblocks;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
@@ -7,6 +7,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
+import org.bukkit.scheduler.BukkitRunnable;
 
 public class GhostBlocksPlugin extends JavaPlugin {
     private static GhostBlocksPlugin instance;
@@ -39,6 +40,18 @@ public class GhostBlocksPlugin extends JavaPlugin {
                 }
             }
         }, 1L);
+
+        // Enforce server-side AIR for ghost locations periodically to avoid other plugins or physics making them solid
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                try {
+                    manager.enforceAirNearPlayers();
+                } catch (Throwable t) {
+                    getLogger().warning("Error enforcing ghost block air: " + t.getMessage());
+                }
+            }
+        }.runTaskTimer(this, 2L, 5L);
 
         log.info("GhostBlocks enabled. Loaded " + manager.count() + " ghost blocks.");
     }

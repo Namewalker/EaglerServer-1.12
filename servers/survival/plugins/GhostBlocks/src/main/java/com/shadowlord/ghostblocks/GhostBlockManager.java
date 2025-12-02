@@ -1,4 +1,4 @@
-package shadowlord.ghostblocks;
+package com.shadowlord.ghostblocks;
 
 import org.bukkit.*;
 import org.bukkit.configuration.ConfigurationSection;
@@ -34,6 +34,11 @@ public class GhostBlockManager {
         BlockVector key = new BlockVector(gb.getX(), gb.getY(), gb.getZ());
         boolean added = map.put(key, gb) == null;
         if (added) {
+            // Ensure the server block is air so players can pass through it
+            Location loc = gb.toLocation();
+            if (loc.getWorld() != null) {
+                loc.getBlock().setType(Material.AIR);
+            }
             renderIllusionToNearbyPlayers(gb);
             if (debugParticles) showDebugParticle(gb.toLocation());
         }
@@ -108,6 +113,26 @@ public class GhostBlockManager {
         }
     }
 
+    public GhostBlock getAt(Location loc) {
+        if (loc.getWorld() == null) return null;
+        Map<BlockVector, GhostBlock> map = blocks.get(loc.getWorld().getName());
+        if (map == null) return null;
+        return map.get(new BlockVector(loc.getBlockX(), loc.getBlockY(), loc.getBlockZ()));
+    }
+
+    public boolean hasAt(Location loc) {
+        return getAt(loc) != null;
+    }
+
+    public void renderGhostToPlayer(GhostBlock gb, Player p) {
+        Location loc = gb.toLocation();
+        if (loc.getWorld() == null) return;
+        if (!p.getWorld().getName().equals(gb.getWorldName())) return;
+        if (p.getLocation().distanceSquared(loc) <= 128 * 128) {
+            p.sendBlockChange(loc, gb.getMaterial(), gb.getData());
+        }
+    }
+
     public void renderChunkIllusions(Chunk chunk) {
         List<GhostBlock> list = listInChunk(chunk);
         if (list.isEmpty()) return;
@@ -126,6 +151,31 @@ public class GhostBlockManager {
             if (p.getLocation().distanceSquared(gb.toLocation()) <= 128 * 128) {
                 p.sendBlockChange(gb.toLocation(), gb.getMaterial(), gb.getData());
                 if (debugParticles) showDebugParticle(gb.toLocation());
+            }
+        }
+    }
+
+    /**
+     * Enforce that server blocks at ghost locations are AIR for nearby players.
+     * This helps prevent other plugins/physics from making the server block solid
+     * which would cause collisions.
+     */
+    public void enforceAirNearPlayers() {
+        if (blocks.isEmpty()) return;
+        int r2 = 128 * 128;
+        for (Player p : Bukkit.getOnlinePlayers()) {
+            String worldName = p.getWorld().getName();
+            Map<BlockVector, GhostBlock> map = blocks.get(worldName);
+            if (map == null) continue;
+            Location ploc = p.getLocation();
+            for (GhostBlock gb : map.values()) {
+                Location loc = gb.toLocation();
+                if (loc.getWorld() == null) continue;
+                if (ploc.distanceSquared(loc) <= r2) {
+                    try {
+                        if (loc.getBlock().getType() != Material.AIR) loc.getBlock().setType(Material.AIR);
+                    } catch (Throwable ignored) {}
+                }
             }
         }
     }

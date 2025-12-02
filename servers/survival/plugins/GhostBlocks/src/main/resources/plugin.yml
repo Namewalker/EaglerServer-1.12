@@ -1,5 +1,5 @@
 name: GhostBlocks
-main: shadowlord.ghostblocks.GhostBlocksPlugin
+main: com.shadowlord.ghostblocks.GhostBlocksPlugin
 version: 1.0.0
 api-version: 1.12
 author: shadowlord
