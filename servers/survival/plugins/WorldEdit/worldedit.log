@@ -471,3 +471,43 @@
 [INFO] WorldEdit: ShadowLord (in "world"): ascend
 [INFO] WorldEdit: ShadowLord (in "world"): ascend
 [INFO] WorldEdit: ShadowLord (in "world"): up 900 - Position: (-823.0707093860674, 56.52519259617381, -2223.428300027139)
+[INFO] WorldEdit: ShadowLord (in "world"): up 200 - Position: (848.2370689648294, 73.0, 1450.8756005458783)
+[INFO] WorldEdit: ShadowLord (in "world"): up 200 - Position: (1075.0859794208993, 64.0, 1573.3124586962208)
+[INFO] WorldEdit: ShadowLord (in "world"): ascend
+[INFO] WorldEdit: The_Code (in "world"): ascend
+[INFO] WorldEdit: The_Code (in "world"): ascend
+[INFO] WorldEdit: The_Code (in "world"): /sphere 10 obsidia - Position: (889.0, 64.0, 1362.0)
+[INFO] WorldEdit: The_Code (in "world"): /sphere obsidian 10 - Position: (889.0, 64.0, 1362.0)
+[INFO] WorldEdit: The_Code (in "world"): /undo
+[INFO] WorldEdit: The_Code (in "world"): /sphere obsidian 10 - Position: (878.0, 67.0, 1368.0)
+[INFO] WorldEdit: The_Code (in "world"): /sphere obsidian 10 - Position: (886.0, 59.0, 1371.0)
+[INFO] WorldEdit: The_Code (in "world"): /undo 2
+[INFO] WorldEdit: The_Code (in "world"): /wand
+[INFO] WorldEdit: The_Code (in "world"): /replace air grass - Region: (873.0, 61.0, 1348.0) - (883.0, 63.0, 1356.0)
+[INFO] WorldEdit: The_Code (in "world"): /replace air grass - Region: (873.0, 63.0, 1338.0) - (883.0, 63.0, 1348.0)
+[INFO] WorldEdit: The_Code (in "world"): /replace air grass - Region: (883.0, 63.0, 1336.0) - (888.0, 63.0, 1348.0)
+[INFO] WorldEdit: The_Code (in "world"): /replace air grass - Region: (883.0, 63.0, 1334.0) - (897.0, 63.0, 1348.0)
+[INFO] WorldEdit: The_Code (in "world"): /replace air grass - Region: (883.0, 61.0, 1334.0) - (897.0, 63.0, 1348.0)
+[INFO] WorldEdit: The_Code (in "world"): /replace air grass - Region: (905.0, 64.0, 1400.0) - (921.0, 69.0, 1400.0)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (865.0, 67.0, 1399.0) - (879.0, 67.0, 1416.0)
+[INFO] WorldEdit: The_Code (in "world"): /replace air grass - Region: (840.0, 62.0, 1349.0) - (846.0, 63.0, 1356.0)
+[INFO] WorldEdit: The_Code (in "world"): /wand
+[INFO] WorldEdit: The_Code (in "world"): /set air - Region: (958.0, 64.0, 1311.0) - (961.0, 70.0, 1314.0)
+[INFO] WorldEdit: The_Code (in "world"): /set stonebrick - Region: (958.0, 64.0, 1310.0) - (961.0, 64.0, 1314.0)
+[INFO] WorldEdit: The_Code (in "world"): /set lava - Region: (911.0, 64.0, 1368.0) - (917.0, 64.0, 1373.0)
+[INFO] WorldEdit: The_Code (in "world"): /set lava - Region: (911.0, 64.0, 1367.0) - (917.0, 64.0, 1368.0)
+[INFO] WorldEdit: The_Code (in "world"): none
+[INFO] WorldEdit: The_Code (in "world"): deltree
+[INFO] WorldEdit: The_Code (in "world"): ascend
+[INFO] WorldEdit: The_Code (in "world"): ascend
+[INFO] WorldEdit: The_Code (in "world"): /wand
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (936.0, 59.0, 1323.0) - (942.0, 62.0, 1330.0)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (939.0, 59.0, 1330.0) - (942.0, 62.0, 1332.0)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (942.0, 59.0, 1327.0) - (944.0, 62.0, 1330.0)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (942.0, 59.0, 1330.0) - (944.0, 62.0, 1332.0)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (936.0, 61.0, 1316.0) - (945.0, 62.0, 1325.0)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (943.0, 60.0, 1355.0) - (946.0, 62.0, 1361.0)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (943.0, 60.0, 1355.0) - (948.0, 62.0, 1361.0)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (943.0, 60.0, 1402.0) - (945.0, 62.0, 1406.0)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (944.0, 60.0, 1402.0) - (945.0, 62.0, 1408.0)
+[INFO] WorldEdit: The_Code (in "world"): up 200 - Position: (873.8976140364813, 41.3444768288131, 1273.8256958335517)

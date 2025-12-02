@@ -1,0 +1,3 @@
+# GhostBlocks persistent storage
+# The plugin will populate ghostblocks: entries automatically.
+ghostblocks: {}

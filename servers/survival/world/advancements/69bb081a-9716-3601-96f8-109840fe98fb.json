@@ -909,6 +909,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone_slab": {
+    "criteria": {
+      "has_stone": "2025-11-17 14:12:21 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
       "has_at_least_9_coal": "2025-11-11 00:56:07 +0000"
@@ -1065,6 +1071,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2025-11-17 14:12:21 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/iron_chestplate": {
     "criteria": {
       "has_iron_ingot": "2025-11-11 00:58:38 +0000"
@@ -1170,6 +1182,7 @@
       "mushroom_island_shore": "2025-11-13 00:56:45 +0000",
       "deep_ocean": "2025-11-13 00:36:23 +0000",
       "beaches": "2025-11-13 00:36:32 +0000",
+      "extreme_hills_with_trees": "2025-11-15 01:18:01 +0000",
       "forest_hills": "2025-11-11 14:47:28 +0000",
       "plains": "2025-11-11 00:57:46 +0000",
       "jungle_hills": "2025-11-13 00:40:53 +0000",
@@ -1245,6 +1258,12 @@
   "minecraft:husbandry/plant_seed": {
     "criteria": {
       "nether_wart": "2025-11-12 15:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_pressure_plate": {
+    "criteria": {
+      "has_stone": "2025-11-17 14:12:21 +0000"
     },
     "done": true
   },
@@ -1335,6 +1354,12 @@
   "minecraft:recipes/transportation/tnt_minecart": {
     "criteria": {
       "has_minecart": "2025-11-11 01:21:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stonebrick": {
+    "criteria": {
+      "has_stone": "2025-11-17 14:12:21 +0000"
     },
     "done": true
   },

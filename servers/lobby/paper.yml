@@ -69,7 +69,6 @@ world-settings:
       disable-extreme-hills-emeralds: false
       disable-extreme-hills-monster-eggs: false
       disable-mesa-additional-gold: false
-    portal-search-radius: 128
     queue-light-updates: false
     optimize-explosions: false
     use-chunk-inhabited-timer: true
@@ -100,7 +99,6 @@ world-settings:
     despawn-ranges:
       soft: 32
       hard: 128
-    use-vanilla-world-scoreboard-name-coloring: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     water-over-lava-flow-speed: 5
@@ -124,6 +122,8 @@ world-settings:
       cooldown-when-full: true
       disable-move-event: false
       push-based: false
+    use-vanilla-world-scoreboard-name-coloring: false
+    portal-search-radius: 128
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
     keep-spawn-loaded-range: 4

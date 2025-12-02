@@ -16,5 +16,11 @@
     "name": "The_Code",
     "level": 4,
     "bypassesPlayerLimit": true
+  },
+  {
+    "uuid": "d22f3266-a37b-4a89-84f1-a175759e7c9f",
+    "name": "Lily",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]

@@ -6,6 +6,14 @@ groups:
     - modifyworld.*
     - essentials.spawn
     - essentials.spawn.default
+  owner:
+    options:
+      default: 'false'
+    permissions:
+    - '*'
+    - essentials.*
+    - modifyworld.*
+    - permissionsex.*
   admin:
     options:
       default: 'false'
@@ -47,6 +55,20 @@ groups:
       default: 'true'
     permissions:
     - rank.player
+    - essentials.tpr
+    - essentials.kit.member
+    - essentials.tpa
+    - essentials.home
+    - essentials.sethome
+    - essentials.sell
+    - essentials.warp
+    - essentials.warps
+    - essentials.spawn
+    - essentials.tpaaccept
+    - essentials.tpadeny
+    - essentials.tpahere
+    - essentials.back
+    - simpletpa.back
   Creative:
     options:
       default: 'false'

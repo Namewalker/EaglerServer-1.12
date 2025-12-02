@@ -1,0 +1,10 @@
+# GhostBlocks persistent storage
+# The plugin will populate ghostblocks: entries automatically.
+ghostblocks:
+  '0':
+    world: world
+    x: 887
+    y: 67
+    z: 1365
+    material: STONE
+    data: 0
