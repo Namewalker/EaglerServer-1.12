@@ -1,9 +1,9 @@
-2025-12-04T19:16:34.119673927Z main WARN Advanced terminal features are not available in this environment
-[19:16:35 INFO]: Booting up Velocity 3.4.0-SNAPSHOT (git-965db127-b454)...
-[19:16:35 INFO]: Loading localizations...
-[19:16:36 INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
-[19:16:36 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
-[19:16:37 INFO]: Unable to load your server-icon.png, continuing without it.
+2025-12-05T13:55:01.584174204Z main WARN Advanced terminal features are not available in this environment
+[13:55:03 INFO]: Booting up Velocity 3.4.0-SNAPSHOT (git-965db127-b454)...
+[13:55:04 INFO]: Loading localizations...
+[13:55:05 INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[13:55:05 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[13:55:06 INFO]: Unable to load your server-icon.png, continuing without it.
 java.lang.IllegalArgumentException: Image is not 64x64 (found 475x896)
 	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:299) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.api.util.Favicon.create(Favicon.java:82) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
@@ -13,8 +13,8 @@ java.lang.IllegalArgumentException: Image is not 64x64 (found 475x896)
 	at com.velocitypowered.proxy.VelocityServer.doStartupConfigLoad(VelocityServer.java:388) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:276) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[19:16:37 INFO]: Loading plugins...
-[19:16:37 ERROR]: Unable to load plugin plugins/QuickVoid-1.0.jar
+[13:55:06 INFO]: Loading plugins...
+[13:55:06 ERROR]: Unable to load plugin plugins/QuickVoid-1.0.jar
 com.velocitypowered.api.plugin.InvalidPluginException: The plugin file QuickVoid-1.0.jar appears to be a Bukkit or BungeeCord plugin. Velocity does not support Bukkit or BungeeCord plugins.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.getSerializedPluginInfo(JavaPluginLoader.java:161) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:62) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
@@ -22,68 +22,80 @@ com.velocitypowered.api.plugin.InvalidPluginException: The plugin file QuickVoid
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:418) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:289) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[19:16:38 ERROR]: Unable to load plugin plugins/LuckPerms-Velocity.jar
+[13:55:07 ERROR]: Unable to load plugin plugins/LuckPerms-Velocity.jar
 com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velocity-plugin.json.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:65) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:101) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:418) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:289) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[19:16:38 ERROR]: Unable to load plugin plugins/luckperms-velocity.jar
+[13:55:07 ERROR]: Unable to load plugin plugins/luckperms-velocity.jar
 com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velocity-plugin.json.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:65) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:101) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:418) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:289) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[19:16:39 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[19:16:39 ERROR]: :>  
-[19:16:39 ERROR]: :>      EAGLERCRAFTXVELOCITY WARNING:
-[19:16:39 ERROR]: :>  
-[19:16:39 ERROR]: :>  This plugin wasn't tested to be 'working'
-[19:16:39 ERROR]: :>  with ANY version of Velocity (and forks)
-[19:16:39 ERROR]: :>  apart from the versions listed below:
-[19:16:39 ERROR]: :>  
-[19:16:39 ERROR]: :>  - Velocity: 3.4.0-SNAPSHOT:a33f2d1a:b452
-[19:16:39 ERROR]: :>  
-[19:16:39 ERROR]: :>  This is not a Bukkit/Spigot plugin!
-[19:16:39 ERROR]: :>  
-[19:16:39 ERROR]: :>  Use "-Deaglerxvelocity.stfu=true" to hide
-[19:16:39 ERROR]: :>  
-[19:16:39 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[19:16:39 INFO]: Loaded plugin eaglerxvelocity 1.1.5 by lax1dude, ayunami2000
-[19:16:39 INFO]: Loaded plugin luckperms 5.5.17 by Luck
-[19:16:39 INFO]: Loaded plugin viaversion 5.4.2 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
-[19:16:39 INFO]: Loaded plugin viabackwards 5.4.2 by Matsv, kennytv, Gerrygames, creeper123123321, ForceUpdate1, EnZaXD
-[19:16:39 INFO]: Loaded plugin viarewind 4.0.11 by FlorianMichael/EnZaXD, Gerrygames, creeper123123321
-[19:16:39 INFO]: Loaded 6 plugins
-[19:16:40 INFO] [luckperms]: Loading configuration...
-[19:16:41 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
-[19:16:41 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [0m[38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.17[0m
-[19:16:41 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Velocity - Velocity[0m
-[19:16:41 INFO]: 
-[19:16:41 INFO] [luckperms]: Loading storage provider... [H2]
-[19:16:42 INFO] [luckperms]: Loading internal permission managers...
-[19:16:42 INFO] [luckperms]: Performing initial data load...
-[19:16:42 INFO] [luckperms]: Successfully enabled. (took 3188ms)
-[19:16:42 WARN] [eaglerxvelocity]: This plugin is still in development, certain features may not be functional!
-[19:16:42 WARN] [eaglerxvelocity]: Not recommended for public servers yet, please check for updates
-[19:16:43 INFO] [eaglerxvelocity]: Loading vanilla profile: lax1dude
-[19:16:44 INFO] [eaglerxvelocity]: Loaded vanilla profile: lax1dude
-[19:16:44 ERROR] [eaglerxvelocity]: Online mode is set to false! Authentication system has been disabled
-[19:16:44 INFO] [eaglerxvelocity]: Eaglercraft is listening on: /0.0.0.0:8081
-[19:16:45 INFO] [eaglerxvelocity]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
-[19:16:45 WARN] [eaglerxvelocity]: Voice chat enabled, not recommended for public servers!
-[19:16:47 INFO] [viaversion]: Loading block connection mappings ...
-[19:16:48 INFO] [viaversion]: Replacing channel initializers; you can safely ignore the following two warnings.
-[19:16:48 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[19:16:48 WARN]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[19:16:48 INFO] [viabackwards]: Loading translations...
-[19:16:48 INFO] [viabackwards]: Registering protocols...
-[19:16:50 INFO] [viarewind]: Registering protocols...
-[19:16:50 INFO] [viaversion]: ViaVersion detected lowest supported version by the proxy: 1.7.2-1.7.5 (4)
-[19:16:50 INFO] [viaversion]: Highest supported version by the proxy: 1.21.4 (769)
-[19:16:50 INFO] [viaversion]: Finished mapping loading, shutting down loader executor.
-[19:16:50 WARN] [viaversion]: There is a newer plugin version available: 5.5.1, you're on: 5.4.2
-[19:16:50 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25577
-[19:16:51 INFO]: Done (16.59s)!
+[13:55:08 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
+[13:55:08 ERROR]: :>  
+[13:55:08 ERROR]: :>      EAGLERCRAFTXVELOCITY WARNING:
+[13:55:08 ERROR]: :>  
+[13:55:08 ERROR]: :>  This plugin wasn't tested to be 'working'
+[13:55:08 ERROR]: :>  with ANY version of Velocity (and forks)
+[13:55:08 ERROR]: :>  apart from the versions listed below:
+[13:55:08 ERROR]: :>  
+[13:55:08 ERROR]: :>  - Velocity: 3.4.0-SNAPSHOT:a33f2d1a:b452
+[13:55:08 ERROR]: :>  
+[13:55:08 ERROR]: :>  This is not a Bukkit/Spigot plugin!
+[13:55:08 ERROR]: :>  
+[13:55:08 ERROR]: :>  Use "-Deaglerxvelocity.stfu=true" to hide
+[13:55:08 ERROR]: :>  
+[13:55:08 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
+[13:55:08 INFO]: Loaded plugin eaglerxvelocity 1.1.5 by lax1dude, ayunami2000
+[13:55:08 INFO]: Loaded plugin luckperms 5.5.17 by Luck
+[13:55:08 INFO]: Loaded plugin viaversion 5.4.2 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
+[13:55:08 INFO]: Loaded plugin viabackwards 5.4.2 by Matsv, kennytv, Gerrygames, creeper123123321, ForceUpdate1, EnZaXD
+[13:55:08 INFO]: Loaded plugin viarewind 4.0.11 by FlorianMichael/EnZaXD, Gerrygames, creeper123123321
+[13:55:08 INFO]: Loaded 6 plugins
+[13:55:10 INFO] [luckperms]: Loading configuration...
+[13:55:11 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
+[13:55:11 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [0m[38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.17[0m
+[13:55:11 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Velocity - Velocity[0m
+[13:55:11 INFO]: 
+[13:55:11 INFO] [luckperms]: Loading storage provider... [H2]
+[13:55:13 INFO] [luckperms]: Loading internal permission managers...
+[13:55:13 INFO] [luckperms]: Performing initial data load...
+[13:55:13 INFO] [luckperms]: Successfully enabled. (took 5128ms)
+[13:55:13 WARN] [eaglerxvelocity]: This plugin is still in development, certain features may not be functional!
+[13:55:13 WARN] [eaglerxvelocity]: Not recommended for public servers yet, please check for updates
+[13:55:13 INFO] [eaglerxvelocity]: Loading vanilla profile: lax1dude
+[13:55:14 INFO] [eaglerxvelocity]: Loaded vanilla profile: lax1dude
+[13:55:14 ERROR] [eaglerxvelocity]: Online mode is set to false! Authentication system has been disabled
+[13:55:14 INFO] [eaglerxvelocity]: Eaglercraft is listening on: /0.0.0.0:8081
+[13:55:15 INFO] [eaglerxvelocity]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
+[13:55:15 WARN] [eaglerxvelocity]: Voice chat enabled, not recommended for public servers!
+[13:55:15 INFO] [viaversion]: Loading block connection mappings ...
+[13:55:16 INFO] [viaversion]: Replacing channel initializers; you can safely ignore the following two warnings.
+[13:55:16 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[13:55:16 WARN]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[13:55:16 INFO] [viabackwards]: Loading translations...
+[13:55:16 INFO] [viabackwards]: Registering protocols...
+[13:55:17 INFO] [viarewind]: Registering protocols...
+[13:55:17 INFO] [viaversion]: ViaVersion detected lowest supported version by the proxy: 1.7.2-1.7.5 (4)
+[13:55:17 INFO] [viaversion]: Highest supported version by the proxy: 1.21.4 (769)
+[13:55:17 INFO] [viaversion]: Finished mapping loading, shutting down loader executor.
+[13:55:17 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25577
+[13:55:17 INFO]: Done (15.29s)!
+[13:55:17 WARN] [viaversion]: There is a newer plugin version available: 5.5.1, you're on: 5.4.2
+[13:55:29 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43306]: Connected via websocket
+[13:55:29 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43306]: Origin header is https://1-12-eaglercraftx.pages.dev
+[13:55:29 INFO] [eaglerxvelocity]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:43306) has connected
+[13:55:29 INFO]: [server connection] The_Code -> lobby has connected
+[13:55:34 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43322]: Connected via websocket
+[13:55:34 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43322]: Origin header is https://1-12-eaglercraftx.pages.dev
+[13:55:35 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:43322) has connected
+[13:55:35 INFO]: [server connection] Ruger1 -> lobby has connected
+[13:55:35 INFO]: [server connection] The_Code -> survival has connected
+[13:55:35 INFO]: [server connection] The_Code -> lobby has disconnected
+[13:55:43 INFO]: [server connection] Ruger1 -> survival has connected
+[13:55:43 INFO]: [server connection] Ruger1 -> lobby has disconnected
