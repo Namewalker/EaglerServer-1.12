@@ -783,9 +783,9 @@ world-home-permissions: false
 # Remember, they must have BOTH permission nodes in order to be able to set multiple homes.
 # For more information, visit https://wiki.ess3.net/wiki/Multihome
 sethome-multiple:
-  default: 3
-  vip: 5
-  staff: 10
+  default: 5
+  vip: 10
+  staff: 15
 
 # Controls whether players need the permission 'essentials.home.compass' in order to point
 # the player's compass toward their first home.

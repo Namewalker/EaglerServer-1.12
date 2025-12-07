@@ -9,7 +9,7 @@ pages:
 - lines:
   - content: '&6Welcome!'
     height: 0.3
-  - content: '&3Use /server <server> to play'
+  - content: '&bUse /server survival to join us in survival.'
     height: 0.3
   - content: '&cFollow the rules and have fun!'
     height: 0.3

@@ -6,6 +6,14 @@ groups:
     - modifyworld.*
     - essentials.spawn
     - essentials.spawn.default
+  owner:
+    options:
+      default: 'false'
+    permissions:
+    - '*'
+    - essentials.*
+    - modifyworld.*
+    - permissionsex.*
   admin:
     options:
       default: 'false'
@@ -44,15 +52,40 @@ groups:
     - kit.lord
   Member:
     options:
-      default: 'false'
+      default: 'true'
     permissions:
     - rank.player
+    - essentials.tpr
+    - essentials.kit
+    - essentials.tpa
+    - essentials.home
+    - essentials.sethome
+    - essentials.sell
+    - essentials.warp
+    - essentials.warps
+    - essentials.spawn
+    - essentials.tpaaccept
+    - essentials.tpadeny
+    - essentials.tpahere
+    - essentials.back
+    - simpletpa.back
+    - essentials.kits.food
+    - essentials.kit.food
+    - kit.food
+  Creative:
+    options:
+      default: 'false'
+    permissions:
+    - rank.creative
+    - essentials.kit.creative
+    - kit.creative
 schema-version: 1
 users:
   69bb081a-9716-3601-96f8-109840fe98fb:
     options:
       name: ShadowLord
     permissions:
+    - rank.owner
     - admin
     - '''*'''
     - rank.lord
@@ -67,3 +100,11 @@ users:
     - rank.break_the_bed
     options:
       name: _Demon_Queen420_
+  crims0nf4ng:
+    options:
+      rank: rank.admin
+  2c7337e4-7c7f-32d7-a626-f92031871e9b:
+    permissions:
+    - rank.aetherborn
+    options:
+      name: ItzRealLava

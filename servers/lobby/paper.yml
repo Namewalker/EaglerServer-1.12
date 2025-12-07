@@ -73,7 +73,6 @@ world-settings:
     queue-light-updates: false
     optimize-explosions: false
     use-chunk-inhabited-timer: true
-    use-vanilla-world-scoreboard-name-coloring: false
     delay-chunk-unloads-by: 10s
     max-auto-save-chunks-per-tick: 24
     save-queue-limit-for-auto-save: 50
@@ -83,10 +82,10 @@ world-settings:
     game-mechanics:
       allow-permanent-chunk-loaders: false
       scan-for-legacy-ender-dragon: true
-      shield-blocking-delay: 5
       disable-end-credits: false
       disable-player-crits: false
       disable-sprint-interruption-on-attack: false
+      shield-blocking-delay: 5
       disable-chest-cat-detection: false
       disable-unloaded-chunk-enderpearl-exploit: true
       village-sieges-enabled: true
@@ -103,10 +102,11 @@ world-settings:
       hard: 128
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
-    water-over-lava-flow-speed: 5
     fast-drain:
       lava: false
       water: false
+    use-vanilla-world-scoreboard-name-coloring: false
+    water-over-lava-flow-speed: 5
     lava-flow-speed:
       normal: 30
       nether: 10
@@ -142,8 +142,8 @@ world-settings:
     grass-spread-tick-rate: 1
     use-alternate-fallingblock-onGround-detection: false
     bed-search-radius: 1
-    non-player-arrow-despawn-rate: -1
     prevent-tnt-from-moving-in-water: false
+    non-player-arrow-despawn-rate: -1
     armor-stands-tick: true
     keep-spawn-loaded: true
     anti-xray:
@@ -176,8 +176,8 @@ world-settings:
     skeleton-horse-thunder-spawn-chance: 0.01
     disable-ice-and-snow: false
     fire-physics-event-for-redstone: false
-    baby-zombie-movement-speed: 0.5
     spawner-nerfed-mobs-should-jump: false
+    baby-zombie-movement-speed: 0.5
     allow-leashing-undead-horse: false
     mob-spawner-tick-rate: 1
     all-chunks-are-slime-chunks: false

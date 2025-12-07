@@ -36,3 +36,7 @@ kits:
     delay: 0
     items:
     - observer 1
+  food:
+    delay: 60
+    items:
+    - beef 32
