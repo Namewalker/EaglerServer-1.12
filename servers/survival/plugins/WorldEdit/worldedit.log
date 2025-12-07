@@ -518,3 +518,20 @@
 [INFO] WorldEdit: The_Code (in "world"): descend
 [INFO] WorldEdit: The_Code (in "world"): ascend
 [INFO] WorldEdit: The_Code (in "world"): ascend
+[INFO] WorldEdit: ShadowLord (in "world"): /replacenear 20 barrier air - Position: (1.5000868E7, 1.0, 1.5001357E7)
+[INFO] WorldEdit: The_Code (in "world"): /replacenear 10 water air - Position: (529.0, 58.0, 1410.0)
+[INFO] WorldEdit: The_Code (in "world"): up 0 - Position: (885.5, 96.98869932341766, 1363.5)
+[INFO] WorldEdit: The_Code (in "world"): /wand
+[INFO] WorldEdit: The_Code (in "world"): up 0 - Position: (908.3637542659003, 96.0, 1380.5753768966715)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (885.0, 95.0, 1363.0) - (908.0, 95.0, 1380.0)
+[INFO] WorldEdit: The_Code (in "world"): /center stone - Region: (885.0, 95.0, 1363.0) - (908.0, 95.0, 1380.0)
+[INFO] WorldEdit: The_Code (in "world"): /set air - Region: (885.0, 95.0, 1380.0) - (908.0, 95.0, 1380.0)
+[INFO] WorldEdit: The_Code (in "world"): /set air - Region: (908.0, 95.0, 1363.0) - (908.0, 95.0, 1380.0)
+[INFO] WorldEdit: The_Code (in "world"): /center grass - Region: (885.0, 95.0, 1363.0) - (907.0, 95.0, 1379.0)
+[INFO] WorldEdit: The_Code (in "world"): /center stone - Region: (885.0, 95.0, 1363.0) - (907.0, 95.0, 1379.0)
+[INFO] WorldEdit: The_Code (in "world"): /set grass - Region: (885.0, 95.0, 1363.0) - (907.0, 95.0, 1379.0)
+[INFO] WorldEdit: The_Code (in "world"): /center stone - Region: (885.0, 95.0, 1363.0) - (907.0, 95.0, 1379.0)
+[INFO] WorldEdit: The_Code (in "world_nether"): ascend
+[INFO] WorldEdit: The_Code (in "world_nether"): ascend 200
+[INFO] WorldEdit: The_Code (in "world"): thru
+[INFO] WorldEdit: The_Code (in "world"): thru

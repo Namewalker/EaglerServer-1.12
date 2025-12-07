@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1763392363516
-  login: 1763392351141
+  logout: 1764983432244
+  login: 1764983192720
 money: '0'
 last-account-name: ShadowLord
 lastlocation:
@@ -31,8 +31,8 @@ lastlocation:
 logoutlocation:
   world: e6495bc2-b68c-46d4-bc57-f3ea503e4709
   world-name: world
-  x: 892.8329929822575
-  y: 67.0
-  z: 1367.9592962022582
-  yaw: 108.23087310791016
-  pitch: 11.509435653686523
+  x: 1.5000861325625023E7
+  y: 1.0
+  z: 1.5001357627992185E7
+  yaw: -246.298828125
+  pitch: 43.79996109008789

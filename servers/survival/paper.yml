@@ -54,6 +54,9 @@ timings:
   history-length: 3600
 world-settings:
   default:
+    remove-corrupt-tile-entities: false
+    use-chunk-inhabited-timer: true
+    queue-light-updates: false
     generator-settings:
       canyon: true
       caves: true
@@ -69,13 +72,11 @@ world-settings:
       disable-extreme-hills-monster-eggs: false
       disable-mesa-additional-gold: false
     portal-search-radius: 128
-    queue-light-updates: false
+    use-vanilla-world-scoreboard-name-coloring: false
     optimize-explosions: false
-    use-chunk-inhabited-timer: true
     delay-chunk-unloads-by: 10s
     max-auto-save-chunks-per-tick: 24
     save-queue-limit-for-auto-save: 50
-    remove-corrupt-tile-entities: false
     max-chunk-sends-per-tick: 81
     max-chunk-gens-per-tick: 10
     game-mechanics:
@@ -102,7 +103,6 @@ world-settings:
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     water-over-lava-flow-speed: 5
-    use-vanilla-world-scoreboard-name-coloring: false
     fast-drain:
       lava: false
       water: false
@@ -170,10 +170,10 @@ world-settings:
       - planks
     experience-merge-max-value: -1
     armor-stands-do-collision-entity-lookups: true
+    skip-entity-ticking-in-chunks-scheduled-for-unload: true
     disable-thunder: false
     skeleton-horse-thunder-spawn-chance: 0.01
     disable-ice-and-snow: false
-    skip-entity-ticking-in-chunks-scheduled-for-unload: true
     fire-physics-event-for-redstone: false
     spawner-nerfed-mobs-should-jump: false
     baby-zombie-movement-speed: 0.5

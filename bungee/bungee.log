@@ -1,9 +1,9 @@
-2025-12-05T13:55:01.584174204Z main WARN Advanced terminal features are not available in this environment
-[13:55:03 INFO]: Booting up Velocity 3.4.0-SNAPSHOT (git-965db127-b454)...
-[13:55:04 INFO]: Loading localizations...
-[13:55:05 INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
-[13:55:05 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
-[13:55:06 INFO]: Unable to load your server-icon.png, continuing without it.
+2025-12-06T00:45:22.777386307Z main WARN Advanced terminal features are not available in this environment
+[00:45:24 INFO]: Booting up Velocity 3.4.0-SNAPSHOT (git-965db127-b454)...
+[00:45:24 INFO]: Loading localizations...
+[00:45:25 INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[00:45:25 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[00:45:25 INFO]: Unable to load your server-icon.png, continuing without it.
 java.lang.IllegalArgumentException: Image is not 64x64 (found 475x896)
 	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:299) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.api.util.Favicon.create(Favicon.java:82) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
@@ -13,8 +13,8 @@ java.lang.IllegalArgumentException: Image is not 64x64 (found 475x896)
 	at com.velocitypowered.proxy.VelocityServer.doStartupConfigLoad(VelocityServer.java:388) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:276) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[13:55:06 INFO]: Loading plugins...
-[13:55:06 ERROR]: Unable to load plugin plugins/QuickVoid-1.0.jar
+[00:45:26 INFO]: Loading plugins...
+[00:45:26 ERROR]: Unable to load plugin plugins/QuickVoid-1.0.jar
 com.velocitypowered.api.plugin.InvalidPluginException: The plugin file QuickVoid-1.0.jar appears to be a Bukkit or BungeeCord plugin. Velocity does not support Bukkit or BungeeCord plugins.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.getSerializedPluginInfo(JavaPluginLoader.java:161) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:62) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
@@ -22,80 +22,275 @@ com.velocitypowered.api.plugin.InvalidPluginException: The plugin file QuickVoid
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:418) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:289) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[13:55:07 ERROR]: Unable to load plugin plugins/LuckPerms-Velocity.jar
+[00:45:26 ERROR]: Unable to load plugin plugins/LuckPerms-Velocity.jar
 com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velocity-plugin.json.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:65) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:101) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:418) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:289) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[13:55:07 ERROR]: Unable to load plugin plugins/luckperms-velocity.jar
+[00:45:26 ERROR]: Unable to load plugin plugins/luckperms-velocity.jar
 com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velocity-plugin.json.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:65) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:101) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:418) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:289) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[bungee.jar:3.4.0-SNAPSHOT (git-965db127-b454)]
-[13:55:08 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[13:55:08 ERROR]: :>  
-[13:55:08 ERROR]: :>      EAGLERCRAFTXVELOCITY WARNING:
-[13:55:08 ERROR]: :>  
-[13:55:08 ERROR]: :>  This plugin wasn't tested to be 'working'
-[13:55:08 ERROR]: :>  with ANY version of Velocity (and forks)
-[13:55:08 ERROR]: :>  apart from the versions listed below:
-[13:55:08 ERROR]: :>  
-[13:55:08 ERROR]: :>  - Velocity: 3.4.0-SNAPSHOT:a33f2d1a:b452
-[13:55:08 ERROR]: :>  
-[13:55:08 ERROR]: :>  This is not a Bukkit/Spigot plugin!
-[13:55:08 ERROR]: :>  
-[13:55:08 ERROR]: :>  Use "-Deaglerxvelocity.stfu=true" to hide
-[13:55:08 ERROR]: :>  
-[13:55:08 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[13:55:08 INFO]: Loaded plugin eaglerxvelocity 1.1.5 by lax1dude, ayunami2000
-[13:55:08 INFO]: Loaded plugin luckperms 5.5.17 by Luck
-[13:55:08 INFO]: Loaded plugin viaversion 5.4.2 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
-[13:55:08 INFO]: Loaded plugin viabackwards 5.4.2 by Matsv, kennytv, Gerrygames, creeper123123321, ForceUpdate1, EnZaXD
-[13:55:08 INFO]: Loaded plugin viarewind 4.0.11 by FlorianMichael/EnZaXD, Gerrygames, creeper123123321
-[13:55:08 INFO]: Loaded 6 plugins
-[13:55:10 INFO] [luckperms]: Loading configuration...
-[13:55:11 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
-[13:55:11 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [0m[38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.17[0m
-[13:55:11 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Velocity - Velocity[0m
-[13:55:11 INFO]: 
-[13:55:11 INFO] [luckperms]: Loading storage provider... [H2]
-[13:55:13 INFO] [luckperms]: Loading internal permission managers...
-[13:55:13 INFO] [luckperms]: Performing initial data load...
-[13:55:13 INFO] [luckperms]: Successfully enabled. (took 5128ms)
-[13:55:13 WARN] [eaglerxvelocity]: This plugin is still in development, certain features may not be functional!
-[13:55:13 WARN] [eaglerxvelocity]: Not recommended for public servers yet, please check for updates
-[13:55:13 INFO] [eaglerxvelocity]: Loading vanilla profile: lax1dude
-[13:55:14 INFO] [eaglerxvelocity]: Loaded vanilla profile: lax1dude
-[13:55:14 ERROR] [eaglerxvelocity]: Online mode is set to false! Authentication system has been disabled
-[13:55:14 INFO] [eaglerxvelocity]: Eaglercraft is listening on: /0.0.0.0:8081
-[13:55:15 INFO] [eaglerxvelocity]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
-[13:55:15 WARN] [eaglerxvelocity]: Voice chat enabled, not recommended for public servers!
-[13:55:15 INFO] [viaversion]: Loading block connection mappings ...
-[13:55:16 INFO] [viaversion]: Replacing channel initializers; you can safely ignore the following two warnings.
-[13:55:16 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[13:55:16 WARN]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[13:55:16 INFO] [viabackwards]: Loading translations...
-[13:55:16 INFO] [viabackwards]: Registering protocols...
-[13:55:17 INFO] [viarewind]: Registering protocols...
-[13:55:17 INFO] [viaversion]: ViaVersion detected lowest supported version by the proxy: 1.7.2-1.7.5 (4)
-[13:55:17 INFO] [viaversion]: Highest supported version by the proxy: 1.21.4 (769)
-[13:55:17 INFO] [viaversion]: Finished mapping loading, shutting down loader executor.
-[13:55:17 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25577
-[13:55:17 INFO]: Done (15.29s)!
-[13:55:17 WARN] [viaversion]: There is a newer plugin version available: 5.5.1, you're on: 5.4.2
-[13:55:29 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43306]: Connected via websocket
-[13:55:29 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43306]: Origin header is https://1-12-eaglercraftx.pages.dev
-[13:55:29 INFO] [eaglerxvelocity]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:43306) has connected
-[13:55:29 INFO]: [server connection] The_Code -> lobby has connected
-[13:55:34 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43322]: Connected via websocket
-[13:55:34 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43322]: Origin header is https://1-12-eaglercraftx.pages.dev
-[13:55:35 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:43322) has connected
-[13:55:35 INFO]: [server connection] Ruger1 -> lobby has connected
-[13:55:35 INFO]: [server connection] The_Code -> survival has connected
-[13:55:35 INFO]: [server connection] The_Code -> lobby has disconnected
-[13:55:43 INFO]: [server connection] Ruger1 -> survival has connected
-[13:55:43 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[00:45:27 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
+[00:45:27 ERROR]: :>  
+[00:45:27 ERROR]: :>      EAGLERCRAFTXVELOCITY WARNING:
+[00:45:27 ERROR]: :>  
+[00:45:27 ERROR]: :>  This plugin wasn't tested to be 'working'
+[00:45:27 ERROR]: :>  with ANY version of Velocity (and forks)
+[00:45:27 ERROR]: :>  apart from the versions listed below:
+[00:45:27 ERROR]: :>  
+[00:45:27 ERROR]: :>  - Velocity: 3.4.0-SNAPSHOT:a33f2d1a:b452
+[00:45:27 ERROR]: :>  
+[00:45:27 ERROR]: :>  This is not a Bukkit/Spigot plugin!
+[00:45:27 ERROR]: :>  
+[00:45:27 ERROR]: :>  Use "-Deaglerxvelocity.stfu=true" to hide
+[00:45:27 ERROR]: :>  
+[00:45:27 ERROR]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
+[00:45:27 INFO]: Loaded plugin eaglerxvelocity 1.1.5 by lax1dude, ayunami2000
+[00:45:27 INFO]: Loaded plugin luckperms 5.5.17 by Luck
+[00:45:27 INFO]: Loaded plugin viaversion 5.4.2 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
+[00:45:27 INFO]: Loaded plugin viabackwards 5.4.2 by Matsv, kennytv, Gerrygames, creeper123123321, ForceUpdate1, EnZaXD
+[00:45:27 INFO]: Loaded plugin viarewind 4.0.11 by FlorianMichael/EnZaXD, Gerrygames, creeper123123321
+[00:45:27 INFO]: Loaded 6 plugins
+[00:45:28 INFO] [luckperms]: Loading configuration...
+[00:45:29 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
+[00:45:29 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [0m[38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.17[0m
+[00:45:29 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Velocity - Velocity[0m
+[00:45:29 INFO]: 
+[00:45:30 INFO] [luckperms]: Loading storage provider... [H2]
+[00:45:31 INFO] [luckperms]: Loading internal permission managers...
+[00:45:31 INFO] [luckperms]: Performing initial data load...
+[00:45:31 INFO] [luckperms]: Successfully enabled. (took 4209ms)
+[00:45:31 WARN] [eaglerxvelocity]: This plugin is still in development, certain features may not be functional!
+[00:45:31 WARN] [eaglerxvelocity]: Not recommended for public servers yet, please check for updates
+[00:45:32 INFO] [eaglerxvelocity]: Loading vanilla profile: lax1dude
+[00:45:33 INFO] [eaglerxvelocity]: Loaded vanilla profile: lax1dude
+[00:45:33 ERROR] [eaglerxvelocity]: Online mode is set to false! Authentication system has been disabled
+[00:45:33 INFO] [eaglerxvelocity]: Eaglercraft is listening on: /0.0.0.0:8081
+[00:45:34 INFO] [eaglerxvelocity]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
+[00:45:34 WARN] [eaglerxvelocity]: Voice chat enabled, not recommended for public servers!
+[00:45:35 INFO] [viaversion]: Loading block connection mappings ...
+[00:45:36 INFO] [viaversion]: Replacing channel initializers; you can safely ignore the following two warnings.
+[00:45:36 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[00:45:36 WARN]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[00:45:36 INFO] [viabackwards]: Loading translations...
+[00:45:36 INFO] [viabackwards]: Registering protocols...
+[00:45:37 INFO] [viarewind]: Registering protocols...
+[00:45:37 INFO] [viaversion]: ViaVersion detected lowest supported version by the proxy: 1.7.2-1.7.5 (4)
+[00:45:37 INFO] [viaversion]: Highest supported version by the proxy: 1.21.4 (769)
+[00:45:38 INFO] [viaversion]: Finished mapping loading, shutting down loader executor.
+[00:45:38 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25577
+[00:45:38 INFO]: Done (15.23s)!
+[00:45:38 WARN] [viaversion]: There is a newer plugin version available: 5.5.1, you're on: 5.4.2
+[00:46:11 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:58608]: Connected via websocket
+[00:46:11 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:58608]: Origin header is https://1-12-eaglercraftx.pages.dev
+[00:46:11 INFO] [eaglerxvelocity]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:58608) has connected
+[00:46:11 INFO]: [server connection] The_Code -> lobby has connected
+[00:46:15 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:58616]: Connected via websocket
+[00:46:15 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:58616]: Origin header is https://1-12-eaglercraftx.pages.dev
+[00:46:15 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:58616) has connected
+[00:46:15 INFO]: [server connection] Ruger1 -> lobby has connected
+[00:46:27 INFO]: [server connection] Ruger1 -> survival has connected
+[00:46:27 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[00:46:35 INFO]: [server connection] The_Code -> survival has connected
+[00:46:35 INFO]: [server connection] The_Code -> lobby has disconnected
+[00:47:08 INFO]: [server connection] The_Code -> lobby has connected
+[00:47:08 INFO]: [server connection] The_Code -> survival has disconnected
+[00:48:37 INFO]: [server connection] The_Code -> survival has connected
+[00:48:37 INFO]: [server connection] The_Code -> lobby has disconnected
+[00:50:08 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:58616) has disconnected
+[00:50:08 INFO]: [server connection] Ruger1 -> survival has disconnected
+[00:50:20 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:33072]: Connected via websocket
+[00:50:20 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:33072]: Origin header is https://1-12-eaglercraftx.pages.dev
+[00:50:20 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:33072) has connected
+[00:50:20 INFO]: [server connection] Ruger1 -> lobby has connected
+[00:50:26 INFO]: [server connection] Ruger1 -> survival has connected
+[00:50:26 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[00:52:41 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:33072) has disconnected
+[00:52:41 INFO]: [server connection] Ruger1 -> survival has disconnected
+[00:52:44 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:42270]: Connected via websocket
+[00:52:44 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:42270]: Origin header is https://1-12-eaglercraftx.pages.dev
+[00:52:44 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:42270) has connected
+[00:52:44 INFO]: [server connection] Ruger1 -> lobby has connected
+[00:52:50 INFO]: [server connection] Ruger1 -> survival has connected
+[00:52:50 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[00:53:07 INFO]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:58608) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[00:53:07 ERROR]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:58608): read timed out
+[00:53:07 INFO]: [server connection] The_Code -> survival has disconnected
+[00:59:30 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:42270): kicked from server survival: You have been ejected! <Player> was a bitch! 2 Remain...
+[00:59:30 INFO]: [server connection] Ruger1 -> survival has disconnected
+[00:59:30 INFO]: [server connection] Ruger1 -> lobby has connected
+[00:59:34 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:42270) has disconnected
+[00:59:34 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[00:59:35 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:57068]: Connected via websocket
+[00:59:35 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:57068]: Origin header is https://1-12-eaglercraftx.pages.dev
+[00:59:35 INFO] [eaglerxvelocity]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:57068) has connected
+[00:59:35 INFO]: [server connection] The_Code -> lobby has connected
+[00:59:39 INFO]: [server connection] The_Code -> survival has connected
+[00:59:40 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:57096]: Connected via websocket
+[00:59:40 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:57096]: Origin header is https://1-12-eaglercraftx.pages.dev
+[00:59:40 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:57096) has connected
+[00:59:40 INFO]: [server connection] Ruger1 -> lobby has connected
+[00:59:45 INFO]: [server connection] The_Code -> lobby has disconnected
+[00:59:51 INFO]: [server connection] Ruger1 -> survival has connected
+[00:59:51 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[01:00:11 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:56856]: Connected via websocket
+[01:00:11 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:56856]: Origin header is https://www.mc.js.cool
+[01:00:11 INFO] [eaglerxvelocity]: [connected player] PlumPickle (/[0:0:0:0:0:0:0:1]:56856) has connected
+[01:00:11 INFO]: [server connection] PlumPickle -> lobby has connected
+[01:00:22 INFO]: [server connection] PlumPickle -> survival has connected
+[01:00:22 INFO]: [server connection] PlumPickle -> lobby has disconnected
+[01:04:46 INFO]: [connected player] PlumPickle (/[0:0:0:0:0:0:0:1]:56856) has disconnected
+[01:04:46 INFO]: [server connection] PlumPickle -> survival has disconnected
+[01:06:18 INFO]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:57068) has disconnected
+[01:06:18 INFO]: [server connection] The_Code -> survival has disconnected
+[01:06:28 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:48722]: Connected via websocket
+[01:06:28 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:48722]: Origin header is https://1-12-eaglercraftx.pages.dev
+[01:06:29 INFO] [eaglerxvelocity]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:48722) has connected
+[01:06:29 INFO]: [server connection] ShadowLord -> lobby has connected
+[01:06:32 INFO]: [server connection] ShadowLord -> survival has connected
+[01:06:32 INFO]: [server connection] ShadowLord -> lobby has disconnected
+[01:07:35 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:40154]: Connected via websocket
+[01:07:35 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:40154]: Origin header is null
+[01:07:36 INFO] [eaglerxvelocity]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:40154) has connected
+[01:07:36 INFO]: [server connection] ItzRealLava -> lobby has connected
+[01:08:17 INFO]: [server connection] ItzRealLava -> survival has connected
+[01:08:17 INFO]: [server connection] ItzRealLava -> lobby has disconnected
+[01:10:32 INFO]: [connected player] ShadowLord (/[0:0:0:0:0:0:0:1]:48722) has disconnected
+[01:10:32 INFO]: [server connection] ShadowLord -> survival has disconnected
+[01:12:08 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:57096): kicked from server survival: You have been ejected! <Player> was a bitch! 2 Remain...
+[01:12:08 INFO]: [server connection] Ruger1 -> survival has disconnected
+[01:12:08 INFO]: [server connection] Ruger1 -> lobby has connected
+[01:12:08 INFO]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:40154): kicked from server survival: You have been ejected! <Player> was a bitch! 2 Remain...
+[01:12:08 INFO]: [server connection] ItzRealLava -> survival has disconnected
+[01:12:08 INFO]: [server connection] ItzRealLava -> lobby has connected
+[01:12:27 INFO]: [server connection] Ruger1 -> survival has connected
+[01:12:28 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[01:12:37 INFO]: [server connection] ItzRealLava -> survival has connected
+[01:12:37 INFO]: [server connection] ItzRealLava -> lobby has disconnected
+[01:13:26 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:57096): kicked from server survival: You have been ejected! <Player> was a bitch! 2 Remain...
+[01:13:26 INFO]: [server connection] Ruger1 -> survival has disconnected
+[01:13:26 INFO]: [server connection] Ruger1 -> lobby has connected
+[01:13:26 INFO]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:40154): kicked from server survival: You have been ejected! <Player> was a bitch! 2 Remain...
+[01:13:26 INFO]: [server connection] ItzRealLava -> survival has disconnected
+[01:13:26 INFO]: [server connection] ItzRealLava -> lobby has connected
+[01:13:33 INFO]: [server connection] ItzRealLava -> survival has connected
+[01:13:35 INFO]: [server connection] Ruger1 -> survival has connected
+[01:13:44 INFO]: [server connection] ItzRealLava -> lobby has disconnected
+[01:13:44 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[01:14:15 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:50168]: Connected via websocket
+[01:14:15 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:50168]: Origin header is https://1-12-eaglercraftx.pages.dev
+[01:14:15 INFO] [eaglerxvelocity]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:50168) has connected
+[01:14:15 INFO]: [server connection] The_Code -> lobby has connected
+[01:14:18 INFO]: [server connection] The_Code -> survival has connected
+[01:14:18 INFO]: [server connection] The_Code -> lobby has disconnected
+[01:28:08 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:57096) has disconnected
+[01:28:08 INFO]: [server connection] Ruger1 -> survival has disconnected
+[01:28:14 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43564]: Connected via websocket
+[01:28:14 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:43564]: Origin header is https://1-12-eaglercraftx.pages.dev
+[01:28:14 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:43564) has connected
+[01:28:14 INFO]: [server connection] Ruger1 -> lobby has connected
+[01:28:20 INFO]: [server connection] Ruger1 -> survival has connected
+[01:28:20 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[01:29:44 INFO]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:50168) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[01:29:44 ERROR]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:50168): read timed out
+[01:29:44 INFO]: [server connection] The_Code -> survival has disconnected
+[01:31:47 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:47184]: Connected via websocket
+[01:31:47 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:47184]: Origin header is https://1-12-eaglercraftx.pages.dev
+[01:31:47 INFO] [eaglerxvelocity]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:47184) has connected
+[01:31:47 INFO]: [server connection] The_Code -> lobby has connected
+[01:31:52 INFO]: [server connection] The_Code -> survival has connected
+[01:31:52 INFO]: [server connection] The_Code -> lobby has disconnected
+[01:35:22 INFO]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:40154) has disconnected
+[01:35:22 INFO]: [server connection] ItzRealLava -> survival has disconnected
+[01:35:35 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:45740]: Connected via websocket
+[01:35:35 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:45740]: Origin header is null
+[01:35:35 INFO] [eaglerxvelocity]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:45740) has connected
+[01:35:35 INFO]: [server connection] ItzRealLava -> lobby has connected
+[01:35:50 INFO]: [server connection] ItzRealLava -> survival has connected
+[01:35:50 INFO]: [server connection] ItzRealLava -> lobby has disconnected
+[01:39:56 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:43564) has disconnected
+[01:39:56 INFO]: [server connection] Ruger1 -> survival has disconnected
+[01:40:20 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:35628]: Connected via websocket
+[01:40:20 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:35628]: Origin header is https://1-12-eaglercraftx.pages.dev
+[01:40:20 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:35628) has connected
+[01:40:20 INFO]: [server connection] Ruger1 -> lobby has connected
+[01:40:35 INFO]: [server connection] Ruger1 -> survival has connected
+[01:40:35 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[01:59:00 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:35628) has disconnected
+[01:59:00 INFO]: [server connection] Ruger1 -> survival has disconnected
+[01:59:07 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:47008]: Connected via websocket
+[01:59:07 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:47008]: Origin header is https://1-12-eaglercraftx.pages.dev
+[01:59:07 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:47008) has connected
+[01:59:07 INFO]: [server connection] Ruger1 -> lobby has connected
+[01:59:13 INFO]: [server connection] Ruger1 -> survival has connected
+[01:59:13 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[01:59:49 INFO]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:47184): kicked from server survival: hah
+[01:59:49 INFO]: [server connection] The_Code -> survival has disconnected
+[01:59:49 INFO]: [server connection] The_Code -> lobby has connected
+[02:00:41 INFO]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:47184) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[02:00:41 ERROR]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:47184): read timed out
+[02:00:41 INFO]: [server connection] The_Code -> lobby has disconnected
+[02:01:03 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:56452]: Connected via websocket
+[02:01:03 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:56452]: Origin header is https://1-12-eaglercraftx.pages.dev
+[02:01:03 INFO] [eaglerxvelocity]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:56452) has connected
+[02:01:03 INFO]: [server connection] The_Code -> lobby has connected
+[02:01:07 INFO]: [server connection] The_Code -> survival has connected
+[02:01:07 INFO]: [server connection] The_Code -> lobby has disconnected
+[02:01:30 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:47008) has disconnected
+[02:01:30 INFO]: [server connection] Ruger1 -> survival has disconnected
+[02:01:35 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:39272]: Connected via websocket
+[02:01:35 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:39272]: Origin header is https://1-12-eaglercraftx.pages.dev
+[02:01:35 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:39272) has connected
+[02:01:35 INFO]: [server connection] Ruger1 -> lobby has connected
+[02:01:43 INFO]: [server connection] Ruger1 -> survival has connected
+[02:01:43 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[02:02:52 INFO]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:45740) has disconnected
+[02:02:52 INFO]: [server connection] ItzRealLava -> survival has disconnected
+[02:03:05 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:56478]: Connected via websocket
+[02:03:05 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:56478]: Origin header is null
+[02:03:05 INFO] [eaglerxvelocity]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:56478) has connected
+[02:03:05 INFO]: [server connection] ItzRealLava -> lobby has connected
+[02:03:12 INFO]: [server connection] ItzRealLava -> survival has connected
+[02:03:12 INFO]: [server connection] ItzRealLava -> lobby has disconnected
+[02:13:04 INFO]: [connected player] The_Code (/[0:0:0:0:0:0:0:1]:56452) has disconnected
+[02:13:04 INFO]: [server connection] The_Code -> survival has disconnected
+[02:27:16 INFO]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:56478) has disconnected
+[02:27:16 INFO]: [server connection] ItzRealLava -> survival has disconnected
+[02:28:08 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:58980]: Connected via websocket
+[02:28:08 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:58980]: Origin header is null
+[02:28:08 INFO] [eaglerxvelocity]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:58980) has connected
+[02:28:08 INFO]: [server connection] ItzRealLava -> lobby has connected
+[02:28:17 INFO]: [server connection] ItzRealLava -> survival has connected
+[02:28:17 INFO]: [server connection] ItzRealLava -> lobby has disconnected
+[02:46:11 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:39272) has disconnected
+[02:46:11 INFO]: [server connection] Ruger1 -> survival has disconnected
+[02:46:15 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:32946]: Connected via websocket
+[02:46:15 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:32946]: Origin header is https://1-12-eaglercraftx.pages.dev
+[02:46:16 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:32946) has connected
+[02:46:16 INFO]: [server connection] Ruger1 -> lobby has connected
+[02:46:21 INFO]: [server connection] Ruger1 -> survival has connected
+[02:46:21 INFO]: [server connection] Ruger1 -> lobby has disconnected
+[02:48:45 INFO]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:32946) has disconnected
+[02:48:45 INFO]: [server connection] Ruger1 -> survival has disconnected
+[02:48:47 INFO]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:58980): kicked from server survival: An internal server connection error occurred.
+[02:48:47 INFO]: [server connection] ItzRealLava -> survival has disconnected
+[02:48:47 INFO]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:58980) has disconnected: [38;2;255;85;85mAn internal error occurred in your connection.[0m
+[02:48:47 ERROR]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:58980): read timed out
+[02:49:08 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:41898]: Connected via websocket
+[02:49:08 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:41898]: Origin header is null
+[02:49:08 INFO] [eaglerxvelocity]: [connected player] ItzRealLava (/[0:0:0:0:0:0:0:1]:41898) has connected
+[02:49:08 INFO]: [server connection] ItzRealLava -> lobby has connected
+[02:49:20 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:49748]: Connected via websocket
+[02:49:20 INFO] [eaglerxvelocity]: [/[0:0:0:0:0:0:0:1]:49748]: Origin header is https://1-12-eaglercraftx.pages.dev
+[02:49:21 INFO] [eaglerxvelocity]: [connected player] Ruger1 (/[0:0:0:0:0:0:0:1]:49748) has connected
+[02:49:21 INFO]: [server connection] Ruger1 -> lobby has connected
+[02:49:22 INFO]: [server connection] ItzRealLava -> survival has connected
+[02:49:22 INFO]: [server connection] ItzRealLava -> lobby has disconnected
+[02:49:26 INFO]: [server connection] Ruger1 -> survival has connected
+[02:49:26 INFO]: [server connection] Ruger1 -> lobby has disconnected

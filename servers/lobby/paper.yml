@@ -73,7 +73,6 @@ world-settings:
     queue-light-updates: false
     optimize-explosions: false
     use-chunk-inhabited-timer: true
-    use-vanilla-world-scoreboard-name-coloring: false
     delay-chunk-unloads-by: 10s
     max-auto-save-chunks-per-tick: 24
     save-queue-limit-for-auto-save: 50
@@ -103,10 +102,11 @@ world-settings:
       hard: 128
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
-    water-over-lava-flow-speed: 5
     fast-drain:
       lava: false
       water: false
+    use-vanilla-world-scoreboard-name-coloring: false
+    water-over-lava-flow-speed: 5
     lava-flow-speed:
       normal: 30
       nether: 10
@@ -145,10 +145,6 @@ world-settings:
     prevent-tnt-from-moving-in-water: false
     non-player-arrow-despawn-rate: -1
     armor-stands-tick: true
-    allow-leashing-undead-horse: false
-    disable-thunder: false
-    skeleton-horse-thunder-spawn-chance: 0.01
-    disable-ice-and-snow: false
     keep-spawn-loaded: true
     anti-xray:
       enabled: false
@@ -176,9 +172,13 @@ world-settings:
     experience-merge-max-value: -1
     armor-stands-do-collision-entity-lookups: true
     skip-entity-ticking-in-chunks-scheduled-for-unload: true
+    disable-thunder: false
+    skeleton-horse-thunder-spawn-chance: 0.01
+    disable-ice-and-snow: false
     fire-physics-event-for-redstone: false
     spawner-nerfed-mobs-should-jump: false
     baby-zombie-movement-speed: 0.5
+    allow-leashing-undead-horse: false
     mob-spawner-tick-rate: 1
     all-chunks-are-slime-chunks: false
     squid-spawn-height:
